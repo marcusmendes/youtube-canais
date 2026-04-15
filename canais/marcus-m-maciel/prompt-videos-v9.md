@@ -1,5 +1,5 @@
 # PROMPT MESTRE — IA, CIÊNCIA E FUTURO DA HUMANIDADE
-**Canal: Marcus M Maciel | Versão 8.0**
+**Canal: Marcus M Maciel | Versão 9.0**
 
 ---
 
@@ -201,39 +201,58 @@ Antes de iniciar o roteiro, gere os seguintes metadados:
 ### [METADADOS DO VÍDEO]
 
 **Títulos sugeridos:** gere exatamente 10 opções de título.
-Para cada um, aplique uma estrutura diferente entre as abaixo —
-não repita a mesma estrutura:
+Para cada um, aplique uma estrutura diferente entre as 6 fórmulas
+abaixo — distribua as 10 opções entre elas, priorizando as 3
+primeiras (são as de maior CTR comprovado por análise de dados):
 
-- `[GATILHO em CAPS]: [Fato científico impactante] — [dado concreto]`
-  O GATILHO deve ser uma palavra ou expressão de urgência em letras
-  maiúsculas (ex: CONFIRMADO, REVELADO, DESCOBRIRAM, AGORA É REAL).
-  > Exemplo: "CONFIRMADO: IA resolve em 3 dias problema que cientistas
-  > não conseguiram em 50 anos"
+- **Fórmula 1 — Pergunta existencial** *(maior CTR observado)*
+  Pergunta que o espectador sente na pele — toca em identidade,
+  medo ou fascínio universal. 1-2 palavras em CAPS cirúrgico.
+  > Exemplo: "A IA Pode CURAR a Morte?"
+  > Exemplo: "Por Que Existe Um LIMITE Para o Que Podemos Ver?"
 
-- `[Descoberta ou evento] que [consequência inesperada ou paradoxo]`
-  > Exemplo: "A IA que errou na previsão — e ainda assim salvou o
-  > experimento"
+- **Fórmula 2 — X vs Y** *(formato de maior CTR no YouTube global)*
+  Dois elementos em confronto direto. Gera clique por curiosidade
+  sobre quem/o quê vence.
+  > Exemplo: "IA vs Médico: Quem Detecta CÂNCER Primeiro?"
+  > Exemplo: "O Melhor Cirurgião do Mundo vs Um ROBÔ de 2026"
 
-- `O que acontece quando [situação provocativa ou dilema]`
-  > Exemplo: "O que acontece quando uma IA começa a fazer descobertas
-  > que os humanos não conseguem entender?"
+- **Fórmula 3 — Contradição / Negação**
+  Nega algo que o espectador acredita ser verdade. Tom conversacional.
+  1-2 palavras em CAPS no ponto de tensão.
+  > Exemplo: "A IA NÃO Vai Substituir Médicos... Vai Algo PIOR"
+  > Exemplo: "Ninguém ENSINOU Esse Robô a Operar. Ele Aprendeu Sozinho"
 
-- `[Tecnologia ou descoberta] que [promessa de transformação concreta]`
-  > Exemplo: "A ferramenta que já acelerou pesquisas científicas em 10x
-  > nos maiores laboratórios do mundo"
+- **Fórmula 4 — Número impossível**
+  Dado numérico concreto que soa impossível. O número carrega toda
+  a tensão do título.
+  > Exemplo: "A IA Analisou 80.000 Exames em UMA Hora"
+  > Exemplo: "Em 3 DIAS a IA Resolveu o Que Cientistas Não Conseguiram em 50 Anos"
 
-- `[Número] [fatos, casos ou razões] que mostram [tema central]`
-  > Exemplo: "5 descobertas científicas que só foram possíveis por
-  > causa da IA"
+- **Fórmula 5 — Descoberta + consequência inesperada**
+  Fato concreto seguido de implicação que muda a perspectiva.
+  1-2 palavras em CAPS no ponto de virada.
+  > Exemplo: "A IA Encontrou ALGO que Nenhum Cientista Esperava"
+  > Exemplo: "Esse Experimento Mudou TUDO que Sabíamos Sobre o Cérebro"
 
-Todos os títulos devem ter no máximo 90 caracteres.
+- **Fórmula 6 — E se... (cenário hipotético)**
+  Abre com "E se" + cenário fascinante ou perturbador. Funciona
+  especialmente com temas de espaço, filosofia e futuro.
+  > Exemplo: "E Se a IA Descobrir VIDA Fora da Terra?"
+  > Exemplo: "E Se Você Pudesse VIVER Para Sempre?"
+
+**Regras obrigatórias para TODOS os títulos:**
+- Máximo de 60 caracteres (10 palavras ou menos)
+- Zero jargão técnico — o jargão vai na descrição, nunca no título
+- 1-2 palavras em CAPS cirúrgico (nunca tudo em caps, nunca sem caps)
+- Tom conversacional — deve soar como algo dito numa conversa, não
+  como manchete de jornal científico
+- O título é uma premissa que precisa ser resolvida, não o anúncio
+  de um resultado. Conta uma história, não entrega o final
+
 Após gerar os 10, identifique os 3 com maior potencial de CTR
-e explique em uma frase por que cada um se destaca.
-
-Para os títulos, priorize gatilhos das seguintes categorias:
-- **Curiosidade:** REVELADO, CONFIRMADO, DESCOBRIRAM, EXPOSTO, SEGREDO
-- **Poder/Urgência:** AGORA, COMPROVADO, SURPREENDENTE, NOVO, HOJE
-- **Segurança/Autoridade:** APROVADO, PESQUISA, RESULTADOS, GARANTIDO
+e explique em uma frase por que cada um se destaca, referenciando
+qual fórmula foi usada.
 
 ---
 
@@ -492,6 +511,27 @@ para o próximo bloco via bridge de escalada.
   ou qualquer construção que situe o passado antes do presente.
   O passado é contexto — vem depois da conclusão, nunca antes.
 
+**ESCALONAMENTO PROGRESSIVO ENTRE BLOCOS:**
+
+> **REGRA ESTRUTURAL:** A tensão entre blocos deve SEMPRE subir.
+> Nunca diminuir. Nunca estabilizar. Cada bloco deve ser mais
+> impactante que o anterior. Essa é a camada ACIMA da estrutura
+> interna de cada bloco — é a progressão da narrativa como um todo.
+
+Organize os blocos do desenvolvimento seguindo esta curva
+obrigatória de 4 níveis de escalada:
+
+| Bloco | Função | Duração | O que acontece |
+|---|---|---|---|
+| **Bloco 1 — Âncora** | Entrada acessível | 2-3 min | Apresenta o cenário de forma que qualquer pessoa entende. O espectador pensa "ok, faz sentido" |
+| **Bloco 2 — Escalada** | Contradição | 3-4 min | Introduz o dado ou caso que contradiz o senso comum. O espectador pensa "espera, isso é real?" |
+| **Bloco 3 — Clímax** | Dado impossível | 3-4 min | O dado mais impactante do vídeo. O "número impossível". O espectador pensa "isso muda tudo" |
+| **Bloco 4 — Implicação** | Futuro + emoção | 2-3 min | O que isso significa para o futuro. Conexão emocional. O espectador pensa "preciso contar isso pra alguém" |
+
+As bridges de escalada (definidas na seção VOZ E TOM) são o
+mecanismo que conecta cada bloco ao próximo. Cada bridge deve
+sinalizar que o próximo bloco é mais impactante que o anterior.
+
 **Além da estrutura de bloco, use:**
 - Analogias simples e do cotidiano para cada conceito técnico
   introduzido — calibradas para a persona.
@@ -576,7 +616,7 @@ espectador deve sentir que vai perder algo importante se não assistir.
 - Indique ênfase vocal com: `[ênfase]`.
 
 ### Vídeos longos
-- Duração alvo de 12 a 15 minutos (aproximadamente 1.400 a 2.000
+- Duração alvo de 13 a 17 minutos (aproximadamente 1.700 a 2.200
   palavras de narração).
 
 ### Shorts
@@ -598,9 +638,25 @@ espectador deve sentir que vai perder algo importante se não assistir.
   contínua. O Short inteiro funciona como um único open loop
   resolvido nos últimos 5 segundos.
 - Presença editorial em primeira pessoa: máximo de 1 inserção.
-- O CTA final do Short deve ser de 1 frase apenas — priorizar
-  "siga para mais" ou "veja o vídeo completo no canal" quando
-  houver vídeo longo relacionado.
+- O CTA final do Short deve ser de 1 frase apenas — sempre
+  específico e conectado ao conteúdo, nunca genérico.
+  Quando houver vídeo longo relacionado, o CTA deve criar um
+  open loop que só o longo resolve:
+  *"No vídeo completo, eu mostro o dado que mudou tudo."*
+  *"Esse foi só o começo — o que vem depois é ainda mais absurdo.
+  Vídeo completo no canal."*
+  Nunca: "siga para mais" ou "se inscreva" sem contexto.
+
+**FUNÇÃO DO SHORT NO FUNIL (campo obrigatório nos Shorts):**
+Cada Short deve ter uma função clara no ciclo de conteúdo:
+- **Teaser** (publicar 3 dias antes do longo): dado mais impactante
+  do vídeo longo + sinalização de que o vídeo completo está chegando.
+- **Standalone** (publicar 1 dia antes do longo): funciona sozinho,
+  explora dado secundário do tema.
+- **Lançamento** (publicar no mesmo dia do longo): pergunta que só
+  o vídeo longo responde + CTA direto com open loop.
+- **Reprise** (publicar 3-5 dias depois do longo): clip do momento
+  mais impactante do longo, reeditado para formato vertical.
 
 ---
 
@@ -622,11 +678,21 @@ espectador deve sentir que vai perder algo importante se não assistir.
 **TEMA DO VÍDEO:**
 `[descreva o tema, o estudo ou a descoberta científica/tecnológica que deseja abordar]`
 
+**SUB-NICHO:**
+`[escolha um — não repetir o mesmo sub-nicho do vídeo anterior:
+IA + Espaço/Astronomia | IA + Física/Cosmologia | IA + Medicina/Saúde |
+IA + Robótica | IA + Filosofia/Existencial | IA + Energia/Clima |
+IA + Computação Quântica | IA + História/Arqueologia]`
+
 **CONTEXTO E DIRECIONAMENTO:**
 `[Opcional. Descreva informações adicionais: pontos específicos que você quer abordar, estudos ou dados que você já encontrou e quer incluir, ângulos que devem ser evitados, referências que quer que apareçam, casos reais ou experimentos relevantes, ou qualquer outro contexto que torne o roteiro mais preciso e alinhado com a sua visão. Quanto mais detalhe aqui, mais fiel ao seu objetivo será o resultado.]`
 
 **FORMATO:**
-`[vídeo longo (10–12 min) ou Short (até 60s)]`
+`[vídeo longo (13–17 min) ou Short (até 60s)]`
+
+**FUNÇÃO DO SHORT (preencher apenas para Shorts):**
+`[teaser / standalone / lançamento / reprise]`
+→ Consulte a instrução de comportamento na seção FORMATAÇÃO DO ROTEIRO > Shorts.
 
 **OBJETIVO DO VÍDEO:**
 `[informar / converter para outro vídeo / construir autoridade / gerar inscrições]`
@@ -661,15 +727,19 @@ espectador deve sentir que vai perder algo importante se não assistir.
 | # | Verificação | Critério |
 |---|---|---|
 | 1 | Metadados completos | 10 títulos + Top 3 CTR + thumbnail + post comunidade + hashtags + tags + descrição SEO + fontes |
-| 2 | Contagem de palavras (narração) | Vídeo longo: 1.400–2.000 palavras · Short: ≤ 130 palavras |
-| 3 | Todas as seções do roteiro presentes | Hook + Contexto + Desenvolvimento (blocos) + Loops + CTA Final |
-| 4 | Direção visual em todos os blocos | Cada bloco de narração possui linha `VISUAL:` imediatamente após |
-| 5 | Camada Visual Permanente aplicada | Todos os VISUALs e thumbnail seguem estilo, paleta e atmosfera |
-| 6 | Loops de retenção | Ao menos 1 loop a cada 250–400 palavras (vídeos longos) · Nenhum em Shorts |
-| 7 | Credibilidade científica | Nenhuma especulação como fato · Fontes reais com nome + ano na narração · Incertezas sinalizadas |
-| 8 | Keyword principal na descrição SEO | 5–7 ocorrências naturais, concentradas nas 2 primeiras frases |
-| 9 | Post de comunidade | ≤ 150 palavras · 4 partes · ≤ 2 emojis · ≤ 3 hashtags ao final |
-| 10 | Thumbnail | Todas as 6 seções presentes (ou fallback aplicado se sem Reference Image) |
+| 2 | Títulos passam no checklist | Todos os 10: ≤ 60 caracteres · ≤ 10 palavras · zero jargão · 1-2 CAPS cirúrgicos · tom conversacional · premissa (não resultado) |
+| 3 | Contagem de palavras (narração) | Vídeo longo: 1.700–2.200 palavras · Short: ≤ 130 palavras |
+| 4 | Todas as seções do roteiro presentes | Hook + Contexto + Desenvolvimento (blocos) + Loops + CTA Final |
+| 5 | Escalonamento progressivo | Os blocos do desenvolvimento seguem a curva Âncora → Escalada → Clímax → Implicação · A tensão nunca diminui entre blocos |
+| 6 | Direção visual em todos os blocos | Cada bloco de narração possui linha `VISUAL:` imediatamente após |
+| 7 | Camada Visual Permanente aplicada | Todos os VISUALs e thumbnail seguem estilo, paleta e atmosfera |
+| 8 | Loops de retenção | Ao menos 1 loop a cada 250–400 palavras (vídeos longos) · Nenhum em Shorts |
+| 9 | Credibilidade científica | Nenhuma especulação como fato · Fontes reais com nome + ano na narração · Incertezas sinalizadas |
+| 10 | Keyword principal na descrição SEO | 5–7 ocorrências naturais, concentradas nas 2 primeiras frases |
+| 11 | Post de comunidade | ≤ 150 palavras · 4 partes · ≤ 2 emojis · ≤ 3 hashtags ao final |
+| 12 | Thumbnail | Todas as 6 seções presentes (ou fallback aplicado se sem Reference Image) |
+| 13 | Sub-nicho diferente do vídeo anterior | Campo SUB-NICHO preenchido e diferente do último vídeo publicado |
+| 14 | Função do Short (apenas Shorts) | Campo FUNÇÃO DO SHORT preenchido · CTA específico conectado ao longo · Nunca CTA genérico |
 
 ---
 
