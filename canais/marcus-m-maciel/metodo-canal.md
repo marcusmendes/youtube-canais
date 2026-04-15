@@ -153,17 +153,17 @@ O prompt v8 atual mira 12-15 min nos longos. Ajustar para 13-17 min (expandir o 
 
 | Conteúdo | Frequência | Dia sugerido |
 |---|---|---|
-| **1 vídeo longo** | A cada 2 semanas | Sábado (maior audiência BR) |
-| **2 Shorts** | Por semana (4 por ciclo de longo) | Terça + Quinta |
+| **1 vídeo longo** | Por semana | Sábado (maior audiência BR) |
+| **2 Shorts** | Por semana | Terça + Quinta |
 
-**Total: 1 longo + 4 Shorts a cada 2 semanas** (vs 3-4 longos + 3-4 Shorts a cada 2 semanas antes)
+**Total: 1 longo + 2 Shorts por semana = 3 publicações/semana** (vs ~3.5 longos/semana antes)
 
 ### Por que menos é mais
 
 | Cenário | Vídeos/mês | Tempo por vídeo | Resultado esperado |
 |---|---|---|---|
 | **Antes** | ~14 | ~1 dia | 92 views/vídeo |
-| **Agora** | ~6 | ~5 dias por longo, ~1 dia por Short | Meta: 500+ views/longo, 500+ views/Short |
+| **Agora** | ~12 (4 longos + 8 Shorts) | ~3 dias por longo, ~1 dia por Short | Meta: 200+ views/longo, 500+ views/Short |
 
 O tempo extra por longo deve ser investido em:
 1. **Título**: testar 10 opções, aplicar o checklist (30 min)
