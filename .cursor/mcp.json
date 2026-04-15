@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "youtube": {
+      "command": "zubeid-youtube-mcp-server",
+      "env": {
+        "YOUTUBE_API_KEY": "AIzaSyDnjRdTSmoCA6iNPFzqVB5KYEJJOv8Z62o"
+      }
+    }
+  }
+}
