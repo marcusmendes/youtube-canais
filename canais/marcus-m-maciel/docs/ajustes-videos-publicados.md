@@ -517,3 +517,250 @@ No estudo KEYNOTE-942, a vacina personalizada da Moderna reduziu a recorrência 
 | V7 | Longo | 5 | DESCOBRIRAM: Robô Faz Cirurgia Melhor que Médico — O Que o Da Vinci 5 Já Consegue | **Você Deixaria Um ROBÔ Operar o Seu Corpo?** | 47 |
 
 > **Nota importante:** O YouTube permite editar título, descrição, tags e hashtags a qualquer momento sem penalidade. Mudanças no título podem resetar o algoritmo para aquele vídeo, o que para vídeos com <10 views é vantajoso — o algoritmo vai re-testar a distribuição com o novo CTR.
+
+---
+
+# Parte 2 — Vídeos Privados (Aguardando Publicação)
+
+> 5 vídeos encontrados via OAuth. Análise e propostas de ajuste antes da publicação.
+
+## Inventário dos Vídeos Privados
+
+| # | ID | Tipo | Duração | Título atual | Tema |
+|---|---|---|---|---|---|
+| V8 | `1ZB4WSkCQgQ` | Longo | 9:05 | CHIP NO CÉREBRO: Paciente com ELA Volta a Falar Usando Apenas o Pensamento | Neuralink / BCI |
+| V9 | `xmtvJuh8_js` | Short | 0:48 | Impossível Virou Real — Paralisia Não É Mais Barreira para Falar #neuralink #futuro | Neuralink / BCI |
+| V10 | `fs64BTP07ps` | Short | 0:38 | Impossível Virou Possível: Pensamento Vira Palavras #MedicinaDoFuturo #Incrível | Neuralink / BCI |
+| V11 | `7OIQoBQHBJo` | Short | 0:31 | Quando o Robô Toma Decisões na Cirurgia, Quem Responde? #Medicina #Ética | Cirurgia robótica |
+| V12 | `yzDxS5HP0_4` | Short | 0:32 | Da Vinci 5 Fez o Impossível — Veja o que os Médicos Tentam Ocultar #saúde #robô #viral | Cirurgia robótica |
+
+## Diagnóstico Geral dos 5 Vídeos
+
+| Problema | Impacto | Vídeos |
+|---|---|---|
+| **Hashtags no título** em TODOS os Shorts | Visual amador, desperdiça caracteres | V9, V10, V11, V12 |
+| **Título manchete** no Longo ("CHIP NO CÉREBRO:") | Anuncia resultado, sem curiosidade | V8 |
+| **Título clickbait** ("Médicos Tentam Ocultar") | Quebra confiança, risco de penalidade | V12 |
+| **Títulos duplicados** ("Impossível Virou Real" / "Impossível Virou Possível") | Algoritmo confunde, zero diferenciação | V9, V10 |
+| **Keyword stuffing** com aspas nas descrições dos Shorts | Parece spam, SEO negativo | V10, V11, V12 |
+| **Descrição do Longo** = roteiro colado, sem capítulos | Perde SEO e indexação de trechos | V8 |
+| **Sem CTA** com link para o vídeo longo nos Shorts | Perde funil Short → Longo | V9, V10, V11, V12 |
+| **Tag "shorts"** em 2 vídeos | Inútil (YT detecta automaticamente) | V11, V12 |
+| **Erro factual** — "julho de 2026" (futuro) | Descredibiliza | V12 |
+
+---
+
+## V8 — Longo (9:05) — Neuralink / BCI
+
+**Título atual:** `CHIP NO CÉREBRO: Paciente com ELA Volta a Falar Usando Apenas o Pensamento` (76 chars)
+
+### Título
+
+| Aspecto | Diagnóstico |
+|---|---|
+| Comprimento | 76 chars — trunca no mobile |
+| Fórmula | Manchete ("CHIP NO CÉREBRO:") — revela resultado |
+| Jargão | "ELA" — maioria do público não sabe o que é |
+| Premissa | Entrega o final ("Volta a Falar") |
+
+**Proposta de novo título:**
+
+| Opção | Fórmula | Chars |
+|---|---|---|
+| **Ele Perdeu a Fala. Um CHIP Devolveu Tudo** | Contradição + CAPS | 44 |
+| **Um Chip Leu o PENSAMENTO Dele. E Falou Por Ele** | Descoberta + CAPS | 51 |
+| **Esse Homem Fala Usando APENAS o Cérebro** | Número impossível + CAPS | 44 |
+
+### Descrição
+
+Problema: roteiro inteiro colado (3 parágrafos longos), sem capítulos. Mesma estrutura do V7 antes da correção.
+
+**Nova descrição:**
+```
+Um paciente com ELA — completamente incapaz de falar — voltou a se comunicar usando apenas os sinais elétricos do próprio cérebro. O chip Neuralink N1, com 1.024 eletrodos, capta a atividade dos neurônios enquanto o paciente pensa em falar, e uma inteligência artificial transforma esses padrões em palavras audíveis em tempo real.
+
+Neste vídeo, você vai entender como funciona a interface cérebro-computador da Neuralink, o que o ensaio clínico VOICE revelou, e como Stanford e Paradromics estão competindo nessa corrida.
+
+Capítulos:
+00:00 Introdução — O que aconteceu em março de 2026
+01:30 O ensaio clínico VOICE — Como funciona o chip N1
+03:25 Bradford Smith — O homem que digitou com o cérebro
+05:00 Como a IA decodifica a fala — A complexidade técnica
+06:30 Stanford e Paradromics — A competição global
+08:00 O futuro — Para onde vai essa tecnologia
+08:45 Conclusão
+
+🔔 Inscreva-se para acompanhar como a inteligência artificial está transformando a ciência e a medicina.
+
+#InteligênciaArtificial #Neuralink #ChipCerebral #BCI #Neurociência #IAnaMedicina #Saúde #CiênciaETecnologia #MedicinaDoFuturo
+
+📚 Fontes:
+- Neuralink — VOICE Clinical Trial (NCT07224256), ClinicalTrials.gov, 2025
+https://clinicaltrials.gov/study/NCT07224256
+
+- FDA Breakthrough Device Designation — Neuralink, maio de 2025
+https://neuralink.com/updates/neuralink-receives-breakthrough-device-designation-for-speech/
+
+- Bradford G. Smith — relato na plataforma X, abril de 2025
+https://x.com/ALScyborg
+
+- Kenneth — VOICE Trial, Neuralink, março de 2026
+https://www.basenor.com/blogs/news/neuralink-voice-trial-bci-helps-als-patient-speak-again
+
+- Target ALS — "How ALS Affects Speech" (80–95% dos pacientes perdem a fala)
+https://targetals.org/news/how-als-affects-speech/
+
+- Stanford Medicine — Brain-computer interface para fala interior, agosto de 2025
+https://news.stanford.edu/stories/2025/08/study-inner-speech-decoding-device-patients-paralysis
+
+- Paradromics — primeiro implante humano, CNBC, junho de 2025
+https://www.cnbc.com/2025/06/02/neuralink-paradromics-human-implant.html
+```
+
+### Tags (atuais: 22 — ok quantidade, mas ajustar)
+
+Remover: duplicatas implícitas
+Adicionar: `neuralink 2026`, `chip cerebral pensamento`, `BCI speech restoration`, `neuralink fala 2026`
+
+---
+
+## V9 — Short (0:48) — Neuralink
+
+**Título atual:** `Impossível Virou Real — Paralisia Não É Mais Barreira para Falar #neuralink #futuro` (83 chars)
+
+| Problema | Detalhe |
+|---|---|
+| Hashtags no título | `#neuralink #futuro` — desperdiça espaço |
+| Título vago | "Impossível Virou Real" não diz o quê |
+| Sem CAPS | Perde destaque visual |
+| Quase idêntico ao V10 | "Impossível Virou Real" vs "Impossível Virou Possível" |
+
+**Proposta de novo título:**
+
+| Opção | Fórmula | Chars |
+|---|---|---|
+| **Ele Não Fala. Mas o CÉREBRO Dele Sim** | Contradição + CAPS | 41 |
+| **A Neuralink Leu o PENSAMENTO Dele. De Verdade** | Descoberta + CAPS | 50 |
+
+**Nova descrição:**
+```
+Em março de 2026, um paciente com ELA (esclerose lateral amiotrófica) — completamente incapaz de falar — voltou a se comunicar. Um chip da Neuralink implantado no córtex motor da fala captou os sinais elétricos do cérebro e uma inteligência artificial os transformou em palavras audíveis, em tempo real.
+
+A interface cérebro-computador não é mais ficção. É medicina.
+
+▶️ Quer entender como o chip funciona e o que vem depois? Assista ao vídeo completo: https://youtu.be/1ZB4WSkCQgQ
+
+🔔 Inscreva-se para acompanhar como a IA está transformando a ciência e a medicina.
+
+#InteligênciaArtificial #Neuralink #ChipCerebral #BCI #Neurociência #Saúde #MedicinaDoFuturo #CiênciaETecnologia
+```
+
+### Tags — remover termos irrelevantes
+
+Remover: `neurologista`, `sintomas`, `tratamento`, `neurologia`, `medicina` (genéricos de saúde)
+Manter os específicos de Neuralink/BCI
+
+---
+
+## V10 — Short (0:38) — Neuralink
+
+**Título atual:** `Impossível Virou Possível: Pensamento Vira Palavras #MedicinaDoFuturo #Incrível` (80 chars)
+
+| Problema | Detalhe |
+|---|---|
+| Hashtags no título | `#MedicinaDoFuturo #Incrível` |
+| Quase idêntico ao V9 | Sem diferenciação |
+| Sem CAPS | |
+| Descrição = keyword stuffing | Aspas em termos genéricos |
+
+**Proposta de novo título:**
+
+| Opção | Fórmula | Chars |
+|---|---|---|
+| **Um CHIP Ouviu o Que Ele Pensava. E Falou Por Ele** | Contradição + CAPS | 53 |
+| **1.024 Eletrodos. Um CÉREBRO. Zero Músculos** | Número impossível + CAPS | 48 |
+
+**Nova descrição:**
+```
+O chip Neuralink N1, com 1.024 eletrodos ultrafinos implantados no córtex motor da fala, captou a atividade neural de um paciente com ELA e uma inteligência artificial transformou seus pensamentos em palavras — em tempo real. Sem mover um único músculo.
+
+Isso já aconteceu. Em março de 2026.
+
+▶️ Veja a história completa e como essa tecnologia funciona: https://youtu.be/1ZB4WSkCQgQ
+
+🔔 Inscreva-se para acompanhar como a IA está transformando a ciência e a medicina.
+
+#InteligênciaArtificial #Neuralink #ChipCerebral #BCI #Neurociência #Saúde #MedicinaDoFuturo #CiênciaETecnologia
+```
+
+---
+
+## V11 — Short (0:31) — Cirurgia Robótica
+
+**Título atual:** `Quando o Robô Toma Decisões na Cirurgia, Quem Responde? #Medicina #Ética` (73 chars)
+
+| Problema | Detalhe |
+|---|---|
+| Hashtags no título | `#Medicina #Ética` |
+| Formato bom! | A pergunta é interessante, mas as hashtags estragam |
+| Descrição = keyword stuffing | Aspas em todos os termos-chave |
+
+**Proposta de novo título:**
+
+| Opção | Fórmula | Chars |
+|---|---|---|
+| **O ROBÔ Errou na Cirurgia. Quem É o Culpado?** | Pergunta existencial + CAPS | 49 |
+| **Se o Robô ERRAR na Cirurgia, Quem Responde?** | Pergunta existencial + CAPS | 50 |
+
+**Nova descrição:**
+```
+Em 2025, um robô da Johns Hopkins realizou uma cirurgia com autonomia, sem guia humano direto. Se a IA toma decisões no centro cirúrgico, quem é responsável quando algo dá errado? O cirurgião? O hospital? A empresa que programou o robô?
+
+Essa pergunta não é teórica. É a realidade da cirurgia robótica em 2026.
+
+▶️ Entenda como o Da Vinci 5 opera com IA e o que isso muda na medicina: https://youtu.be/4PWic1m8oiM
+
+🔔 Inscreva-se para acompanhar como a IA está transformando a ciência e a medicina.
+
+#InteligênciaArtificial #CirurgiaRobótica #IAnaMedicina #Ética #Saúde #MedicinaDoFuturo #CiênciaETecnologia #RobôCirurgião
+```
+
+### Tags — limpar
+
+Remover: `shorts`, `robo`, `cirurgia`, `tecnologia`, `inteligencia artificial`, `medicina` (duplicatas sem acento)
+
+---
+
+## V12 — Short (0:32) — Cirurgia Robótica
+
+**Título atual:** `Da Vinci 5 Fez o Impossível — Veja o que os Médicos Tentam Ocultar #saúde #robô #viral` (89 chars)
+
+| Problema | Detalhe |
+|---|---|
+| **CLICKBAIT** | "Veja o que os Médicos Tentam Ocultar" é enganoso e pode levar a penalidade |
+| Hashtags no título | `#saúde #robô #viral` |
+| 89 chars | Mais longo que qualquer título do canal |
+| Erro factual | Descrição diz "julho de 2026" (não aconteceu ainda) |
+| Descrição = keyword stuffing | |
+
+**Este é o título mais problemático do canal.** O YouTube pode classificar como misleading e limitar a distribuição.
+
+**Proposta de novo título:**
+
+| Opção | Fórmula | Chars |
+|---|---|---|
+| **Esse ROBÔ Aprendeu a Operar Sozinho. Sem Professor** | Contradição + CAPS | 55 |
+| **O Robô Operou MELHOR que o Cirurgião que o Treinou** | X vs Y + CAPS | 54 |
+
+**Nova descrição:**
+```
+Um robô cirúrgico treinado por inteligência artificial na Johns Hopkins realizou uma operação complexa com precisão total — sem orientação humana direta durante o procedimento. A IA aprendeu assistindo a centenas de cirurgias e superou as métricas de performance dos próprios instrutores.
+
+A cirurgia autônoma guiada por IA não é mais ficção. É o futuro da medicina sendo testado agora.
+
+▶️ Veja como o Da Vinci 5 usa IA para operar com precisão milimétrica: https://youtu.be/4PWic1m8oiM
+
+🔔 Inscreva-se para acompanhar como a IA está transformando a ciência e a medicina.
+
+#InteligênciaArtificial #CirurgiaRobótica #IAnaMedicina #DaVinci5 #Saúde #MedicinaDoFuturo #CiênciaETecnologia #RobôCirurgião
+```
