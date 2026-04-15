@@ -3,7 +3,8 @@
     "youtube": {
       "command": "zubeid-youtube-mcp-server",
       "env": {
-        "YOUTUBE_API_KEY": "AIzaSyDnjRdTSmoCA6iNPFzqVB5KYEJJOv8Z62o"
+        "YOUTUBE_API_KEY": "AIzaSyDnjRdTSmoCA6iNPFzqVB5KYEJJOv8Z62o",
+        "GOOGLE_CLIENT_SECRET_PATH": "/Users/marcusmaciel/Projects/pessoal/yt/canais/marcus-m-maciel/client_secret.json"
       }
     }
   }
