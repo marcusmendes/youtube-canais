@@ -390,19 +390,62 @@ Exemplos do padrão:
 ---
 
 **Hashtags para descrição:** liste de 8 a 12 hashtags relevantes
-ao tema, começando pelas mais amplas e afunilando para as específicas.
+ao tema. Use os dados da pesquisa competitiva de tags (acima)
+para identificar quais hashtags os top performers estão usando
+nas descrições. Comece pelas mais amplas e afunile para as
+específicas.
 > Exemplo: #InteligênciaArtificial #Ciência #FuturoDaHumanidade
-> #Tecnologia
+> #JamesWebb #JWST #IA #Astronomia #Tecnologia
 
-**Tags do vídeo:** liste de 15 a 20 tags separadas por vírgula,
-misturando termos em português e inglês para ampliar alcance.
-> Exemplo: inteligência artificial futuro, IA e ciência,
-> AI science future, tecnologia e humanidade, revolução tecnológica
+**Tags do vídeo (pesquisa competitiva obrigatória):**
+
+Antes de gerar as tags, execute o seguinte processo de pesquisa
+competitiva usando a API do YouTube (MCP YouTube):
+
+**Passo 1 — Buscar vídeos top no tema:**
+Use `videos_searchVideos` com a query do tema do vídeo para
+encontrar 5-10 vídeos relevantes e bem posicionados (em PT-BR
+e em EN). Priorize vídeos recentes (últimos 12 meses) e com
+alto número de views no nicho.
+
+**Passo 2 — Extrair tags dos top performers:**
+Use `videos_getVideo` em cada vídeo encontrado para extrair o
+campo `tags` do `snippet`. Colete todas as tags de todos os
+vídeos analisados.
+
+**Passo 3 — Cruzar e selecionar:**
+Identifique as tags que aparecem em 2 ou mais vídeos diferentes
+(alta recorrência = alta relevância algorítmica). Priorize:
+- Tags de termos exatos de busca (ex: "james webb 2026 descoberta")
+- Tags de termos amplos do nicho (ex: "astronomia", "ciência")
+- Tags em inglês dos termos mais buscados globalmente
+
+**Passo 4 — Montar a lista final:**
+Gere 15 a 20 tags combinando:
+- ~8 tags extraídas da pesquisa competitiva (as mais recorrentes)
+- ~4 tags do canal (keywords recorrentes da seção AUTORIDADE E SEO)
+- ~4 tags em inglês para alcance internacional
+- ~4 tags long-tail específicas do tema (ex: "IA análise imagens james webb galáxias")
+
+Separe por vírgula. Ordem: do mais específico ao mais amplo.
+
+> Exemplo de resultado final:
+> IA james webb galáxias, ASTERIS inteligência artificial espaço,
+> james webb 2026 descoberta, galáxias primitivas, JWST AI,
+> AI space discovery, james webb telescope AI, telescópio james webb,
+> inteligência artificial astronomia, astronomia, ciência e tecnologia,
+> exploração espacial, universo, futuro da humanidade, IA e ciência,
+> AI science, space documentary, descobertas científicas
+
+**Se a API não estiver disponível:** gere as tags manualmente
+misturando termos em português e inglês, priorizando termos de
+busca exatos relacionados ao tema.
 
 **Descrição completa para SEO:**
 - Identifique a palavra-chave principal com maior volume de busca
-  para este tema (use como referência o VidIQ ou pesquisa de
-  palavras-chave do YouTube).
+  para este tema. Use os dados da pesquisa competitiva de tags
+  (acima) como referência: a tag mais recorrente entre os top
+  performers é provavelmente a keyword de maior volume.
 - Escreva uma descrição em texto corrido com exatamente 1500
   caracteres.
 - A palavra-chave principal deve aparecer entre 5 e 7 vezes de
