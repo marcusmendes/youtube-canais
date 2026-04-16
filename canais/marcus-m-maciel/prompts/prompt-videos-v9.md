@@ -192,6 +192,91 @@ Exemplos do padrão:
 
 ---
 
+## FASE 0 — ANÁLISE COMPETITIVA DE ROTEIROS
+
+> **INSTRUÇÃO:** Esta fase é executada ANTES da geração dos metadados
+> e do roteiro. O objetivo é identificar lacunas e erros nos vídeos
+> existentes sobre o tema para diferenciar o conteúdo do canal.
+> Se o campo ANÁLISE COMPETITIVA DE ROTEIROS estiver preenchido nos
+> campos variáveis, pule a execução automática e use o briefing
+> fornecido.
+
+### Processo (usar MCP YouTube):
+
+**Passo 1 — Buscar concorrentes (apenas vídeos longos):**
+Use `videos_searchVideos` para encontrar 5-8 vídeos relevantes sobre
+o tema (em PT-BR e EN). Parâmetros recomendados:
+- `videoDuration`: `"medium"` (4-20 min) — exclui Shorts e clipes
+- `publishedAfter`: calcular a partir da data atual. Para temas de ciência/espaço, usar últimos **12 meses**. Para temas de tecnologia/notícia com ciclo rápido, usar últimos **6 meses**. Formato ISO 8601 (ex: `"2025-04-15T00:00:00Z"` se hoje for 15/04/2026).
+- `maxResults`: 8
+- Executar 2 buscas: uma em português, uma em inglês
+
+**Passo 2 — Selecionar os 3-5 mais relevantes:**
+Use `videos_getVideo` para obter detalhes (views, likes, tags,
+description) de cada resultado. Selecione os 3-5 com melhor
+combinação de:
+- Relevância temática direta com o nosso tema
+- Alto número de views relativo ao canal
+- Recência (últimos 12 meses)
+
+**Passo 3 — Extrair transcripts:**
+Use `transcripts_getTranscript` para cada vídeo selecionado.
+Parâmetro `language`: o idioma do vídeo (`pt` ou `en`).
+
+**Passo 4 — Análise cruzada com fontes:**
+Para cada transcript, cruzar com as fontes científicas definidas
+para o tema do nosso roteiro e identificar:
+
+| Categoria | O que procurar |
+|---|---|
+| **Erros factuais** | Dados incorretos, simplificações que distorcem o conceito, interpretações equivocadas de estudos |
+| **Lacunas** | Dados, ângulos ou implicações que nossas fontes cobrem mas o vídeo ignorou |
+| **Padrão estrutural** | Como abre (contexto histórico? dado?), como escala a narrativa, como fecha (CTA genérico? implicação?) |
+
+**Passo 5 — Gerar briefing competitivo:**
+Documente o resultado no início do output (antes dos Metadados),
+em formato estruturado:
+
+```
+## [BRIEFING COMPETITIVO — FASE 0]
+
+### Vídeos analisados
+| # | Título | Canal | Views | Data |
+|---|--------|-------|-------|------|
+| 1 | ... | ... | ... | ... |
+
+### Top 3 erros/simplificações dos concorrentes
+1. [Erro] — Correção baseada em [fonte real]
+2. ...
+3. ...
+
+### Top 3 ângulos não explorados
+1. [Ângulo] — Possível porque [fonte real] permite cobrir
+2. ...
+3. ...
+
+### Padrão estrutural dominante a evitar
+[Descrever o padrão mais comum e como nosso roteiro se diferencia]
+```
+
+### Como o briefing alimenta o roteiro:
+
+- O roteiro deve incorporar pelo menos **1 correção explícita** de
+  um erro comum dos concorrentes (frases como "ao contrário do que
+  muitos vídeos afirmam..." ou "um dado que a maioria dos vídeos
+  sobre esse tema ignora completamente")
+- O roteiro deve incluir pelo menos **1 ângulo diferenciador** que
+  nenhum concorrente cobriu — preferencialmente no Bloco 2 (Escalada)
+  ou Bloco 4 (Implicação), onde o impacto é maior
+- Os vídeos encontrados nesta fase são reutilizados na pesquisa
+  competitiva de tags (seção Tags do Vídeo nos Metadados)
+
+> **Se a API não estiver disponível:** pule esta fase. Indique na
+> checklist que a Fase 0 não foi executada e gere o roteiro
+> normalmente.
+
+---
+
 ## ESTRUTURA OBRIGATÓRIA DO ROTEIRO
 
 Antes de iniciar o roteiro, gere os seguintes metadados:
@@ -403,10 +488,12 @@ Antes de gerar as tags, execute o seguinte processo de pesquisa
 competitiva usando a API do YouTube (MCP YouTube):
 
 **Passo 1 — Buscar vídeos top no tema:**
-Use `videos_searchVideos` com a query do tema do vídeo para
-encontrar 5-10 vídeos relevantes e bem posicionados (em PT-BR
-e em EN). Priorize vídeos recentes (últimos 12 meses) e com
-alto número de views no nicho.
+Reutilize os vídeos já encontrados na FASE 0 (Análise Competitiva
+de Roteiros) como base. Se a Fase 0 não foi executada, use
+`videos_searchVideos` com a query do tema do vídeo para encontrar
+5-10 vídeos relevantes e bem posicionados (em PT-BR e em EN).
+Priorize vídeos recentes (últimos 12 meses) e com alto número
+de views no nicho.
 
 **Passo 2 — Extrair tags dos top performers:**
 Use `videos_getVideo` em cada vídeo encontrado para extrair o
@@ -759,6 +846,15 @@ IA + Computação Quântica | IA + História/Arqueologia]`
 **DNA EDITORIAL DE REFERÊNCIA (opcional):**
 `[Cole aqui os padrões extraídos de uma análise de canal de referência que devem influenciar este vídeo — estrutura de hook, tom, técnicas de transição, estilo de encerramento, padrões de título, posicionamento de CTAs. Quanto mais específico, mais alinhado será o roteiro ao DNA editorial do canal modelado.]`
 
+**ANÁLISE COMPETITIVA DE ROTEIROS (opcional — preencher OU deixar
+para a Fase 0 executar automaticamente):**
+`[Se já realizou a análise, cole aqui o briefing competitivo com:
+(1) vídeos concorrentes analisados, (2) top 3 erros factuais com
+correção baseada em fontes reais, (3) top 3 ângulos não explorados,
+(4) padrão estrutural dominante a evitar. Se deixar em branco, o
+modelo executará a Fase 0 automaticamente via MCP YouTube antes de
+gerar o roteiro.]`
+
 ---
 
 ## CHECKLIST DE VALIDAÇÃO
@@ -783,9 +879,14 @@ IA + Computação Quântica | IA + História/Arqueologia]`
 | 12 | Thumbnail | Todas as 6 seções presentes (ou fallback aplicado se sem Reference Image) |
 | 13 | Sub-nicho diferente do vídeo anterior | Campo SUB-NICHO preenchido e diferente do último vídeo publicado |
 | 14 | Função do Short (apenas Shorts) | Campo FUNÇÃO DO SHORT preenchido · CTA específico conectado ao longo · Nunca CTA genérico |
+| 15 | Análise competitiva (Fase 0) | Fase 0 executada ou fornecida · ≥3 concorrentes analisados · ≥1 correção explícita de erro no roteiro · ≥1 ângulo diferenciador incorporado |
 
 ---
 
-Quando todos os campos variáveis estiverem preenchidos, execute
-imediatamente todas as seções do roteiro sem interrupção,
-na ordem definida. Ao final, execute a checklist de validação.
+Quando todos os campos variáveis estiverem preenchidos:
+
+1. **Fase 0** — Execute a Análise Competitiva de Roteiros (se o
+   campo não estiver preenchido). Documente o briefing no output.
+2. **Metadados + Roteiro** — Gere todas as seções na ordem definida,
+   sem interrupção, incorporando os insights da Fase 0.
+3. **Checklist** — Execute a checklist de validação ao final.

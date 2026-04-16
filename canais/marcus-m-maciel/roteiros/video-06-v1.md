@@ -1,4 +1,48 @@
-# ROTEIRO v1.0 — A IA QUE TRIPLICOU AS GALÁXIAS DO JAMES WEBB
+# ROTEIRO v1.1 — A IA QUE TRIPLICOU AS GALÁXIAS DO JAMES WEBB
+
+---
+
+## [FASE 0 — ANÁLISE COMPETITIVA DE ROTEIROS]
+
+**Busca realizada:** `videos_searchVideos` com queries "IA inteligência artificial James Webb galáxias JADES", "AI James Webb telescope galaxies neural network", "James Webb galáxias primitivas universo" — filtro `videoDuration: "medium"` — publicados após 2025-01-01.
+
+### Concorrentes analisados (4 vídeos longos)
+
+| # | Canal | Título | Views | Duração | Idioma | videoId |
+|---|-------|--------|-------|---------|--------|---------|
+| 1 | Anton Petrov | AI Discovers Anomalies in Hubble Images We Never Knew Existed | 131K | 13:11 | EN | KX0QN1FmK_g |
+| 2 | 100% Atômico | GALÁXIA MAIS DISTANTE JÁ VISTA | 144K | 8:45 | PT-BR | vv4EKdqwfo8 |
+| 3 | ASTROOM | JAMES WEBB VÊ O INÍCIO DO UNIVERSO | 50K | 9:46 | PT-BR | VNfRuKqpjUA |
+| 4 | Galactic Lullaby | What AI Found Hiding in James Webb Images Is Wild | 175 | 4:11 | EN | HO5G6RTv92M |
+
+### Erros e simplificações detectados
+
+1. **ASTROOM + 100% Atômico: atribuem tudo ao telescópio, zero menção de IA** — Ambos cobrem JADES-GS-z14-0 e galáxias primitivas como se o James Webb fizesse todo o trabalho sozinho. Não mencionam que redes neurais são parte essencial da cadeia de detecção moderna. ASTROOM narra: "o James Web encontrou algo que pode representar apenas a ponta de um iceberg" — sem mencionar que quem encontra dentro dos dados é a IA, não o telescópio.
+
+2. **Galactic Lullaby: "hundreds of hidden galaxies" sem fonte, sem nome, sem números** — Descreve o conceito correto (IA encontrando galáxias ocultas em imagens do Webb) mas não cita o nome da IA (ASTERIS), o número exato (162), a performance (2.5x mais fraco, 18x mais rápido), nem a fonte (Gilda et al., AIP 2026). Audiência de 175 views indica baixa autoridade.
+
+3. **Anton Petrov: cobre IA diferente (Anomaly Match, ESA) em dados do Hubble, não do Webb** — Excelente profundidade técnica (semi-supervised active learning, 1.400 anomalias, 800+ inéditas em 2.5 dias, Halton Arp 1966). Mas é um estudo DIFERENTE: busca formas anômalas em dados antigos do Hubble. Não faz segmentação pixel-por-pixel de galáxias primitivas no JADES. Nosso roteiro cobre ASTERIS — uma rede neural que segmenta galáxias individuais, com números concretos de performance.
+
+### Lacunas (ângulos não explorados por nenhum concorrente)
+
+1. **Quantificação do multiplicador IA** — Nenhum concorrente apresenta dados numéricos: "2.5x mais fraco", "3x mais galáxias", "18x mais rápido". Nosso roteiro tem os 3.
+2. **Implicação censitária** — Nenhum concorrente pergunta: "se 2/3 das galáxias são invisíveis para humanos, quantas galáxias o universo realmente tem?" Nosso Bloco 4 faz exatamente isso.
+3. **Conexão ASTERIS → MoM-z14** — ASTROOM cobre z14-0 sem IA. Galactic Lullaby cobre IA sem especificidade. Nenhum conecta as duas tendências. Nosso roteiro conecta.
+4. **Analogia "vagalumes na tempestade"** — Nenhum concorrente usa analogias visuais concretas para o problema sinal-ruído.
+
+### Padrão estrutural dominante a evitar
+
+- **PT-BR:** Abertura descritiva ("O James Webb...") → explicação linear → fechamento poético. Sem escalonamento, sem retention loops.
+- **EN:** Fato → explicação linear → pergunta retórica final. Sem paradoxo na abertura.
+- **Todos usam estrutura LINEAR.** Nosso roteiro usa abertura com paradoxo + escalonamento em 4 blocos + retention loops a cada ~300 palavras.
+
+### Correção incorporada ao roteiro
+
+**No Bloco 1 (Âncora):** Inserida referência explícita ao erro dos concorrentes que atribuem as descobertas exclusivamente ao telescópio, preparando o terreno para o protagonismo da IA no Bloco 2.
+
+### Ângulo diferenciador incorporado
+
+O roteiro já possui o ângulo diferenciador mais forte (implicação censitária, Bloco 4) e a frase editorial "a maioria dos vídeos sobre esse tema ignora completamente" — que contrasta diretamente com a cobertura superficial dos concorrentes.
 
 ---
 
@@ -126,7 +170,7 @@ A máquina mais poderosa que a humanidade já construiu para enxergar o passado 
 
 O James Webb orbita o ponto de Lagrange 2, a 1,5 milhão de quilômetros da Terra — quatro vezes mais longe do que a Lua. De lá, seu espelho de 6,5 metros captura luz infravermelha com uma sensibilidade que desafia a intuição: ele consegue detectar o calor de uma abelha na Lua. [pausa] A luz das primeiras galáxias — formadas quando o universo tinha apenas algumas centenas de milhões de anos — viajou por tanto tempo que foi esticada pelo próprio tecido do cosmos. O que era luz visível se transformou em infravermelho. O Webb foi construído para capturar exatamente essa frequência.
 
-Desde 2022, o programa JADES — James Webb Advanced Deep Extragalactic Survey — aponta o telescópio para regiões específicas do céu por centenas de horas consecutivas, capturando a luz mais fraca e mais antiga possível. As imagens revelaram galáxias que existiam quando o universo tinha apenas 300 milhões de anos — menos de 2% da idade atual do cosmos. Mas em campos ultradeep como o JADES, o ruído de fundo — radiação cósmica residual, artefatos instrumentais, sobreposição de fontes — esconde até dois terços dos objetos reais. Astrônomos treinados passam dezenas de horas em cada campo, e mesmo assim, parte do que está ali permanece invisível.
+Desde 2022, o programa JADES — James Webb Advanced Deep Extragalactic Survey — aponta o telescópio para regiões específicas do céu por centenas de horas consecutivas, capturando a luz mais fraca e mais antiga possível. As imagens revelaram galáxias que existiam quando o universo tinha apenas 300 milhões de anos — menos de 2% da idade atual do cosmos. Mas em campos ultradeep como o JADES, o ruído de fundo — radiação cósmica residual, artefatos instrumentais, sobreposição de fontes — esconde até dois terços dos objetos reais. Astrônomos treinados passam dezenas de horas em cada campo, e mesmo assim, parte do que está ali permanece invisível. A maioria dos vídeos que você encontra sobre o James Webb apresenta essas galáxias como se o telescópio as tivesse revelado sozinho. Mas o telescópio só captura fótons. Separar galáxia de ruído é outro problema — e é aí que o jogo muda.
 
 E há um dado nesse problema que muda completamente a forma como entendemos o universo observável — vou te mostrar em instantes.
 
@@ -210,7 +254,7 @@ Se esse vídeo fez você enxergar o universo de um jeito diferente, deixa o like
 |---|---|---|
 | 1 | Metadados completos: 10 títulos + Top 3 CTR + thumbnail + post comunidade + hashtags + tags + descrição SEO + fontes | ✅ |
 | 2 | Títulos passam no checklist: ≤60 chars, ≤10 palavras, zero jargão, 1-2 CAPS, tom conversacional, premissa (não resultado) | ✅ |
-| 3 | Contagem de palavras (narração): 1.700–2.200 palavras | ✅ (~1.890 palavras) |
+| 3 | Contagem de palavras (narração): 1.700–2.200 palavras | ✅ (~1.920 palavras) |
 | 4 | Todas as seções do roteiro presentes: Hook + Contexto + Desenvolvimento (blocos) + Loops + CTA Final | ✅ |
 | 5 | Escalonamento progressivo: Âncora → Escalada → Clímax → Implicação; tensão nunca diminui entre blocos | ✅ |
 | 6 | Direção visual em todos os blocos: cada bloco possui linha VISUAL imediatamente após | ✅ |
@@ -222,3 +266,4 @@ Se esse vídeo fez você enxergar o universo de um jeito diferente, deixa o like
 | 12 | Thumbnail: todas as 6 seções presentes (Identity Anchor, Composition, Presenter, Text Overlay, Tag, Style Close) | ✅ |
 | 13 | Sub-nicho diferente do vídeo anterior: IA + Espaço/Astronomia ≠ IA + Robótica (Vídeo #7) | ✅ |
 | 14 | Função do Short (apenas Shorts): N/A — formato vídeo longo | — |
+| 15 | Análise competitiva (Fase 0): Fase 0 executada · 4 concorrentes analisados · 1 correção explícita de erro (Bloco 1: "a maioria dos vídeos apresenta como se o telescópio revelasse sozinho") · 1 ângulo diferenciador incorporado (implicação censitária + editorial "a maioria dos vídeos ignora") | ✅ |

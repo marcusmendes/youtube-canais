@@ -19,6 +19,53 @@ Os 3 gargalos que explicam 646 views em 7 vídeos:
 
 ---
 
+## 0. Análise Competitiva de Roteiros (Fase 0)
+
+### Por que analisar antes de escrever
+
+O prompt v9 já faz pesquisa competitiva para **SEO** (tags, description). Mas o conteúdo do roteiro era escrito sem referência ao que já existe no YouTube sobre o tema. Isso cria dois riscos:
+
+1. **Repetição involuntária** — Se os 5 vídeos mais vistos sobre o tema abrem com o mesmo contexto histórico, nosso vídeo se torna mais um na pilha
+2. **Erros não corrigidos** — Se os vídeos mais vistos simplificam ou erram um dado científico, o espectador chega ao nosso vídeo com a "versão errada" na cabeça. Corrigi-la explicitamente gera autoridade e comentários
+
+A Fase 0 transforma a pesquisa competitiva de uma ferramenta de SEO para uma **ferramenta de diferenciação de conteúdo**.
+
+### O processo (executar ANTES de escrever o roteiro)
+
+| Passo | Ação | Ferramenta MCP |
+|---|---|---|
+| **1. Buscar** | Encontrar 5-8 vídeos top no tema (PT-BR + EN) | `videos_searchVideos` |
+| **2. Selecionar** | Escolher 3-5 mais relevantes por views + recência + autoridade do canal | `videos_getVideo` |
+| **3. Extrair** | Obter transcript de cada vídeo selecionado | `transcripts_getTranscript` |
+| **4. Cruzar** | Comparar cada transcript com as fontes científicas do nosso roteiro | Análise IA |
+| **5. Documentar** | Gerar briefing estruturado com erros, lacunas e ângulos inexplorados | Análise IA |
+
+### Estrutura do briefing competitivo
+
+Para cada vídeo analisado, registrar:
+
+| Campo | Descrição |
+|---|---|
+| **Vídeo** | Título, canal, views, data |
+| **Erros factuais** | Dados incorretos, simplificações excessivas ou interpretações equivocadas — cruzados com nossas fontes reais |
+| **Lacunas** | O que o vídeo não cobriu que nossas fontes permitem cobrir |
+| **Padrão estrutural** | Como abre, onde provavelmente perde audiência, como fecha |
+
+O briefing final deve conter:
+
+1. **Top 3 erros/simplificações** mais comuns entre os concorrentes (com a correção baseada em nossas fontes)
+2. **Top 3 ângulos que nenhum concorrente explorou** (nossa oportunidade de diferenciação)
+3. **Padrão estrutural dominante a evitar** (ex: "todos abrem com histórico do telescópio")
+
+### Regras de uso
+
+- **Foco em gaps, não em cópia** — O briefing existe para identificar o que falta, não o que funciona. Nossa estrutura narrativa já está definida no método e no prompt v9
+- **Sempre ancorado em fontes** — Cada erro identificado deve ter a fonte real que o contradiz. Cada lacuna deve ter a fonte real que permite preenchê-la
+- **Alimentar o prompt** — O briefing entra como campo variável `ANÁLISE COMPETITIVA DE ROTEIROS` no prompt v9. O roteiro deve referenciar pelo menos 1 correção explícita e 1 ângulo diferenciador
+- **Reutilizar para tags** — Os vídeos encontrados nesta fase servem como base para a pesquisa competitiva de tags (evitando busca duplicada)
+
+---
+
 ## 1. Escolha do Tema
 
 ### Regra de ouro: nunca repetir o sub-tema em vídeos consecutivos
@@ -262,8 +309,9 @@ O prompt v8 é forte mas precisa de ajustes baseados nos dados coletados:
 
 ---
 
-## Resumo Executivo: Os 10 Mandamentos
+## Resumo Executivo: Os 11 Mandamentos
 
+0. **Analisar concorrentes antes de escrever** (Fase 0: buscar transcripts, cruzar com fontes, identificar erros e lacunas)
 1. **Nunca repetir sub-tema em vídeos consecutivos**
 2. **Título = premissa de filme em <10 palavras, com 1-2 CAPS cirúrgicos**
 3. **Teste de tema: 3 perguntas antes de produzir**
@@ -282,8 +330,9 @@ O prompt v8 é forte mas precisa de ajustes baseados nos dados coletados:
 Produzir o **vídeo #8** seguindo este método:
 
 1. Escolher tema da matriz (Seção 1) — sair de IA + saúde
-2. Gerar 10 títulos com as 6 fórmulas (Seção 2)
-3. Aplicar checklist do título
-4. Estruturar narrativa com 4 blocos escalados (Seção 3)
-5. Planejar os 4 Shorts do funil (Seção 5)
-6. Publicar e medir com as métricas da Seção 6
+2. **Executar Fase 0** (Seção 0) — analisar concorrentes do tema escolhido
+3. Gerar 10 títulos com as 6 fórmulas (Seção 2)
+4. Aplicar checklist do título
+5. Estruturar narrativa com 4 blocos escalados (Seção 3), incorporando correções e ângulos da Fase 0
+6. Planejar os 2 Shorts da semana (Seção 5)
+7. Publicar e medir com as métricas da Seção 6
