@@ -157,29 +157,59 @@ do campo variável ou de qualquer outra instrução.
 **PRESENÇA EDITORIAL EM PRIMEIRA PESSOA:**
 O narrador é Marcus M Maciel — uma voz com ponto de vista próprio,
 não um locutor neutro. Ao longo do roteiro, intercale naturalmente
-frases em primeira pessoa que reforcem a presença e a autoridade do
-apresentador. Exemplos do padrão:
-- *"O que me chamou atenção nesse estudo foi..."*
-- *"Na minha leitura desse dado, o que realmente importa é..."*
-- *"Eu analisei esse experimento por três ângulos diferentes, e o
-  terceiro muda completamente a conclusão."*
-- *"Isso me fez pensar em algo que a maioria dos vídeos sobre esse
-  tema ignora completamente."*
-- *"Vou te mostrar exatamente por que esse resultado me surpreendeu."*
+momentos em primeira pessoa que mostrem o processo de raciocínio
+do apresentador ao interpretar os dados.
 
-Use no máximo 3 a 4 dessas inserções por vídeo longo — o suficiente
-para criar presença sem quebrar o ritmo documental.
+**Princípio:** cada inserção editorial deve ser uma reação genuína
+ao conteúdo específico deste roteiro. A inserção deve revelar o
+*processo de entendimento* — surpresa, confusão temporária, insight
+progressivo — não anunciar uma estrutura de análise. Pense: o que
+uma pessoa curiosa e inteligente sentiria ao ler esse dado pela
+primeira vez? Qual seria a sequência real de reações?
+
+**O que uma boa inserção editorial faz:**
+- Mostra uma reação específica a um dado específico deste roteiro
+- Revela um momento de mudança de perspectiva ("achei X, mas
+  na verdade era Y")
+- Admite incerteza ou limitação genuína ("não sei se consigo
+  explicar o tamanho disso")
+- Conecta o dado a uma experiência ou reflexão pessoal concreta
+
+**Anti-padrões — NUNCA usar:**
+- Enumerar ângulos de análise ("analisei por X ângulos")
+- Pré-anunciar quantos pontos vai abordar ("são 3 razões")
+- Frases-molde como "na minha leitura", "o que me chamou atenção",
+  "isso me fez pensar em algo que a maioria ignora" — essas frases
+  só funcionam se o que vem depois for uma reação genuinamente
+  inesperada, mas a IA as usa como muleta para qualquer conteúdo
+- Repetir a mesma estrutura de inserção editorial em dois blocos
+  consecutivos
+
+Use no máximo 3 a 4 inserções por vídeo longo — o suficiente
+para criar presença sem quebrar o ritmo documental. Cada inserção
+deve ser estruturalmente diferente da anterior.
 
 **Transições entre blocos temáticos:** use bridges de escalada que
 conectem o bloco anterior ao próximo por lógica causal ou contraste.
-Exemplos do padrão:
-- *"Se X já é impressionante... o próximo dado muda tudo."*
-- *"Enquanto isso acontecia nos laboratórios... outra descoberta
-  transformava a forma como entendemos o universo."*
-- *"Mas se essa tecnologia já funciona em escala de laboratório...
-  o que acontece quando ela atinge a escala planetária?"*
-- *"Quando essa descoberta sai dos laboratórios para a vida real,
-  nada mais será como antes."*
+
+**Princípio:** a bridge deve nascer organicamente do conteúdo do
+bloco que termina e criar tensão específica para o que vem a seguir.
+Nunca usar a mesma estrutura sintática em duas bridges consecutivas.
+A bridge deve ser impossível de reutilizar em outro roteiro.
+
+**Mecanismos válidos para bridges (variar entre eles):**
+- Pergunta que o bloco anterior levantou mas não respondeu
+- Consequência inesperada do dado que acabou de ser apresentado
+- Mudança de escala (do micro para o macro, do laboratório para
+  o planeta, do presente para o futuro)
+- Confissão de que o próximo dado mudou a interpretação do anterior
+- Contradição direta com o que acabou de ser dito
+
+**Anti-padrão:** fórmulas genéricas como "Se X já é impressionante,
+o próximo dado muda tudo" ou "Quando isso sai dos laboratórios,
+nada mais será como antes" — funcionam para qualquer tema e por
+isso não funcionam para nenhum. A bridge certa só faz sentido
+no contexto deste roteiro específico.
 
 **NÍVEL DE DETALHE TÉCNICO — instrução de comportamento:**
 - **básico:** evite siglas, explique todo conceito com analogia imediata,
@@ -262,9 +292,10 @@ em formato estruturado:
 ### Como o briefing alimenta o roteiro:
 
 - O roteiro deve incorporar pelo menos **1 correção explícita** de
-  um erro comum dos concorrentes (frases como "ao contrário do que
-  muitos vídeos afirmam..." ou "um dado que a maioria dos vídeos
-  sobre esse tema ignora completamente")
+  um erro ou simplificação dos concorrentes. A correção deve ser
+  específica ao erro encontrado e integrada naturalmente na
+  narrativa — nunca usando fórmulas genéricas como "ao contrário
+  do que muitos vídeos afirmam" ou "a maioria dos vídeos ignora"
 - O roteiro deve incluir pelo menos **1 ângulo diferenciador** que
   nenhum concorrente cobriu — preferencialmente no Bloco 2 (Escalada)
   ou Bloco 4 (Implicação), onde o impacto é maior
@@ -595,21 +626,43 @@ revelar a solução. Mantenha a tensão. Não entregue a resposta ainda.
 Explique o tema com profundidade, dividindo em blocos temáticos
 claros.
 
+**PENSAMENTO PRÉVIO — ANTES DE ESCREVER CADA BLOCO:**
+Antes de redigir cada bloco, reflita internamente sobre estas
+perguntas (não inclua as respostas no output — use-as para guiar
+a escrita):
+- O que é genuinamente surpreendente ou contraintuitivo neste dado?
+- Qual seria a minha primeira interpretação? Por que ela estaria
+  errada ou incompleta?
+- Qual é a pergunta que uma pessoa inteligente faria aqui?
+- O que eu NÃO sei ou não consigo explicar sobre isso?
+- A minha reação a este dado é igual à do bloco anterior? Se sim,
+  preciso mudar a abordagem — o leitor percebe repetição emocional.
+
+Este exercício garante que cada bloco tenha uma voz editorial
+única, derivada do conteúdo, e não uma fórmula repetida.
+
 **ESTRUTURA DE BLOCO — "CONCLUSÃO PRIMEIRO, JORNADA DEPOIS":**
 Cada bloco temático do desenvolvimento deve seguir esta ordem
-obrigatória, em vez de construção linear:
+como guia flexível, não como molde rígido:
 
 **1. ABERTURA COM PARADOXO OU CONTRADIÇÃO**
 Abra o bloco com a conclusão mais impactante ou contraintuitiva
 daquele bloco — formulada como paradoxo, contradição ou afirmação
 que desafia o que o espectador acredita saber.
 Nunca abra com contexto histórico ou construção linear.
-Exemplos do padrão:
-- *"Isso não deveria ser possível. E até [ano], não era."*
-- *"Ninguém ensinou [X] a fazer [Y]. Ninguém demonstrou,
-  ninguém programou. [Ele/ela] [fez sozinho/a]."*
-- *"O número que [instituição] publicou não faz sentido na
-  primeira leitura. Faz todo o sentido na segunda."*
+
+**Regra de variação obrigatória:** nenhum bloco pode abrir com a
+mesma estrutura sintática do bloco anterior. Se o Bloco 1 abriu
+com afirmação negativa, o Bloco 2 deve abrir com dado numérico,
+pergunta direta, história concreta, ou confissão de erro. A
+abertura deve ser tão específica ao conteúdo daquele bloco que
+seja impossível reutilizá-la em outro roteiro.
+
+**Anti-padrão:** frases-molde com variáveis como "Isso não deveria
+ser possível. E até [ano], não era" ou "O número que [X] publicou
+não faz sentido na primeira leitura. Faz todo o sentido na segunda"
+— são fórmulas reconhecíveis que denunciam geração por IA. A
+abertura deve nascer do conteúdo, nunca de um template.
 
 **2. TENSÃO — POR QUE ISSO CONTRADIZ O QUE SABÍAMOS**
 Em 2 a 3 frases, explique o que tornava essa conclusão impossível
@@ -634,12 +687,25 @@ satisfatória o suficiente para ser um mini-payoff, mas abrir tensão
 para o próximo bloco via bridge de escalada.
 
 **Regras de aplicação da estrutura:**
-- Aplicar em todos os blocos do desenvolvimento de vídeos longos.
+- A estrutura de 4 etapas é um guia — não um molde rígido. Cada
+  bloco pode enfatizar uma etapa diferente dependendo do conteúdo.
+  Um bloco pode ser 80% mecanismo e 20% implicação. Outro pode
+  ser 90% implicação e 10% mecanismo. O peso de cada etapa deve
+  ser proporcional à relevância do conteúdo, não à simetria.
 - Para Shorts: aplicar apenas na abertura — paradoxo nos primeiros
   3 segundos, tensão nos próximos 10, mecanismo nos últimos 45.
 - Nunca abrir um bloco com "Durante décadas...", "Historicamente..."
   ou qualquer construção que situe o passado antes do presente.
   O passado é contexto — vem depois da conclusão, nunca antes.
+
+**REGRA DE ASSIMETRIA:**
+Blocos consecutivos devem ter proporções, tamanhos e ritmos
+diferentes. Se o Bloco 1 tem 4 parágrafos de contexto denso, o
+Bloco 2 pode ter 2 frases curtas + 1 analogia longa. Se o Bloco 3
+é todo números e dados, o Bloco 4 pode ser uma reflexão sem nenhum
+dado. A variação de ritmo entre blocos é o que cria a sensação de
+escrita humana — simetria perfeita é o sinal mais claro de geração
+por IA.
 
 **ESCALONAMENTO PROGRESSIVO ENTRE BLOCOS:**
 
@@ -683,33 +749,29 @@ obrigatório:
 1. Faça uma pergunta específica ao conteúdo — algo que o espectador
    ainda não sabe responder naquele momento do vídeo.
 
-2. NÃO responda imediatamente. Sinalize que a resposta vem adiante:
-   *"E vou te mostrar exatamente isso em um momento."*
-   ou
-   *"Mas há um detalhe nesse experimento que a maioria dos
-   noticiários ignorou — e ele muda tudo. Vou te contar já."*
+2. NÃO responda imediatamente. Sinalize que a resposta vem adiante
+   usando linguagem que nasce organicamente da pergunta feita.
+   A sinalização deve ser específica ao conteúdo — referenciando
+   o dado, o estudo ou o conceito concreto que será revelado.
 
 3. ANTES de entregar o payoff do loop, posicione um CTA de
-   engajamento imediatamente antes da resposta:
-   *"Antes de revelar isso, me diz nos comentários: você acredita
-   que [pergunta relacionada ao tema]?"*
+   engajamento — uma pergunta específica ao tema que convide o
+   espectador a comentar antes de saber a resposta.
 
 4. Quando a resposta finalmente chegar, ela deve ser um payoff
    satisfatório — ou abrir um novo loop.
 
-Os loops devem ser sempre específicos ao conteúdo do vídeo.
-Nunca use frases genéricas como *"o que vem a seguir vai surpreender
-você"*.
+**Princípio:** cada loop deve ser impossível de reutilizar em outro
+roteiro. A pergunta, a sinalização e o payoff devem derivar
+exclusivamente do conteúdo específico deste vídeo.
 
-**Exemplos de frases de sinalização** (use variações, não copie
-literalmente):
-- *"E há um dado nesse experimento que muda completamente essa
-  conclusão — vou te mostrar em instantes."*
-- *"A pergunta real aqui não é se a IA vai superar os cientistas.
-  É o que acontece quando ela faz descobertas que nenhum humano
-  consegue explicar. Pensa nisso enquanto continuamos."*
-- *"Antes de revelar o resultado, me diz nos comentários: você
-  confiaria em uma descoberta científica feita 100% por IA?"*
+**Anti-padrões — NUNCA usar:**
+- "E há um dado nesse [X] que muda completamente [Y]"
+- "Vou te mostrar em instantes / em um momento"
+- "A maioria dos noticiários/vídeos ignorou isso"
+- "Isso muda tudo" / "nada mais será como antes"
+- Qualquer frase que funcione em qualquer roteiro sem modificação
+  — se a frase faz sentido para outro tema, ela é genérica demais
 
 > `VISUAL: [imagem ou corte de impacto que reforce a tensão do loop, aplicando a Camada Visual Permanente]`
 
@@ -843,6 +905,14 @@ IA + Computação Quântica | IA + História/Arqueologia]`
 **PERÍODO DE REFERÊNCIA:**
 `[ex: 2024–2025 — define a janela de tempo preferencial para as fontes citadas]`
 
+**DNA DE VOZ DO MARCUS (recomendado):**
+`[Cole aqui 1-2 parágrafos transcritos de você falando naturalmente
+sobre qualquer tema — pode ser trecho de um vídeo existente, áudio
+gravado no celular, ou até uma mensagem de voz. Esse trecho serve
+como referência de ritmo, vocabulário, tamanho de frase e forma de
+reagir a dados. A IA usará esse padrão como âncora de naturalidade
+em vez de gerar "voz de apresentador genérico".]`
+
 **DNA EDITORIAL DE REFERÊNCIA (opcional):**
 `[Cole aqui os padrões extraídos de uma análise de canal de referência que devem influenciar este vídeo — estrutura de hook, tom, técnicas de transição, estilo de encerramento, padrões de título, posicionamento de CTAs. Quanto mais específico, mais alinhado será o roteiro ao DNA editorial do canal modelado.]`
 
@@ -880,6 +950,7 @@ gerar o roteiro.]`
 | 13 | Sub-nicho diferente do vídeo anterior | Campo SUB-NICHO preenchido e diferente do último vídeo publicado |
 | 14 | Função do Short (apenas Shorts) | Campo FUNÇÃO DO SHORT preenchido · CTA específico conectado ao longo · Nunca CTA genérico |
 | 15 | Análise competitiva (Fase 0) | Fase 0 executada ou fornecida · ≥3 concorrentes analisados · ≥1 correção explícita de erro no roteiro · ≥1 ângulo diferenciador incorporado |
+| 16 | Revisão anti-IA | Releia o roteiro completo e verifique: (a) nenhuma frase-molde dos anti-padrões listados neste prompt foi usada · (b) nenhum bloco abre com a mesma estrutura sintática do anterior · (c) nenhuma bridge repete a fórmula da anterior · (d) cada inserção editorial é uma reação específica ao conteúdo deste roteiro, impossível de reutilizar em outro · Se encontrar violação, reescreva antes de entregar |
 
 ---
 

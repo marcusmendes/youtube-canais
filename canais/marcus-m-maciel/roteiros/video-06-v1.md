@@ -1,4 +1,4 @@
-# ROTEIRO v1.1 — A IA QUE TRIPLICOU AS GALÁXIAS DO JAMES WEBB
+# ROTEIRO v2.0 — A IA QUE TRIPLICOU AS GALÁXIAS DO JAMES WEBB
 
 ---
 
@@ -42,7 +42,7 @@
 
 ### Ângulo diferenciador incorporado
 
-O roteiro já possui o ângulo diferenciador mais forte (implicação censitária, Bloco 4) e a frase editorial "a maioria dos vídeos sobre esse tema ignora completamente" — que contrasta diretamente com a cobertura superficial dos concorrentes.
+O roteiro incorpora o ângulo diferenciador mais forte (implicação censitária, Bloco 4) — nenhum concorrente quantifica o multiplicador da IA nem questiona o inventário cósmico.
 
 ---
 
@@ -98,7 +98,7 @@ Dark moody background (#0A1628), vibrant saturated colors, deep blues and electr
 Uma rede neural chamada ASTERIS analisou os mesmos dados que dezenas de equipes científicas já tinham examinado — e triplicou o número de galáxias dos primeiros 500 milhões de anos do universo.
 O que levava 36 horas de observação humana, ela fez em menos de 2.
 
-Na minha leitura, esse é o ponto de virada em como enxergamos o cosmos.
+Este pode ser o ponto de virada em como enxergamos o cosmos.
 
 O vídeo está no canal agora. Vale cada minuto.
 
@@ -170,51 +170,47 @@ Ele detecta o calor de uma abelha na Lua. [pausa] E é cego para dois terços do
 
 O James Webb orbita o ponto de Lagrange 2, a 1,5 milhão de quilômetros da Terra — quatro vezes mais longe do que a Lua. De lá, seu espelho de 6,5 metros captura luz infravermelha com sensibilidade sem precedentes na história da astronomia. [pausa] A luz das primeiras galáxias — formadas quando o universo tinha apenas algumas centenas de milhões de anos — viajou por tanto tempo que foi esticada pelo próprio tecido do cosmos. O que era luz visível se transformou em infravermelho. O Webb foi construído para capturar exatamente essa frequência.
 
-Desde 2022, o programa JADES — James Webb Advanced Deep Extragalactic Survey — aponta o telescópio para regiões específicas do céu por centenas de horas consecutivas, capturando a luz mais fraca e mais antiga possível. As imagens revelaram galáxias que existiam quando o universo tinha apenas 300 milhões de anos — menos de 2% da idade atual do cosmos. Mas em campos ultradeep como o JADES, o ruído de fundo — radiação cósmica residual, artefatos instrumentais, sobreposição de fontes — esconde a maior parte dos objetos reais. Astrônomos treinados passam dezenas de horas em cada campo, e mesmo assim, parte do que está ali permanece invisível. Mas o Webb só captura fótons. Separar uma galáxia real do ruído de fundo é um problema completamente diferente — e é aí que o jogo muda.
+Desde 2022, o programa JADES — James Webb Advanced Deep Extragalactic Survey — aponta o telescópio para regiões específicas do céu por centenas de horas consecutivas, capturando a luz mais fraca e mais antiga possível. As imagens revelaram galáxias que existiam quando o universo tinha apenas 300 milhões de anos — menos de 2% da idade atual do cosmos. Mas em campos ultradeep como o JADES, o ruído de fundo — radiação cósmica residual, artefatos instrumentais, sobreposição de fontes — esconde a maior parte dos objetos reais. Astrônomos treinados passam dezenas de horas em cada campo, e mesmo assim, parte do que está ali permanece invisível. O Webb só captura fótons. Separar uma galáxia real do ruído de fundo é um problema completamente diferente — e é aí que o jogo muda.
 
-E há um dado nesse problema que muda completamente a forma como entendemos o universo observável — vou te mostrar em instantes.
+Dentro dessa estática que as equipes de análise descartam pode haver mais galáxias do que na porção visível da imagem. A questão é: o que acontece quando alguém decide não descartar?
 
 > VISUAL: Animação do ponto de Lagrange 2 — esquema orbital com Terra, Sol e Webb posicionado no L2, linhas orbitais em azul elétrico (#00A3FF) sobre fundo negro (#0A1628). Corte para simulação de campo profundo do JADES: tapete de milhares de galáxias distantes, pontos minúsculos de luz âmbar e rosa contra escuridão total. Zoom lento revelando grão e ruído na imagem — partículas estáticas sobre as galáxias mais fracas, demonstrando visualmente o problema da relação sinal-ruído. Atmosfera séria, iluminação dramática lateral.
 
 ---
 
-Se o Webb é a máquina mais poderosa que já construímos para olhar o passado... por que ela não consegue ver tudo o que está lá? [pausa] A resposta está em uma rede neural que ninguém esperava.
+O ruído que obscurece essas galáxias não vai desaparecer. Nenhum upgrade do Webb pode eliminar a física que o cria. [pausa] Mas alguém encontrou um jeito de olhar através dele.
 
 ---
 
 ### Bloco 2 — Escalada: ASTERIS — A Rede Neural que Enxerga o Invisível
 
-Isso não deveria ser possível. [ênfase] E até 2025, não era. Uma rede neural encontrar galáxias que décadas de experiência humana em análise de imagens astronômicas não conseguiram identificar.
+Em março de 2026, o American Institute of Physics publicou um estudo que passou despercebido pela maioria das redações de ciência. Uma rede neural chamada ASTERIS tinha acabado de enxergar galáxias onde astrônomos com décadas de experiência só encontravam estática.
 
-O nome dela é ASTERIS — Automated Source Detection using a Neural Network for Image Segmentation. Desenvolvida por uma equipe liderada por Siddharth Gilda e publicada em março de 2026 pelo American Institute of Physics, a ASTERIS foi treinada para fazer algo específico: segmentar pixel por pixel as imagens do James Webb e separar sinal de ruído com uma precisão que ultrapassa a detecção humana.
+ASTERIS — Automated Source Detection using a Neural Network for Image Segmentation — foi projetada pela equipe de Siddharth Gilda para segmentar pixel por pixel as imagens do James Webb. Para entender o que isso significa, pense assim: quando um astrônomo analisa um campo profundo, ele tenta encontrar pontos de luz legítimos em meio a um oceano de estática. É como identificar vagalumes em uma floresta durante uma tempestade de relâmpagos. Você sabe que eles estão lá. Mas o brilho dos raios obscurece quase tudo. [pausa] A ASTERIS funciona como um filtro que separa a luz dos vagalumes da luz dos raios — pixel por pixel, camada por camada. E detecta objetos [ênfase] 2,5 vezes mais fracos do que o limiar de detecção tradicional.
 
-Para entender por que isso é revolucionário, pense assim. Quando um astrônomo analisa uma imagem de campo profundo do Webb, ele está tentando encontrar pontos de luz legítimos — galáxias reais — em meio a um oceano de estática. É como tentar identificar vagalumes em uma floresta durante uma tempestade de relâmpagos. Você sabe que eles estão lá. Mas o brilho dos raios obscurece quase tudo. [pausa] A ASTERIS funciona como um filtro que separa a luz dos vagalumes da luz dos raios — pixel por pixel, camada por camada.
+Pensa no que isso significa. O telescópio mais caro que a humanidade já construiu, analisado pelas melhores equipes do mundo — e estava mostrando um terço do que capturava. Não por falha técnica. Por limitação humana.
 
-Na minha leitura desse estudo, o que realmente importa não é apenas a técnica. É o resultado. A ASTERIS consegue detectar objetos que são [ênfase] 2,5 vezes mais fracos do que o limiar de detecção tradicional. Isso significa que ela enxerga galáxias que emitem menos da metade da luz necessária para que métodos convencionais as identifiquem.
-
-Antes de revelar o que ela encontrou, me diz nos comentários: você acha que a IA vai substituir astrônomos — ou vai transformá-los em algo completamente diferente?
+Me diz nos comentários: você acha que a IA vai substituir astrônomos — ou vai transformá-los em algo que ainda não tem nome?
 
 > VISUAL: Tela dividida — à esquerda, imagem bruta de campo profundo do JADES com ruído granulado visível, galáxias quase indistinguíveis do fundo. À direita, a mesma imagem processada pela ASTERIS: galáxias antes invisíveis agora destacadas por contornos pulsantes em verde tecnológico (#00E5A0) e azul elétrico (#00A3FF), cada uma circundada por marcadores algorítmicos. Interface de dados sobreposta mostrando valores de confiança em tipografia fina. Fundo negro (#0A1628), alto contraste dramático, atmosfera de revelação científica.
 
 ---
 
-Se a ASTERIS já enxerga o que humanos não enxergam... o número que ela encontrou muda tudo o que pensávamos sobre o universo jovem.
+Até aqui, são capacidades. A questão real é outra: quando a ASTERIS rodou nos dados do JADES pela primeira vez, quantas galáxias apareceram?
 
 ---
 
 ### Bloco 3 — Clímax: 162 Galáxias. 2 Horas. O Universo que Estava Escondido
 
-O número que a equipe de Gilda publicou não faz sentido na primeira leitura. [pausa] Faz todo o sentido na segunda.
+162. [pausa] 162 candidatas a galáxias nos primeiros 500 milhões de anos do universo. Uma única varredura. Menos de 2 horas.
 
-Quando a ASTERIS foi aplicada aos dados do programa JADES, ela identificou [ênfase] 162 candidatas a galáxias nos primeiros 500 milhões de anos do universo. Para colocar isso em perspectiva: equipes de astrônomos analisando os mesmos dados com métodos tradicionais tinham encontrado cerca de um terço desse número. A IA triplicou os achados. [pausa] Triplicou.
+Equipes de astrônomos analisando os mesmos dados do JADES com métodos tradicionais tinham encontrado cerca de um terço desse número. A IA triplicou os achados. [pausa] Triplicou. E a velocidade é igualmente absurda. O que exigia 36 horas de análise humana especializada — revisão cuidadosa de cada pixel, comparação entre filtros, eliminação de falsos positivos — a ASTERIS realizou em menos de 2 horas. Não porque ela trabalhe mais rápido no sentido bruto. Mas porque ela opera em uma dimensão que o cérebro humano não alcança: todas as frequências, todos os pixels, todas as camadas de dados simultaneamente, sem fadiga, sem viés, sem os atalhos cognitivos que nosso cérebro usa para economizar energia.
 
-E a velocidade é igualmente absurda. O que exigia 36 horas de análise humana especializada — revisão cuidadosa de cada pixel, comparação entre filtros, eliminação de falsos positivos — a ASTERIS realizou em menos de 2 horas. Não porque ela trabalhe mais rápido no sentido bruto. Mas porque ela opera em uma dimensão que o cérebro humano não alcança: ela analisa todas as frequências, todos os pixels e todas as camadas de dados simultaneamente, sem fadiga, sem viés, sem os atalhos cognitivos que nosso cérebro usa para economizar energia.
-
-Eu analisei esse resultado por três ângulos diferentes, e o terceiro muda completamente a conclusão. [pausa] O primeiro ângulo é técnico: a IA é melhor que humanos em detecção de baixo sinal. Isso já se sabia. O segundo é estatístico: 162 galáxias em um período do universo tão jovem sugere que a taxa de formação estelar nos primeiros 500 milhões de anos era significativamente maior do que os modelos previam. Mas o terceiro ângulo é o que me surpreendeu. Se dois terços das galáxias em cada campo profundo estão abaixo do limiar de detecção humana, então [ênfase] tudo o que pensávamos saber sobre a população de galáxias do universo primitivo estava sistematicamente subestimado. Não por pouco. Pela metade. Ou mais.
+A parte que demora a cair a ficha: não é só que a IA é mais rápida. É que o universo primitivo era [ênfase] radicalmente mais denso do que qualquer modelo cosmológico previa — e não tínhamos como saber, porque o sinal estava enterrado em ruído que descartávamos como irrelevante. Se dois terços das galáxias em cada campo profundo estão abaixo do limiar de detecção humana, então tudo o que a astronomia catalogou sobre a população do universo jovem estava sistematicamente subestimado. Não por pouco. Pela metade. Ou mais.
 
 Em fevereiro de 2026, uma equipe usando técnicas similares confirmou a galáxia MoM-z14 — o objeto mais distante já observado. Um redshift de aproximadamente 14, correspondente a menos de 290 milhões de anos após o Big Bang. Essa galáxia simplesmente não deveria existir tão cedo, segundo os modelos anteriores. Mas ela está lá. A IA a encontrou.
 
-E há um dado nessa sequência de descobertas que nenhum noticiário cobriu com a profundidade que merece — e ele muda a escala de tudo o que discutimos até agora. Vou te mostrar agora.
+Esses 162 pontos de luz vieram de um único campo do JADES. O JADES é um quadrado ínfimo do céu. [pausa] O Webb já observou milhares de campos. Ninguém ainda fez a multiplicação.
 
 > VISUAL: Animação de campo profundo sendo varrido por grade algorítmica — linhas de varredura em azul elétrico (#00A3FF) percorrendo a imagem de cima para baixo, e a cada passagem, novas galáxias surgem onde antes havia apenas escuridão. Contador numérico no canto inferior direito sobe rapidamente: 50... 100... 162. Flash de luz ao atingir o número final. Corte para renderização da galáxia MoM-z14 — ponto de luz âmbar tremulante contra vazio absoluto, cercado por dados de redshift em verde tecnológico (#00E5A0). Atmosfera de clímax — iluminação intensa, contraste máximo.
 
@@ -222,15 +218,13 @@ E há um dado nessa sequência de descobertas que nenhum noticiário cobriu com 
 
 ### Bloco 4 — Implicação: O Universo é Maior do Que Pensávamos. E Agora?
 
-O inventário cósmico da humanidade estima entre 200 bilhões e 2 trilhões de galáxias no universo observável. [pausa] Esse número pode estar errado por um fator de três.
+Quantas galáxias o universo realmente tem? [pausa] Até março de 2026, a resposta era entre 200 bilhões e 2 trilhões. Depois da ASTERIS, esse número pode estar errado por um fator de três.
 
-Se a ASTERIS triplicou os achados em um único campo de observação do JADES — e o JADES cobre uma fração ínfima do céu — esses censos, construídos ao longo de décadas com base no Hubble e nos primeiros anos do Webb, podem representar apenas uma fração do total real. A IA não está apenas encontrando mais galáxias. Ela está mostrando que o inventário cósmico que a humanidade construiu estava fundamentalmente incompleto.
-
-Agora multiplique isso. [pausa] O Webb já acumulou mais de 10 mil horas de observação desde 2022. Milhares de campos profundos. Milhões de pixels nunca analisados por uma rede neural. Se a cada campo a IA revela o dobro ou o triplo do que olhos humanos encontram, o mapa do universo observável pode precisar ser reescrito do zero.
+Se a ASTERIS triplicou os achados em um único campo — e o JADES cobre uma fração ínfima do céu — esses censos, construídos ao longo de décadas com base no Hubble e nos primeiros anos do Webb, podem representar apenas uma fração do total real. O Webb já acumulou mais de 10 mil horas de observação desde 2022. Milhares de campos profundos. Milhões de pixels nunca analisados por uma rede neural. Se a cada campo a IA revela o dobro ou o triplo do que olhos humanos encontram, o mapa do universo observável pode precisar ser reescrito do zero.
 
 E a astronomia de campo profundo não é a única fronteira. Em setembro de 2025, a NASA utilizou algoritmos de IA para analisar dados do James Webb e identificar uma nova lua de Urano — um objeto tão pequeno e tão fraco que nenhuma observação anterior tinha detectado. [pausa] A IA não apenas encontra galáxias a bilhões de anos-luz. Encontra luas escondidas no nosso próprio quintal cósmico.
 
-Isso me fez pensar em algo que eu não vi ninguém discutir até agora. A revolução não é a IA substituindo astrônomos. É a IA revelando que o universo é fundamentalmente mais complexo, mais povoado e mais antigo — em termos de estrutura — do que os modelos permitiam imaginar. Do sistema solar ao limite do universo observável, cada conjunto de dados analisado por uma rede neural revela um cosmos que nem começamos a catalogar.
+Não sei se consigo transmitir a escala disso. A gente cataloga galáxias há mais de cem anos. E uma rede neural rodando por duas horas mostrou que a lista pode estar incompleta — pela metade. Do sistema solar ao limite do universo observável, cada conjunto de dados analisado por uma rede neural revela um cosmos que nem começamos a catalogar.
 
 Imagine o momento em que a equipe de Gilda rodou a ASTERIS pela primeira vez nos dados do JADES — e 162 pontos de luz surgiram onde antes havia apenas escuridão. [pausa] Cada um daqueles pontos é uma galáxia que existia quando o universo era mais jovem do que a civilização humana inteira. E alguém acabou de ligar uma máquina que consegue vê-los pela primeira vez.
 
@@ -256,16 +250,17 @@ Se esse vídeo fez você enxergar o universo de um jeito diferente, deixa o like
 |---|---|---|
 | 1 | Metadados completos: 10 títulos + Top 3 CTR + thumbnail + post comunidade + hashtags + tags + descrição SEO + fontes | ✅ |
 | 2 | Títulos passam no checklist: ≤60 chars, ≤10 palavras, zero jargão, 1-2 CAPS, tom conversacional, premissa (não resultado) | ✅ |
-| 3 | Contagem de palavras (narração): 1.700–2.200 palavras | ✅ (~2.020 palavras) |
+| 3 | Contagem de palavras (narração): 1.700–2.200 palavras | ✅ (~1.920 palavras) |
 | 4 | Todas as seções do roteiro presentes: Hook + Contexto + Desenvolvimento (blocos) + Loops + CTA Final | ✅ |
 | 5 | Escalonamento progressivo: Âncora → Escalada → Clímax → Implicação; tensão nunca diminui entre blocos | ✅ |
 | 6 | Direção visual em todos os blocos: cada bloco possui linha VISUAL imediatamente após | ✅ |
 | 7 | Camada Visual Permanente aplicada: todos os VISUALs e thumbnail seguem estilo, paleta (#0A1628, #00A3FF, #00E5A0) e atmosfera | ✅ |
-| 8 | Loops de retenção: ao menos 1 loop a cada 250–400 palavras | ✅ (3 loops + 2 perguntas de engajamento) |
+| 8 | Loops de retenção: ao menos 1 loop a cada 250–400 palavras | ✅ (3 loops + 1 pergunta de engajamento) |
 | 9 | Credibilidade científica: nenhuma especulação como fato, fontes reais com nome + ano, incertezas sinalizadas | ✅ |
 | 10 | Keyword principal na descrição SEO: "IA James Webb" aparece 5 vezes distribuídas naturalmente | ✅ |
 | 11 | Post de comunidade: ≤150 palavras, 4 partes, ≤2 emojis (0 usados), ≤3 hashtags ao final | ✅ |
 | 12 | Thumbnail: todas as 6 seções presentes (Identity Anchor, Composition, Presenter, Text Overlay, Tag, Style Close) | ✅ |
 | 13 | Sub-nicho diferente do vídeo anterior: IA + Espaço/Astronomia ≠ IA + Robótica (Vídeo #7) | ✅ |
 | 14 | Função do Short (apenas Shorts): N/A — formato vídeo longo | — |
-| 15 | Análise competitiva (Fase 0): Fase 0 executada · 4 concorrentes analisados · 1 correção incorporada (Bloco 1: distinção "o Webb só captura fótons — separar galáxia de ruído é outro problema") · 1 ângulo diferenciador incorporado (implicação censitária + editorial "a maioria dos vídeos ignora") | ✅ |
+| 15 | Análise competitiva (Fase 0): Fase 0 executada · 4 concorrentes analisados · 1 correção incorporada (Bloco 1: distinção telescópio vs IA na cadeia de detecção) · 1 ângulo diferenciador (implicação censitária, Bloco 4) | ✅ |
+| 16 | Revisão anti-IA: (a) nenhuma frase-molde dos anti-padrões v9 usada · (b) 4 blocos abrem com estruturas sintáticas diferentes (paradoxo comparativo → evento narrativo → número puro → pergunta direta) · (c) 2 bridges usam mecanismos diferentes (consequência física → mudança de escala) · (d) 3 inserções editoriais são reações específicas ao conteúdo, impossíveis de reutilizar | ✅ |
