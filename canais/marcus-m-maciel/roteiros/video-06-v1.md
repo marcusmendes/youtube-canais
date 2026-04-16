@@ -38,7 +38,7 @@
 
 ### Correção incorporada ao roteiro
 
-**No Bloco 1 (Âncora):** Inserida referência explícita ao erro dos concorrentes que atribuem as descobertas exclusivamente ao telescópio, preparando o terreno para o protagonismo da IA no Bloco 2.
+**No Bloco 1 (Âncora):** Inserida distinção técnica entre captura de fótons (função do telescópio) e separação de sinal-ruído (função da IA), preparando o terreno para o protagonismo da ASTERIS no Bloco 2.
 
 ### Ângulo diferenciador incorporado
 
@@ -138,7 +138,7 @@ A combinação de IA e James Webb está transformando a forma como enxergamos o 
 
 - Gilda, S. et al., "ASTERIS: Automated Source deTEction using a neuRal network for Image Segmentation of JWST deep fields", AIP Publishing / Sky & Telescope, março de 2026. — verificar no Google Scholar
 - JADES Team (James Webb Advanced Deep Extragalactic Survey), "JADES: The first census of faint galaxies at z > 10", programa de observação do JWST. — verificar em jwst.nasa.gov / JADES
-
+- NASA/JWST (set 2025): Descoberta de nova lua de Urano com auxílio de IA em análise de imagens do James Webb. — verificar em nasa.gov
 - OpenTools / Nature Astronomy (fev 2026): MoM-z14 — confirmação do objeto mais distante já observado, galáxia a redshift z ≈ 14. — verificar no Google Scholar
 - Finkelstein, S. L. et al., "A Long Time Ago in a Galaxy Far, Far Away: A Candidate z ∼ 12 Galaxy in Early JWST CEERS Imaging", The Astrophysical Journal Letters, 2022. DOI: 10.3847/2041-8213/aca5d0
 - Naidu, R. P. et al., "Two Remarkably Luminous Galaxy Candidates at z ≈ 10–12 Revealed by JWST", The Astrophysical Journal Letters, 2022. DOI: 10.3847/2041-8213/ac9b22
@@ -156,7 +156,7 @@ A combinação de IA e James Webb está transformando a forma como enxergamos o 
 
 ## [CONTEXTO — 3 a 15 segundos]
 
-O James Webb captura a luz mais antiga do universo. Mas dois terços do que ele fotografa fica escondido sob camadas de ruído que o olho humano não consegue separar do sinal. [pausa] Até que uma rede neural decidiu tentar.
+O James Webb captura a luz mais antiga do universo. Mas nem tudo o que ele fotografa pode ser visto. [pausa] Há algo escondido nos dados que o olho humano simplesmente não alcança. Até que uma rede neural decidiu tentar.
 
 > VISUAL: Renderização fotorrealista do James Webb flutuando no espaço — espelho dourado hexagonal contra fundo negro (#000000). Iluminação lateral azul elétrico (#00A3FF) nas bordas do escudo térmico. Corte para monitor científico com imagem ruidosa de campo profundo — estática granulada, dados ilegíveis. Atmosfera séria, precisa, épica.
 
@@ -166,11 +166,11 @@ O James Webb captura a luz mais antiga do universo. Mas dois terços do que ele 
 
 ### Bloco 1 — Âncora: O Olho Mais Poderoso da Humanidade e o Que Ele Não Consegue Ver
 
-A máquina mais poderosa que a humanidade já construiu para enxergar o passado é cega para dois terços do que captura. [pausa] E até março de 2026, ninguém sabia exatamente quanto estávamos perdendo.
+Ele detecta o calor de uma abelha na Lua. [pausa] E é cego para dois terços do que fotografa.
 
-O James Webb orbita o ponto de Lagrange 2, a 1,5 milhão de quilômetros da Terra — quatro vezes mais longe do que a Lua. De lá, seu espelho de 6,5 metros captura luz infravermelha com uma sensibilidade que desafia a intuição: ele consegue detectar o calor de uma abelha na Lua. [pausa] A luz das primeiras galáxias — formadas quando o universo tinha apenas algumas centenas de milhões de anos — viajou por tanto tempo que foi esticada pelo próprio tecido do cosmos. O que era luz visível se transformou em infravermelho. O Webb foi construído para capturar exatamente essa frequência.
+O James Webb orbita o ponto de Lagrange 2, a 1,5 milhão de quilômetros da Terra — quatro vezes mais longe do que a Lua. De lá, seu espelho de 6,5 metros captura luz infravermelha com sensibilidade sem precedentes na história da astronomia. [pausa] A luz das primeiras galáxias — formadas quando o universo tinha apenas algumas centenas de milhões de anos — viajou por tanto tempo que foi esticada pelo próprio tecido do cosmos. O que era luz visível se transformou em infravermelho. O Webb foi construído para capturar exatamente essa frequência.
 
-Desde 2022, o programa JADES — James Webb Advanced Deep Extragalactic Survey — aponta o telescópio para regiões específicas do céu por centenas de horas consecutivas, capturando a luz mais fraca e mais antiga possível. As imagens revelaram galáxias que existiam quando o universo tinha apenas 300 milhões de anos — menos de 2% da idade atual do cosmos. Mas em campos ultradeep como o JADES, o ruído de fundo — radiação cósmica residual, artefatos instrumentais, sobreposição de fontes — esconde até dois terços dos objetos reais. Astrônomos treinados passam dezenas de horas em cada campo, e mesmo assim, parte do que está ali permanece invisível. A maioria dos vídeos que você encontra sobre o James Webb apresenta essas galáxias como se o telescópio as tivesse revelado sozinho. Mas o telescópio só captura fótons. Separar galáxia de ruído é outro problema — e é aí que o jogo muda.
+Desde 2022, o programa JADES — James Webb Advanced Deep Extragalactic Survey — aponta o telescópio para regiões específicas do céu por centenas de horas consecutivas, capturando a luz mais fraca e mais antiga possível. As imagens revelaram galáxias que existiam quando o universo tinha apenas 300 milhões de anos — menos de 2% da idade atual do cosmos. Mas em campos ultradeep como o JADES, o ruído de fundo — radiação cósmica residual, artefatos instrumentais, sobreposição de fontes — esconde a maior parte dos objetos reais. Astrônomos treinados passam dezenas de horas em cada campo, e mesmo assim, parte do que está ali permanece invisível. Mas o Webb só captura fótons. Separar uma galáxia real do ruído de fundo é um problema completamente diferente — e é aí que o jogo muda.
 
 E há um dado nesse problema que muda completamente a forma como entendemos o universo observável — vou te mostrar em instantes.
 
@@ -222,17 +222,19 @@ E há um dado nessa sequência de descobertas que nenhum noticiário cobriu com 
 
 ### Bloco 4 — Implicação: O Universo é Maior do Que Pensávamos. E Agora?
 
-Se a ASTERIS encontrou o que encontrou em um único campo de observação... a pergunta que nenhum astrônomo consegue responder com certeza é: [ênfase] quantas galáxias o universo realmente tem?
+O inventário cósmico da humanidade estima entre 200 bilhões e 2 trilhões de galáxias no universo observável. [pausa] Esse número pode estar errado por um fator de três.
 
-As estimativas tradicionais, baseadas nos censos do Hubble e dos primeiros anos do Webb, apontavam para algo entre 200 bilhões e 2 trilhões de galáxias no universo observável. Mas se dois terços das galáxias em campos ultradeep estão abaixo do limiar de detecção humana, esses números podem ser uma fração do total real. A IA não está apenas encontrando mais galáxias. Ela está mostrando que o inventário cósmico que a humanidade construiu ao longo de décadas estava fundamentalmente incompleto.
+Se a ASTERIS triplicou os achados em um único campo de observação do JADES — e o JADES cobre uma fração ínfima do céu — esses censos, construídos ao longo de décadas com base no Hubble e nos primeiros anos do Webb, podem representar apenas uma fração do total real. A IA não está apenas encontrando mais galáxias. Ela está mostrando que o inventário cósmico que a humanidade construiu estava fundamentalmente incompleto.
 
-Isso me fez pensar em algo que a maioria dos vídeos sobre esse tema ignora completamente. O JADES cobre uma fatia ínfima do céu — e mesmo nessa fatia, a ASTERIS triplicou os achados. Agora multiplique isso. [pausa] O Webb já acumulou mais de 10 mil horas de observação desde 2022. Milhares de campos profundos. Milhões de pixels nunca analisados por uma rede neural. Se a cada campo a IA revela o dobro ou o triplo do que olhos humanos encontram, o inventário de galáxias do universo observável pode precisar ser reescrito do zero.
+Agora multiplique isso. [pausa] O Webb já acumulou mais de 10 mil horas de observação desde 2022. Milhares de campos profundos. Milhões de pixels nunca analisados por uma rede neural. Se a cada campo a IA revela o dobro ou o triplo do que olhos humanos encontram, o mapa do universo observável pode precisar ser reescrito do zero.
 
-A revolução não é a IA substituindo astrônomos. É a IA revelando que o universo é fundamentalmente mais complexo, mais povoado e mais antigo — em termos de estrutura — do que os modelos permitiam imaginar. Cada campo profundo analisado por uma rede neural como a ASTERIS é uma janela para um inventário cósmico que nem começamos a catalogar.
+E a astronomia de campo profundo não é a única fronteira. Em setembro de 2025, a NASA utilizou algoritmos de IA para analisar dados do James Webb e identificar uma nova lua de Urano — um objeto tão pequeno e tão fraco que nenhuma observação anterior tinha detectado. [pausa] A IA não apenas encontra galáxias a bilhões de anos-luz. Encontra luas escondidas no nosso próprio quintal cósmico.
 
-E talvez o dado mais perturbador de todos seja este: [pausa] o universo que conhecemos hoje pode ser apenas a sombra do universo que realmente existe.
+Isso me fez pensar em algo que eu não vi ninguém discutir até agora. A revolução não é a IA substituindo astrônomos. É a IA revelando que o universo é fundamentalmente mais complexo, mais povoado e mais antigo — em termos de estrutura — do que os modelos permitiam imaginar. Do sistema solar ao limite do universo observável, cada conjunto de dados analisado por uma rede neural revela um cosmos que nem começamos a catalogar.
 
-> VISUAL: Zoom out progressivo — de uma única galáxia primitiva para o campo profundo completo, depois para uma representação do céu inteiro coberto por pontos de luz. A fração observada pelo JADES aparece marcada em azul elétrico (#00A3FF) — um quadrado minúsculo sobre a esfera celeste. O restante permanece em escuridão total, com pontos de interrogação sutis pulsando em verde tecnológico (#00E5A0). Atmosfera de imensidão, assombro controlado. Fundo negro absoluto (#000000) dominando o frame.
+Imagine o momento em que a equipe de Gilda rodou a ASTERIS pela primeira vez nos dados do JADES — e 162 pontos de luz surgiram onde antes havia apenas escuridão. [pausa] Cada um daqueles pontos é uma galáxia que existia quando o universo era mais jovem do que a civilização humana inteira. E alguém acabou de ligar uma máquina que consegue vê-los pela primeira vez.
+
+> VISUAL: Infográfico animado mostrando "200 bilhões — 2 trilhões" em tipografia branca sobre fundo negro (#000000), seguido de multiplicador "×3" pulsando em vermelho. Corte para renderização de Urano com anéis gelados — ponto minúsculo de luz surge em órbita, destacado por círculo em azul elétrico (#00A3FF). Corte para simulação de laboratório escuro (#0A1628): tela de computador exibindo campo profundo com galáxias surgindo em cascata — reflexo da tela iluminando rosto de cientista em azul (#00A3FF). Zoom out final: da tela para o céu inteiro — fração observada pelo JADES marcada como quadrado minúsculo em azul elétrico sobre esfera celeste. Restante em escuridão total, pontos de interrogação pulsando em verde tecnológico (#00E5A0). Atmosfera de imensidão e assombro. Fundo negro absoluto (#000000).
 
 ---
 
@@ -240,7 +242,7 @@ E talvez o dado mais perturbador de todos seja este: [pausa] o universo que conh
 
 A história da astronomia sempre foi assim: cada vez que construímos um instrumento mais poderoso, o universo se revelou maior, mais estranho e mais cheio do que imaginávamos. [pausa] O que mudou agora é que o instrumento mais poderoso não é mais um telescópio. É uma rede neural.
 
-Mas a IA não está apenas mudando como enxergamos o universo. [pausa] Três laboratórios independentes — Anthropic, Google DeepMind e AE Studio — mediram algo dentro dessas redes neurais que ninguém consegue explicar. [ênfase] Algo que se parece com consciência. No próximo vídeo, eu vou mostrar os dados. E eles são perturbadores.
+Se uma rede neural já consegue enxergar o que o olho humano não alcança... o que mais pode estar acontecendo dentro dela? [pausa] Três laboratórios independentes — Anthropic, Google DeepMind e AE Studio — decidiram investigar. E o que mediram dentro dessas redes neurais é perturbador. [ênfase] Algo que se parece com consciência. No próximo vídeo, eu vou mostrar os dados.
 
 Se esse vídeo fez você enxergar o universo de um jeito diferente, deixa o like — isso ajuda mais do que você imagina. Se inscreve no canal para não perder o que vem a seguir.
 
@@ -254,7 +256,7 @@ Se esse vídeo fez você enxergar o universo de um jeito diferente, deixa o like
 |---|---|---|
 | 1 | Metadados completos: 10 títulos + Top 3 CTR + thumbnail + post comunidade + hashtags + tags + descrição SEO + fontes | ✅ |
 | 2 | Títulos passam no checklist: ≤60 chars, ≤10 palavras, zero jargão, 1-2 CAPS, tom conversacional, premissa (não resultado) | ✅ |
-| 3 | Contagem de palavras (narração): 1.700–2.200 palavras | ✅ (~1.920 palavras) |
+| 3 | Contagem de palavras (narração): 1.700–2.200 palavras | ✅ (~2.020 palavras) |
 | 4 | Todas as seções do roteiro presentes: Hook + Contexto + Desenvolvimento (blocos) + Loops + CTA Final | ✅ |
 | 5 | Escalonamento progressivo: Âncora → Escalada → Clímax → Implicação; tensão nunca diminui entre blocos | ✅ |
 | 6 | Direção visual em todos os blocos: cada bloco possui linha VISUAL imediatamente após | ✅ |
@@ -266,4 +268,4 @@ Se esse vídeo fez você enxergar o universo de um jeito diferente, deixa o like
 | 12 | Thumbnail: todas as 6 seções presentes (Identity Anchor, Composition, Presenter, Text Overlay, Tag, Style Close) | ✅ |
 | 13 | Sub-nicho diferente do vídeo anterior: IA + Espaço/Astronomia ≠ IA + Robótica (Vídeo #7) | ✅ |
 | 14 | Função do Short (apenas Shorts): N/A — formato vídeo longo | — |
-| 15 | Análise competitiva (Fase 0): Fase 0 executada · 4 concorrentes analisados · 1 correção explícita de erro (Bloco 1: "a maioria dos vídeos apresenta como se o telescópio revelasse sozinho") · 1 ângulo diferenciador incorporado (implicação censitária + editorial "a maioria dos vídeos ignora") | ✅ |
+| 15 | Análise competitiva (Fase 0): Fase 0 executada · 4 concorrentes analisados · 1 correção incorporada (Bloco 1: distinção "o Webb só captura fótons — separar galáxia de ruído é outro problema") · 1 ângulo diferenciador incorporado (implicação censitária + editorial "a maioria dos vídeos ignora") | ✅ |
