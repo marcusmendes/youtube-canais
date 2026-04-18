@@ -1,5 +1,5 @@
 # Cronograma de Conteúdo — Maio 2026
-**Canal: Marcus M Maciel (@marcusmmaciel)**
+**Canal: Marcus Maciel (@MarcusMacielIAeCiencia)**
 **Atualizado em: 18 de abril de 2026 (v2 — temas validados com VidIQ)**
 
 > Baseado no [Método de Produção v2.0](metodo-canal.md) + prompt v10.

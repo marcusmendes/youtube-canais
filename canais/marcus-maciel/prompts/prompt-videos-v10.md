@@ -1,5 +1,5 @@
 # PROMPT MESTRE — IA, CIÊNCIA E FUTURO DA HUMANIDADE
-**Canal: Marcus M Maciel | Versão 10.0**
+**Canal: Marcus Maciel | IA & Ciência — Versão 10.0**
 
 ---
 
@@ -28,7 +28,7 @@ Você domina:
   maximizar views nas primeiras horas de lançamento.
 
 **REFERÊNCIA DE ESTILO NARRATIVO:**
-A pasta `canais/marcus-m-maciel/modelos-de-escrita/` contém roteiros
+A pasta `canais/marcus-maciel/modelos-de-escrita/` contém roteiros
 de referência com o estilo narrativo que o canal busca. Antes de
 escrever o roteiro, leia ao menos 1 modelo desta pasta para calibrar
 tom, ritmo e fluidez. O modelo é referência de ESTILO DE ESCRITA
@@ -39,7 +39,7 @@ tom, ritmo e fluidez. O modelo é referência de ESTILO DE ESCRITA
 
 ## IDENTIDADE DO CANAL
 
-- **CANAL:** Marcus M Maciel — Inteligência Artificial, Ciência e Futuro
+- **CANAL:** Marcus Maciel | IA & Ciência
 - **FORMATO DE PRODUÇÃO:** Narração em voz-over (sem presença em câmera).
   Imagens e vídeos aparecem na tela enquanto o narrador fala.
 - **PÚBLICO — PERSONA "O EXPLORADOR DA FRONTEIRA":**
@@ -279,7 +279,7 @@ que...") ou lista de pontos abordados ("Neste vídeo, vimos
 três aspectos...").
 
 **PRESENÇA EDITORIAL EM PRIMEIRA PESSOA:**
-O narrador é Marcus M Maciel — uma voz com ponto de vista próprio,
+O narrador é Marcus Maciel — uma voz com ponto de vista próprio,
 não um locutor neutro. Ao longo do roteiro, intercale naturalmente
 momentos em primeira pessoa que mostrem o processo de raciocínio
 do apresentador ao interpretar os dados.
@@ -812,7 +812,7 @@ atual` como guia para este desenvolvimento. A IA deve:
 - Inserir **Mecanismos de Re-engajamento** nos pontos fracos
   identificados: loop de retenção inédito, quebra de padrão
   narrativa (mudança brusca de assunto ou tom) ou inserção
-  editorial em primeira pessoa do Marcus M Maciel
+  editorial em primeira pessoa do Marcus Maciel
 
 **PENSAMENTO PRÉVIO — ANTES DE ESCREVER CADA BLOCO:**
 Antes de redigir cada bloco, reflita internamente sobre estas
@@ -1186,7 +1186,7 @@ Quando todos os campos variáveis estiverem preenchidos:
    Roteiros (se o campo não estiver preenchido). Documente o
    briefing no output.
 4. **Modelos de Escrita** — Leia ao menos 1 roteiro da pasta
-   `canais/marcus-m-maciel/modelos-de-escrita/` para calibrar
+   `canais/marcus-maciel/modelos-de-escrita/` para calibrar
    o estilo narrativo antes de escrever.
 5. **Metadados + Roteiro** — Gere todas as seções na ordem definida,
    sem interrupção, incorporando os insights da Fase P e Fase 0,

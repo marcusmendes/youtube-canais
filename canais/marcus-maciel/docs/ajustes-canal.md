@@ -1,5 +1,5 @@
 # Análise e Ajustes na Configuração do Canal
-**Canal: Marcus M Maciel (@marcusmmaciel)**
+**Canal: Marcus Maciel (@MarcusMacielIAeCiencia)**
 **Análise inicial: 15 de abril de 2026 | Atualizado: 18 de abril de 2026**
 
 ---
@@ -8,8 +8,8 @@
 
 | Campo | Valor |
 |---|---|
-| Nome | Marcus M Maciel |
-| URL | @marcusmmaciel |
+| Nome | Marcus Maciel |
+| URL | @MarcusMacielIAeCiencia |
 | País | Brasil |
 | Inscritos | < 10 (oculto) |
 | Views totais | ~2.500+ |
@@ -196,7 +196,7 @@ Os vídeos estão na categoria **28 (Science & Technology)** — correto para o 
 | País | BR | OK |
 | Made for kids | Não | OK |
 | Monetização | Desabilitada | Normal (precisa de 1K inscritos + 4K horas) |
-| URL personalizada | @marcusmmaciel | OK — limpa e memorável |
+| URL personalizada | @MarcusMacielIAeCiencia | OK — limpa e memorável |
 | Banner | Configurado | Verificar se texto do banner reflete os temas atuais |
 | Long uploads | Permitido | OK |
 

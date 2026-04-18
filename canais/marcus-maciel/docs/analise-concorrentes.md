@@ -1,5 +1,5 @@
 # Análise de Concorrentes e Referências
-**Canal: Marcus M Maciel (@marcusmmaciel)**
+**Canal: Marcus Maciel (@MarcusMacielIAeCiencia)**
 **Análise inicial: 15 de abril de 2026 | Atualizado: 18 de abril de 2026**
 
 ---
@@ -494,7 +494,7 @@ MrBeast publica ~1 vídeo longo por mês. Mas cada um recebe semanas de produç�
 | MrBeast | ~1 longo | 122M |
 | Ciência Todo Dia | ~2 longos | 1M |
 | Singularidade | ~5 | 8K |
-| Marcus M Maciel | ~7 (em 2 semanas) | 92 |
+| Marcus Maciel | ~7 (em 2 semanas) | 92 |
 
 **A lição:** Publicar 7 vídeos em 2 semanas não é vantagem se nenhum teve tempo de ser otimizado. Melhor publicar 2 vídeos excelentes por mês do que 7 medianos por mês.
 

@@ -1,5 +1,5 @@
 # Ajustes nos Vídeos Publicados
-**Canal: Marcus M Maciel (@marcusmmaciel)**
+**Canal: Marcus Maciel (@MarcusMacielIAeCiencia)**
 **Data: 15 de abril de 2026**
 
 > Análise dos 7 vídeos publicados com propostas concretas de melhoria em título, descrição, tags e hashtags. Baseado nos padrões identificados nas análises de Singularidade, Ciência Todo Dia e MrBeast.

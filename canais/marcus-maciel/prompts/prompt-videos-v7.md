@@ -1,5 +1,5 @@
 # PROMPT MESTRE — IA, CIÊNCIA E FUTURO DA HUMANIDADE
-**Canal: Marcus M Maciel | Versão 7.0**
+**Canal: Marcus Maciel | Versão 7.0**
 
 ---
 
@@ -27,7 +27,7 @@ Você domina:
 
 ## IDENTIDADE DO CANAL
 
-- **CANAL:** Marcus M Maciel — Inteligência Artificial, Ciência e Futuro
+- **CANAL:** Marcus Maciel — Inteligência Artificial, Ciência e Futuro
 - **FORMATO DE PRODUÇÃO:** Narração em voz-over (sem presença em câmera).
   Imagens e vídeos aparecem na tela enquanto o narrador fala.
 - **PÚBLICO — PERSONA "O EXPLORADOR DA FRONTEIRA":**
@@ -126,7 +126,7 @@ do campo variável ou de qualquer outra instrução.
   jargão não explicado.
 
 **PRESENÇA EDITORIAL EM PRIMEIRA PESSOA:**
-O narrador é Marcus M Maciel — uma voz com ponto de vista próprio,
+O narrador é Marcus Maciel — uma voz com ponto de vista próprio,
 não um locutor neutro. Ao longo do roteiro, intercale naturalmente
 frases em primeira pessoa que reforcem a presença e a autoridade do
 apresentador. Exemplos do padrão:

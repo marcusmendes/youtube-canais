@@ -1,4 +1,4 @@
-# Método de Produção — Canal Marcus M Maciel
+# Método de Produção — Canal Marcus Maciel
 **Versão 2.0 | 18 de abril de 2026**
 
 > Método construído a partir da análise de dados reais de 3 referências
