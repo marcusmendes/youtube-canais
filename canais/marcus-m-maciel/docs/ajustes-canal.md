@@ -1,10 +1,10 @@
 # Análise e Ajustes na Configuração do Canal
 **Canal: Marcus M Maciel (@marcusmmaciel)**
-**Data: 15 de abril de 2026**
+**Análise inicial: 15 de abril de 2026 | Atualizado: 18 de abril de 2026**
 
 ---
 
-## Dados Atuais do Canal
+## Dados Atuais do Canal (18/04/2026)
 
 | Campo | Valor |
 |---|---|
@@ -12,14 +12,16 @@
 | URL | @marcusmmaciel |
 | País | Brasil |
 | Inscritos | < 10 (oculto) |
-| Views totais | 653 |
-| Vídeos publicados | 7 (+ 5 privados) |
+| Views totais | ~2.500+ |
+| Vídeos publicados | 12 (7 longos + 5 Shorts públicos) |
 | Monetização | Desabilitada |
 | Made for kids | Não |
 
 ---
 
 ## 1. Fontes de Tráfego (dados reais via Analytics)
+
+### Snapshot 15/04/2026 (primeiros 7 vídeos)
 
 | Fonte | Views | % do Total |
 |---|---|---|
@@ -31,10 +33,13 @@
 | Hashtags | 1 | 0,2% |
 | Página do canal | 1 | 0,2% |
 
-**Diagnóstico:** 94,6% do tráfego vem do feed de Shorts. O YouTube quase não está distribuindo via busca (19 views) nem via vídeos relacionados (3 views). Isso significa:
-- Os Shorts estão funcionando no feed — o algoritmo está testando
-- O canal ainda não tem autoridade de busca (search authority)
-- As keywords do canal e descrição importam pouco AGORA, mas serão decisivas quando o canal crescer e o YouTube começar a ranquear os longos em search
+**Diagnóstico (15/04):** 94,6% do tráfego vem do Shorts feed.
+
+**Atualização (18/04):** Com a aplicação de títulos CAPS + contradição
+nos novos Shorts, o volume do Shorts feed aumentou significativamente
+(1.000+ views por Short). O tráfego de busca e vídeos relacionados
+deve melhorar à medida que as keywords e SEO forem otimizados com VidIQ.
+Monitorar via `vidiq_channel_performance_trends` mensalmente.
 
 ---
 
@@ -77,13 +82,14 @@
 | **Compound keywords longas demais** | "inteligência artificial e tecnologia", "aprendizado de máquina na ciência" | Ninguém busca frases tão longas exatamente |
 | **Zero keywords em inglês** | — | Perde alcance internacional (tags dos vídeos já são bilíngues) |
 
-### Proposta de Novas Keywords
+### Proposta de Novas Keywords (v2 — 18/04/2026)
 
 As channel keywords devem:
 1. Refletir o conteúdo **real** publicado (não o aspiracional)
 2. Misturar termos **amplos** (do nicho) com **específicos** (do canal)
 3. Incluir termos em **inglês** para alcance
 4. Caber em ~500 caracteres (limite do YouTube)
+5. Ser validadas com `vidiq_keyword_research` para volume e competição
 
 ```
 "inteligência artificial" "IA na medicina" "ciência e tecnologia"
@@ -91,16 +97,22 @@ As channel keywords devem:
 "IA na saúde" "cirurgia robótica" "Neuralink" "chip cerebral"
 "futuro da humanidade" "ciência" "tecnologia" "saúde"
 "câncer" "diagnóstico por IA" "vacina personalizada"
+"Sam Altman" "OpenAI" "IA e ética" "poder da IA"
 "artificial intelligence" "AI in medicine" "future of science"
-"science and technology" "medical AI"
+"science and technology" "medical AI" "AI ethics"
 ```
 
-**O que mudou:**
-- Removidas 10 keywords irrelevantes (automação, energia, LLMs, IA generativa, etc.)
-- Adicionados temas reais: medicina, saúde, câncer, cirurgia robótica, Neuralink
-- Adicionados 5 termos em inglês
-- Mantidos os termos âncora: "inteligência artificial", "ciência e tecnologia"
-- Todos os termos aparecem nos vídeos publicados ou agendados
+**O que mudou na v2 (18/04):**
+- Adicionados termos dos novos sub-nichos explorados: "Sam Altman",
+  "OpenAI", "IA e ética", "poder da IA", "AI ethics"
+- Próxima atualização: adicionar termos de Espaço, Física e Filosofia
+  quando os vídeos correspondentes forem publicados (maio/2026)
+- Usar `vidiq_keyword_research` para validar volume de cada keyword
+  antes de aplicar
+
+> **Nota:** keywords do canal devem ser atualizadas mensalmente para
+> refletir os novos temas publicados. Manter alinhamento entre keywords
+> do canal e conteúdo real publicado.
 
 ---
 
@@ -139,32 +151,35 @@ da nossa civilização, você está no lugar certo.
 | **Sem CTA** | Não pede para se inscrever nem sugere por onde começar |
 | **Menciona temas não explorados** | "novos materiais", "computação" — não tem vídeos sobre isso |
 
-### Proposta de Nova Descrição
+### Proposta de Nova Descrição (v2 — 18/04/2026)
+
+A descrição deve evoluir conforme os temas publicados se diversificam.
 
 ```
-A inteligência artificial está transformando a medicina, o espaço e o futuro
-da humanidade. E aqui você vai entender como.
+A inteligência artificial está transformando a medicina, a ética do poder
+e o futuro da humanidade. E aqui você vai entender como.
 
-Neste canal, eu mostro como a IA já está detectando câncer antes de médicos,
-criando vacinas personalizadas, operando pacientes com robôs cirúrgicos e
-decodificando o cérebro humano. Toda semana, um vídeo novo com descobertas
-reais, fontes verificáveis e zero enrolação.
+Neste canal, eu mostro como a IA já detecta câncer antes de médicos, opera
+pacientes com robôs cirúrgicos, decodifica o cérebro humano — e por que
+os homens mais poderosos do mundo estão apostando tudo nela. Toda semana,
+um vídeo novo com descobertas reais, fontes verificáveis e zero enrolação.
 
-Se a pergunta é "como a IA está mudando a ciência?", a resposta está aqui.
+Se a pergunta é "como a IA está mudando o mundo?", a resposta está aqui.
 
 🔔 Inscreva-se e ative as notificações para não perder nenhum vídeo.
 
 📬 Contato: [seu email]
 ```
 
-**O que mudou:**
-- Primeira frase com keywords de peso: "medicina", "espaço", "futuro da humanidade"
-- Menção concreta dos temas publicados: câncer, vacinas, robôs, cérebro
-- Frequência explícita: "Toda semana, um vídeo novo"
-- Removeu "linguagem clara e visual" (impreciso para voice-over)
-- CTA direto para inscrição
-- Espaço para email de contato (futuras parcerias)
-- Mais curto: ~450 chars vs ~720 chars (os primeiros 150 chars aparecem no search)
+**O que mudou na v2:**
+- "espaço" substituído por "ética do poder" (reflete o vídeo Sam Altman)
+- Adicionada referência a poder/ética: "os homens mais poderosos do mundo"
+- "mudando a ciência" → "mudando o mundo" (mais amplo, reflete diversificação)
+- Quando vídeos de Espaço e Física forem publicados, atualizar novamente
+
+> **Próxima atualização:** após publicar vídeos de Espaço e Filosofia em
+> maio/2026, expandir para: "medicina, o espaço, a ética do poder e o
+> futuro da humanidade".
 
 ---
 
@@ -187,15 +202,19 @@ Os vídeos estão na categoria **28 (Science & Technology)** — correto para o 
 
 ---
 
-## Resumo de Ações (Keywords e Descrição)
+## Resumo de Ações
 
 | # | Ação | Prioridade | Status |
 |---|---|---|---|
-| 1 | **Atualizar keywords do canal** | Alta | Aplicado |
-| 2 | **Atualizar descrição do canal** | Alta | Aplicado |
-| 3 | **Reestruturar playlists** | Alta | Ver seção 7 abaixo |
-| 4 | **Definir vídeo de destaque** | Média | Pendente |
-| 5 | **Revisar banner** | Baixa | Pendente |
+| 1 | **Atualizar keywords do canal (v1)** | Alta | ✅ Aplicado (15/04) |
+| 2 | **Atualizar descrição do canal (v1)** | Alta | ✅ Aplicado (15/04) |
+| 3 | **Atualizar keywords (v2)** — adicionar Poder/Ética | Alta | Pendente |
+| 4 | **Atualizar descrição (v2)** — refletir diversificação | Alta | Pendente |
+| 5 | **Reestruturar playlists** — por tema, não formato | Alta | Pendente |
+| 6 | **Criar playlist "IA e Poder"** | Alta | Pendente (após publicar Sam Altman) |
+| 7 | **Definir vídeo de destaque** | Média | Pendente |
+| 8 | **Revisar banner** | Baixa | Pendente |
+| 9 | **Configurar monitoramento mensal** com `vidiq_channel_performance_trends` | Média | Pendente |
 
 ---
 
@@ -243,7 +262,7 @@ A lógica é simples: playlists agrupam por **assunto**, misturando Longos e Sho
 - Fortalece o funil Short → Longo dentro da própria playlist
 - Dá sinais temáticos claros ao algoritmo
 
-#### Estrutura proposta
+#### Estrutura proposta (v2 — 18/04/2026)
 
 **Playlist 1 — 🔬 IA e Câncer: Diagnóstico, Vacinas e o Futuro**
 | Posição | Vídeo | Tipo |
@@ -255,22 +274,12 @@ A lógica é simples: playlists agrupam por **assunto**, misturando Longos e Sho
 | 5 | V5 — Uma Vacina DIFERENTE Para Cada Paciente. Já Existe | Short |
 | 6 | V6 — A IA Leu Seu DNA em MINUTOS. Antes Levava Anos | Short |
 
-Descrição sugerida:
-```
-A IA já detecta câncer antes de médicos, cria vacinas personalizadas e lê seu DNA em minutos. Nesta playlist, você acompanha os avanços mais recentes da inteligência artificial na luta contra o câncer — com dados reais de estudos publicados na The Lancet e Nature.
-```
-
 **Playlist 2 — 🤖 IA e Cirurgia Robótica**
 | Posição | Vídeo | Tipo |
 |---|---|---|
 | 1 | V7 — Você Deixaria Um ROBÔ Operar o Seu Corpo? | Longo |
 | 2 | V11 — O ROBÔ Errou na Cirurgia. Quem É o Culpado? | Short |
 | 3 | V12 — Esse ROBÔ Aprendeu a Operar Sozinho. Sem Professor | Short |
-
-Descrição sugerida:
-```
-Robôs cirúrgicos com inteligência artificial já operam pacientes com precisão milimétrica. O Da Vinci 5 sente tecidos, mapeia nervos e aprende com cada cirurgia. Mas quem responde quando a IA erra? Nesta playlist, você entende como a cirurgia robótica funciona e para onde ela está indo.
-```
 
 **Playlist 3 — 🧠 IA e o Cérebro: Neuralink e Interface Cérebro-Computador**
 | Posição | Vídeo | Tipo |
@@ -279,38 +288,45 @@ Robôs cirúrgicos com inteligência artificial já operam pacientes com precis�
 | 2 | V9 — Ele Não Fala. Mas o CÉREBRO Dele Sim | Short |
 | 3 | V10 — Um CHIP Ouviu o Que Ele Pensava. E Falou Por Ele | Short |
 
+**Playlist 4 — ⚖️ IA e Poder: Quem Controla o Futuro? (NOVA)**
+| Posição | Vídeo | Tipo |
+|---|---|---|
+| 1 | Sam Altman — Longo #extra (quando publicar) | Longo |
+| 2 | Shorts derivados do tema Sam Altman / ética | Short |
+
 Descrição sugerida:
 ```
-Um chip cerebral da Neuralink leu os pensamentos de um paciente com ELA e transformou em fala — em tempo real. Nesta playlist, você entende como a interface cérebro-computador funciona, o que o ensaio clínico VOICE revelou, e como Stanford e Paradromics competem nessa corrida.
+A IA mais poderosa do mundo está nas mãos de poucas pessoas. Quem são elas? O que querem? Podemos confiar? Nesta playlist, você entende o jogo de poder por trás da inteligência artificial — com fontes reais e sem teoria da conspiração.
 ```
 
-**Playlist 4 — 📚 Para Começar (manter, mas reformular)**
-Curadoria dos melhores vídeos para quem acabou de chegar ao canal. Deve ter pelo menos 3 vídeos públicos.
+**Playlist 5 — 📚 Para Começar**
+Curadoria dos melhores vídeos para quem acabou de chegar ao canal.
 
 | Posição | Vídeo | Tipo | Por quê |
 |---|---|---|---|
 | 1 | V1 — IA vs Médico: Quem Detecta CÂNCER Primeiro? | Longo | Melhor retenção (30,9%) |
-| 2 | V7 — Você Deixaria Um ROBÔ Operar o Seu Corpo? | Longo | Tema acessível, visual |
-| 3 | V8 — Ele Perdeu a Fala. Um CHIP Devolveu Tudo | Longo | Quando for publicado |
+| 2 | V7 — Você Deixaria Um ROBÔ Operar o Seu Corpo? | Longo | Tema acessível |
+| 3 | Sam Altman — Longo #extra | Longo | Tema de timing, alta busca |
 
-Descrição sugerida:
-```
-Acabou de chegar? Comece por aqui. Esses são os vídeos essenciais para entender como a inteligência artificial está transformando a medicina, a cirurgia e o cérebro humano.
-```
+#### O que fazer com as playlists antigas
 
-#### O que fazer com a playlist "⚡ Shorts"
+- **"⚡ Shorts" → Deletar ou tornar privada.** Shorts já estão na aba Shorts e nas playlists temáticas
+- **"🧬 IA na Ciência e Tecnologia" → Deletar.** Substituída pelas temáticas específicas
 
-**Deletar ou tornar privada.** Ela não agrega valor — os Shorts já estão na aba Shorts do canal automaticamente e agora estão organizados nas playlists temáticas. Manter uma playlist genérica "todos os Shorts" dilui a organização.
+> **Nota para maio/2026:** Criar novas playlists temáticas à medida que
+> novos sub-nichos forem publicados (Espaço, Física, Filosofia).
 
 ---
 
 ### Resumo de Ações — Playlists
 
-| # | Ação | Prioridade |
-|---|---|---|
-| 1 | **Reestruturar P4 "IA e Câncer"**: adicionar V2, V3, V5, V6 (Shorts) e renomear para "IA e Câncer: Diagnóstico, Vacinas e o Futuro" | Alta |
-| 2 | **Criar P2 "IA e Cirurgia Robótica"**: V7 + V11 + V12 | Alta |
-| 3 | **Criar P3 "IA e o Cérebro"**: V8 + V9 + V10 | Alta (quando publicar V8) |
-| 4 | **Reformular P1 "Para Começar"**: substituir V8 privado por V1 + V7 (públicos) | Alta |
-| 5 | **Deletar ou tornar privada P2 "Shorts"** | Média |
-| 6 | **Deletar ou tornar privada P3 "IA na Ciência e Tecnologia"** (genérica, será substituída pelas temáticas) | Média |
+| # | Ação | Prioridade | Status |
+|---|---|---|---|
+| 1 | **Reestruturar P4 "IA e Câncer"**: adicionar Shorts + renomear | Alta | Pendente |
+| 2 | **Criar "IA e Cirurgia Robótica"**: V7 + Shorts | Alta | Pendente |
+| 3 | **Criar "IA e o Cérebro"**: V8 + Shorts | Alta | Quando publicar V8 |
+| 4 | **Criar "IA e Poder"**: Sam Altman + Shorts | Alta | Quando publicar Sam Altman |
+| 5 | **Reformular "Para Começar"**: V1 + V7 + Sam Altman | Alta | Pendente |
+| 6 | **Deletar "⚡ Shorts"** (genérica) | Média | Pendente |
+| 7 | **Deletar "🧬 IA na Ciência e Tecnologia"** (genérica) | Média | Pendente |
+| 8 | **Criar playlists de Espaço, Física, Filosofia** | Média | Quando publicar (maio) |

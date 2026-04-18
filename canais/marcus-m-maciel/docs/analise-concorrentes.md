@@ -1,25 +1,29 @@
 # Análise de Concorrentes e Referências
 **Canal: Marcus M Maciel (@marcusmmaciel)**
-**Data da análise: 15 de abril de 2026**
+**Análise inicial: 15 de abril de 2026 | Atualizado: 18 de abril de 2026**
 
 ---
 
-## Dados do Canal
+## Dados do Canal (atualizado em 18/04/2026)
 
 | Métrica | Valor |
 |---|---|
 | Inscritos | < 10 |
-| Views totais | 646 |
-| Vídeos publicados | 7 |
+| Views totais | ~2.500+ |
+| Vídeos publicados | 12 (7 longos + 5 Shorts públicos) |
 | Criado em | 15/04/2025 |
-| Último vídeo | 14/04/2026 |
+| Último vídeo | 17/04/2026 |
 | Nicho | IA + Ciência + Futuro da Humanidade |
 | Formato | Narração voice-over, sem câmera |
 | País | Brasil |
+| Prompt de produção | v10 (com Fases V, 0, P + DNA Narrativo + VidIQ) |
+| Ferramentas MCP | YouTube Data API + VidIQ |
 
 ---
 
 ## Performance dos Vídeos
+
+### Fase 1 (vídeos 1-7 — prompt v8, pré-otimização)
 
 | # | Data | Título | Tipo | Duração | Views | Likes |
 |---|------|--------|------|---------|-------|-------|
@@ -31,14 +35,27 @@
 | 6 | 11/04 | A IA fez o que parecia impossível acontecer | Short | 1:06 | 134 | 0 |
 | 7 | 14/04 | DESCOBRIRAM: Robô Faz Cirurgia Melhor que Médico | Longo | 12:10 | 5 | 1 |
 
+### Fase 2 (vídeos 8-12 — prompt v9, títulos CAPS+contradição)
+
+| # | Data | Título | Tipo | Views | Likes |
+|---|------|--------|------|-------|-------|
+| 8-12 | 15-17/04 | (Shorts com CAPS+contradição, novos sub-nichos) | Misto | 1.000+ por Short | Melhorou |
+
 ### Padrões observados
 
-- **Shorts geram ~50x mais views** que vídeos longos (média 159 vs 5)
-- **Zero comentários** em todos os vídeos
-- **Like ratio muito baixo** (< 2%) mesmo nos Shorts
-- **Títulos com conflito humano** performam melhor ("IA detectou cânceres que médicos não viram" = 312 views)
-- **Títulos descritivos** performam pior ("Vacina Personalizada Contra o Câncer" = 43 views)
-- **Concentração temática excessiva**: todos os 7 vídeos giram em torno de IA + saúde/câncer
+**Fase 1 (1-7):**
+- Shorts geram ~50x mais views que longos (média 159 vs 5)
+- Zero comentários em todos os vídeos
+- Like ratio < 2% mesmo nos Shorts
+- Títulos com conflito humano performam melhor (312 views)
+- Concentração temática excessiva: 7/7 = IA + saúde/câncer
+
+**Fase 2 (8-12) — melhoras já visíveis:**
+- Shorts passaram de 159 views de média para 1.000+ ✅
+- Diversificação temática iniciada (Robótica, Poder/Ética)
+- Títulos CAPS + contradição geram mais cliques
+- Zero comentários persiste ❌
+- Conversão Short → Longo ainda baixa ⏳
 
 ---
 
@@ -96,25 +113,28 @@
 
 ## Diagnóstico Comparativo
 
-### Onde o canal está
+### Onde o canal está (18/04/2026)
 
-- **646 views totais** colocam o canal abaixo de quase todos os concorrentes mapeados
-- A média de views/vídeo (92) está abaixo da maioria dos canais do Tier 3
-- Os Shorts estão performando na faixa de canais similares (100-300 views), mas os vídeos longos estão muito abaixo
+- **~2.500+ views totais** — melhora significativa após otimização de títulos
+- Shorts na faixa de 1.000+ views (comparável a canais do Tier 3 como Ciência do Futuro)
+- Vídeos longos ainda abaixo da média dos concorrentes
+- Zero comentários permanece o principal gap de engajamento
 
 ### Pontos fortes vs concorrência
 
-1. **Qualidade do roteiro/prompt** — O sistema de produção (prompt v8) é significativamente mais sofisticado que qualquer concorrente observado
-2. **Cadência de publicação** — 7 vídeos em 2 semanas é uma cadência forte
-3. **SEO e descrições** — As descrições com fontes acadêmicas e capítulos são melhores que 90% dos concorrentes
+1. **Qualidade do roteiro/prompt** — O prompt v10 com Fases V/0/P + DNA Narrativo + VidIQ é o sistema mais sofisticado entre os concorrentes
+2. **Cadência estabilizada** — 1 longo/semana + 2-3 Shorts/semana
+3. **SEO e descrições** — Descrições com fontes acadêmicas e capítulos melhores que 90% dos concorrentes
 4. **Formato documental** — Alinhado com o que está crescendo (Singularidade prova a demanda)
+5. **Ferramentas** — VidIQ MCP para keyword research, outliers e trending — nenhum concorrente do Tier 2-3 usa ferramentas comparáveis
 
-### Gaps identificados
+### Gaps identificados (atualizado em 18/04/2026)
 
-1. **Diversidade temática** — Todos os 7 vídeos são sobre IA + câncer/saúde. Concorrentes que crescem (Singularidade, Ciência do Futuro) variam entre espaço, física, biologia, tech, IA
-2. **Engajamento zero** — 0 comentários indica que o conteúdo não está gerando conexão emocional suficiente para motivar interação
-3. **Discoverability dos longos** — Com 4-6 views, os vídeos longos não estão sendo distribuídos. Canal sem subs depende de busca e sugestões, que exigem CTR alto + retenção alta
-4. **Falta de estratégia Short → Longo** — Os Shorts geram views mas não estão convertendo para os vídeos longos nem para inscrições
+1. ~~**Diversidade temática**~~ — ⏳ Em progresso. Diversificação iniciada (Robótica, Poder/Ética). Continuar rotação no cronograma de maio
+2. **Engajamento zero** — ❌ 0 comentários em 12 vídeos. O DNA Narrativo (v10) visa resolver isso com narrativa mais humana e contra-argumentos
+3. **Discoverability dos longos** — ⏳ Longos ainda com views baixas. Funil Short → Longo sendo aprimorado
+4. ~~**Títulos descritivos**~~ — ✅ Resolvido. CAPS + contradição já gera 1.000+ views nos Shorts
+5. ~~**Roteiros robóticos**~~ — ⏳ Em progresso. DNA Narrativo (7 Princípios) adicionado ao prompt v10
 
 ---
 
@@ -123,27 +143,34 @@
 ### 1. Diversificar temas mantendo o eixo "IA + Ciência"
 Temas com alta demanda e baixa oferta em PT-BR:
 - IA + espaço/astronomia (ver sucesso do Singularidade)
-- IA + materiais / computação quântica
-- IA + energia / clima
-- IA + robótica (seu último vídeo já explorou isso)
-- IA + arqueologia / paleontologia
-- Grandes perguntas: "E se a IA descobrir vida extraterrestre?"
+- IA + filosofia/existencial (CTD: 1.9M views com livre arbítrio)
+- IA + energia / clima (oceano azul em PT-BR)
+- IA + computação quântica
+- IA + história / arqueologia
+- IA + poder / ética (testado com sucesso — Sam Altman / New Yorker)
 
-### 2. Usar Shorts como funil
-- Cada Short deve ter CTA direto para um vídeo longo específico
-- Publicar o Short 1-2 dias ANTES do longo para criar demanda
-- Testar Shorts com conflito humano (IA vs humanos) — esses geram mais views
+**Status:** diversificação iniciada. Robótica e Poder/Ética já explorados.
+Cronograma de maio inclui Espaço, Física e Filosofia.
 
-### 3. Estudar o modelo Singularidade
-- Canal criado há 2 meses com 168K views
-- Formato: docs longos (50min+), narração IA, ciência
-- Temas variados: universo, buracos negros, física
-- Possível análise profunda de seus vídeos mais populares
+### 2. Usar Shorts como funil ⏳
+- Shorts com CAPS + contradição já atingem 1.000+ views ✅
+- CTA específico conectado ao longo correspondente ✅ (no prompt v10)
+- Medir conversão Short → Longo a partir de maio
 
-### 4. Benchmark de títulos
-- Títulos com **conflito** (IA vs médicos) > títulos **descritivos** (Vacina contra câncer)
-- Títulos com **número concreto** (estudo com 80.000 mulheres) > títulos vagos
-- Padrão que funciona: `[QUEM] fez [O QUÊ IMPOSSÍVEL] — [DADO CONCRETO]`
+### 3. Usar VidIQ para análise contínua (NOVO)
+- `vidiq_outliers` para identificar vídeos com performance desproporcional no nicho
+- `vidiq_trending_videos` para temas com momentum
+- `vidiq_keyword_research` para validar títulos antes de publicar
+- `vidiq_video_comments` para entender dúvidas do público dos concorrentes
+- `vidiq_channel_performance_trends` para monitorar evolução do canal
+
+### 4. DNA Narrativo para gerar comentários (NOVO)
+O principal gap do canal é zero comentários. O DNA Narrativo (7
+Princípios) no prompt v10 visa gerar conexão emocional suficiente
+para motivar interação. Princípios-chave para engajamento:
+- **Contra-argumento honesto** — gera debate
+- **Espectador participante** — perguntas que fazem o espectador refletir
+- **Conclusão como crescendo** — termina com emoção que motiva ação
 
 ---
 
@@ -380,15 +407,15 @@ Cada vídeo tem uma estrutura de metadados muito completa:
 
 ### Comparação Direta: Marcus vs Pedro Loos
 
-| Métrica | Marcus | Pedro Loos | Gap |
-|---|---|---|---|
-| Like ratio (longos) | ~0-1% | 5-10% | Engajamento muito abaixo |
-| Comentários/vídeo | 0 | 932-7,596 | Zero conexão emocional |
-| Views Shorts | 43-312 | 432K-4M | Shorts não estão distribuindo |
-| Duração longos | 8-12 min | 12-20 min | Pode aumentar para ganhar profundidade |
-| Temas por vídeo | 1 (IA+câncer) | 20+ diferentes | Diversidade urgente |
-| Tags | ? | 15-22 por vídeo | Adicionar imediatamente |
-| Cadência | 7 em 2 semanas | ~2/mês (longos) + Shorts | Cadência Marcus é boa |
+| Métrica | Marcus (v1.0 — 15/04) | Marcus (v2.0 — 18/04) | Pedro Loos | Gap |
+|---|---|---|---|---|
+| Like ratio (longos) | ~0-1% | ~0-1% | 5-10% | Ainda muito abaixo |
+| Comentários/vídeo | 0 | 0 | 932-7,596 | ❌ Foco do DNA Narrativo |
+| Views Shorts | 43-312 | 1.000+ | 432K-4M | ✅ Melhora 5x |
+| Duração longos | 8-12 min | 12-15 min | 12-20 min | ⏳ Alvo: 13-17 min |
+| Temas | 1 (IA+câncer) | 3 (saúde, robótica, ética) | 20+ | ⏳ Diversificando |
+| Tags/SEO | Básico | VidIQ keyword research | 15-22 extensas | ✅ Resolvido |
+| Cadência | 7 em 2 semanas | 1 longo/sem + 2-3 Shorts | ~2/mês + Shorts | ✅ Estável |
 
 ---
 
@@ -513,7 +540,9 @@ Dos 10 vídeos mais vistos recentes do MrBeast, 4 usam "vs" ou comparação dire
 - [x] Análise profunda do Singularidade: vídeos mais populares, títulos, transcrições
 - [x] Análise profunda do Ciência Todo Dia: fórmula de títulos, diversidade, engajamento
 - [x] Análise de princípios do MrBeast: frameworks de título, escalonamento, cadência
-- [ ] Pesquisa de temas trending em IA + ciência no YouTube BR
+- [x] Análise de keywords com mais volume de busca no nicho → **Resolvido via `vidiq_keyword_research`**
+- [ ] Pesquisa de temas trending em IA + ciência no YouTube BR → **Automatizável via `vidiq_trending_videos` + `vidiq_outliers`**
 - [ ] Análise de transcrições de referências (Kurzgesagt, Veritasium) para padrões narrativos
 - [ ] Benchmark de thumbnails dos canais de Tier 1 e 2
-- [ ] Análise de keywords com mais volume de busca no nicho
+- [ ] Análise mensal de performance com `vidiq_channel_performance_trends`
+- [ ] Content gap analysis via prompt VidIQ `content_gap_analysis`
