@@ -166,9 +166,7 @@ A dramatic widescreen 16:9 composition split into two visual halves. On the left
 
 On the right side (40%), the presenter stands at a slight three-quarter angle, looking directly at camera with an expression of deep concern and investigative seriousness — furrowed brow, lips slightly pressed together, eyes focused and piercing, as if weighing disturbing evidence. He wears a fitted dark tech-style jacket in the Silicon Valley aesthetic, with subtle dark stitching. Lighting on his face is warm amber-orange from the right, sculpting dramatic rim light along his jawline and cheekbone, while cool electric-blue (#00A3FF) spills from the investigation side onto his left shoulder and neck. The contrast between the two light temperatures is extreme and cinematic. The background behind him is pure dark (#0A1628).
 
-In the lower portion of the frame, bold capitalized text reads "NÃO CONFIE" — "NÃO" in clean white with a heavy black outline, "CONFIE" in vivid red-orange with a heavy black outline, conveying urgency and warning.
-
-In the upper right corner, a small bold red badge reads "REVELADO" in white capitalized sans-serif text.
+In the lower portion of the frame, bold capitalized text reads "100 ENTREVISTAS" — "100" in vivid red-orange with a heavy black outline, "ENTREVISTAS" in clean white with a heavy black outline, conveying the crushing weight of evidence. This text overlay complements the title by adding the scale of the investigation (which the title does not mention), while the title carries the emotional tension.
 
 Dark moody background (#0A1628), vibrant saturated colors, deep blues and electric highlights. Photorealistic, 4K, cinematic contrast. No watermarks, no text artifacts, no logos. 16:9 aspect ratio.
 
@@ -342,7 +340,7 @@ E no próximo vídeo, a história vai mais fundo. [pausa] Existe uma corrida aco
 | 9 | Credibilidade científica: fontes reais com nome + ano na narração (New Yorker 2026, Helen Toner 2024, Jan Leike 2024, Anthropic 2021). Incerteza sinalizada no paralelo criador↔criação ("não sei se a engenharia permite traçar essa linha direta") | ✅ |
 | 10 | Keyword principal na descrição SEO: "sam altman" 5x, primeiras 2 ocorrências nas 2 primeiras frases. "openai" 3x. "inteligência artificial" 4x | ✅ |
 | 11 | Post de comunidade: ~85 palavras, 4 partes, 1 emoji, 3 hashtags ao final | ✅ |
-| 12 | Thumbnail: 6 seções presentes (Identity Anchor, Composition, Presenter, Text Overlay, Tag, Style Close) | ✅ |
+| 12 | Thumbnail — complementaridade: 5 seções presentes (Identity Anchor, Composition, Presenter, Text Overlay, Style Close). Text overlay "100 ENTREVISTAS" complementa o título (dado de escala ausente no título) | ✅ |
 | 13 | Sub-nicho diferente do vídeo anterior: IA + Poder/Ética ≠ IA + Espaço/Astronomia | ✅ |
 | 14 | Função do Short: N/A (vídeo longo) | — |
 | 15 | Análise de performance (Fase P): diagnóstico documentado, 4 calibrações incorporadas (CTA comentário posicionado antes do clímax, hook com dado em <10s, fórmulas título CAPS, funil Short→Longo via pergunta) | ✅ |

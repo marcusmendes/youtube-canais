@@ -111,8 +111,8 @@ Fascínio pelo desconhecido + medo de que nossas certezas científicas estejam i
 
 ### Títulos Sugeridos
 
-1. **O James Webb VIU Algo que Ninguém Esperava** *(45 car., 8 palavras)*
-   → Fórmula 1 — Pergunta existencial. "VIU" em CAPS cria tensão visual e ativa curiosidade.
+1. **O James Webb PERDEU 162 Galáxias. A IA Achou** *(48 car., 9 palavras)*
+   → Fórmula 3 — Contradição. "PERDEU" nega a expectativa de que o maior telescópio vê tudo. O número concreto e a resolução pela IA criam tensão específica.
 
 2. **James Webb vs IA: Quem Enxerga MAIS LONGE?** *(47 car., 8 palavras)*
    → Fórmula 2 — X vs Y. Confronto direto entre telescópio e inteligência artificial.
@@ -123,8 +123,8 @@ Fascínio pelo desconhecido + medo de que nossas certezas científicas estejam i
 4. **O James Webb NÃO Viu Essas Galáxias. A IA Viu** *(50 car., 10 palavras)*
    → Fórmula 3 — Contradição. Nega a capacidade do maior telescópio e resolve com a IA.
 
-5. **O James Webb Triplicou as GALÁXIAS do Universo** *(49 car., 8 palavras)*
-   → Fórmula 5 — Descoberta + consequência. "Triplicou" carrega a escala do impacto.
+5. **Uma IA TRIPLICOU as Galáxias do James Webb** *(46 car., 8 palavras)*
+   → Fórmula 5 — Descoberta + consequência. Atribui corretamente o feito à IA, que é o ângulo diferenciador do vídeo. "TRIPLICOU" em CAPS carrega a escala.
 
 6. **E Se o James Webb Só VIU Metade do Universo?** *(47 car., 10 palavras)*
    → Fórmula 6 — E se... Cenário que questiona a completude do nosso conhecimento.
@@ -161,9 +161,7 @@ A dramatic widescreen 16:9 composition divided into two visual halves. On the le
 
 On the right side (40%), the presenter stands at a slight three-quarter angle, looking directly at camera with an expression of profound awe — eyes wide, brows raised, mouth slightly open, as if witnessing a revelation unfold in real time. He wears a fitted black tech-style t-shirt with subtle dark stitching. Lighting on his face is warm amber-orange from the right, sculpting dramatic rim light along his jawline and cheekbone, while cool electric-blue (#00A3FF) spills from the cosmic side onto his left shoulder and neck. The contrast between the two light temperatures is extreme and cinematic. The background behind him is pure dark (#0A1628).
 
-In the lower portion of the frame, bold capitalized text reads "162 GALÁXIAS" — the number "162" rendered in vivid yellow-orange with a heavy black outline, and "GALÁXIAS" in clean white with a thick black outline, conveying shock and scale. The text sits at the bottom third.
-
-In the upper right corner, a small bold red badge reads "REVELADO" in white capitalized sans-serif text.
+In the lower portion of the frame, bold capitalized text reads "162 GALÁXIAS" — the number "162" rendered in vivid yellow-orange with a heavy black outline, and "GALÁXIAS" in clean white with a thick black outline, conveying shock and scale. The text sits at the bottom third. This text overlay complements the title by adding the specific number that the title does not mention.
 
 Dark moody background (#0A1628), vibrant saturated colors, deep blues and electric highlights. Photorealistic, 4K, cinematic contrast. No watermarks, no text artifacts, no logos. 16:9 aspect ratio.
 
@@ -334,7 +332,7 @@ E no próximo vídeo, a história é muito mais próxima do nosso dia a dia. [pa
 | 9 | Credibilidade científica: fontes reais com nome + ano, incertezas sinalizadas ("candidatas, não confirmações"), sem especulação como fato | ✅ |
 | 10 | Keyword principal na descrição SEO: "james webb" 7x, concentradas nas primeiras frases | ✅ |
 | 11 | Post de comunidade: ≤150 palavras, 4 partes, 1 emoji, 3 hashtags ao final | ✅ ~90 palavras |
-| 12 | Thumbnail: 6 seções presentes (Identity Anchor, Composition, Presenter, Text Overlay, Tag, Style Close) | ✅ |
+| 12 | Thumbnail — complementaridade: 5 seções presentes (Identity Anchor, Composition, Presenter, Text Overlay, Style Close). Text overlay "162 GALÁXIAS" complementa o título (número ausente no título) | ✅ |
 | 13 | Sub-nicho diferente do vídeo anterior: IA + Espaço/Astronomia ≠ IA + Robótica | ✅ |
 | 14 | Função do Short: N/A (vídeo longo) | — |
 | 15 | Análise de performance (Fase P): diagnóstico documentado, 4 calibrações incorporadas (CTA comentário, hook com dado em <30s, funil Short→Longo, fórmulas título CAPS) | ✅ |

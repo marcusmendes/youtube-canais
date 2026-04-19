@@ -6,41 +6,48 @@
 
 ### Títulos Sugeridos
 
-1. **CONFIRMADO: Robôs Humanoides Já Vivem em Casas Reais — E Fazem Mais Que Limpar** *(89 car.)*
-   → Estrutura: `[GATILHO em CAPS]: [Fato científico impactante] — [dado concreto]`
+1. **Esse ROBÔ Cuida da Sua Casa. Ninguém Ensinou** *(48 car., 8 palavras)*
+   → Fórmula 3 — Contradição. "Ninguém Ensinou" nega a expectativa. "ROBÔ" em CAPS.
 
-2. **O Robô Que Acorda Você, Faz Café e Arruma a Cama — Sem Programação** *(71 car.)*
-   → Estrutura: `[Tecnologia ou descoberta] que [promessa de transformação concreta]`
+2. **Robô vs Empregada Doméstica: Quem FAZ Mais?** *(48 car., 7 palavras)*
+   → Fórmula 2 — X vs Y. Confronto direto, familiar e provocativo. "FAZ" em CAPS.
 
-3. **O que acontece quando um robô aprende sozinho a cuidar da sua casa** *(69 car.)*
-   → Estrutura: `O que acontece quando [situação provocativa ou dilema]`
+3. **O Robô de 20 Mil Dólares Que JÁ Mora em Casas** *(50 car., 10 palavras)*
+   → Fórmula 4 — Número impossível. O preço concreto + "JÁ" em CAPS cria urgência.
 
-4. **A corrida de 38 bilhões de dólares que vai decidir quem mora na sua casa** *(78 car.)*
-   → Estrutura: `[Descoberta ou evento] que [consequência inesperada ou paradoxo]`
+4. **Ninguém PROGRAMOU Esse Robô. Ele Aprendeu Sozinho** *(51 car., 7 palavras)*
+   → Fórmula 3 — Contradição. Nega a premissa e resolve com paradoxo.
 
-5. **5 Robôs Humanoides Que Já Fazem Trabalho Doméstico Sem Ninguém Ensinar** *(75 car.)*
-   → Estrutura: `[Número] [fatos, casos ou razões] que mostram [tema central]`
+5. **E Se Um ROBÔ Cuidasse da Sua Casa Amanhã?** *(46 car., 9 palavras)*
+   → Fórmula 6 — E se... Cenário próximo e perturbador. "ROBÔ" em CAPS.
 
-6. **AGORA É REAL: Robôs Domésticos Aprendem Tarefas Apenas Observando Você** *(74 car.)*
-   → Estrutura: `[GATILHO em CAPS]: [Fato científico impactante] — [dado concreto]`
+6. **38 BILHÕES para Colocar Um Robô na SUA Casa** *(49 car., 9 palavras)*
+   → Fórmula 4 — Número impossível. "SUA Casa" transforma dado de mercado em consequência pessoal.
 
-7. **A Máquina de 20 Mil Dólares Que Já Cuida de Casas Inteiras — Sozinha** *(72 car.)*
-   → Estrutura: `[Tecnologia ou descoberta] que [promessa de transformação concreta]`
+7. **Este ROBÔ Já Mora em Casas Reais. Sem Dono Saber** *(51 car., 10 palavras)*
+   → Fórmula 3 — Contradição. "Sem Dono Saber" cria tensão específica ao tema — implica autonomia não supervisionada.
 
-8. **O robô que errou a dobra da roupa — e corrigiu sozinho sem ajuda humana** *(76 car.)*
-   → Estrutura: `[Descoberta ou evento] que [consequência inesperada ou paradoxo]`
+8. **O Robô Que APRENDE Só de Assistir Você** *(42 car., 8 palavras)*
+   → Fórmula 5 — Descoberta + consequência. "APRENDE" em CAPS. Levemente inquietante.
 
-9. **SURPREENDENTE: O Primeiro Robô Produzido em Massa Já Mora em Casas Reais** *(76 car.)*
-   → Estrutura: `[GATILHO em CAPS]: [Fato científico impactante] — [dado concreto]`
+9. **Seu Próximo Funcionário Não É HUMANO** *(40 car., 6 palavras)*
+   → Fórmula 3 — Contradição. Curto, provocativo, ativa medo da obsolescência.
 
-10. **O que acontece quando robôs domésticos ficam mais baratos que um carro** *(73 car.)*
-    → Estrutura: `O que acontece quando [situação provocativa ou dilema]`
+10. **A IA Que DOBRA Roupa Melhor que Você** *(40 car., 8 palavras)*
+    → Fórmula 2 — X vs Y implícito. Confronto máquina vs humano em tarefa mundana.
+
+**Diagnóstico de armadilhas:** Nenhum dos 10 cai nas 6 armadilhas. Todos implicam
+consequência ou conflito, nenhum é informativo, instrucional ou lista genérica.
+
+---
 
 **Top 3 — Maior Potencial de CTR:**
 
-- **#1 — "CONFIRMADO: Robôs Humanoides Já Vivem em Casas Reais — E Fazem Mais Que Limpar"** — combina gatilho de autoridade (CONFIRMADO) com fato verificável e promessa de revelação além do óbvio; ativa curiosidade e urgência simultaneamente, e o travessão funciona como open loop implícito.
-- **#6 — "AGORA É REAL: Robôs Domésticos Aprendem Tarefas Apenas Observando Você"** — o gatilho temporal (AGORA É REAL) cria urgência imediata; "observando você" é contraintuitivo e levemente inquietante, gerando clique por curiosidade e por um leve desconforto que o espectador quer resolver.
-- **#9 — "SURPREENDENTE: O Primeiro Robô Produzido em Massa Já Mora em Casas Reais"** — "produzido em massa" e "mora em casas reais" transformam ficção científica em fato tangível; o espectador precisa verificar se é verdade — e isso é o clique.
+- **#4 — "Ninguém PROGRAMOU Esse Robô. Ele Aprendeu Sozinho"** — Fórmula 3 (Contradição). O ponto final no meio funciona como micro-cliffhanger. A resolução "Aprendeu Sozinho" transforma o paradoxo em algo inquietante. A Fase P confirma: contradição + CAPS gera 3-8x mais views.
+
+- **#8 — "O Robô Que APRENDE Só de Assistir Você"** — Fórmula 5 (Descoberta + consequência). "Assistir Você" inverte a relação: não é você que assiste o robô, é ele que assiste você. O desconforto gera clique.
+
+- **#3 — "O Robô de 20 Mil Dólares Que JÁ Mora em Casas"** — Fórmula 4 (Número impossível). O preço torna tangível, "JÁ" em CAPS destrói a ideia de futuro distante. O viewer precisa verificar.
 
 ---
 
@@ -52,9 +59,7 @@ A dramatic widescreen 16:9 composition split into two visual halves. On the left
 
 On the right side (40%), the presenter stands at a slight three-quarter angle, looking directly at camera with an expression of intense fascination mixed with contained awe — eyes wide, brows slightly raised, lips barely parted, as if witnessing something extraordinary unfold in real time. He wears a fitted black tech-style t-shirt with subtle dark stitching. Lighting on his face is warm amber-orange from the right, sculpting dramatic rim light along his jawline and cheekbone, while cool electric-blue (#00A3FF) spills from the robot side onto his left shoulder and neck. The contrast between the two light temperatures is extreme and cinematic. The background behind him is pure dark (#0A1628) with no distractions.
 
-In the lower portion of the frame, bold capitalized text reads "ROBÔS EM CASA" — the word "ROBÔS" rendered in clean white with a thick black outline, and "EM CASA" in vivid yellow-orange with a heavy black outline, conveying shock and immediacy. The text sits at the bottom third.
-
-In the upper right corner, a small bold red badge reads "REAL" in white capitalized sans-serif text.
+In the lower portion of the frame, bold capitalized text reads "SEM PROGRAMAÇÃO" — the word "SEM" rendered in clean white with a thick black outline, and "PROGRAMAÇÃO" in vivid yellow-orange with a heavy black outline, conveying the paradox that no one coded these actions. The text sits at the bottom third, complementing the title (which says what the robot does) by revealing how it does it.
 
 Dark moody background (#0A1628), vibrant saturated colors, deep blues and electric highlights. Photorealistic, 4K, cinematic contrast. No watermarks, no text artifacts, no logos. 16:9 aspect ratio.
 

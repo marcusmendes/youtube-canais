@@ -106,9 +106,14 @@ O clima é de assombro temperado por rigor científico.
 - Telescópios espaciais e drones autônomos
 
 ### REGRA PERMANENTE DE IMAGEM
-**Zero exceções:** sem textos, legendas, logos ou marcas d'água
-em nenhuma imagem ou thumbnail gerada — independentemente do tema,
-do campo variável ou de qualquer outra instrução.
+**Zero exceções para VISUALs do roteiro:** sem textos, legendas,
+logos ou marcas d'água em nenhuma imagem gerada para os blocos
+de narração — independentemente do tema, do campo variável ou
+de qualquer outra instrução.
+
+**Exceção única — thumbnails:** thumbnails seguem as instruções
+específicas da seção Thumbnail nos Metadados, onde o TEXT OVERLAY
+é permitido e regulado pela Regra de Complementaridade.
 
 ---
 
@@ -518,6 +523,19 @@ primeiras (são as de maior CTR comprovado por análise de dados):
   > Exemplo: "E Se a IA Descobrir VIDA Fora da Terra?"
   > Exemplo: "E Se Você Pudesse VIVER Para Sempre?"
 
+**Armadilhas de título — diagnosticar ANTES de gerar:**
+Ao formular os 10 títulos, verifique se algum cai nestas armadilhas.
+Se cair, aplique o reframe correspondente:
+
+| Armadilha | Sintoma | Reframe |
+|---|---|---|
+| **Informativo demais** | Explica o fato sem gerar urgência | Implicar a consequência: "O que muda se isto for verdade?" |
+| **Log de atualização** | Só fala com quem já conhece o assunto | Reescrever como solução para uma dor de quem não conhece |
+| **Esperto demais** | Usa metáfora ou trocadilho que exige pensar | Liderar com a ideia central; criatividade no final, não no início |
+| **Lista genérica** | "X formas de..." gera fadiga de decisão | Substituir por velocidade ou singularidade: "A forma mais rápida de..." |
+| **Biografia/resumo** | Soa como documentário seguro para assistir depois | Encontrar o ponto de virada e liderar com o conflito |
+| **Instrucional** | "Como fazer X" parece dever de casa | Trocar por demonstração: "Eu fiz X" — prova, não aula |
+
 **Regras obrigatórias para TODOS os títulos:**
 - Máximo de 60 caracteres (10 palavras ou menos)
 - Zero jargão técnico — o jargão vai na descrição, nunca no título
@@ -526,6 +544,8 @@ primeiras (são as de maior CTR comprovado por análise de dados):
   como manchete de jornal científico
 - O título é uma premissa que precisa ser resolvida, não o anúncio
   de um resultado. Conta uma história, não entrega o final
+- O título deve implicar consequências ou conflito — nunca apenas
+  declarar um fato. Fatos informam; consequências geram cliques
 
 Após gerar os 10, identifique os 3 com maior potencial de CTR
 e explique em uma frase por que cada um se destaca, referenciando
@@ -594,17 +614,34 @@ do vídeo. Determine a vestimenta com base no contexto do roteiro:
 Iluminação: azul elétrico frio (#00A3FF) no lado do elemento
 visual, laranja quente no lado do rosto. Alto contraste dramático.
 
-**4. TEXT OVERLAY**
-2–3 palavras em caps que capturam a tensão do vídeo.
+**4. TEXT OVERLAY — REGRA DE COMPLEMENTARIDADE**
+
+> **PRINCÍPIO CENTRAL:** O título e a thumbnail são um par — cada
+> um carrega metade da mensagem. O texto da thumbnail NUNCA deve
+> repetir o título (nem parafrasear, nem usar sinônimos diretos).
+> Se o título diz o quê aconteceu, a thumbnail mostra a escala,
+> o impacto ou a emoção. Se o título cria tensão, a thumbnail
+> mostra a consequência visual.
+
+Gere 2–3 palavras em caps que **complementem** o título, usando
+uma destas estratégias:
+- **Dado complementar:** um número ou fato que o título não
+  menciona (ex: título fala do robô, thumbnail diz "100% PRECISÃO")
+- **Credibilidade:** nome da instituição ou fonte que o título
+  não cita (ex: "JOHNS HOPKINS", "NATURE 2025")
+- **Reação emocional:** expressão que traduz o sentimento
+  (ex: "IMPOSSÍVEL", "SEM VOLTA")
+
 Primeira palavra em branco com outline preto.
 Palavra de maior impacto em amarelo/laranja com outline preto.
 
-**5. TAG**
-Badge vermelho no canto superior direito. Escolha a mais
-alinhada ao ângulo editorial:
-REAL / CONFIRMADO / INÉDITO / REVELADO / AGORA.
+**Teste de validação:** tape mentalmente o título e leia só o
+texto da thumbnail. Ele faz sentido sozinho? Agora tape a
+thumbnail e leia só o título. Funciona sozinho? Se ambos
+funcionam separados E se completam juntos, o par está correto.
+Se a thumbnail só faz sentido repetindo o título, reescreva.
 
-**6. STYLE CLOSE**
+**5. STYLE CLOSE**
 Finalize sempre com:
 *"Dark moody background (#0A1628), vibrant saturated colors,
 deep blues and electric highlights. Photorealistic, 4K,
@@ -740,6 +777,20 @@ misturando termos em PT-BR e EN.
   os top performers como referência.
 - Escreva uma descrição em texto corrido com exatamente 1500
   caracteres.
+
+**Primeira linha como segundo gancho:**
+A primeira linha da descrição é visível no feed do YouTube (abaixo
+do título, antes do clique). Ela funciona como extensão do pacote
+título+thumbnail. Deve ser uma frase curta e provocativa que
+reforce a curiosidade — nunca um resumo do vídeo.
+Padrão desejado: dado concreto + tensão não resolvida.
+> Ex: "Em julho de 2025, cirurgiões da Johns Hopkins ficaram
+> assistindo enquanto um robô operava sozinho. O que aconteceu
+> depois mudou tudo."
+Anti-padrão: abrir com definição genérica ("A cirurgia robótica
+com inteligência artificial já é realidade.") ou descrição do
+canal ("Neste vídeo, você vai entender...").
+
 - A palavra-chave principal deve aparecer entre 5 e 7 vezes de
   forma natural ao longo do texto, concentrando as primeiras
   ocorrências nas 2 primeiras frases da descrição (zona de maior
@@ -1149,7 +1200,7 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | # | Verificação | Critério |
 |---|---|---|
 | 1 | Metadados completos | 10 títulos + Top 3 CTR + thumbnail + post comunidade + hashtags + tags + descrição SEO + fontes |
-| 2 | Títulos validados | Todos os 10: ≤ 60 caracteres · ≤ 10 palavras · zero jargão · 1-2 CAPS cirúrgicos · tom conversacional · premissa (não resultado). Top 3 validados por keyword research (VidIQ) ou justificados por fórmula se indisponível |
+| 2 | Títulos validados | Todos os 10: ≤ 60 caracteres · ≤ 10 palavras · zero jargão · 1-2 CAPS cirúrgicos · tom conversacional · premissa (não resultado) · nenhum caiu nas 6 armadilhas sem reframe aplicado. Top 3 validados por keyword research (VidIQ) ou justificados por fórmula se indisponível |
 | 3 | Contagem de palavras (narração) | Vídeo longo: 1.700–2.200 palavras · Short: ≤ 130 palavras |
 | 4 | Todas as seções do roteiro presentes | Hook + Contexto + Desenvolvimento (blocos) + Loops + CTA Final |
 | 5 | Escalonamento progressivo | Os blocos seguem Âncora → Escalada → Clímax → Implicação · Tensão nunca diminui · Transições invisíveis entre blocos (Princípio 2) |
@@ -1157,9 +1208,9 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 7 | Camada Visual Permanente aplicada | Todos os VISUALs e thumbnail seguem estilo, paleta e atmosfera |
 | 8 | Loops de retenção | Ao menos 1 loop a cada 250–400 palavras (vídeos longos) · Nenhum em Shorts |
 | 9 | Credibilidade científica | Nenhuma especulação como fato · Fontes reais com nome + ano na narração · Incertezas sinalizadas |
-| 10 | Keyword principal na descrição SEO | 5–7 ocorrências naturais, concentradas nas 2 primeiras frases |
+| 10 | Keyword principal na descrição SEO | 5–7 ocorrências naturais, concentradas nas 2 primeiras frases · Primeira linha funciona como segundo gancho (dado + tensão, não resumo ou definição) |
 | 11 | Post de comunidade | ≤ 150 palavras · 4 partes · ≤ 2 emojis · ≤ 3 hashtags ao final |
-| 12 | Thumbnail | Todas as 6 seções presentes (ou fallback aplicado se sem Reference Image) |
+| 12 | Thumbnail — complementaridade | Todas as 5 seções presentes (ou fallback aplicado se sem Reference Image) · Text overlay complementa o título (nunca repete) |
 | 13 | Sub-nicho diferente do vídeo anterior | Campo SUB-NICHO preenchido e diferente do último vídeo publicado |
 | 14 | Função do Short (apenas Shorts) | Campo FUNÇÃO DO SHORT preenchido · CTA específico conectado ao longo · Nunca CTA genérico |
 | 15 | Análise de performance (Fase P) | Fase P executada via VidIQ ou MCP · Diagnóstico documentado · ≥2 calibrações incorporadas · Ou fallback informado |
@@ -1171,7 +1222,10 @@ Fase P (Performance) antes de gerar o roteiro.]`
 
 ---
 
-Quando todos os campos variáveis estiverem preenchidos:
+Quando todos os campos variáveis estiverem preenchidos,
+execute o pipeline de criação abaixo. (Para repackaging de
+vídeos já publicados, use a **Fase R** diretamente — ela é
+um workflow independente que não requer os campos variáveis.)
 
 1. **Fase V (Validação)** — Antes de tudo, valide o tema usando
    `vidiq_keyword_research` com a keyword principal do tema.
@@ -1309,3 +1363,120 @@ Se o MCP YouTube não estiver disponível ou a autenticação OAuth
 falhar, informar no output: "Fase P não executada — MCP YouTube
 indisponível. Prosseguindo sem dados de performance." e continuar
 para a Fase 0.
+
+---
+
+## FASE R — PROTOCOLO DE REPACKAGING PÓS-PUBLICAÇÃO
+
+> **QUANDO USAR:** Executar esta fase quando um vídeo já publicado
+> está com views abaixo da média do canal após 5+ dias. O conteúdo
+> não muda — muda o pacote (título, thumbnail, primeira linha da
+> descrição). 10 minutos resgatando um vídeo > 10 horas refazendo.
+
+### Princípio
+
+O conteúdo de um vídeo não muda. Mas o reframing do título e da
+thumbnail muda subjetivamente como o espectador se sente sobre ele.
+O objetivo do repackaging é transformar:
+- Fatos → implicações
+- Passos → resultados
+- Biografias → conflitos
+- Atualizações → decisões
+- Explicações → consequências
+
+### Processo de execução
+
+**Passo 1 — Identificar candidatos a repackaging**
+
+Usar `vidiq_channel_videos` com `popular: false` para listar os
+uploads recentes. Para obter a média de views do canal como
+baseline, usar `vidiq_channel_videos` com `popular: true` e
+calcular a média de views dos últimos 10 vídeos — ou reutilizar
+o baseline da Fase P se já tiver sido executada recentemente.
+Vídeos com views < 50% da média após 5+ dias são candidatos.
+
+Critério adicional: o vídeo deve ter retenção razoável (>25% para
+longos, >40% para Shorts). Se a retenção é baixa, o problema é
+o conteúdo, não o pacote — repackaging não resolve.
+
+**Passo 2 — Diagnosticar o título atual**
+
+Classificar o título em qual armadilha ele caiu:
+
+| Armadilha | Sintoma | Reframe |
+|---|---|---|
+| Informativo demais | Declara fato sem urgência | Implicar consequência |
+| Log de atualização | Fala só com quem já conhece | Reformular como solução para uma dor |
+| Esperto demais | Exige que o viewer pense | Ideia central primeiro, criatividade depois |
+| Lista genérica | "X formas de..." | Velocidade ou singularidade |
+| Biografia/resumo | Documentário seguro | Liderar com ponto de virada/conflito |
+| Instrucional | "Como fazer X" | Demonstração: "Eu fiz X" |
+
+**Passo 3 — Gerar 3-5 títulos alternativos**
+
+Usar as 6 fórmulas de título + os reframes da tabela acima.
+Validar com `vidiq_keyword_research` para garantir que os novos
+títulos incorporam keywords com volume real.
+
+**Passo 4 — Diagnosticar a thumbnail atual**
+
+Verificar:
+- O texto da thumbnail repete o título? → Reescrever com dado
+  complementar, credibilidade ou reação emocional
+- A imagem é abstrata ou genérica? → Substituir por imagem
+  visceral, concreta, de consequência visível
+- Há elementos demais competindo? → Simplificar para máximo 3
+  pontos focais (rosto + elemento visual + texto opcional)
+- A thumbnail funciona sozinha (sem o título)? → Se não, repensar
+
+**Passo 5 — Gerar novo prompt de thumbnail**
+
+Seguir a seção de Thumbnail dos Metadados, aplicando a Regra de
+Complementaridade: o novo text overlay deve complementar o novo
+título, nunca repeti-lo.
+
+**Passo 6 — Reescrever primeira linha da descrição**
+
+A primeira linha visível no feed deve funcionar como segundo
+gancho do novo pacote. Dado concreto + tensão não resolvida.
+
+**Passo 7 — Plano de iteração**
+
+- Mudar UMA coisa por vez (título primeiro, thumbnail depois,
+  ou vice-versa)
+- Esperar 4-5 dias entre mudanças para medir impacto
+- Usar `vidiq_video_stats` com `granularity: "daily"` para
+  monitorar a curva de views após cada mudança
+- Se a primeira mudança não funcionou, tentar outra abordagem
+- Nunca desistir completamente de um bom vídeo — vídeos podem
+  explodir semanas ou meses depois de um repackaging bem feito
+
+### Output do Repackaging
+
+```
+## [FASE R — REPACKAGING]
+
+### Vídeo alvo
+- Título atual: [título]
+- Views: [X] | Média do canal: [Y] | Diferença: [-Z%]
+- Dias desde publicação: [N]
+- Retenção média: [X%] (confirma que o conteúdo é bom)
+
+### Diagnóstico do pacote atual
+- Armadilha do título: [qual armadilha + explicação]
+- Problema da thumbnail: [o que não funciona + por quê]
+- Primeira linha da descrição: [funciona como gancho? sim/não]
+
+### Novo pacote proposto
+- Título recomendado: [título]
+- Alternativas: [2-3 opções]
+- Keywords validadas: [keyword → volume → competition → overall]
+- Text overlay da thumbnail: [complemento, não repetição]
+- Prompt de thumbnail: [prompt completo Nano Banana 2]
+- Nova primeira linha da descrição: [frase]
+
+### Plano de execução
+1. [O que mudar primeiro]
+2. [Quando medir resultados]
+3. [Próximo passo se não funcionar]
+```
