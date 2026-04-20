@@ -154,18 +154,23 @@ Fascínio pelo desconhecido + medo de que nossas certezas científicas estejam i
 ---
 
 ### Thumbnail (Prompt para Nano Banana 2)
+**Composição:** B — Visual Protagonista (sem rosto)
+**Paleta:** Preto profundo + Dourado/âmbar
+**Texto:** nenhum
 
-Using Reference Image 1 as the strict identity anchor — preserve every facial feature, bone structure, skin tone, and proportion exactly.
+A breathtaking full-frame deep-field image of the cosmos fills the entire 16:9 frame. Hundreds of galaxies — spirals, ellipticals, irregular blobs — are scattered across an ocean of absolute black (#050510). The image evokes the real James Webb deep-field photographs: dense, layered, overwhelming in scale.
 
-A dramatic widescreen 16:9 composition divided into two visual halves. On the left side of the frame (60%), a breathtaking deep-field image of the cosmos fills the space — hundreds of tiny galaxies scattered across an ocean of pure darkness (#0A1628). Some galaxies glow in faint warm oranges and reds, representing the most distant and ancient objects. Overlaid on this cosmic field, a translucent grid of electric blue (#00A3FF) data analysis lines traces geometric patterns across the galaxies, suggesting AI processing and neural network analysis in real time. Tiny particles of blue and green (#00E5A0) light float around the data overlay, conveying computational awareness scanning the universe. The overall impression is of an artificial intelligence revealing hidden structures within the deep field.
+Most galaxies are rendered in cool, muted tones — pale blues, soft whites, faint grays — as they would appear in a standard JWST image. But approximately one third of the galaxies glow with a warm golden-amber light (#FFB300), as if they have been "switched on" or revealed. These golden galaxies are distributed throughout the field, some clustered, some isolated — they are the ones the AI found that the telescope alone had missed. The contrast between the cold "known" galaxies and the warm "discovered" ones is the visual story: the universe just got bigger.
 
-On the right side (40%), the presenter stands at a slight three-quarter angle, looking directly at camera with an expression of profound awe — eyes wide, brows raised, mouth slightly open, as if witnessing a revelation unfold in real time. He wears a fitted black tech-style t-shirt with subtle dark stitching. Lighting on his face is warm amber-orange from the right, sculpting dramatic rim light along his jawline and cheekbone, while cool electric-blue (#00A3FF) spills from the cosmic side onto his left shoulder and neck. The contrast between the two light temperatures is extreme and cinematic. The background behind him is pure dark (#0A1628).
+No grids, no data overlays, no interface elements. The image should feel like a real astronomical photograph that has been subtly enhanced — not like a sci-fi rendering. The golden glow should feel like natural starlight, not artificial highlighting.
 
-In the lower portion of the frame, bold capitalized text reads "162 GALÁXIAS" — the number "162" rendered in vivid yellow-orange with a heavy black outline, and "GALÁXIAS" in clean white with a thick black outline, conveying shock and scale. The text sits at the bottom third. This text overlay complements the title by adding the specific number that the title does not mention.
+The composition places the densest cluster of golden galaxies slightly off-center to the left, creating natural visual weight. The deepest black regions of space surround the field, framing the galaxies with the void.
 
-Dark moody background (#0A1628), vibrant saturated colors, deep blues and electric highlights. Photorealistic, 4K, cinematic contrast. No watermarks, no text artifacts, no logos. 16:9 aspect ratio.
+No text anywhere in the frame. The sheer density of revealed galaxies tells the story without words.
 
-→ No Nano Banana 2: anexe sua foto de referência como Reference Image 1 e cole o prompt acima.
+Photorealistic, 4K, cinematic contrast. Deep black #050510 tones with golden amber #FFB300 highlights on revealed galaxies. No watermarks, no text artifacts, no logos, no unintended text. 16:9 aspect ratio.
+
+→ No Nano Banana 2: cole o prompt acima. Não é necessária Reference Image para esta composição.
 
 ---
 
@@ -332,7 +337,7 @@ E no próximo vídeo, a história é muito mais próxima do nosso dia a dia. [pa
 | 9 | Credibilidade científica: fontes reais com nome + ano, incertezas sinalizadas ("candidatas, não confirmações"), sem especulação como fato | ✅ |
 | 10 | Keyword principal na descrição SEO: "james webb" 7x, concentradas nas primeiras frases | ✅ |
 | 11 | Post de comunidade: ≤150 palavras, 4 partes, 1 emoji, 3 hashtags ao final | ✅ ~90 palavras |
-| 12 | Thumbnail — complementaridade: 5 seções presentes (Identity Anchor, Composition, Presenter, Text Overlay, Style Close). Text overlay "162 GALÁXIAS" complementa o título (número ausente no título) | ✅ |
+| 12 | Thumbnail — sistema v2: Composição B (Visual Protagonista, sem rosto) · Paleta Preto/Dourado (diferente da anterior Cinza/Laranja) · Zero texto · Passa no teste do celular (4cm) — galáxias douradas visíveis em miniatura · Nenhum anti-padrão violado | ✅ |
 | 13 | Sub-nicho diferente do vídeo anterior: IA + Espaço/Astronomia ≠ IA + Robótica | ✅ |
 | 14 | Função do Short: N/A (vídeo longo) | — |
 | 15 | Análise de performance (Fase P): diagnóstico documentado, 4 calibrações incorporadas (CTA comentário, hook com dado em <30s, funil Short→Longo, fórmulas título CAPS) | ✅ |

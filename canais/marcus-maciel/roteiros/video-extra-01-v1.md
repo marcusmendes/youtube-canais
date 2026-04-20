@@ -159,16 +159,23 @@ Medo da perda de controle + inquietação sobre poder concentrado sem supervisã
 ---
 
 ### Thumbnail (Prompt para Nano Banana 2)
+**Composição:** A — Confronto (apresentador + elemento visual)
+**Paleta:** Vermelho escuro + Branco/amarelo
+**Texto:** nenhum
 
-Using Reference Image 1 as the strict identity anchor — preserve every facial feature, bone structure, skin tone, and proportion exactly.
+Using Reference Image 1 as the strict identity anchor — preserve every facial feature, bone structure, skin tone, and proportion exactly. Maintain absolute consistency with all previous thumbnails generated using this reference.
 
-A dramatic widescreen 16:9 composition split into two visual halves. On the left side (60%), a striking scene of investigative exposure: a faceless corporate figure rendered as a dark silhouette stands before a massive wall of glowing digital screens and cascading data streams. The screens emit cold electric blue light (#00A3FF) that cuts through the darkness. Around the silhouette, fragments of documents, printed transcripts and scattered interview notes float in mid-air, illuminated by traces of green technological light (#00E5A0), suggesting hidden truths surfacing under scrutiny. The silhouette is perfectly sharp but devoid of identity — representing power without accountability. The atmosphere is one of revelation, as though a carefully constructed image is fracturing in real time.
+Split frame 16:9 composition built on tension between two figures. The presenter occupies the right 40% of the frame, positioned at a slight angle, looking left toward the opposing element with an expression of controlled indignation — eyebrows contracted, lips pressed firmly together, jaw set, eyes locked with a challenging, unflinching stare. He wears a fitted dark tech-style jacket with subtle dark stitching, Silicon Valley aesthetic. The expression says: "I've seen the evidence."
 
-On the right side (40%), the presenter stands at a slight three-quarter angle, looking directly at camera with an expression of deep concern and investigative seriousness — furrowed brow, lips slightly pressed together, eyes focused and piercing, as if weighing disturbing evidence. He wears a fitted dark tech-style jacket in the Silicon Valley aesthetic, with subtle dark stitching. Lighting on his face is warm amber-orange from the right, sculpting dramatic rim light along his jawline and cheekbone, while cool electric-blue (#00A3FF) spills from the investigation side onto his left shoulder and neck. The contrast between the two light temperatures is extreme and cinematic. The background behind him is pure dark (#0A1628).
+On the left 60% of the frame, a man in a corporate suit stands with his back to the camera — completely faceless, anonymous, powerful. His silhouette is sharp and defined, rendered in deep black against a dark crimson background (#6D0000). He stands slightly elevated, suggesting authority. Around his silhouette, hairline fractures of bright white light crack through the dark surface behind him — as if a carefully constructed facade is literally breaking apart under scrutiny. The cracks radiate outward from the silhouette, suggesting that the closer you look, the more the image falls apart.
 
-In the lower portion of the frame, bold capitalized text reads "100 ENTREVISTAS" — "100" in vivid red-orange with a heavy black outline, "ENTREVISTAS" in clean white with a heavy black outline, conveying the crushing weight of evidence. This text overlay complements the title by adding the scale of the investigation (which the title does not mention), while the title carries the emotional tension.
+The presenter is lit with stark white light from the left, creating harsh, journalistic contrast on his face — no warmth, no flattery, pure documentary exposure. From the crimson side, a deep red wash (#6D0000) bleeds onto his right shoulder and neck, connecting him to the investigation visually.
 
-Dark moody background (#0A1628), vibrant saturated colors, deep blues and electric highlights. Photorealistic, 4K, cinematic contrast. No watermarks, no text artifacts, no logos. 16:9 aspect ratio.
+The background behind both figures is a gradient from deep crimson (#6D0000) on the left to near-black on the right, creating a sense of dread that builds toward the faceless figure.
+
+No text anywhere in the frame. The confrontation between the investigator and the anonymous power figure tells the entire story.
+
+Photorealistic, 4K, cinematic contrast. Dark crimson #6D0000 tones with stark white and bright crack highlights. No watermarks, no text artifacts, no logos, no unintended text. 16:9 aspect ratio.
 
 → No Nano Banana 2: anexe sua foto de referência como Reference Image 1 e cole o prompt acima.
 
@@ -340,7 +347,7 @@ E no próximo vídeo, a história vai mais fundo. [pausa] Existe uma corrida aco
 | 9 | Credibilidade científica: fontes reais com nome + ano na narração (New Yorker 2026, Helen Toner 2024, Jan Leike 2024, Anthropic 2021). Incerteza sinalizada no paralelo criador↔criação ("não sei se a engenharia permite traçar essa linha direta") | ✅ |
 | 10 | Keyword principal na descrição SEO: "sam altman" 5x, primeiras 2 ocorrências nas 2 primeiras frases. "openai" 3x. "inteligência artificial" 4x | ✅ |
 | 11 | Post de comunidade: ~85 palavras, 4 partes, 1 emoji, 3 hashtags ao final | ✅ |
-| 12 | Thumbnail — complementaridade: 5 seções presentes (Identity Anchor, Composition, Presenter, Text Overlay, Style Close). Text overlay "100 ENTREVISTAS" complementa o título (dado de escala ausente no título) | ✅ |
+| 12 | Thumbnail — sistema v2: Composição A (Confronto) · Paleta Vermelho/Branco (diferente da anterior Preto/Dourado) · Expressão: Indignação (diferente da anterior) · Zero texto · Passa no teste do celular (4cm) — silhueta + fachada rachando visíveis em miniatura · Nenhum anti-padrão violado | ✅ |
 | 13 | Sub-nicho diferente do vídeo anterior: IA + Poder/Ética ≠ IA + Espaço/Astronomia | ✅ |
 | 14 | Função do Short: N/A (vídeo longo) | — |
 | 15 | Análise de performance (Fase P): diagnóstico documentado, 4 calibrações incorporadas (CTA comentário posicionado antes do clímax, hook com dado em <10s, fórmulas título CAPS, funil Short→Longo via pergunta) | ✅ |

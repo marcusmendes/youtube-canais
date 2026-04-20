@@ -52,18 +52,23 @@ consequência ou conflito, nenhum é informativo, instrucional ou lista genéric
 ---
 
 ### Thumbnail (Prompt para Nano Banana 2)
+**Composição:** C — Objeto Simbólico (close macro)
+**Paleta:** Cinza metálico + Laranja industrial
+**Texto:** nenhum
 
-Using Reference Image 1 as the strict identity anchor — preserve every facial feature, bone structure, skin tone, and proportion exactly.
+Extreme macro close-up of a humanoid robot's articulated hand — five silver-white fingers with visible mechanical joints and subtle carbon-fiber textures — gently curled around a simple white ceramic coffee mug. The hand is captured mid-lift, as if picking the mug off a kitchen counter. The gesture is unsettlingly human — the grip pressure looks calibrated, the finger placement natural, almost tender.
 
-A dramatic widescreen 16:9 composition split into two visual halves. On the left side of the frame (60%), a sleek humanoid robot with articulated silver-white arms stands inside a modern kitchen bathed in deep darkness. Its torso is illuminated by cool electric-blue LED strips (#00A3FF) running along its joints and forearms. The robot holds a ceramic coffee mug in one hand and a folded white towel in the other, captured mid-action as if performing morning routines autonomously. Behind the robot, the kitchen counter holds everyday objects — a glass toaster, a fruit bowl, a glass of water — grounding the scene in domestic realism. Tiny particles of electric-blue light float in the air around the robot, suggesting ambient computational awareness. The kitchen background is almost entirely swallowed in deep navy-black (#0A1628), with only metallic surfaces catching faint neon reflections.
+The robot hand and mug occupy the center 60% of the 16:9 frame, razor-sharp, with every mechanical detail visible: micro-hydraulic lines running along the fingers, tiny sensor pads on the fingertips, the seamless transition between brushed metal segments. The ceramic mug catches warm reflections from the lighting.
 
-On the right side (40%), the presenter stands at a slight three-quarter angle, looking directly at camera with an expression of intense fascination mixed with contained awe — eyes wide, brows slightly raised, lips barely parted, as if witnessing something extraordinary unfold in real time. He wears a fitted black tech-style t-shirt with subtle dark stitching. Lighting on his face is warm amber-orange from the right, sculpting dramatic rim light along his jawline and cheekbone, while cool electric-blue (#00A3FF) spills from the robot side onto his left shoulder and neck. The contrast between the two light temperatures is extreme and cinematic. The background behind him is pure dark (#0A1628) with no distractions.
+Background is a domestic kitchen, completely blurred to abstraction (f/1.4 depth of field) — just shapes and warm ambient tones suggesting a real home, not a lab. This grounding in domestic normality is what makes the robot hand disturbing: it belongs in a factory, not holding your morning coffee.
 
-In the lower portion of the frame, bold capitalized text reads "SEM PROGRAMAÇÃO" — the word "SEM" rendered in clean white with a thick black outline, and "PROGRAMAÇÃO" in vivid yellow-orange with a heavy black outline, conveying the paradox that no one coded these actions. The text sits at the bottom third, complementing the title (which says what the robot does) by revealing how it does it.
+Lighting: strong directional industrial orange (#FF6D00) from the upper left, sculpting the metallic surfaces of the hand with dramatic highlights and deep shadows. A cooler metallic gray fill (#2C2C2C) from the right side prevents the shadows from going fully black. The mug's white surface catches both temperatures, creating a warm-cool gradient across its surface.
 
-Dark moody background (#0A1628), vibrant saturated colors, deep blues and electric highlights. Photorealistic, 4K, cinematic contrast. No watermarks, no text artifacts, no logos. 16:9 aspect ratio.
+No text anywhere in the frame. The image alone asks the question: whose hand is making your coffee tomorrow?
 
-→ No Nano Banana 2: anexe sua foto de referência como Reference Image 1 e cole o prompt acima.
+Photorealistic, 4K, cinematic contrast, shallow depth of field. Metallic gray #2C2C2C tones with industrial orange #FF6D00 highlights. No watermarks, no text artifacts, no logos, no unintended text. 16:9 aspect ratio.
+
+→ No Nano Banana 2: cole o prompt acima. Não é necessária Reference Image para esta composição.
 
 ---
 

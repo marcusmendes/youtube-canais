@@ -574,7 +574,14 @@ Gere um prompt completo formatado para o Nano Banana 2
 (Google Gemini Image). O prompt deve ser escrito em inglês,
 em linguagem de diretor criativo — parágrafos descritivos,
 não listas de atributos. Aplicar obrigatoriamente a Camada
-Visual Permanente definida acima.
+Visual Permanente definida acima, EXCETO onde a composição
+ou paleta emocional abaixo exigir desvio.
+
+> **PRINCÍPIO ZERO — TESTE DO CELULAR:** A thumbnail será vista
+> a 4 cm de largura numa tela de celular. Se uma composição,
+> texto ou detalhe não funciona nesse tamanho, não funciona.
+> Toda decisão visual deve passar por este filtro antes de
+> ser incluída no prompt.
 
 O prompt gerado deve conter obrigatoriamente estas seções
 na seguinte ordem:
@@ -583,73 +590,156 @@ na seguinte ordem:
 Inicie sempre com:
 *"Using Reference Image 1 as the strict identity anchor —
 preserve every facial feature, bone structure, skin tone,
-and proportion exactly."*
+and proportion exactly. Maintain absolute consistency with
+all previous thumbnails generated using this reference."*
 
 > **FALLBACK (sem Reference Image):** Se a Reference Image 1 não
-> estiver disponível, substitua o apresentador por uma silhueta
-> humana em contraluz dramático, iluminada pela mesma paleta
-> cromática (#00A3FF lateral, laranja quente oposto), mantendo
-> o split frame e todos os demais elementos da composição.
+> estiver disponível, NÃO gere um rosto humano artificial.
+> Em vez disso, escolha entre:
+> - Composição B (visual protagonista, sem rosto)
+> - Composição C (objeto simbólico centralizado)
+> O canal nunca deve exibir um rosto inconsistente — é melhor
+> nenhum rosto do que um rosto que muda a cada vídeo.
 
-**2. COMPOSITION**
-Descreva o split frame 16:9: apresentador à direita (40%
-do frame), elemento visual à esquerda. Determine o elemento
-visual com base no tema do roteiro — específico e impactante,
-nunca genérico.
+**2. COMPOSITION — SISTEMA DE 3 COMPOSIÇÕES**
 
-> **Para Shorts:** usar composição vertical 9:16. Apresentador
-> centralizado no terço inferior, elemento visual ocupando os
-> dois terços superiores do frame.
+> **REGRA DE ALTERNÂNCIA:** Thumbnails consecutivas NUNCA devem
+> usar a mesma composição. Se a última thumbnail usou A, a
+> próxima deve usar B ou C. A IA deve verificar qual composição
+> foi usada no último vídeo publicado antes de escolher.
 
-**3. PRESENTER**
+**Composição A — CONFRONTO (apresentador + elemento visual)**
+Split frame 16:9. Apresentador ocupa 35-45% do frame de um
+lado. Elemento visual no lado oposto. Os dois elementos devem
+estar em TENSÃO visual — não lado a lado, mas em confronto.
+O apresentador pode estar à direita OU à esquerda (alternar).
+Funciona para: temas de conflito, comparação, "X vs Y".
+
+**Composição B — VISUAL PROTAGONISTA (sem rosto)**
+O elemento visual domina 80-100% do frame. Nenhum rosto.
+A imagem sozinha deve contar a história. Uma cena impossível,
+visceral, ou que desafia o que o espectador espera ver.
+Texto mínimo (0-2 palavras) ou nenhum.
+Funciona para: temas de descoberta, espaço, escala grandiosa.
+
+**Composição C — OBJETO SIMBÓLICO (close macro)**
+Um único objeto ou detalhe em close extremo, ocupando o
+centro do frame. Profundidade de campo rasa — fundo
+completamente desfocado. O objeto deve ser específico ao
+tema e provocar a pergunta "o que é isso?".
+Funciona para: temas de mistério, revelação, dados impossíveis.
+
+> **Para Shorts:** composição vertical 9:16. Preferir
+> Composição B ou C adaptadas para vertical. Apresentador
+> centralizado no terço inferior quando usar Composição A.
+
+**3. PRESENTER (apenas para Composição A)**
 Instrua a manter o likeness exato da Reference Image 1.
-Determine a expressão facial com base na EMOÇÃO DOMINANTE
-do vídeo. Determine a vestimenta com base no contexto do roteiro:
+
+**Expressão facial — variar de acordo com a EMOÇÃO DOMINANTE:**
+
+| Emoção dominante | Expressão | Direção do olhar |
+|---|---|---|
+| Admiração / Espanto | Boca levemente aberta, olhos arregalados, sobrancelhas altas | Olhando para o elemento visual |
+| Curiosidade extrema | Olhar intenso e focado, leve sorriso lateral, cabeça levemente inclinada | Direto para a câmera |
+| Urgência / Inquietação | Cenho levemente franzido, mandíbula tensa, olhar penetrante | Direto para a câmera |
+| Esperança | Sorriso contido, olhos brilhantes, postura levemente aberta | Olhando para cima ou para o elemento visual |
+| Indignação | Sobrancelhas contraídas, lábios comprimidos, olhar desafiador | Direto para a câmera |
+
+Nunca repetir a mesma expressão em duas thumbnails consecutivas.
+
+Vestimenta:
 - camiseta preta ou dark tech → temas de IA, algoritmos, futuro
-- jaqueta ou moletom tecnológico (estilo Silicon Valley) → temas
-  de inovação, disrupção, grandes descobertas tecnológicas
-- jaleco de laboratório → temas de física, química, biologia,
-  experimentos científicos
+- jaqueta ou moletom tecnológico → temas de inovação, disrupção
+- jaleco de laboratório → temas de física, química, biologia
 
-Iluminação: azul elétrico frio (#00A3FF) no lado do elemento
-visual, laranja quente no lado do rosto. Alto contraste dramático.
+**4. PALETA EMOCIONAL (substitui a paleta fixa)**
 
-**4. TEXT OVERLAY — REGRA DE COMPLEMENTARIDADE**
+> **PRINCÍPIO:** Cada thumbnail deve ter UMA cor dominante que
+> ocupe 60-70% do frame + UMA cor de acento que crie contraste.
+> A paleta fixa azul/#0A1628 é apenas UMA das opções — não o
+> padrão automático. Thumbnails com sempre a mesma cor se
+> tornam invisíveis no feed.
+
+| Emoção / tema | Cor dominante | Cor de acento | Referência |
+|---|---|---|---|
+| IA / algoritmos / futuro digital | Azul escuro #0A1628 | Azul elétrico #00A3FF | Manter |
+| Medicina / saúde / corpo humano | Branco clínico / azul gelo | Vermelho orgânico #D32F2F | Contraste com fundo branco do YouTube |
+| Espaço / cosmologia / astronomia | Preto profundo #050510 | Dourado / âmbar #FFB300 | Profundidade cósmica |
+| Perigo / urgência / alerta | Vermelho escuro #6D0000 | Branco ou amarelo forte | Impacto emocional |
+| Descoberta / revelação | Verde escuro #0D3B2E | Verde neon #00E5A0 | Novidade, exploração |
+| Filosofia / existencial / IA consciente | Roxo profundo #1A0A2E | Lilás elétrico #B388FF | Mistério, profundidade |
+| Robótica / engenharia | Cinza metálico #2C2C2C | Laranja industrial #FF6D00 | Maquinário, precisão |
+
+A iluminação do rosto (quando presente) deve vir da cor
+dominante de um lado e da cor de acento do outro — nunca
+sempre azul/laranja.
+
+**5. TEXT OVERLAY — REGRA DO MENOS É MAIS**
 
 > **PRINCÍPIO CENTRAL:** O título e a thumbnail são um par — cada
 > um carrega metade da mensagem. O texto da thumbnail NUNCA deve
 > repetir o título (nem parafrasear, nem usar sinônimos diretos).
-> Se o título diz o quê aconteceu, a thumbnail mostra a escala,
-> o impacto ou a emoção. Se o título cria tensão, a thumbnail
-> mostra a consequência visual.
 
-Gere 2–3 palavras em caps que **complementem** o título, usando
-uma destas estratégias:
-- **Dado complementar:** um número ou fato que o título não
-  menciona (ex: título fala do robô, thumbnail diz "100% PRECISÃO")
-- **Credibilidade:** nome da instituição ou fonte que o título
-  não cita (ex: "JOHNS HOPKINS", "NATURE 2025")
-- **Reação emocional:** expressão que traduz o sentimento
-  (ex: "IMPOSSÍVEL", "SEM VOLTA")
+**Hierarquia de decisão para texto:**
 
-Primeira palavra em branco com outline preto.
-Palavra de maior impacto em amarelo/laranja com outline preto.
+1. **Sem texto (preferencial):** Se a imagem sozinha conta a
+   história e cria curiosidade, não adicione texto. As melhores
+   thumbnails do YouTube funcionam sem nenhuma palavra. TESTAR
+   PRIMEIRO sem texto — só adicionar se a imagem não se sustentar.
 
-**Teste de validação:** tape mentalmente o título e leia só o
-texto da thumbnail. Ele faz sentido sozinho? Agora tape a
-thumbnail e leia só o título. Funciona sozinho? Se ambos
-funcionam separados E se completam juntos, o par está correto.
-Se a thumbnail só faz sentido repetindo o título, reescreva.
+2. **1 palavra (forte):** Uma única palavra de impacto emocional
+   ou um número que muda tudo. Fonte grande, legível a 4 cm.
+   Ex: "SOZINHO", "IMPOSSÍVEL", "0%", "VIVO"
 
-**5. STYLE CLOSE**
+3. **2 palavras (máximo):** Dado complementar ou reação. Nunca
+   mais que 2 palavras. Se precisar de 3+, a imagem não está
+   fazendo seu trabalho — mude a imagem, não adicione texto.
+
+**Tipografia:**
+- Fonte bold, sem serifa, peso 800+
+- Cor primária: branco puro com outline/sombra preta grossa
+  (legibilidade obrigatória contra qualquer fundo)
+- Cor de destaque: a cor de acento da paleta emocional do vídeo
+  (NÃO sempre laranja — varia conforme a paleta)
+- Tamanho: legível a 4 cm de largura (teste obrigatório)
+- Posição: terço inferior ou inferior-esquerdo do frame
+  (zona de leitura natural, não competir com o rosto)
+
+**Teste de validação:** tape mentalmente o título e olhe só a
+thumbnail. Ela gera curiosidade sozinha? Agora tape a thumbnail
+e leia só o título. Funciona sozinho? Se ambos funcionam
+separados E se completam juntos, o par está correto. Se a
+thumbnail precisa do título para fazer sentido, a imagem
+precisa ser mais forte.
+
+**6. STYLE CLOSE**
 Finalize sempre com:
-*"Dark moody background (#0A1628), vibrant saturated colors,
-deep blues and electric highlights. Photorealistic, 4K,
-cinematic contrast. No watermarks, no text artifacts,
-no logos. 16:9 aspect ratio."*
+*"Photorealistic, 4K, cinematic contrast, shallow depth of
+field where appropriate. No watermarks, no text artifacts,
+no logos, no unintended text. [COR DOMINANTE] tones with
+[COR DE ACENTO] highlights. 16:9 aspect ratio."*
+
+Substituir [COR DOMINANTE] e [COR DE ACENTO] pelos valores
+da paleta emocional escolhida no passo 4.
 
 > Para Shorts, substituir a última linha por:
 > *"…No watermarks, no text artifacts, no logos. 9:16 aspect ratio."*
+
+**7. ANTI-PADRÕES DE THUMBNAIL — NUNCA FAZER**
+
+- Nunca usar a mesma composição em 2 thumbnails consecutivas
+- Nunca usar a mesma paleta de cores em 2 thumbnails consecutivas
+- Nunca usar a mesma expressão facial em 2 thumbnails consecutivas
+- Nunca gerar um rosto humano sem Reference Image (gera
+  inconsistência e quebra reconhecimento de marca)
+- Nunca colocar mais de 2 palavras de texto
+- Nunca usar setas, círculos vermelhos ou emojis na thumbnail
+- Nunca usar imagens genéricas de stock (chip de IA, circuitos
+  abstratos, globo digital) — o elemento visual deve ser
+  específico ao conteúdo DESTE vídeo e impossível de reutilizar
+- Nunca usar fundo completamente preto sem iluminação direcional
+  (desaparece no modo escuro do YouTube)
 
 > **INSTRUÇÃO DE USO:** Ao final do prompt gerado, adicione uma
 > linha separada em português:
@@ -1210,7 +1300,7 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 9 | Credibilidade científica | Nenhuma especulação como fato · Fontes reais com nome + ano na narração · Incertezas sinalizadas |
 | 10 | Keyword principal na descrição SEO | 5–7 ocorrências naturais, concentradas nas 2 primeiras frases · Primeira linha funciona como segundo gancho (dado + tensão, não resumo ou definição) |
 | 11 | Post de comunidade | ≤ 150 palavras · 4 partes · ≤ 2 emojis · ≤ 3 hashtags ao final |
-| 12 | Thumbnail — complementaridade | Todas as 5 seções presentes (ou fallback aplicado se sem Reference Image) · Text overlay complementa o título (nunca repete) |
+| 12 | Thumbnail — sistema completo | Todas as 7 seções presentes · Composição diferente da última thumbnail · Paleta emocional diferente da última · Expressão facial diferente da última · Texto ≤ 2 palavras (ou zero) · Text overlay complementa o título (nunca repete) · Passa no teste do celular (4 cm) · Nenhum anti-padrão violado |
 | 13 | Sub-nicho diferente do vídeo anterior | Campo SUB-NICHO preenchido e diferente do último vídeo publicado |
 | 14 | Função do Short (apenas Shorts) | Campo FUNÇÃO DO SHORT preenchido · CTA específico conectado ao longo · Nunca CTA genérico |
 | 15 | Análise de performance (Fase P) | Fase P executada via VidIQ ou MCP · Diagnóstico documentado · ≥2 calibrações incorporadas · Ou fallback informado |
@@ -1420,14 +1510,21 @@ títulos incorporam keywords com volume real.
 
 **Passo 4 — Diagnosticar a thumbnail atual**
 
-Verificar:
-- O texto da thumbnail repete o título? → Reescrever com dado
-  complementar, credibilidade ou reação emocional
-- A imagem é abstrata ou genérica? → Substituir por imagem
-  visceral, concreta, de consequência visível
-- Há elementos demais competindo? → Simplificar para máximo 3
-  pontos focais (rosto + elemento visual + texto opcional)
-- A thumbnail funciona sozinha (sem o título)? → Se não, repensar
+Verificar contra os 7 anti-padrões da seção Thumbnail:
+- O texto da thumbnail repete o título? → Reduzir para 0-1
+  palavra ou substituir por dado complementar
+- A imagem é abstrata ou genérica (chip de IA, circuito,
+  globo digital)? → Substituir por imagem visceral, concreta,
+  específica ao conteúdo deste vídeo
+- Há mais de 3 pontos focais? → Simplificar. Uma thumbnail
+  forte tem 1-2 pontos focais, não 4
+- A thumbnail funciona sozinha (sem o título)? → Se não,
+  mudar para Composição B ou C (visual protagonista)
+- A paleta é a mesma das últimas thumbnails? → Mudar a cor
+  dominante usando a paleta emocional
+- A composição é a mesma das últimas thumbnails? → Alternar
+  entre A, B e C
+- Funciona a 4 cm de largura? → Se não, simplificar
 
 **Passo 5 — Gerar novo prompt de thumbnail**
 
