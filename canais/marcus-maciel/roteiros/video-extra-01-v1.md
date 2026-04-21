@@ -199,19 +199,36 @@ Você confiaria em alguém que admite não conseguir mudar — enquanto controla
 
 ### Hashtags para Descrição
 
-#SamAltman #OpenAI #InteligênciaArtificial #ChatGPT #IA #Tecnologia #FuturoDaHumanidade #IAeSociedade #Ciência #ÉticaIA
+#SamAltman #OpenAI #InteligênciaArtificial #ChatGPT
 
 ---
 
 ### Tags do Vídeo
 
-sam altman, openai, chatgpt, sam altman interview, artificial intelligence, openai ceo, Sam Altman New Yorker, OpenAI investigation, Sam Altman fired, AI safety, inteligência artificial, futuro da humanidade, ciência e tecnologia, IA e sociedade, Sam Altman investigation, OpenAI trust, Ronan Farrow Sam Altman, AI ethics, sam altman new yorker 2026, sam altman openai confiança
+sam altman, openai, chatgpt, sam altman interview, sam altman fired, openai ceo, ronan farrow, artificial intelligence, ai safety, ai ethics, inteligência artificial, new yorker
+
+| Tag | Volume | Competition | Overall |
+|---|---|---|---|
+| sam altman | 413k/mês | 67.0 | 63.5 |
+| openai | 572k/mês | 66.0 | 65.2 |
+| chatgpt | 1.06M/mês | 64.0 | 68.4 |
+| sam altman interview | 98k/mês | 51.0 | 64.3 |
+| sam altman fired | 7.794/mês | 41.3 | 58.3 |
+| openai ceo | 8.454/mês | 60.5 | 51.0 |
+| ronan farrow | 43k/mês | 55.5 | 59.3 |
+| artificial intelligence | 438k/mês | 54.5 | 68.7 |
+| ai safety | 27k/mês | 61.0 | 55.2 |
+| ai ethics | 13k/mês | 42.6 | 59.8 |
+| inteligência artificial | 188k/mês | 58.5 | 63.8 |
+| new yorker | 16k/mês | 73.0 | 48.6 |
 
 ---
 
 ### Descrição Completa para SEO
 
-Sam Altman é o CEO da OpenAI e o homem que colocou a inteligência artificial nas mãos de centenas de milhões de pessoas. Uma investigação do New Yorker sobre Sam Altman, conduzida por Ronan Farrow e Andrew Marantz ao longo de dezoito meses, revelou um padrão de comportamento documentado por mais de cem fontes independentes em vinte anos de carreira. Neste vídeo, analiso como a reportagem rastreou a trajetória de Sam Altman desde a startup Loopt até a presidência da Y Combinator e a fundação da OpenAI, expondo como colegas de diferentes épocas e organizações descreveram sua relação com a verdade como irrestrita. O artigo detalha a demissão de Sam Altman pelo conselho da OpenAI em novembro de 2023, quando a ex-membro Helen Toner declarou publicamente que o conselho não conseguia confiar nas informações fornecidas pelo CEO da empresa. A investigação documenta ainda a saída de pesquisadores de segurança como Dario Amodei, Ilya Sutskever e Jan Leike, cujas demissões em cadeia sinalizam uma erosão profunda das salvaguardas na empresa de inteligência artificial mais avançada do mundo. O vídeo explora também a confissão de Sam Altman ao SF Standard e um paralelo inédito entre o comportamento documentado do criador e as alucinações e sycophancy do ChatGPT. Se você quer entender quem realmente controla o futuro da inteligência artificial e o que isso significa para todos nós, inscreva-se no canal Marcus Maciel para análises semanais sobre o impacto da IA na ciência e no futuro da humanidade.
+Cem pessoas contaram ao New Yorker quem Sam Altman realmente é. A investigação de Ronan Farrow e Andrew Marantz levou dezoito meses e revelou um padrão de comportamento documentado por fontes independentes ao longo de vinte anos. Neste vídeo, analiso como a reportagem rastreia Sam Altman desde a Loopt até a demissão pelo conselho da OpenAI em 2023, a saída de pesquisadores de segurança como Dario Amodei e Ilya Sutskever, e um paralelo entre o comportamento do CEO e as alucinações do ChatGPT. Se quem controla a inteligência artificial mais poderosa do mundo importa para você, inscreva-se no canal.
+
+Imagens ilustrativas geradas por inteligência artificial.
 
 ---
 
@@ -336,7 +353,7 @@ E no próximo vídeo, a história vai mais fundo. [pausa] Existe uma corrida aco
 
 | # | Verificação | Status |
 |---|---|---|
-| 1 | Metadados completos: 10 títulos + Top 3 CTR + thumbnail + post comunidade + hashtags + tags + descrição SEO + fontes | ✅ |
+| 1 | Metadados completos: 10 títulos + Top 3 CTR + thumbnail + post comunidade + 4 hashtags + 12 tags (todas com volume > 0, tabela com dados) + descrição SEO (600–800 chars) + fontes | ✅ |
 | 2 | Títulos validados: ≤60 chars, ≤10 palavras, zero jargão, 1-2 CAPS cirúrgicos, tom conversacional, premissa (não resultado). Top 3 justificados por fórmula e keyword research | ✅ |
 | 3 | Contagem de palavras (narração): 1.700–2.200 palavras | ✅ ~1.798 palavras |
 | 4 | Todas as seções do roteiro presentes: Hook + Contexto + Desenvolvimento (4 blocos) + CTA Final | ✅ |
@@ -345,7 +362,7 @@ E no próximo vídeo, a história vai mais fundo. [pausa] Existe uma corrida aco
 | 7 | Camada Visual Permanente aplicada: estilo, paleta (#0A1628, #00A3FF, #00E5A0) e atmosfera em todos os VISUALs e thumbnail | ✅ |
 | 8 | Loops de retenção: (1) bridge B1→B2 com tensão sobre padrão pré-OpenAI ~350p, (2) citação da Y Combinator + editorial ~630p, (3) CTA comentário antes do paralelo criador↔criação ~1.000p, (4) pergunta "quem vigia?" abrindo B4 ~1.400p | ✅ 4 mecanismos |
 | 9 | Credibilidade científica: fontes reais com nome + ano na narração (New Yorker 2026, Helen Toner 2024, Jan Leike 2024, Anthropic 2021). Incerteza sinalizada no paralelo criador↔criação ("não sei se a engenharia permite traçar essa linha direta") | ✅ |
-| 10 | Keyword principal na descrição SEO: "sam altman" 5x, primeiras 2 ocorrências nas 2 primeiras frases. "openai" 3x. "inteligência artificial" 4x | ✅ |
+| 10 | Descrição SEO: 600–800 chars · 3 zonas · "sam altman" 3x + "openai" 2x + "inteligência artificial" 1x · Primeira linha = dado + tensão · 4 hashtags | ✅ |
 | 11 | Post de comunidade: ~85 palavras, 4 partes, 1 emoji, 3 hashtags ao final | ✅ |
 | 12 | Thumbnail — sistema v2: Composição A (Confronto) · Paleta Vermelho/Branco (diferente da anterior Preto/Dourado) · Expressão: Indignação (diferente da anterior) · Zero texto · Passa no teste do celular (4cm) — silhueta + fachada rachando visíveis em miniatura · Nenhum anti-padrão violado | ✅ |
 | 13 | Sub-nicho diferente do vídeo anterior: IA + Poder/Ética ≠ IA + Espaço/Astronomia | ✅ |

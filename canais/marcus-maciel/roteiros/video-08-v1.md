@@ -192,19 +192,36 @@ Você confiaria numa descoberta científica feita inteiramente por IA — sem ne
 
 ### Hashtags para Descrição
 
-#InteligênciaArtificial #JamesWebb #JWST #Astronomia #Ciência #FuturoDaHumanidade #IA #Tecnologia #ExploraçãoEspacial #DescobertasCientíficas
+#JamesWebb #InteligênciaArtificial #Astronomia #Ciência
 
 ---
 
 ### Tags do Vídeo
 
-james webb, james webb space telescope, ASTERIS inteligência artificial, galáxias primitivas universo, JADES james webb survey, james webb telescope, JWST, NASA, astronomia, galáxias universo primitivo, inteligência artificial, ciência e tecnologia, futuro da humanidade, descobertas científicas, james webb discoveries 2026, AI astronomy, JWST deep field galaxies, artificial intelligence space exploration, IA astronomia galáxias invisíveis, telescópio james webb IA 2026
+james webb, james webb space telescope, JWST, NASA, astronomia, inteligência artificial, space documentary, astrophysics, artificial intelligence, science and technology, futuro da humanidade, ciência e tecnologia
+
+| Tag | Volume | Competition | Overall |
+|---|---|---|---|
+| james webb | 236k/mês | 66.0 | 61.7 |
+| james webb space telescope | 148k/mês | 57.0 | 63.5 |
+| JWST | 45k/mês | 52.5 | 60.7 |
+| NASA | 19.8M/mês | 69.0 | 72.4 |
+| astronomia | 323k/mês | 57.0 | 66.5 |
+| inteligência artificial | 188k/mês | 58.5 | 63.8 |
+| space documentary | 461k/mês | 45.6 | 72.5 |
+| astrophysics | 103k/mês | 58.5 | 61.5 |
+| artificial intelligence | 438k/mês | 54.5 | 68.7 |
+| science and technology | 93k/mês | 28.6 | 73.1 |
+| futuro da humanidade | 7.302/mês | 34.0 | 61.0 |
+| ciência e tecnologia | 9.062/mês | 55.6 | 53.2 |
 
 ---
 
 ### Descrição Completa para SEO
 
-O James Webb capturou as imagens mais profundas do universo primitivo, mas uma inteligência artificial chamada ASTERIS revelou que dois terços das galáxias estavam invisíveis nos dados do James Webb. Neste vídeo, mostro como essa rede neural analisou as mesmas imagens do James Webb que os melhores astrônomos do mundo já tinham estudado e encontrou 162 candidatas a galáxias dos primeiros 500 milhões de anos do universo, triplicando o que a ciência conhecia. O estudo, publicado em março de 2026 pelo American Institute of Physics, demonstrou que ASTERIS detecta objetos até 2,5 vezes mais fracos que o limite humano nos dados do James Webb, reduzindo o tempo de análise de 36 horas para menos de duas. As observações vêm do JADES, o James Webb Advanced Deep Survey, que investiga a Aurora Cósmica, quando as primeiras galáxias se acenderam. Com inteligência artificial aplicada à astronomia, o James Webb funciona como se tivesse um espelho maior sem modificação física. O vídeo aborda como a NASA usou IA nos dados do James Webb para descobrir uma nova lua de Urano em 2025 e o que isso significa para o censo galáctico do universo. Se o universo primitivo escondia três vezes mais galáxias, o mapa do cosmos precisa ser redesenhado. Acompanhe o canal Marcus Maciel para análises semanais sobre inteligência artificial, ciência e futuro da humanidade. Inscreva-se e ative as notificações para não perder os próximos vídeos sobre IA, astronomia e exploração espacial.
+Cento e sessenta e duas galáxias estavam escondidas nos dados do James Webb. Nenhum astrônomo no mundo conseguiu enxergá-las. Uma inteligência artificial chamada ASTERIS encontrou todas em menos de duas horas. O estudo, publicado em março de 2026, mostrou que a rede neural detecta objetos 2,5 vezes mais fracos que o limite humano nos dados do JWST, triplicando o catálogo de galáxias dos primeiros 500 milhões de anos do universo. Neste vídeo, mostro como essa inteligência artificial funciona, o que a NASA já fez com IA nos dados do James Webb e por que o mapa do cosmos precisa ser redesenhado. Inscreva-se para análises semanais sobre inteligência artificial, ciência e futuro da humanidade.
+
+Imagens ilustrativas geradas por inteligência artificial.
 
 ---
 
@@ -326,7 +343,7 @@ E no próximo vídeo, a história é muito mais próxima do nosso dia a dia. [pa
 
 | # | Verificação | Status |
 |---|---|---|
-| 1 | Metadados completos: 10 títulos + Top 3 CTR + thumbnail + post comunidade + hashtags + tags + descrição SEO + fontes | ✅ |
+| 1 | Metadados completos: 10 títulos + Top 3 CTR + thumbnail + post comunidade + 4 hashtags + 12 tags (todas com volume > 0, tabela com dados) + descrição SEO (600–800 chars) + fontes | ✅ |
 | 2 | Títulos validados: ≤60 chars, ≤10 palavras, zero jargão, 1-2 CAPS cirúrgicos, tom conversacional, premissa (não resultado). Top 3 justificados por fórmula e keyword research | ✅ |
 | 3 | Contagem de palavras (narração): 1.700–2.200 palavras | ✅ ~1.774 palavras |
 | 4 | Todas as seções do roteiro presentes: Hook + Contexto + Desenvolvimento (4 blocos) + Loops + CTA Final | ✅ |
@@ -335,7 +352,7 @@ E no próximo vídeo, a história é muito mais próxima do nosso dia a dia. [pa
 | 7 | Camada Visual Permanente aplicada: estilo, paleta (#0A1628, #00A3FF, #00E5A0) e atmosfera em todos os VISUALs e thumbnail | ✅ |
 | 8 | Loops de retenção: ao menos 1 a cada 250-400 palavras | ✅ 4 loops + 1 CTA comentário |
 | 9 | Credibilidade científica: fontes reais com nome + ano, incertezas sinalizadas ("candidatas, não confirmações"), sem especulação como fato | ✅ |
-| 10 | Keyword principal na descrição SEO: "james webb" 7x, concentradas nas primeiras frases | ✅ |
+| 10 | Descrição SEO: 600–800 chars · 3 zonas · "james webb" 3x + "inteligência artificial" 2x · Primeira linha = dado + tensão · 4 hashtags | ✅ |
 | 11 | Post de comunidade: ≤150 palavras, 4 partes, 1 emoji, 3 hashtags ao final | ✅ ~90 palavras |
 | 12 | Thumbnail — sistema v2: Composição B (Visual Protagonista, sem rosto) · Paleta Preto/Dourado (diferente da anterior Cinza/Laranja) · Zero texto · Passa no teste do celular (4cm) — galáxias douradas visíveis em miniatura · Nenhum anti-padrão violado | ✅ |
 | 13 | Sub-nicho diferente do vídeo anterior: IA + Espaço/Astronomia ≠ IA + Robótica | ✅ |

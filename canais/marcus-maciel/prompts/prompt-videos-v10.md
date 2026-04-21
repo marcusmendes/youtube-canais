@@ -919,23 +919,30 @@ Exemplos do padrão:
 
 ---
 
-**Hashtags para descrição:** liste de 8 a 12 hashtags relevantes
-ao tema. Use os dados da pesquisa competitiva de tags (acima)
-para identificar quais hashtags os top performers estão usando
-nas descrições. Comece pelas mais amplas e afunile para as
-específicas.
-> Exemplo: #InteligênciaArtificial #Ciência #FuturoDaHumanidade
-> #JamesWebb #JWST #IA #Astronomia #Tecnologia
+**Hashtags para descrição:** liste **3 a 5 hashtags** relevantes
+ao tema. O YouTube exibe no máximo 3 acima do título (se
+colocadas no final da descrição). Mais que 5 dilui a relevância
+e parece spam.
+- Use apenas hashtags que tenham volume de busca real ou sejam
+  usadas pelos top performers da Fase 0.
+- Misture 1-2 amplas (#IA, #Ciência) com 1-2 específicas do
+  tema (#JamesWebb, #Neuralink).
+> Exemplo: #InteligênciaArtificial #Ciência #JamesWebb
 
 **Tags do vídeo (pesquisa com dados reais):**
+
+> **PRINCÍPIO: QUALIDADE > QUANTIDADE.** Toda tag DEVE ter volume
+> de busca comprovado. Tag com volume zero é peso morto — não
+> ajuda no rankeamento e dilui a relevância das tags boas.
+> Menos tags com volume real > muitas tags sem busca.
 
 **Processo com VidIQ (preferencial):**
 
 **Passo 1 — Keyword research do tema:**
 Use `vidiq_keyword_research` com `includeRelated: true` para as
 2-3 keywords principais do tema (em PT-BR e EN). Exemplo: se o
-tema é "Sam Altman OpenAI", rodar para "Sam Altman", "OpenAI
-confiança", "Sam Altman trust".
+tema é "Sam Altman OpenAI", rodar para "Sam Altman", "OpenAI",
+"Sam Altman interview".
 
 Cada chamada retorna: volume, competition, overall score,
 estimatedMonthlySearch, growthPercentage e keywords relacionadas
@@ -947,63 +954,96 @@ Os vídeos da Fase 0 (se usou `vidiq_outliers` ou
 todas as tags. Se usou MCP YouTube, usar `videos_getVideo` para
 extrair o campo `tags`.
 
-**Passo 3 — Cruzar keywords + tags + dados de volume:**
+**Passo 3 — Filtrar por volume REAL:**
+
+> **REGRA DE CORTE:** Nenhuma tag com `volume` = 0 e
+> `estimatedMonthlySearch` = 0 entra na lista final.
+> Se uma tag long-tail em português tem volume zero, substituir
+> pelo equivalente em inglês (que quase sempre tem volume).
+> Se o equivalente em inglês também tem volume zero, descartar.
+
 Priorizar:
-- Keywords com **volume alto + competition baixa** (overall > 60)
-- Tags que aparecem em 2+ vídeos concorrentes (validação
-  algorítmica)
+- Keywords com **overall > 50** (equilíbrio volume/competição)
+- Tags que aparecem em 2+ vídeos concorrentes E têm volume > 0
 - Keywords com `growthPercentage` positivo (tendência de alta)
+- Termos em inglês com alto volume como equivalentes dos
+  termos em português que têm volume zero
 
 **Passo 4 — Montar a lista final:**
-Gere 15 a 20 tags combinando:
-- ~6 tags validadas por keyword research (volume real)
-- ~4 tags recorrentes dos concorrentes
-- ~4 tags do canal (keywords da seção AUTORIDADE E SEO)
-- ~4 tags em inglês para alcance internacional
-- ~2 tags long-tail específicas do tema
+Gere **8 a 12 tags** (não mais), todas com volume comprovado:
+- ~4 tags de alto volume validadas por keyword research
+  (priorizar overall > 60)
+- ~3 tags recorrentes dos concorrentes com volume > 0
+- ~3 tags em inglês de alto volume para alcance internacional
+- ~2 tags do canal (apenas as que têm volume: "inteligência
+  artificial", "ciência e tecnologia", "IA")
+
+**NÃO incluir:**
+- Tags long-tail em português com volume zero (ex: "cirurgia
+  assistida por IA", "tecnologia médica brasil")
+- Tags compostas que ninguém busca (ex: "machine learning
+  medicina", "Johns Hopkins robô cirurgia")
+- Tags do canal que não são buscadas (ex: "impacto da IA no
+  mundo", "revolução tecnológica")
 
 Separe por vírgula. Ordem: do mais específico ao mais amplo.
 
+Ao final, liste as tags em formato de tabela com os dados:
+
+| Tag | Volume | Competition | Overall |
+|---|---|---|---|
+| [tag] | [volume] | [competition] | [overall] |
+
 **Processo sem VidIQ (fallback):**
 Usar `videos_getVideo` do MCP YouTube para extrair tags dos
-concorrentes. Cruzar por recorrência. Gerar tags manualmente
-misturando termos em PT-BR e EN.
+concorrentes. Cruzar por recorrência. Priorizar tags em inglês
+(maior probabilidade de volume real). Gerar no máximo 10 tags.
 
 **Descrição completa para SEO:**
+
+> **PRINCÍPIO: CONCISA E ESTRATÉGICA.** A descrição tem 3 zonas
+> de peso SEO decrescente. Concentrar a densidade de keywords nas
+> primeiras 2 linhas. O YouTube lê tudo, mas o espectador lê pouco.
+
 - Identifique a palavra-chave principal com maior volume de busca
   para este tema. Se `vidiq_keyword_research` foi usada na etapa de
   tags, a keyword com maior `volume` e `overall` score é a principal.
   Se VidIQ não estiver disponível, usar a tag mais recorrente entre
   os top performers como referência.
-- Escreva uma descrição em texto corrido com exatamente 1500
-  caracteres.
 
-**Primeira linha como segundo gancho:**
-A primeira linha da descrição é visível no feed do YouTube (abaixo
-do título, antes do clique). Ela funciona como extensão do pacote
-título+thumbnail. Deve ser uma frase curta e provocativa que
-reforce a curiosidade — nunca um resumo do vídeo.
-Padrão desejado: dado concreto + tensão não resolvida.
+**Estrutura obrigatória (3 zonas):**
+
+**ZONA 1 — Gancho + keyword (primeiros 200 caracteres):**
+Visível no feed do YouTube antes do clique. Funciona como
+extensão do pacote título+thumbnail.
+- Frase 1: dado concreto + tensão não resolvida (gancho).
+- Frase 2: contextualiza e insere a keyword principal.
+- A keyword principal DEVE aparecer nas 2 primeiras frases.
 > Ex: "Em julho de 2025, cirurgiões da Johns Hopkins ficaram
-> assistindo enquanto um robô operava sozinho. O que aconteceu
-> depois mudou tudo."
+> assistindo enquanto um robô operava sozinho. A cirurgia
+> robótica com inteligência artificial deixou de ser ficção."
 Anti-padrão: abrir com definição genérica ("A cirurgia robótica
 com inteligência artificial já é realidade.") ou descrição do
 canal ("Neste vídeo, você vai entender...").
 
-- A palavra-chave principal deve aparecer entre 5 e 7 vezes de
-  forma natural ao longo do texto, concentrando as primeiras
-  ocorrências nas 2 primeiras frases da descrição (zona de maior
-  peso para SEO do YouTube).
-- Cada palavra-chave secundária deve aparecer ao menos 2 vezes.
-- Sem listas, sem negritos, sem emojis — texto corrido natural.
-- O texto não pode parecer gerado por IA.
-- Nos últimos 500 caracteres, inclua um convite natural para
-  assistir a mais vídeos do canal e se inscrever.
+**ZONA 2 — Corpo (200 a 600 caracteres):**
+Texto corrido que desenvolve o tema e adiciona keywords
+secundárias de forma natural.
+- Keyword principal: mais 1-2 ocorrências (total de 3-4 no
+  texto inteiro — nunca mais que 4).
+- Keywords secundárias: 1 ocorrência cada, sem forçar.
+- Tom editorial do canal, sem parecer gerado por IA.
+
+**ZONA 3 — Fechamento (últimos 200 caracteres):**
+- Convite natural para assistir outros vídeos e se inscrever.
+  Uma frase, não um parágrafo.
+
+**Tamanho total:** entre 600 e 800 caracteres (não mais).
+Sem listas, sem negritos, sem emojis — texto corrido natural.
 
 **Disclosure de conteúdo gerado por IA:**
 Após o convite de inscrição e antes das fontes, inclua sempre
-a seguinte linha na descrição:
+a seguinte linha, separada por uma linha em branco:
 *"Imagens ilustrativas geradas por inteligência artificial."*
 Essa linha é obrigatória em todos os vídeos que usem imagens
 geradas por IA como B-roll. Garante transparência e conformidade
@@ -1322,11 +1362,20 @@ Cada Short deve ter uma função clara no ciclo de conteúdo:
 ## AUTORIDADE E SEO
 
 - **Keywords recorrentes do canal** — tecer naturalmente em títulos,
-  descrições, tags e hashtags de todos os vídeos:
-  inteligência artificial, futuro da humanidade, ciência e tecnologia,
-  revolução tecnológica, IA e sociedade, aprendizado de máquina,
-  computação quântica, exploração espacial, descobertas científicas,
-  impacto da IA no mundo.
+  descrições, tags e hashtags de todos os vídeos.
+  Usar apenas keywords com volume de busca comprovado:
+
+  **PT-BR (todas com volume > 0):**
+  inteligência artificial (188k/mês), futuro da humanidade (7k),
+  ciência e tecnologia (9k), aprendizado de máquina (8k),
+  exploração espacial (6k), revolução tecnológica (4k).
+
+  **EN (alto volume, alcance internacional):**
+  artificial intelligence (438k/mês), science and technology (93k).
+
+  **NÃO usar como tags recorrentes (volume zero):**
+  ~~IA e sociedade~~, ~~impacto da IA no mundo~~,
+  ~~descobertas científicas~~.
 - Para diretrizes de fontes e credibilidade, seguir integralmente
   a seção CREDIBILIDADE CIENTÍFICA.
 
@@ -1407,7 +1456,7 @@ Fase P (Performance) antes de gerar o roteiro.]`
 
 | # | Verificação | Critério |
 |---|---|---|
-| 1 | Metadados completos | 10 títulos + Top 3 CTR + thumbnail + post comunidade + hashtags + tags + descrição SEO + fontes |
+| 1 | Metadados completos | 10 títulos + Top 3 CTR + thumbnail + post comunidade + 3–5 hashtags + 8–12 tags (todas com volume > 0, tabela com dados) + descrição SEO (600–800 chars) + fontes |
 | 2 | Títulos validados | Todos os 10: ≤ 60 caracteres · ≤ 10 palavras · zero jargão · 1-2 CAPS cirúrgicos · tom conversacional · premissa (não resultado) · nenhum caiu nas 6 armadilhas sem reframe aplicado. Top 3 validados por keyword research (VidIQ) ou justificados por fórmula se indisponível |
 | 3 | Contagem de palavras (narração) | Vídeo longo: 1.700–2.200 palavras · Short: ≤ 130 palavras |
 | 4 | Todas as seções do roteiro presentes | Hook + Contexto + Desenvolvimento (blocos) + Loops + CTA Final |
@@ -1416,7 +1465,7 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 7 | Camada Visual Permanente aplicada | Todos os VISUALs e thumbnail seguem estilo, paleta e atmosfera |
 | 8 | Loops de retenção | Ao menos 1 loop a cada 250–400 palavras (vídeos longos) · Nenhum em Shorts |
 | 9 | Credibilidade científica | Nenhuma especulação como fato · Fontes reais com nome + ano na narração · Incertezas sinalizadas |
-| 10 | Keyword principal na descrição SEO | 5–7 ocorrências naturais, concentradas nas 2 primeiras frases · Primeira linha funciona como segundo gancho (dado + tensão, não resumo ou definição) |
+| 10 | Descrição SEO | 600–800 caracteres · 3 zonas (gancho, corpo, fechamento) · Keyword principal 3–4x no total, concentrada nas 2 primeiras frases · Keywords secundárias 1x cada · Primeira linha = dado + tensão (nunca resumo ou definição) · 3–5 hashtags no final da descrição |
 | 11 | Post de comunidade | ≤ 150 palavras · 4 partes · ≤ 2 emojis · ≤ 3 hashtags ao final |
 | 12 | Thumbnail — sistema completo | Estética (Documental Sombria ou Ficção Científica) escolhida e coerente com o ângulo editorial · Estética alternada em relação à última thumbnail quando possível · Todas as 7 seções presentes · Composição diferente da última thumbnail · Paleta emocional diferente da última · Expressão facial diferente da última · Texto ≤ 2 palavras (ou zero) · Text overlay complementa o título (nunca repete) · Passa no teste do celular (4 cm) · Aspecto de pôster de cinema · Nenhum anti-padrão violado |
 | 13 | Sub-nicho diferente do vídeo anterior | Campo SUB-NICHO preenchido e diferente do último vídeo publicado |

@@ -74,19 +74,36 @@ Photorealistic, 4K, cinematic contrast, shallow depth of field. Metallic gray #2
 
 ### Hashtags para Descrição
 
-#InteligênciaArtificial #RobôsHumanoides #FuturoDaHumanidade #Tecnologia #Ciência #Robótica #Inovação #CasaInteligente #IA #FuturoAgora #AutomaçãoDoméstica #Humanoid
+#InteligênciaArtificial #RobôsHumanoides #Robótica #FuturoDaHumanidade
 
 ---
 
 ### Tags do Vídeo
 
-robôs humanoides em casa, robô doméstico inteligência artificial, Figure 03 robot, NEO 1X Technologies, Tesla Optimus casa, LG CLOiD robot, UniX AI Panther, humanoid robot home, robô que limpa e cozinha, IA robótica doméstica, futuro da automação doméstica, AI household robot 2026, revolução robótica, inteligência artificial futuro, robô que aprende sozinho, domestic humanoid robot, smart home robot AI, robôs e sociedade, automação residencial IA
+robôs humanoides, inteligência artificial, humanoid robot, tesla optimus, figure robot, neo humanoid robot, 1x neo robot, home robots, robótica, ciência e tecnologia, artificial intelligence, machine learning
+
+| Tag | Volume | Competition | Overall |
+|---|---|---|---|
+| robôs humanoides | 4.916/mês | 56.0 | 50.7 |
+| inteligência artificial | 188k/mês | 58.5 | 63.8 |
+| humanoid robot | 145k/mês | 52.4 | 65.3 |
+| tesla optimus | 118k/mês | 55.0 | 63.4 |
+| figure robot | 33k/mês | 51.0 | 60.1 |
+| neo humanoid robot | 4.463/mês | 41.1 | 56.2 |
+| 1x neo robot | 4.045/mês | 38.5 | 56.9 |
+| home robots | 6.449/mês | 51.5 | 53.5 |
+| robótica | 5.080/mês | 31.7 | 60.5 |
+| ciência e tecnologia | 9.062/mês | 55.6 | 53.2 |
+| artificial intelligence | 438k/mês | 54.5 | 68.7 |
+| machine learning | 349k/mês | 41.9 | 72.9 |
 
 ---
 
 ### Descrição Completa para SEO
 
-Robôs humanoides em casa já deixaram de ser promessa de ficção científica e se tornaram realidade em 2026. Este vídeo investiga como a inteligência artificial transformou robôs humanoides em assistentes domésticos capazes de executar tarefas complexas dentro de lares reais, sem nenhum tipo de cenário preparado ou programação manual. A corrida global pelos robôs humanoides domésticos envolve empresas como Figure AI, 1X Technologies, Tesla, LG e UniX AI, cada uma com abordagens distintas para colocar robôs humanoides funcionais dentro das nossas casas. O Goldman Sachs projeta que o mercado de robôs humanoides pode atingir 38 bilhões de dólares até 2035, e os avanços em modelos de visão-linguagem-ação permitem que esses robôs humanoides aprendam tarefas domésticas apenas observando demonstrações humanas. A revolução dos robôs humanoides não se limita à limpeza automática. Máquinas como o Panther, da UniX AI, já acordam moradores, preparam café da manhã e organizam objetos em residências reais. O Figure 03 utiliza o modelo Helix, uma inteligência artificial que controla o corpo inteiro do robô com uma única rede neural, permitindo que robôs humanoides dobrem roupas, carreguem lava-louças e naveguem por ambientes domésticos apertados. O NEO, da 1X Technologies, introduziu em janeiro de 2026 um modelo de mundo que permite ao robô aprender novas tarefas de forma autônoma a partir de dados de vídeo, sem exemplos prévios. Essa capacidade de aprendizado autônomo representa uma mudança de paradigma para os robôs humanoides domésticos. Mas a chegada dos robôs humanoides às casas levanta questões profundas sobre privacidade, dependência tecnológica e o impacto na forma como vivemos. Pesquisas publicadas em 2025 e 2026 identificam mais de sessenta aspectos éticos envolvendo robôs humanoides no cuidado de pessoas idosas, incluindo riscos de manipulação emocional e perda de autonomia. Neste vídeo, você vai entender exatamente como esses robôs humanoides funcionam por dentro, quais são os modelos mais avançados disponíveis e o que significa para o futuro da humanidade viver lado a lado com máquinas inteligentes. Se esse tipo de análise sobre inteligência artificial e o futuro da humanidade faz sentido para você, inscreva-se no canal Marcus Maciel e explore os outros vídeos — toda semana tem conteúdo novo sobre como a revolução tecnológica dos robôs humanoides está transformando a ciência, a sociedade e a forma como vivemos.
+Em abril de 2026, um robô humanóide acordou o morador, arrumou a cama e preparou o café da manhã numa casa real em Shenzhen, sem ninguém programar uma única linha de código. Os robôs humanoides deixaram de ser promessa e cinco empresas já disputam a sua cozinha. O Goldman Sachs projeta 38 bilhões de dólares para esse mercado até 2035, e os novos modelos de inteligência artificial permitem que robôs humanoides aprendam tarefas domésticas apenas observando demonstrações humanas. Neste vídeo, investigo como o Figure 03, o NEO da 1X Technologies, o Tesla Optimus e o Panther da UniX AI funcionam por dentro, o que cada um já consegue fazer e as questões éticas que ninguém está discutindo. Se inteligência artificial e o futuro da humanidade te interessam, inscreva-se e ative as notificações.
+
+Imagens ilustrativas geradas por inteligência artificial.
 
 ---
 
