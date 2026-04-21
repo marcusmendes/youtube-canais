@@ -105,6 +105,42 @@ O clima é de assombro temperado por rigor científico.
 - Renderizações de computação quântica
 - Telescópios espaciais e drones autônomos
 
+### REGRA DE ESPECIFICIDADE VISUAL
+
+> **INSTRUÇÃO DE PRIORIDADE ALTA:** Cada VISUAL gerado deve ser
+> específico ao conteúdo daquele bloco — impossível de reutilizar
+> em outro vídeo do canal. Imagens genéricas enfraquecem a
+> percepção de originalidade do conteúdo.
+
+**Anti-padrões visuais — NUNCA gerar:**
+- "Cientista genérico olhando para tela" (serve para qualquer tema)
+- "Data center genérico com luzes azuis" (serve para qualquer tema)
+- "Chip de IA com circuitos brilhantes" (clichê visual de IA)
+- "Globo digital com conexões de rede" (serve para qualquer tema)
+- "Mão robótica genérica" (sem contexto específico do bloco)
+
+**Regra:** antes de gerar o VISUAL de cada bloco, pergunte:
+"Essa imagem poderia aparecer em qualquer vídeo sobre IA?"
+Se sim, a imagem é genérica demais — substitua por algo que
+só faça sentido neste bloco específico deste vídeo específico.
+
+**Exemplo de especificidade:**
+- ❌ Genérico: "Laboratório futurista com cientistas trabalhando"
+- ✅ Específico: "Close das mãos de um cirurgião imóveis ao lado
+  de braços robóticos Da Vinci em movimento ativo sobre um
+  paciente — o contraste entre imobilidade humana e precisão
+  mecânica"
+
+**Variação visual entre blocos do mesmo vídeo:**
+- Nenhum VISUAL consecutivo deve usar a mesma escala (se o
+  Bloco 1 é macro, o Bloco 2 deve ser panorâmico ou médio)
+- Nenhum VISUAL consecutivo deve usar o mesmo tipo de cenário
+  (se o Bloco 1 é laboratório, o Bloco 2 não pode ser laboratório)
+- A paleta cromática dos VISUALs pode variar por bloco seguindo
+  a mesma lógica da paleta emocional das thumbnails — vídeos de
+  medicina podem ter blocos com tons clínicos (branco/vermelho),
+  vídeos de espaço com tons cósmicos (preto/dourado)
+
 ### REGRA PERMANENTE DE IMAGEM
 **Zero exceções para VISUALs do roteiro:** sem textos, legendas,
 logos ou marcas d'água em nenhuma imagem gerada para os blocos
@@ -891,6 +927,14 @@ canal ("Neste vídeo, você vai entender...").
 - Nos últimos 500 caracteres, inclua um convite natural para
   assistir a mais vídeos do canal e se inscrever.
 
+**Disclosure de conteúdo gerado por IA:**
+Após o convite de inscrição e antes das fontes, inclua sempre
+a seguinte linha na descrição:
+*"Imagens ilustrativas geradas por inteligência artificial."*
+Essa linha é obrigatória em todos os vídeos que usem imagens
+geradas por IA como B-roll. Garante transparência e conformidade
+preventiva com as políticas de rotulagem do YouTube.
+
 **Fontes utilizadas:** liste por linha os artigos com autor,
 publicação, ano e DOI quando disponível. NÃO invente DOIs ou URLs.
 Se o DOI não for conhecido com certeza, omita o link e indique
@@ -1309,6 +1353,8 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 18 | DNA Narrativo — 7 Princípios | Verificar: (a) scaffold invisível — nenhum rótulo de bloco na narração (P1) · (b) transições orgânicas sem marcadores (P2) · (c) ritmo respiratório — ao menos 1 frase ≤8 e 1 ≥25 palavras por parágrafo (P3) · (d) metáforas concretas antes de conceitos abstratos (P4) · (e) espectador posicionado como participante (P5) · (f) contra-argumento honesto presente se roteiro investigativo (P6) · (g) conclusão como crescendo, não como resumo (P7) |
 | 19 | Revisão anti-IA | Releia o roteiro e verifique: (a) nenhuma frase-molde dos anti-padrões · (b) nenhum bloco abre com mesma estrutura sintática · (c) nenhuma bridge repete fórmula · (d) inserções editoriais específicas ao conteúdo · (e) modelos de escrita foram consultados · Se encontrar violação, reescreva antes de entregar |
 | 20 | Modelo de escrita consultado | Ao menos 1 roteiro de `modelos-de-escrita/` foi lido antes de escrever · Estilo narrativo calibrado |
+| 21 | Especificidade visual | Nenhum VISUAL genérico (chip de IA, data center genérico, globo digital, cientista genérico) · Cada VISUAL é específico ao conteúdo daquele bloco · Nenhum VISUAL consecutivo repete escala ou cenário · Paleta cromática dos VISUALs varia conforme o tema |
+| 22 | Disclosure de IA na descrição | Linha "Imagens ilustrativas geradas por inteligência artificial." presente na descrição SEO, após o convite de inscrição e antes das fontes |
 
 ---
 
