@@ -613,11 +613,62 @@ não listas de atributos. Aplicar obrigatoriamente a Camada
 Visual Permanente definida acima, EXCETO onde a composição
 ou paleta emocional abaixo exigir desvio.
 
+> **CONCEITO GERAL — ESTÉTICA DE PÔSTER DE CINEMA:**
+> Toda thumbnail do canal deve parecer um pôster de filme de
+> alto orçamento adaptado para o YouTube. Foco claro,
+> legibilidade em telas pequenas, narrativa visual forte e
+> autoridade científica. O elemento humano ou tecnológico
+> deve estar centralizado para facilitar a visualização em
+> celulares. Referências permanentes: pôsteres de
+> *Oppenheimer* e *Interestelar*.
+
 > **PRINCÍPIO ZERO — TESTE DO CELULAR:** A thumbnail será vista
 > a 4 cm de largura numa tela de celular. Se uma composição,
 > texto ou detalhe não funciona nesse tamanho, não funciona.
 > Toda decisão visual deve passar por este filtro antes de
 > ser incluída no prompt.
+
+### SISTEMA DE DUAS ESTÉTICAS
+
+Antes de gerar o prompt, a IA deve escolher qual das duas
+estéticas aplicar com base no ÂNGULO EDITORIAL e no tema:
+
+**Estética 1 — DOCUMENTAL SOMBRIA (referência: *Oppenheimer*)**
+Close-ups dramáticos. Iluminação lateral forte tipo
+*chiaroscuro* — uma fonte de luz dura esculpindo o rosto ou
+o objeto com sombras profundas e recorte nítido. Paleta
+dessaturada: azul metálico, cinza aço, sombras profundas,
+tons frios e contidos. Nada vibrante. A estética comunica
+peso, gravidade e consequência.
+Usar quando: ângulo investigativo, crítico ou de urgência.
+Temas de ética, dilemas morais, impacto social, poder,
+vigilância, risco existencial.
+> Exemplos de aplicação: Sam Altman/OpenAI, vieses da IA,
+> IA militar, privacidade, regulamentação.
+
+**Estética 2 — FICÇÃO CIENTÍFICA / FUTURISTA (referência: *Interestelar*)**
+Iluminação vibrante no esquema *Teal and Orange* — contraste
+entre tons frios (azul-esverdeado) e quentes (laranja/âmbar).
+Escala grandiosa — o frame sugere vastidão, profundidade e
+dimensão épica. Elementos de dados, partículas luminosas e
+interfaces podem aparecer como acentos visuais. A estética
+comunica exploração, descoberta e admiração.
+Usar quando: ângulo esperançoso, revelador ou de admiração.
+Temas de futuro, exploração espacial, descobertas científicas,
+inovação tecnológica, robótica, medicina de fronteira.
+> Exemplos de aplicação: James Webb, cirurgia robótica,
+> Neuralink, genômica, computação quântica, robôs humanoides.
+
+> **REGRA DE ALTERNÂNCIA DE ESTÉTICA:** Thumbnails consecutivas
+> devem alternar entre as duas estéticas sempre que possível.
+> Se o tema não permitir alternância natural (ex: dois vídeos
+> consecutivos de descoberta), variar a composição e a paleta
+> dentro da mesma estética para garantir diversidade visual.
+
+**Regra de Ouro:** Em qualquer estética, priorizar a narrativa
+visual e a autoridade científica. O espectador deve olhar a
+thumbnail e sentir que está diante de algo sério, fascinante
+e cinematográfico — nunca diante de um vídeo genérico de IA.
 
 O prompt gerado deve conter obrigatoriamente estas seções
 na seguinte ordem:
@@ -689,27 +740,39 @@ Vestimenta:
 - jaqueta ou moletom tecnológico → temas de inovação, disrupção
 - jaleco de laboratório → temas de física, química, biologia
 
-**4. PALETA EMOCIONAL (substitui a paleta fixa)**
+**4. PALETA EMOCIONAL (vinculada à estética escolhida)**
 
 > **PRINCÍPIO:** Cada thumbnail deve ter UMA cor dominante que
 > ocupe 60-70% do frame + UMA cor de acento que crie contraste.
-> A paleta fixa azul/#0A1628 é apenas UMA das opções — não o
-> padrão automático. Thumbnails com sempre a mesma cor se
-> tornam invisíveis no feed.
+> A paleta deve ser coerente com a estética escolhida (Documental
+> Sombria ou Ficção Científica). Thumbnails com sempre a mesma
+> cor se tornam invisíveis no feed.
 
-| Emoção / tema | Cor dominante | Cor de acento | Referência |
+**Paletas da Estética 1 — DOCUMENTAL SOMBRIA:**
+Tons dessaturados, frios e contidos. Iluminação *chiaroscuro*.
+
+| Tema | Cor dominante | Cor de acento | Iluminação |
 |---|---|---|---|
-| IA / algoritmos / futuro digital | Azul escuro #0A1628 | Azul elétrico #00A3FF | Manter |
-| Medicina / saúde / corpo humano | Branco clínico / azul gelo | Vermelho orgânico #D32F2F | Contraste com fundo branco do YouTube |
-| Espaço / cosmologia / astronomia | Preto profundo #050510 | Dourado / âmbar #FFB300 | Profundidade cósmica |
-| Perigo / urgência / alerta | Vermelho escuro #6D0000 | Branco ou amarelo forte | Impacto emocional |
-| Descoberta / revelação | Verde escuro #0D3B2E | Verde neon #00E5A0 | Novidade, exploração |
-| Filosofia / existencial / IA consciente | Roxo profundo #1A0A2E | Lilás elétrico #B388FF | Mistério, profundidade |
-| Robótica / engenharia | Cinza metálico #2C2C2C | Laranja industrial #FF6D00 | Maquinário, precisão |
+| Ética / poder / vigilância | Cinza chumbo #1C1C1E | Branco frio ou amarelo pálido | Lateral dura, sombras cortantes |
+| Perigo / urgência / alerta | Vermelho escuro #6D0000 | Branco ou amarelo forte | Lateral dura, fundo quase negro |
+| Investigação / exposição | Preto profundo #0A0A0A | Azul metálico dessaturado #4A6A7A | Contraluz ou lateral, alto contraste |
+| Filosofia / existencial | Roxo dessaturado #1A0A2E | Lilás frio #9E9EBF | Difusa mas direcional, atmosférica |
+
+**Paletas da Estética 2 — FICÇÃO CIENTÍFICA / FUTURISTA:**
+Tons vibrantes, esquema *Teal and Orange*. Iluminação épica.
+
+| Tema | Cor dominante | Cor de acento | Iluminação |
+|---|---|---|---|
+| IA / algoritmos / futuro digital | Azul escuro #0A1628 | Azul elétrico #00A3FF | Lateral vibrante, alto contraste |
+| Medicina / saúde / corpo humano | Branco clínico / azul gelo | Vermelho orgânico #D32F2F | Frontal clínica + acento lateral quente |
+| Espaço / cosmologia / astronomia | Preto profundo #050510 | Dourado / âmbar #FFB300 | Backlit cósmico, partículas |
+| Descoberta / revelação | Verde escuro #0D3B2E | Verde neon #00E5A0 | Bioluminescente, de baixo para cima |
+| Robótica / engenharia | Cinza metálico #2C2C2C | Laranja industrial #FF6D00 | Industrial direcional, reflexos metálicos |
 
 A iluminação do rosto (quando presente) deve vir da cor
-dominante de um lado e da cor de acento do outro — nunca
-sempre azul/laranja.
+dominante de um lado e da cor de acento do outro. A direção
+e dureza da luz devem seguir a estética escolhida: *chiaroscuro*
+duro para Estética 1, vibrante e épico para Estética 2.
 
 **5. TEXT OVERLAY — REGRA DO MENOS É MAIS**
 
@@ -750,17 +813,28 @@ thumbnail precisa do título para fazer sentido, a imagem
 precisa ser mais forte.
 
 **6. STYLE CLOSE**
-Finalize sempre com:
-*"Photorealistic, 4K, cinematic contrast, shallow depth of
-field where appropriate. No watermarks, no text artifacts,
-no logos, no unintended text. [COR DOMINANTE] tones with
-[COR DE ACENTO] highlights. 16:9 aspect ratio."*
+
+Para **Estética 1 — Documental Sombria**, finalize com:
+*"Photorealistic, 4K, cinematic chiaroscuro lighting with
+hard directional shadows. Desaturated color palette,
+[COR DOMINANTE] tones with [COR DE ACENTO] accents.
+Film grain subtle. Shallow depth of field where appropriate.
+No watermarks, no text artifacts, no logos, no unintended
+text. Movie poster composition. 16:9 aspect ratio."*
+
+Para **Estética 2 — Ficção Científica / Futurista**, finalize com:
+*"Photorealistic, 4K, cinematic contrast with vibrant
+teal-and-orange color grading. [COR DOMINANTE] tones with
+[COR DE ACENTO] highlights. Epic scale, luminous particles
+where appropriate. Shallow depth of field where appropriate.
+No watermarks, no text artifacts, no logos, no unintended
+text. Movie poster composition. 16:9 aspect ratio."*
 
 Substituir [COR DOMINANTE] e [COR DE ACENTO] pelos valores
 da paleta emocional escolhida no passo 4.
 
-> Para Shorts, substituir a última linha por:
-> *"…No watermarks, no text artifacts, no logos. 9:16 aspect ratio."*
+> Para Shorts, substituir "16:9 aspect ratio" por
+> "9:16 aspect ratio" em qualquer estética.
 
 **7. ANTI-PADRÕES DE THUMBNAIL — NUNCA FAZER**
 
@@ -1344,7 +1418,7 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 9 | Credibilidade científica | Nenhuma especulação como fato · Fontes reais com nome + ano na narração · Incertezas sinalizadas |
 | 10 | Keyword principal na descrição SEO | 5–7 ocorrências naturais, concentradas nas 2 primeiras frases · Primeira linha funciona como segundo gancho (dado + tensão, não resumo ou definição) |
 | 11 | Post de comunidade | ≤ 150 palavras · 4 partes · ≤ 2 emojis · ≤ 3 hashtags ao final |
-| 12 | Thumbnail — sistema completo | Todas as 7 seções presentes · Composição diferente da última thumbnail · Paleta emocional diferente da última · Expressão facial diferente da última · Texto ≤ 2 palavras (ou zero) · Text overlay complementa o título (nunca repete) · Passa no teste do celular (4 cm) · Nenhum anti-padrão violado |
+| 12 | Thumbnail — sistema completo | Estética (Documental Sombria ou Ficção Científica) escolhida e coerente com o ângulo editorial · Estética alternada em relação à última thumbnail quando possível · Todas as 7 seções presentes · Composição diferente da última thumbnail · Paleta emocional diferente da última · Expressão facial diferente da última · Texto ≤ 2 palavras (ou zero) · Text overlay complementa o título (nunca repete) · Passa no teste do celular (4 cm) · Aspecto de pôster de cinema · Nenhum anti-padrão violado |
 | 13 | Sub-nicho diferente do vídeo anterior | Campo SUB-NICHO preenchido e diferente do último vídeo publicado |
 | 14 | Função do Short (apenas Shorts) | Campo FUNÇÃO DO SHORT preenchido · CTA específico conectado ao longo · Nunca CTA genérico |
 | 15 | Análise de performance (Fase P) | Fase P executada via VidIQ ou MCP · Diagnóstico documentado · ≥2 calibrações incorporadas · Ou fallback informado |
