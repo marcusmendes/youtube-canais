@@ -1,5 +1,5 @@
 # PROMPT MESTRE — IA, CIÊNCIA E FUTURO DA HUMANIDADE
-**Canal: Marcus Maciel | IA & Ciência — Versão 11.0**
+**Canal: Marcus Maciel | IA & Ciência — Versão 11.3**
 
 ---
 
@@ -34,6 +34,32 @@ escrever o roteiro, leia ao menos 1 modelo desta pasta para calibrar
 tom, ritmo e fluidez. O modelo é referência de ESTILO DE ESCRITA
 (fluidez narrativa, ritmo, metáforas, transições), não de estrutura
 (a estrutura segue este prompt).
+
+---
+
+## ═══════════════════════════════════════
+## ORDEM DE EXECUÇÃO (PIPELINE OBRIGATÓRIO)
+## ═══════════════════════════════════════
+
+1. **FASE P** — Diagnóstico do vídeo anterior (curva de retenção + drops)
+2. **FASE 0** — Análise competitiva de roteiros (concorrentes + comentários)
+3. **VALIDAÇÃO DE TEMA** — Checklist de Ouro
+4. **METADADOS** — 10 títulos + thumbnail + descrição + tags
+5. **ROTEIRO** — Hook → Contexto → 4 Blocos → CTA Final
+6. **CHECKLIST DE VALIDAÇÃO** — 28 itens
+7. **FASE R** (pós-publicação) — Repackaging se vídeo subperformar em 7 dias
+
+> Se pular qualquer fase, sinalizar no output e justificar.
+
+---
+
+## INSTRUÇÕES DE PRIORIDADE (em caso de conflito)
+
+1. **Credibilidade Científica > tudo** — se não tem fonte real, não escreve
+2. **Camada Visual Permanente > variação criativa** — identidade do canal nunca cede
+3. **Camada de Retenção Engenheirada > preferências estilísticas** — retenção é sinal #1
+4. **DNA Narrativo > estrutura rígida de blocos** — fluidez vence se conflitar
+5. **Manifesto de Diferenciação > volume de conteúdo** — se não diferencia, não publica
 
 ---
 
@@ -135,6 +161,13 @@ só faça sentido neste bloco específico deste vídeo específico.
   paciente — o contraste entre imobilidade humana e precisão
   mecânica"
 
+**POR QUE ISSO IMPORTA PARA O ALGORITMO:** O sistema de busca
+do YouTube (patente US11354342B2) cria embeddings do conteúdo
+visual e auditivo do vídeo, não só do texto. VISUALs genéricos
+geram embeddings genéricos, que diluem a descoberta semântica.
+VISUALs específicos ao tema reforçam a relevância do vídeo
+para queries específicas.
+
 **Variação visual entre blocos do mesmo vídeo:**
 - Nenhum VISUAL consecutivo deve usar a mesma escala (se o
   Bloco 1 é macro, o Bloco 2 deve ser panorâmico ou médio)
@@ -183,6 +216,35 @@ específicas da seção Thumbnail nos Metadados, onde o TEXT OVERLAY
 - Ao citar uma fonte dentro do roteiro narrado, mencione por extenso
   na fala: nome do estudo ou instituição + ano.
   Exemplo: *"Um estudo publicado pela Nature em 2025 mostrou que..."*
+
+**TRANSPARÊNCIA OBRIGATÓRIA SOBRE USO DE IA:**
+- Disclosure textual na descrição (já incluído no template de
+  descrição SEO).
+- **Label oficial "Altered content" marcado no YouTube Studio
+  durante o upload** (Studio → Detalhes → "Conteúdo alterado").
+  Obrigatório quando o vídeo usa imagens, voz ou vídeo gerados
+  por IA que pareçam realistas.
+- Ambos são requisitos de política do YouTube, não opcionais.
+  Falhar nisso pode impactar monetização e rankeamento (sinal
+  de baixa confiabilidade para o algoritmo).
+
+### SINAIS DE E-A-T (Expertise, Authority, Trustworthiness)
+
+Para nichos sensíveis como saúde e ciência, o algoritmo prioriza
+canais com sinais explícitos de:
+- **Expertise:** terminologia técnica precisa + mecanismos
+  explicados com profundidade (não simplificação superficial)
+- **Authority:** citação de instituições reconhecidas (Nature,
+  MIT, Johns Hopkins, Science Robotics) + consistência temática
+  (mesmo sub-nicho IA + Ciência ao longo do tempo)
+- **Trustworthiness:** sinalização de incertezas + contra-argumento
+  honesto (Princípio 6) + disclosure de IA na descrição + label
+  "Altered content" no Studio
+
+Cada elemento do prompt — fontes reais, contra-argumento,
+disclosure, consistência temática — tem propósito algorítmico
+além do editorial. O E-A-T conecta qualidade de conteúdo a
+sinais de rankeamento.
 
 ---
 
@@ -391,11 +453,342 @@ no contexto deste roteiro específico.
 
 ---
 
+## ESCRITA OTIMIZADA PARA VOZ-OVER + TRADUÇÃO AUTOMÁTICA
+
+> O canal usa narração em voz-over e ativa tradução automática
+> (YouTube auto-dub). Estas regras garantem que o roteiro soe
+> natural quando narrado e que a tradução para EN preserve o
+> sentido. **Aplicar DURANTE a escrita do roteiro, não depois.**
+
+### Regras para voz-over
+
+- Marcar pausas com `[pausa]` entre frases longas ou antes de
+  revelações — o narrador precisa respirar e o espectador
+  precisa processar.
+- Marcar ênfase com `[ênfase]` em palavras-chave que o narrador
+  deve destacar vocalmente.
+- Frases com mais de 25 palavras DEVEM ter vírgulas ou travessões
+  estratégicos que criem pontos naturais de respiração.
+- Números grandes: escrever por extenso ou com separador
+  legível — "oitenta mil" ou "80.000", nunca "80000".
+- Datas: escrever por extenso — "vinte e cinco de março de dois
+  mil e vinte e seis", não "25/03/2026". Formato numérico
+  prejudica o reconhecimento de fala (ASR).
+- Siglas: na primeira ocorrência, escrever o nome completo
+  seguido da sigla — "Agência Espacial Europeia (ESA)". Nas
+  seguintes, usar a sigla. Siglas muito comuns (IA, NASA, DNA)
+  não precisam de expansão.
+
+### Regras para tradução automática (YouTube auto-dub EN)
+
+- Evitar gírias ou expressões idiomáticas brasileiras que não
+  tenham equivalente direto em inglês. Ex: "dar um jeitinho",
+  "fulano de tal", "na cara dura".
+- Evitar jogos de palavra que dependem de fonética PT-BR.
+- Nomes próprios em inglês: manter a grafia original e indicar
+  pronúncia entre colchetes na primeira ocorrência se necessário
+  — ex: "Ronan Farrow [rônan férou]".
+- Evitar contrações coloquiais na narração — usar "para" (não
+  "pra"), "está" (não "tá"), "estou" (não "tô"). A exceção
+  são inserções editoriais em 1ª pessoa onde o coloquialismo
+  reforça autenticidade — nesse caso, limitar a 1-2 por roteiro.
+- Frases ambíguas para tradução automática: evitar construções
+  onde sujeito e objeto podem ser confundidos por IA de tradução.
+  Preferir ordem direta (sujeito + verbo + objeto).
+
+---
+
+## CAMADA DE RETENÇÃO ENGENHEIRADA
+
+> Esta camada é transversal — se aplica ao hook, ao contexto e a
+> todos os blocos do desenvolvimento. Deve ser verificada ANTES
+> de finalizar o roteiro. **Ler esta seção ANTES de escrever.**
+
+**Auditoria dos primeiros 30 segundos (checklist obrigatório):**
+
+Antes de considerar o roteiro pronto, validar cada item:
+- [ ] O hook entrega a promessa do título em ≤ 8 segundos?
+- [ ] Zero introdução institucional? (sem "olá", "sejam
+  bem-vindos", "no vídeo de hoje")
+- [ ] O primeiro VISUAL é específico ao tema (não genérico)?
+- [ ] Pelo menos 1 dado numérico nos primeiros 15 segundos?
+- [ ] O contexto (3-15s) abre um loop sem resolvê-lo?
+
+**Pattern interrupts (a cada 30-45 segundos):**
+
+A cada 30-45 segundos de narração (~75-110 palavras), inserir
+um pattern interrupt para evitar queda de retenção. Alternar
+entre os seguintes tipos — nunca repetir o mesmo tipo
+consecutivamente:
+- **Mudança de escala visual** — macro → cósmico → humano →
+  microscópico (instrução no VISUAL)
+- **Pergunta direta ao espectador** — sobre o tema específico,
+  nunca genérica
+- **Dado contraintuitivo** — que reverte a expectativa criada
+  pelo trecho anterior
+- **Mudança de ritmo** — frase ≤ 5 palavras após bloco denso,
+  ou frase longa após sequência curta
+- **Inserção editorial em 1ª pessoa** — reação pessoal,
+  confissão de espanto ou dúvida
+
+**Mapa de open loops (documentar no output):**
+
+Ao final do roteiro, gerar uma tabela de open loops:
+
+```
+### Mapa de Open Loops
+| # | Loop abre em | Conteúdo do loop | Fecha em | Tipo de payoff |
+|---|---|---|---|---|
+| 1 | Hook (~0:05) | [descrição] | Bloco [X] | [dado/revelação/história] |
+| 2 | Contexto (~0:20) | [descrição] | Bloco [Y] | [dado/revelação/história] |
+| 3 | Bloco 1 (~1:00) | [descrição] | Bloco [Z] ou CTA | [dado/revelação/história] |
+```
+
+Regras:
+- Mínimo de 3 open loops nos primeiros 60 segundos
+- Nenhum loop pode ficar aberto por mais de 5 minutos sem ao
+  menos um teaser parcial
+- O último loop deve fechar na Implicação (Bloco 4) ou no CTA
+  final — nunca antes
+
+**Pontos de risco de drop (mapeamento preventivo):**
+
+Independente dos pattern interrupts e open loops, garantir
+reforço EXTRA nestes 3 momentos onde a maioria dos espectadores
+decide sair:
+
+| Momento | Timestamp estimado | O que o espectador decide | Reforço obrigatório |
+|---|---|---|---|
+| **1ª decisão** | ~30s | "Vale a pena ficar?" | Pattern interrupt forte + payoff parcial do hook (dado prometido no título deve ter ao menos um teaser até aqui) |
+| **2ª decisão** | ~2min | "Isso é interessante o suficiente?" | O maior payoff parcial até este ponto — dado concreto, revelação ou virada que recompense quem ficou |
+| **Ponto de fadiga** | ~50% da duração | "Já vi o suficiente?" | O dado mais impactante do vídeo OU virada narrativa inesperada. Este é o momento de inserir o "número impossível" do Bloco 3 (Clímax) |
+
+Ao escrever o roteiro, verificar que estes 3 pontos estão
+cobertos. Se um deles cair numa transição entre blocos ou
+numa explicação técnica longa, reposicionar o conteúdo.
+
+---
+
+## CTAs NA NARRAÇÃO — POSICIONAMENTO ESTRATÉGICO
+
+> Os CTAs não ficam apenas na descrição — devem estar embutidos
+> na narração, nos momentos de maior engajamento emocional.
+> **Ler esta seção ANTES de escrever o roteiro.**
+
+**CTA 1 — Engajamento mid-roll (entre Bloco 2 e Bloco 3):**
+Após o primeiro payoff parcial, antes do clímax do vídeo:
+- Pergunta direta que convida comentário específico ao tema.
+- NUNCA "deixe seu like" ou "comenta aí o que você acha" —
+  sempre uma pergunta substantiva e debatível.
+- Posicionar ANTES de entregar o próximo payoff — o espectador
+  comenta porque quer a resposta, não porque já a recebeu.
+> Ex: "Antes de ver o que aconteceu na fase 2 do estudo — você
+> confiaria sua vida a um diagnóstico feito por IA? Comenta aí."
+
+**CTA 2 — Inscrição DENTRO do Bloco 4 (Implicação):**
+O pedido de inscrição deve vir DENTRO do crescendo do Bloco 4,
+não depois do fechamento. O espectador que ouve o crescendo
+inteiro e chega ao "obrigado" já foi embora mentalmente — o
+momento de maior emoção é onde ele está mais propenso a agir.
+- Conectar a inscrição ao valor do próximo vídeo.
+- Máximo 1 frase, tecida na narração.
+> Ex: "Se esse tipo de investigação faz sentido pra você — se
+> inscreve. Toda semana tem conteúdo novo sobre como a IA está
+> redesenhando o que significa ser humano."
+
+**CTA 3 — Próximo vídeo (últimos 10 segundos):**
+Fechar com gancho para o próximo vídeo ou vídeo relacionado.
+- NUNCA fechar com "obrigado por assistir" ou "até a próxima".
+- Revelar UM elemento surpreendente do próximo vídeo que crie
+  open loop irresistível.
+- Card/end screen com thumbnail do vídeo relacionado.
+> Ex: "No próximo vídeo, a história é mais perturbadora. Uma IA
+> acabou de descobrir algo que nenhum médico no mundo conseguiu
+> ver. Te espero lá."
+
+---
+
+## FASE P — ANÁLISE DE PERFORMANCE DO VÍDEO ANTERIOR
+
+> Executar automaticamente via MCP YouTube ANTES da Fase 0.
+> Objetivo: identificar o que funcionou e o que falhou no último
+> vídeo publicado para calibrar o roteiro atual.
+
+### Processo de execução (VidIQ como primário, MCP YouTube como fallback)
+
+**Passo 1 — Identificar o último vídeo publicado**
+
+*VidIQ:* Usar `vidiq_user_channels` para obter o channelId, depois
+`vidiq_channel_videos` com `videoFormat: "long"` e `popular: false`
+(uploads recentes). Selecionar o mais recente. Repetir com
+`videoFormat: "short"` para obter o último Short.
+
+*Fallback MCP:* Usar `studio_listOwnVideos` com `status: "public"`
+e `maxResults: 5`.
+
+**Passo 2 — Obter analytics do último vídeo**
+
+*VidIQ (preferencial — sem delay de 2-3 dias):*
+- `vidiq_video_stats` com `granularity: "hourly"` para a curva de
+  crescimento hora a hora (views, likes, comments, VPH)
+- `vidiq_channel_analytics` com `filters: "video==[videoId]"` para
+  métricas detalhadas (views, watch time, retenção, por dimensão)
+- Se precisar breakdown por device/country/traffic source:
+  `vidiq_channel_analytics` com `dimensions: ["deviceType"]`,
+  `["country"]` ou `["insightTrafficSourceType"]`
+
+*Fallback MCP:* Usar `analytics_getVideoAnalytics` com métricas:
+`views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,dislikes,comments,shares,subscribersGained`
+
+Nota sobre delay do MCP YouTube: a API de analytics tem delay de
+2-3 dias. Se o resultado retornar zeros, usar as estatísticas de
+`studio_listOwnVideos` e tentar o vídeo anterior.
+
+**Passo 3 — Obter baseline do canal**
+
+*VidIQ:*
+- `vidiq_channel_analytics` com `startDate` dos últimos 90 dias
+  e métricas: `["views", "estimatedMinutesWatched",
+  "averageViewDuration", "likes", "comments", "subscribersGained"]`
+- `vidiq_channel_performance_trends` para a curva típica de
+  acumulação de views (min/max/avg/mediana por minutos desde
+  publicação) — permite comparar se o último vídeo está acima
+  ou abaixo do padrão do canal
+
+*Fallback MCP:* Usar `analytics_getChannelAnalytics` sem
+`dimensions` (agregado) e dividir pelo número de vídeos públicos.
+
+**Passo 4 — Obter top performers (referência)**
+
+*VidIQ:* `vidiq_channel_videos` com `popular: true` para longos
+e shorts separadamente.
+
+*Fallback MCP:* `analytics_getTopVideos` com `maxResults: 5`.
+
+### Diagnóstico a produzir
+
+Com os dados obtidos, gerar o seguinte diagnóstico no output:
+
+```
+## [FASE P — DIAGNÓSTICO DE PERFORMANCE]
+
+### Último vídeo publicado
+- Título: [título]
+- Tipo: [Longo/Short]
+- Publicado em: [data]
+- Views: [X] | Média do canal: [Y] | Diferença: [+/-Z%]
+- Retenção média: [X%] | Média do canal: [Y%]
+- Like ratio: [X%] | Média do canal: [Y%]
+- Comentários: [X] | Média do canal: [Y]
+- Inscritos ganhos: [X]
+
+### Diagnóstico
+- O que FUNCIONOU: [identificar métricas acima da média e
+  possíveis causas — título, tema, formato, duração]
+- O que FALHOU: [identificar métricas abaixo da média e
+  possíveis causas]
+- Comparação com top performer: [diferenças-chave entre o
+  último vídeo e o melhor vídeo do canal]
+
+### Análise de retenção por timestamp (cruzamento com roteiro)
+
+> Esta é a análise mais importante da Fase P. Sem ela, você
+> sabe QUE o vídeo falhou, mas não ONDE nem POR QUÊ.
+
+**Passo 1 — Obter a retention curve:**
+Se a API retornar dados de retention curve (VidIQ
+`vidiq_channel_analytics` com dimensão temporal ou YouTube
+Analytics com `audienceWatchRatio`), extrair os pontos de
+retenção segundo-a-segundo (ou a granularidade disponível).
+
+**Passo 2 — Identificar os 3 maiores drops:**
+
+| Drop | Timestamp | Retenção antes | Retenção depois | Queda |
+|---|---|---|---|---|
+| 1 | [mm:ss] | [X%] | [Y%] | [-Z%] |
+| 2 | [mm:ss] | [X%] | [Y%] | [-Z%] |
+| 3 | [mm:ss] | [X%] | [Y%] | [-Z%] |
+
+**Passo 3 — Cruzar cada drop com o roteiro:**
+Para cada drop identificado, localizar o trecho exato do
+roteiro do último vídeo que corresponde àquele timestamp:
+- Timestamp do drop: [mm:ss]
+- Trecho do roteiro: [citar a frase ou parágrafo exato]
+- Diagnóstico narrativo: [causa provável — escolher entre:]
+  - Hook não entregou a promessa do título
+  - Explicação técnica longa sem dado contraintuitivo
+  - Transição fraca entre blocos (perda de tensão)
+  - Bloco sem payoff parcial (espectador não vê recompensa)
+  - Ausência de pattern interrupt (monotonia visual/narrativa)
+  - Dado ou fonte sem conexão emocional com o espectador
+- Ação corretiva para o roteiro atual: [ação específica]
+
+**Passo 4 — Verificar os 3 pontos críticos universais:**
+Mesmo que não sejam os maiores drops, verificar sempre:
+- **Marca de ~30s** — retenção neste ponto indica se o hook
+  entregou a promessa do título. Se < 70%, o hook falhou.
+- **Marca de ~2min** — retenção indica se o primeiro payoff
+  parcial funcionou. Se < 50%, o contexto/Bloco 1 perderam
+  o espectador.
+- **Marca de ~50% da duração** — ponto de fadiga. Se a
+  retenção cai > 10% neste ponto vs. a marca anterior, falta
+  virada narrativa ou dado de impacto no meio do vídeo.
+
+Se a retention curve não estiver disponível, usar a retenção
+média como proxy e informar: "Retention curve indisponível —
+diagnóstico baseado em retenção média. Aplicar reforço
+preventivo nos 3 pontos críticos (30s, 2min, 50% da duração)."
+
+### Lições do último vídeo
+- ERRO A NÃO REPETIR: [1-2 erros narrativos específicos
+  identificados no diagnóstico, com referência ao trecho do
+  roteiro anterior. Ex: "Explicação técnica de 90s sem dado
+  contraintuitivo no Bloco 2 coincide com o maior drop"]
+- ACERTO A MANTER: [1 padrão que funcionou, com referência.
+  Ex: "Hook com dado numérico em <5s — retenção dos primeiros
+  30s acima da média do canal"]
+
+### Calibrações para o roteiro atual
+- [Lista de 2-4 ações concretas derivadas do diagnóstico.
+  Ex: "Retenção média de 12% sugere hook fraco — reforçar
+  paradoxo nos primeiros 15 segundos" ou "Like ratio de 0%
+  indica baixa conexão emocional — adicionar inserção
+  editorial mais vulnerável no Bloco 3"]
+```
+
+### Como usar o diagnóstico no roteiro
+
+A seção `Calibrações para o roteiro atual` alimenta diretamente a
+**Calibração por Dados (Fase P)** na seção [DESENVOLVIMENTO].
+As ações concretas devem ser incorporadas no roteiro como:
+
+- **Retenção baixa** → reforçar hooks e loops de retenção nos
+  pontos equivalentes ao tempo de saída do vídeo anterior
+- **Like ratio baixo** → adicionar momentos de conexão emocional
+  (inserção editorial vulnerável, história humana concreta)
+- **Zero comentários** → posicionar CTA de engajamento antes de
+  um payoff forte, com pergunta genuinamente debatível
+- **Views abaixo da média** → revisar escolha de título com mais
+  rigor (aplicar as 6 fórmulas, testar mais opções de contradição
+  e pergunta existencial)
+- **Inscritos ganhos = 0** → reforçar CTA de inscrição ancorado
+  em valor específico ("no próximo vídeo vou mostrar [X]")
+
+### Fallback
+
+Se o MCP YouTube não estiver disponível ou a autenticação OAuth
+falhar, informar no output: "Fase P não executada — MCP YouTube
+indisponível. Prosseguindo sem dados de performance." e continuar
+para a Fase 0.
+
+---
+
 ## FASE 0 — ANÁLISE COMPETITIVA DE ROTEIROS
 
-> **INSTRUÇÃO:** Esta fase é executada ANTES da geração dos metadados
-> e do roteiro. O objetivo é identificar lacunas e erros nos vídeos
-> existentes sobre o tema para diferenciar o conteúdo do canal.
+> **INSTRUÇÃO:** Esta fase é executada APÓS a Fase P e ANTES da
+> geração dos metadados e do roteiro. O objetivo é identificar
+> lacunas e erros nos vídeos existentes sobre o tema para
+> diferenciar o conteúdo do canal.
 > Se o campo ANÁLISE COMPETITIVA DE ROTEIROS estiver preenchido nos
 > campos variáveis, pule a execução automática e use o briefing
 > fornecido.
@@ -1046,12 +1439,20 @@ do canal.]
 
 🔬 NESTE VÍDEO VOCÊ VAI VER:
 00:00 Introdução
-01:30 [Capítulo 2 — nome descritivo]
-03:45 [Capítulo 3 — nome descritivo]
-05:00 [Capítulo 4 — nome descritivo]
+01:30 [Capítulo 2 — nome descritivo com keyword]
+03:45 [Capítulo 3 — nome descritivo com keyword]
+05:00 [Capítulo 4 — nome descritivo com keyword]
 ...
-[Timestamps devem corresponder às seções do roteiro. Ajustar
-os tempos reais após a edição do vídeo.]
+
+**CAPÍTULOS (timestamps) — obrigatórios em todo long-form:**
+- Mínimo 5 capítulos para vídeos 10–12 min, 7+ para vídeos >15 min.
+- Nome do capítulo deve incluir keyword secundária quando possível.
+- Cada capítulo é indexado pelo YouTube como ponto de entrada de
+  busca (não é só conveniência do viewer — é estrutura de
+  indexação semântica, cf. patente US11354342B2).
+- Anti-padrão: nomes genéricos ("Parte 1", "Continuação").
+- Timestamps devem corresponder às seções do roteiro. Ajustar
+  os tempos reais após a edição do vídeo.
 
 ▶️ ASSISTA TAMBÉM:
 • [Título do vídeo relacionado 1] → [link do vídeo]
@@ -1139,85 +1540,15 @@ revelar a solução. Mantenha a tensão. Não entregue a resposta ainda.
 
 ---
 
-### CAMADA DE RETENÇÃO ENGENHEIRADA
-
-> Esta camada é transversal — se aplica ao hook, ao contexto e a
-> todos os blocos do desenvolvimento. Deve ser verificada ANTES
-> de finalizar o roteiro.
-
-**Auditoria dos primeiros 30 segundos (checklist obrigatório):**
-
-Antes de considerar o roteiro pronto, validar cada item:
-- [ ] O hook entrega a promessa do título em ≤ 8 segundos?
-- [ ] Zero introdução institucional? (sem "olá", "sejam
-  bem-vindos", "no vídeo de hoje")
-- [ ] O primeiro VISUAL é específico ao tema (não genérico)?
-- [ ] Pelo menos 1 dado numérico nos primeiros 15 segundos?
-- [ ] O contexto (3-15s) abre um loop sem resolvê-lo?
-
-**Pattern interrupts (a cada 30-45 segundos):**
-
-A cada 30-45 segundos de narração (~75-110 palavras), inserir
-um pattern interrupt para evitar queda de retenção. Alternar
-entre os seguintes tipos — nunca repetir o mesmo tipo
-consecutivamente:
-- **Mudança de escala visual** — macro → cósmico → humano →
-  microscópico (instrução no VISUAL)
-- **Pergunta direta ao espectador** — sobre o tema específico,
-  nunca genérica
-- **Dado contraintuitivo** — que reverte a expectativa criada
-  pelo trecho anterior
-- **Mudança de ritmo** — frase ≤ 5 palavras após bloco denso,
-  ou frase longa após sequência curta
-- **Inserção editorial em 1ª pessoa** — reação pessoal,
-  confissão de espanto ou dúvida
-
-**Mapa de open loops (documentar no output):**
-
-Ao final do roteiro, gerar uma tabela de open loops:
-
-```
-### Mapa de Open Loops
-| # | Loop abre em | Conteúdo do loop | Fecha em | Tipo de payoff |
-|---|---|---|---|---|
-| 1 | Hook (~0:05) | [descrição] | Bloco [X] | [dado/revelação/história] |
-| 2 | Contexto (~0:20) | [descrição] | Bloco [Y] | [dado/revelação/história] |
-| 3 | Bloco 1 (~1:00) | [descrição] | Bloco [Z] ou CTA | [dado/revelação/história] |
-```
-
-Regras:
-- Mínimo de 3 open loops nos primeiros 60 segundos
-- Nenhum loop pode ficar aberto por mais de 5 minutos sem ao
-  menos um teaser parcial
-- O último loop deve fechar na Implicação (Bloco 4) ou no CTA
-  final — nunca antes
-
-**Pontos de risco de drop (mapeamento preventivo):**
-
-Independente dos pattern interrupts e open loops, garantir
-reforço EXTRA nestes 3 momentos onde a maioria dos espectadores
-decide sair:
-
-| Momento | Timestamp estimado | O que o espectador decide | Reforço obrigatório |
-|---|---|---|---|
-| **1ª decisão** | ~30s | "Vale a pena ficar?" | Pattern interrupt forte + payoff parcial do hook (dado prometido no título deve ter ao menos um teaser até aqui) |
-| **2ª decisão** | ~2min | "Isso é interessante o suficiente?" | O maior payoff parcial até este ponto — dado concreto, revelação ou virada que recompense quem ficou |
-| **Ponto de fadiga** | ~50% da duração | "Já vi o suficiente?" | O dado mais impactante do vídeo OU virada narrativa inesperada. Este é o momento de inserir o "número impossível" do Bloco 3 (Clímax) |
-
-Ao escrever o roteiro, verificar que estes 3 pontos estão
-cobertos. Se um deles cair numa transição entre blocos ou
-numa explicação técnica longa, reposicionar o conteúdo.
-
----
-
 ### [DESENVOLVIMENTO]
 
 Explique o tema com profundidade, dividindo em blocos temáticos
 claros.
 
 **Calibração por Dados (Fase P):**
-Se a Fase P foi executada, use as `Calibrações para o roteiro
-atual` como guia para este desenvolvimento. A IA deve:
+Se a Fase P foi executada (ver seção FASE P acima), use as
+`Calibrações para o roteiro atual` como guia para este
+desenvolvimento. A IA deve:
 - Aplicar cada ação concreta listada no diagnóstico da Fase P
 - Se a retenção média do vídeo anterior foi baixa (<25% para
   Shorts, <30% para longos), reforçar hooks e loops nos pontos
@@ -1415,44 +1746,6 @@ exclusivamente do conteúdo específico deste vídeo.
 
 ---
 
-### CTAs NA NARRAÇÃO — POSICIONAMENTO ESTRATÉGICO
-
-> Os CTAs não ficam apenas na descrição — devem estar embutidos
-> na narração, nos momentos de maior engajamento emocional.
-
-**CTA 1 — Engajamento mid-roll (entre Bloco 2 e Bloco 3):**
-Após o primeiro payoff parcial, antes do clímax do vídeo:
-- Pergunta direta que convida comentário específico ao tema.
-- NUNCA "deixe seu like" ou "comenta aí o que você acha" —
-  sempre uma pergunta substantiva e debatível.
-- Posicionar ANTES de entregar o próximo payoff — o espectador
-  comenta porque quer a resposta, não porque já a recebeu.
-> Ex: "Antes de ver o que aconteceu na fase 2 do estudo — você
-> confiaria sua vida a um diagnóstico feito por IA? Comenta aí."
-
-**CTA 2 — Inscrição DENTRO do Bloco 4 (Implicação):**
-O pedido de inscrição deve vir DENTRO do crescendo do Bloco 4,
-não depois do fechamento. O espectador que ouve o crescendo
-inteiro e chega ao "obrigado" já foi embora mentalmente — o
-momento de maior emoção é onde ele está mais propenso a agir.
-- Conectar a inscrição ao valor do próximo vídeo.
-- Máximo 1 frase, tecida na narração.
-> Ex: "Se esse tipo de investigação faz sentido pra você — se
-> inscreve. Toda semana tem conteúdo novo sobre como a IA está
-> redesenhando o que significa ser humano."
-
-**CTA 3 — Próximo vídeo (últimos 10 segundos):**
-Fechar com gancho para o próximo vídeo ou vídeo relacionado.
-- NUNCA fechar com "obrigado por assistir" ou "até a próxima".
-- Revelar UM elemento surpreendente do próximo vídeo que crie
-  open loop irresistível.
-- Card/end screen com thumbnail do vídeo relacionado.
-> Ex: "No próximo vídeo, a história é mais perturbadora. Uma IA
-> acabou de descobrir algo que nenhum médico no mundo conseguiu
-> ver. Te espero lá."
-
----
-
 ### [CTA FINAL]
 
 **Encerramento como crescendo emocional (Princípio 7):**
@@ -1531,51 +1824,6 @@ Cada Short deve ter uma função clara no ciclo de conteúdo:
   o vídeo longo responde + CTA direto com open loop.
 - **Reprise** (publicar 3-5 dias depois do longo): clip do momento
   mais impactante do longo, reeditado para formato vertical.
-
----
-
-## ESCRITA OTIMIZADA PARA VOZ-OVER + TRADUÇÃO AUTOMÁTICA
-
-> O canal usa narração em voz-over e ativa tradução automática
-> (YouTube auto-dub). Estas regras garantem que o roteiro soe
-> natural quando narrado e que a tradução para EN preserve o
-> sentido.
-
-### Regras para voz-over
-
-- Marcar pausas com `[pausa]` entre frases longas ou antes de
-  revelações — o narrador precisa respirar e o espectador
-  precisa processar.
-- Marcar ênfase com `[ênfase]` em palavras-chave que o narrador
-  deve destacar vocalmente.
-- Frases com mais de 25 palavras DEVEM ter vírgulas ou travessões
-  estratégicos que criem pontos naturais de respiração.
-- Números grandes: escrever por extenso ou com separador
-  legível — "oitenta mil" ou "80.000", nunca "80000".
-- Datas: escrever por extenso — "vinte e cinco de março de dois
-  mil e vinte e seis", não "25/03/2026". Formato numérico
-  prejudica o reconhecimento de fala (ASR).
-- Siglas: na primeira ocorrência, escrever o nome completo
-  seguido da sigla — "Agência Espacial Europeia (ESA)". Nas
-  seguintes, usar a sigla. Siglas muito comuns (IA, NASA, DNA)
-  não precisam de expansão.
-
-### Regras para tradução automática (YouTube auto-dub EN)
-
-- Evitar gírias ou expressões idiomáticas brasileiras que não
-  tenham equivalente direto em inglês. Ex: "dar um jeitinho",
-  "fulano de tal", "na cara dura".
-- Evitar jogos de palavra que dependem de fonética PT-BR.
-- Nomes próprios em inglês: manter a grafia original e indicar
-  pronúncia entre colchetes na primeira ocorrência se necessário
-  — ex: "Ronan Farrow [rônan férou]".
-- Evitar contrações coloquiais na narração — usar "para" (não
-  "pra"), "está" (não "tá"), "estou" (não "tô"). A exceção
-  são inserções editoriais em 1ª pessoa onde o coloquialismo
-  reforça autenticidade — nesse caso, limitar a 1-2 por roteiro.
-- Frases ambíguas para tradução automática: evitar construções
-  onde sujeito e objeto podem ser confundidos por IA de tradução.
-  Preferir ordem direta (sujeito + verbo + objeto).
 
 ---
 
@@ -1703,6 +1951,7 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 25 | CTAs na narração | CTA 1 (engajamento) entre Bloco 2 e 3 · CTA 2 (inscrição) dentro do Bloco 4 · CTA 3 (próximo vídeo) nos últimos 10s · Nenhum "deixe seu like" genérico |
 | 26 | Voice-over + tradução | Sem contrações coloquiais na narração (exceto inserções editoriais) · Sem gírias PT-BR sem equivalente EN · Datas por extenso · Siglas expandidas na 1ª ocorrência |
 | 27 | Manifesto de Diferenciação | Frase de diferenciação presente no briefing da Fase 0 · Tese parafraseada aparece no roteiro (preferencialmente Bloco 4) |
+| 28 | Label "Altered content" no Studio | Marcado durante upload (Studio → Detalhes → "Conteúdo alterado") · Obrigatório quando vídeo usa imagens/voz/vídeo gerados por IA que pareçam realistas |
 
 ---
 
@@ -1718,11 +1967,10 @@ um workflow independente que não requer os campos variáveis.)
    alternativas usando as `relatedKeywords` retornadas.
    Se VidIQ não estiver disponível, prosseguir sem validação.
 2. **Fase P (Performance)** — Execute a Análise de Performance do
-   Vídeo Anterior (ver instruções abaixo). Documente o diagnóstico
+   Vídeo Anterior (ver seção FASE P acima). Documente o diagnóstico
    no output.
 3. **Fase 0 (Competitiva)** — Execute a Análise Competitiva de
-   Roteiros (se o campo não estiver preenchido). Documente o
-   briefing no output.
+   Roteiros (ver seção FASE 0 acima). Documente o briefing no output.
 4. **Modelos de Escrita** — Leia ao menos 1 roteiro da pasta
    `canais/marcus-maciel/modelos-de-escrita/` para calibrar
    o estilo narrativo antes de escrever.
@@ -1730,181 +1978,6 @@ um workflow independente que não requer os campos variáveis.)
    sem interrupção, incorporando os insights da Fase P e Fase 0,
    aplicando os 7 Princípios do DNA Narrativo.
 6. **Checklist** — Execute a checklist de validação ao final.
-
----
-
-## FASE P — ANÁLISE DE PERFORMANCE DO VÍDEO ANTERIOR
-
-> Executar automaticamente via MCP YouTube ANTES da Fase 0.
-> Objetivo: identificar o que funcionou e o que falhou no último
-> vídeo publicado para calibrar o roteiro atual.
-
-### Processo de execução (VidIQ como primário, MCP YouTube como fallback)
-
-**Passo 1 — Identificar o último vídeo publicado**
-
-*VidIQ:* Usar `vidiq_user_channels` para obter o channelId, depois
-`vidiq_channel_videos` com `videoFormat: "long"` e `popular: false`
-(uploads recentes). Selecionar o mais recente. Repetir com
-`videoFormat: "short"` para obter o último Short.
-
-*Fallback MCP:* Usar `studio_listOwnVideos` com `status: "public"`
-e `maxResults: 5`.
-
-**Passo 2 — Obter analytics do último vídeo**
-
-*VidIQ (preferencial — sem delay de 2-3 dias):*
-- `vidiq_video_stats` com `granularity: "hourly"` para a curva de
-  crescimento hora a hora (views, likes, comments, VPH)
-- `vidiq_channel_analytics` com `filters: "video==[videoId]"` para
-  métricas detalhadas (views, watch time, retenção, por dimensão)
-- Se precisar breakdown por device/country/traffic source:
-  `vidiq_channel_analytics` com `dimensions: ["deviceType"]`,
-  `["country"]` ou `["insightTrafficSourceType"]`
-
-*Fallback MCP:* Usar `analytics_getVideoAnalytics` com métricas:
-`views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,dislikes,comments,shares,subscribersGained`
-
-Nota sobre delay do MCP YouTube: a API de analytics tem delay de
-2-3 dias. Se o resultado retornar zeros, usar as estatísticas de
-`studio_listOwnVideos` e tentar o vídeo anterior.
-
-**Passo 3 — Obter baseline do canal**
-
-*VidIQ:*
-- `vidiq_channel_analytics` com `startDate` dos últimos 90 dias
-  e métricas: `["views", "estimatedMinutesWatched",
-  "averageViewDuration", "likes", "comments", "subscribersGained"]`
-- `vidiq_channel_performance_trends` para a curva típica de
-  acumulação de views (min/max/avg/mediana por minutos desde
-  publicação) — permite comparar se o último vídeo está acima
-  ou abaixo do padrão do canal
-
-*Fallback MCP:* Usar `analytics_getChannelAnalytics` sem
-`dimensions` (agregado) e dividir pelo número de vídeos públicos.
-
-**Passo 4 — Obter top performers (referência)**
-
-*VidIQ:* `vidiq_channel_videos` com `popular: true` para longos
-e shorts separadamente.
-
-*Fallback MCP:* `analytics_getTopVideos` com `maxResults: 5`.
-
-### Diagnóstico a produzir
-
-Com os dados obtidos, gerar o seguinte diagnóstico no output:
-
-```
-## [FASE P — DIAGNÓSTICO DE PERFORMANCE]
-
-### Último vídeo publicado
-- Título: [título]
-- Tipo: [Longo/Short]
-- Publicado em: [data]
-- Views: [X] | Média do canal: [Y] | Diferença: [+/-Z%]
-- Retenção média: [X%] | Média do canal: [Y%]
-- Like ratio: [X%] | Média do canal: [Y%]
-- Comentários: [X] | Média do canal: [Y]
-- Inscritos ganhos: [X]
-
-### Diagnóstico
-- O que FUNCIONOU: [identificar métricas acima da média e
-  possíveis causas — título, tema, formato, duração]
-- O que FALHOU: [identificar métricas abaixo da média e
-  possíveis causas]
-- Comparação com top performer: [diferenças-chave entre o
-  último vídeo e o melhor vídeo do canal]
-
-### Análise de retenção por timestamp (cruzamento com roteiro)
-
-> Esta é a análise mais importante da Fase P. Sem ela, você
-> sabe QUE o vídeo falhou, mas não ONDE nem POR QUÊ.
-
-**Passo 1 — Obter a retention curve:**
-Se a API retornar dados de retention curve (VidIQ
-`vidiq_channel_analytics` com dimensão temporal ou YouTube
-Analytics com `audienceWatchRatio`), extrair os pontos de
-retenção segundo-a-segundo (ou a granularidade disponível).
-
-**Passo 2 — Identificar os 3 maiores drops:**
-
-| Drop | Timestamp | Retenção antes | Retenção depois | Queda |
-|---|---|---|---|---|
-| 1 | [mm:ss] | [X%] | [Y%] | [-Z%] |
-| 2 | [mm:ss] | [X%] | [Y%] | [-Z%] |
-| 3 | [mm:ss] | [X%] | [Y%] | [-Z%] |
-
-**Passo 3 — Cruzar cada drop com o roteiro:**
-Para cada drop identificado, localizar o trecho exato do
-roteiro do último vídeo que corresponde àquele timestamp:
-- Timestamp do drop: [mm:ss]
-- Trecho do roteiro: [citar a frase ou parágrafo exato]
-- Diagnóstico narrativo: [causa provável — escolher entre:]
-  - Hook não entregou a promessa do título
-  - Explicação técnica longa sem dado contraintuitivo
-  - Transição fraca entre blocos (perda de tensão)
-  - Bloco sem payoff parcial (espectador não vê recompensa)
-  - Ausência de pattern interrupt (monotonia visual/narrativa)
-  - Dado ou fonte sem conexão emocional com o espectador
-- Ação corretiva para o roteiro atual: [ação específica]
-
-**Passo 4 — Verificar os 3 pontos críticos universais:**
-Mesmo que não sejam os maiores drops, verificar sempre:
-- **Marca de ~30s** — retenção neste ponto indica se o hook
-  entregou a promessa do título. Se < 70%, o hook falhou.
-- **Marca de ~2min** — retenção indica se o primeiro payoff
-  parcial funcionou. Se < 50%, o contexto/Bloco 1 perderam
-  o espectador.
-- **Marca de ~50% da duração** — ponto de fadiga. Se a
-  retenção cai > 10% neste ponto vs. a marca anterior, falta
-  virada narrativa ou dado de impacto no meio do vídeo.
-
-Se a retention curve não estiver disponível, usar a retenção
-média como proxy e informar: "Retention curve indisponível —
-diagnóstico baseado em retenção média. Aplicar reforço
-preventivo nos 3 pontos críticos (30s, 2min, 50% da duração)."
-
-### Lições do último vídeo
-- ERRO A NÃO REPETIR: [1-2 erros narrativos específicos
-  identificados no diagnóstico, com referência ao trecho do
-  roteiro anterior. Ex: "Explicação técnica de 90s sem dado
-  contraintuitivo no Bloco 2 coincide com o maior drop"]
-- ACERTO A MANTER: [1 padrão que funcionou, com referência.
-  Ex: "Hook com dado numérico em <5s — retenção dos primeiros
-  30s acima da média do canal"]
-
-### Calibrações para o roteiro atual
-- [Lista de 2-4 ações concretas derivadas do diagnóstico.
-  Ex: "Retenção média de 12% sugere hook fraco — reforçar
-  paradoxo nos primeiros 15 segundos" ou "Like ratio de 0%
-  indica baixa conexão emocional — adicionar inserção
-  editorial mais vulnerável no Bloco 3"]
-```
-
-### Como usar o diagnóstico no roteiro
-
-A seção `Calibrações para o roteiro atual` alimenta diretamente a
-**Calibração por Dados (Fase P)** na seção [DESENVOLVIMENTO].
-As ações concretas devem ser incorporadas no roteiro como:
-
-- **Retenção baixa** → reforçar hooks e loops de retenção nos
-  pontos equivalentes ao tempo de saída do vídeo anterior
-- **Like ratio baixo** → adicionar momentos de conexão emocional
-  (inserção editorial vulnerável, história humana concreta)
-- **Zero comentários** → posicionar CTA de engajamento antes de
-  um payoff forte, com pergunta genuinamente debatível
-- **Views abaixo da média** → revisar escolha de título com mais
-  rigor (aplicar as 6 fórmulas, testar mais opções de contradição
-  e pergunta existencial)
-- **Inscritos ganhos = 0** → reforçar CTA de inscrição ancorado
-  em valor específico ("no próximo vídeo vou mostrar [X]")
-
-### Fallback
-
-Se o MCP YouTube não estiver disponível ou a autenticação OAuth
-falhar, informar no output: "Fase P não executada — MCP YouTube
-indisponível. Prosseguindo sem dados de performance." e continuar
-para a Fase 0.
 
 ---
 
