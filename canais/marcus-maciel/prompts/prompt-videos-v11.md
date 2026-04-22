@@ -1,5 +1,5 @@
 # PROMPT MESTRE — IA, CIÊNCIA E FUTURO DA HUMANIDADE
-**Canal: Marcus Maciel | IA & Ciência — Versão 10.0**
+**Canal: Marcus Maciel | IA & Ciência — Versão 11.0**
 
 ---
 
@@ -42,6 +42,10 @@ tom, ritmo e fluidez. O modelo é referência de ESTILO DE ESCRITA
 - **CANAL:** Marcus Maciel | IA & Ciência
 - **FORMATO DE PRODUÇÃO:** Narração em voz-over (sem presença em câmera).
   Imagens e vídeos aparecem na tela enquanto o narrador fala.
+- **DURAÇÃO ALVO:**
+  - Vídeos longos: 10-15 min → **1.400 a 2.000 palavras** de narração
+    (~150 palavras/min de narração documental)
+  - Shorts: até 60s → **120 a 130 palavras** de narração
 - **PÚBLICO — PERSONA "O EXPLORADOR DA FRONTEIRA":**
   Brasileiros entre 25 e 45 anos — profissionais, estudantes e
   entusiastas de tecnologia que sentem o mundo mudando mais rápido
@@ -483,6 +487,14 @@ em formato estruturado:
 
 ### Padrão estrutural dominante a evitar
 [Descrever o padrão mais comum e como nosso roteiro se diferencia]
+
+### Manifesto de Diferenciação (1 frase, obrigatório)
+"Este vídeo se diferencia de todos os concorrentes analisados
+porque é o único que [ângulo único], baseado em [fonte específica],
+algo que nenhum dos top performers cobriu."
+
+→ Esta frase deve aparecer parafraseada em algum momento do
+roteiro (preferencialmente no Bloco 4 — Implicação).
 ```
 
 ### Como o briefing alimenta o roteiro:
@@ -573,7 +585,9 @@ Se cair, aplique o reframe correspondente:
 | **Instrucional** | "Como fazer X" parece dever de casa | Trocar por demonstração: "Eu fiz X" — prova, não aula |
 
 **Regras obrigatórias para TODOS os títulos:**
-- Máximo de 60 caracteres (10 palavras ou menos)
+- Máximo de 55 caracteres (10 palavras ou menos). No mobile
+  (>70% das views), só os primeiros ~50 chars aparecem. Com 55,
+  a keyword principal nunca é cortada.
 - Zero jargão técnico — o jargão vai na descrição, nunca no título
 - 1-2 palavras em CAPS cirúrgico (nunca tudo em caps, nunca sem caps)
 - Tom conversacional — deve soar como algo dito numa conversa, não
@@ -1125,6 +1139,77 @@ revelar a solução. Mantenha a tensão. Não entregue a resposta ainda.
 
 ---
 
+### CAMADA DE RETENÇÃO ENGENHEIRADA
+
+> Esta camada é transversal — se aplica ao hook, ao contexto e a
+> todos os blocos do desenvolvimento. Deve ser verificada ANTES
+> de finalizar o roteiro.
+
+**Auditoria dos primeiros 30 segundos (checklist obrigatório):**
+
+Antes de considerar o roteiro pronto, validar cada item:
+- [ ] O hook entrega a promessa do título em ≤ 8 segundos?
+- [ ] Zero introdução institucional? (sem "olá", "sejam
+  bem-vindos", "no vídeo de hoje")
+- [ ] O primeiro VISUAL é específico ao tema (não genérico)?
+- [ ] Pelo menos 1 dado numérico nos primeiros 15 segundos?
+- [ ] O contexto (3-15s) abre um loop sem resolvê-lo?
+
+**Pattern interrupts (a cada 30-45 segundos):**
+
+A cada 30-45 segundos de narração (~75-110 palavras), inserir
+um pattern interrupt para evitar queda de retenção. Alternar
+entre os seguintes tipos — nunca repetir o mesmo tipo
+consecutivamente:
+- **Mudança de escala visual** — macro → cósmico → humano →
+  microscópico (instrução no VISUAL)
+- **Pergunta direta ao espectador** — sobre o tema específico,
+  nunca genérica
+- **Dado contraintuitivo** — que reverte a expectativa criada
+  pelo trecho anterior
+- **Mudança de ritmo** — frase ≤ 5 palavras após bloco denso,
+  ou frase longa após sequência curta
+- **Inserção editorial em 1ª pessoa** — reação pessoal,
+  confissão de espanto ou dúvida
+
+**Mapa de open loops (documentar no output):**
+
+Ao final do roteiro, gerar uma tabela de open loops:
+
+```
+### Mapa de Open Loops
+| # | Loop abre em | Conteúdo do loop | Fecha em | Tipo de payoff |
+|---|---|---|---|---|
+| 1 | Hook (~0:05) | [descrição] | Bloco [X] | [dado/revelação/história] |
+| 2 | Contexto (~0:20) | [descrição] | Bloco [Y] | [dado/revelação/história] |
+| 3 | Bloco 1 (~1:00) | [descrição] | Bloco [Z] ou CTA | [dado/revelação/história] |
+```
+
+Regras:
+- Mínimo de 3 open loops nos primeiros 60 segundos
+- Nenhum loop pode ficar aberto por mais de 5 minutos sem ao
+  menos um teaser parcial
+- O último loop deve fechar na Implicação (Bloco 4) ou no CTA
+  final — nunca antes
+
+**Pontos de risco de drop (mapeamento preventivo):**
+
+Independente dos pattern interrupts e open loops, garantir
+reforço EXTRA nestes 3 momentos onde a maioria dos espectadores
+decide sair:
+
+| Momento | Timestamp estimado | O que o espectador decide | Reforço obrigatório |
+|---|---|---|---|
+| **1ª decisão** | ~30s | "Vale a pena ficar?" | Pattern interrupt forte + payoff parcial do hook (dado prometido no título deve ter ao menos um teaser até aqui) |
+| **2ª decisão** | ~2min | "Isso é interessante o suficiente?" | O maior payoff parcial até este ponto — dado concreto, revelação ou virada que recompense quem ficou |
+| **Ponto de fadiga** | ~50% da duração | "Já vi o suficiente?" | O dado mais impactante do vídeo OU virada narrativa inesperada. Este é o momento de inserir o "número impossível" do Bloco 3 (Clímax) |
+
+Ao escrever o roteiro, verificar que estes 3 pontos estão
+cobertos. Se um deles cair numa transição entre blocos ou
+numa explicação técnica longa, reposicionar o conteúdo.
+
+---
+
 ### [DESENVOLVIMENTO]
 
 Explique o tema com profundidade, dividindo em blocos temáticos
@@ -1238,6 +1323,28 @@ dado. A variação de ritmo entre blocos é o que cria a sensação de
 escrita humana — simetria perfeita é o sinal mais claro de geração
 por IA.
 
+**VARIAÇÃO DE DENSIDADE INFORMACIONAL:**
+Nenhum bloco pode ter densidade informacional uniforme. Alternar
+obrigatoriamente entre:
+- **Alta densidade** — números, mecanismos, estudos, dados
+  técnicos, comparações quantitativas
+- **Baixa densidade** — história humana concreta, reflexão
+  editorial, analogia do cotidiano, pausa emocional
+
+Padrão obrigatório: bloco de alta densidade SEMPRE seguido de
+momento de baixa densidade (dentro do mesmo bloco ou no início
+do próximo). O espectador precisa processar dados antes de
+receber mais dados.
+
+Anti-padrão: 3+ parágrafos consecutivos de alta densidade sem
+uma história, analogia ou reflexão pessoal entre eles. Isso
+é o que causa drop no meio do vídeo — especialmente em temas
+como IA na medicina, que são naturalmente carregados de dados.
+
+> Pense como respiração: inspirar (dado) → expirar (história).
+> Inspirar (mecanismo) → expirar (reflexão). O espectador que
+> só inspira, engasga.
+
 **ESCALONAMENTO PROGRESSIVO ENTRE BLOCOS:**
 
 > **REGRA ESTRUTURAL:** A tensão entre blocos deve SEMPRE subir.
@@ -1308,6 +1415,44 @@ exclusivamente do conteúdo específico deste vídeo.
 
 ---
 
+### CTAs NA NARRAÇÃO — POSICIONAMENTO ESTRATÉGICO
+
+> Os CTAs não ficam apenas na descrição — devem estar embutidos
+> na narração, nos momentos de maior engajamento emocional.
+
+**CTA 1 — Engajamento mid-roll (entre Bloco 2 e Bloco 3):**
+Após o primeiro payoff parcial, antes do clímax do vídeo:
+- Pergunta direta que convida comentário específico ao tema.
+- NUNCA "deixe seu like" ou "comenta aí o que você acha" —
+  sempre uma pergunta substantiva e debatível.
+- Posicionar ANTES de entregar o próximo payoff — o espectador
+  comenta porque quer a resposta, não porque já a recebeu.
+> Ex: "Antes de ver o que aconteceu na fase 2 do estudo — você
+> confiaria sua vida a um diagnóstico feito por IA? Comenta aí."
+
+**CTA 2 — Inscrição DENTRO do Bloco 4 (Implicação):**
+O pedido de inscrição deve vir DENTRO do crescendo do Bloco 4,
+não depois do fechamento. O espectador que ouve o crescendo
+inteiro e chega ao "obrigado" já foi embora mentalmente — o
+momento de maior emoção é onde ele está mais propenso a agir.
+- Conectar a inscrição ao valor do próximo vídeo.
+- Máximo 1 frase, tecida na narração.
+> Ex: "Se esse tipo de investigação faz sentido pra você — se
+> inscreve. Toda semana tem conteúdo novo sobre como a IA está
+> redesenhando o que significa ser humano."
+
+**CTA 3 — Próximo vídeo (últimos 10 segundos):**
+Fechar com gancho para o próximo vídeo ou vídeo relacionado.
+- NUNCA fechar com "obrigado por assistir" ou "até a próxima".
+- Revelar UM elemento surpreendente do próximo vídeo que crie
+  open loop irresistível.
+- Card/end screen com thumbnail do vídeo relacionado.
+> Ex: "No próximo vídeo, a história é mais perturbadora. Uma IA
+> acabou de descobrir algo que nenhum médico no mundo conseguiu
+> ver. Te espero lá."
+
+---
+
 ### [CTA FINAL]
 
 **Encerramento como crescendo emocional (Princípio 7):**
@@ -1346,8 +1491,7 @@ espectador deve sentir que vai perder algo importante se não assistir.
 - Indique ênfase vocal com: `[ênfase]`.
 
 ### Vídeos longos
-- Duração alvo de 13 a 17 minutos (aproximadamente 1.700 a 2.200
-  palavras de narração).
+- Duração e word count: ver seção IDENTIDADE DO CANAL.
 
 ### Shorts
 
@@ -1387,6 +1531,51 @@ Cada Short deve ter uma função clara no ciclo de conteúdo:
   o vídeo longo responde + CTA direto com open loop.
 - **Reprise** (publicar 3-5 dias depois do longo): clip do momento
   mais impactante do longo, reeditado para formato vertical.
+
+---
+
+## ESCRITA OTIMIZADA PARA VOZ-OVER + TRADUÇÃO AUTOMÁTICA
+
+> O canal usa narração em voz-over e ativa tradução automática
+> (YouTube auto-dub). Estas regras garantem que o roteiro soe
+> natural quando narrado e que a tradução para EN preserve o
+> sentido.
+
+### Regras para voz-over
+
+- Marcar pausas com `[pausa]` entre frases longas ou antes de
+  revelações — o narrador precisa respirar e o espectador
+  precisa processar.
+- Marcar ênfase com `[ênfase]` em palavras-chave que o narrador
+  deve destacar vocalmente.
+- Frases com mais de 25 palavras DEVEM ter vírgulas ou travessões
+  estratégicos que criem pontos naturais de respiração.
+- Números grandes: escrever por extenso ou com separador
+  legível — "oitenta mil" ou "80.000", nunca "80000".
+- Datas: escrever por extenso — "vinte e cinco de março de dois
+  mil e vinte e seis", não "25/03/2026". Formato numérico
+  prejudica o reconhecimento de fala (ASR).
+- Siglas: na primeira ocorrência, escrever o nome completo
+  seguido da sigla — "Agência Espacial Europeia (ESA)". Nas
+  seguintes, usar a sigla. Siglas muito comuns (IA, NASA, DNA)
+  não precisam de expansão.
+
+### Regras para tradução automática (YouTube auto-dub EN)
+
+- Evitar gírias ou expressões idiomáticas brasileiras que não
+  tenham equivalente direto em inglês. Ex: "dar um jeitinho",
+  "fulano de tal", "na cara dura".
+- Evitar jogos de palavra que dependem de fonética PT-BR.
+- Nomes próprios em inglês: manter a grafia original e indicar
+  pronúncia entre colchetes na primeira ocorrência se necessário
+  — ex: "Ronan Farrow [rônan férou]".
+- Evitar contrações coloquiais na narração — usar "para" (não
+  "pra"), "está" (não "tá"), "estou" (não "tô"). A exceção
+  são inserções editoriais em 1ª pessoa onde o coloquialismo
+  reforça autenticidade — nesse caso, limitar a 1-2 por roteiro.
+- Frases ambíguas para tradução automática: evitar construções
+  onde sujeito e objeto podem ser confundidos por IA de tradução.
+  Preferir ordem direta (sujeito + verbo + objeto).
 
 ---
 
@@ -1488,8 +1677,8 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | # | Verificação | Critério |
 |---|---|---|
 | 1 | Metadados completos | 10 títulos + Top 3 CTR + thumbnail + post comunidade + 3–5 hashtags + 8–12 tags (todas com volume > 0, tabela com dados) + descrição SEO (250–400 palavras, template completo com timestamps + vídeos relacionados + fontes + CTA) |
-| 2 | Títulos validados | Todos os 10: ≤ 60 caracteres · ≤ 10 palavras · zero jargão · 1-2 CAPS cirúrgicos · tom conversacional · premissa (não resultado) · nenhum caiu nas 6 armadilhas sem reframe aplicado. Top 3 validados por keyword research (VidIQ) ou justificados por fórmula se indisponível |
-| 3 | Contagem de palavras (narração) | Vídeo longo: 1.700–2.200 palavras · Short: ≤ 130 palavras |
+| 2 | Títulos validados | Todos os 10: ≤ 55 caracteres · ≤ 10 palavras · zero jargão · 1-2 CAPS cirúrgicos · tom conversacional · premissa (não resultado) · nenhum caiu nas 6 armadilhas sem reframe aplicado. Top 3 validados por keyword research (VidIQ) ou justificados por fórmula se indisponível |
+| 3 | Contagem de palavras (narração) | Vídeo longo: 1.400–2.000 palavras · Short: ≤ 130 palavras |
 | 4 | Todas as seções do roteiro presentes | Hook + Contexto + Desenvolvimento (blocos) + Loops + CTA Final |
 | 5 | Escalonamento progressivo | Os blocos seguem Âncora → Escalada → Clímax → Implicação · Tensão nunca diminui · Transições invisíveis entre blocos (Princípio 2) |
 | 6 | Direção visual em todos os blocos | Cada bloco de narração possui linha `VISUAL:` imediatamente após |
@@ -1509,6 +1698,11 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 20 | Modelo de escrita consultado | Ao menos 1 roteiro de `modelos-de-escrita/` foi lido antes de escrever · Estilo narrativo calibrado |
 | 21 | Especificidade visual | Nenhum VISUAL genérico (chip de IA, data center genérico, globo digital, cientista genérico) · Cada VISUAL é específico ao conteúdo daquele bloco · Nenhum VISUAL consecutivo repete escala ou cenário · Paleta cromática dos VISUALs varia conforme o tema |
 | 22 | Disclosure de IA na descrição | Linha "Imagens ilustrativas geradas por inteligência artificial." presente na descrição SEO, após o convite de inscrição e antes das fontes |
+| 23 | Teste de leitura em voz alta | Roteiro lido em voz alta a ~150 palavras/min · Nenhuma frase causa fôlego curto · Pausas `[pausa]` e ênfases `[ênfase]` posicionadas · Números escritos por extenso ou com separador legível |
+| 24 | Camada de Retenção Engenheirada | Auditoria dos primeiros 30s aprovada (5 itens) · Pattern interrupts a cada 30-45s · Mapa de open loops documentado (mínimo 3 nos primeiros 60s) · 3 pontos de risco de drop cobertos (30s, 2min, 50%) · Variação de densidade: nenhuma sequência de 3+ parágrafos de alta densidade sem momento de baixa |
+| 25 | CTAs na narração | CTA 1 (engajamento) entre Bloco 2 e 3 · CTA 2 (inscrição) dentro do Bloco 4 · CTA 3 (próximo vídeo) nos últimos 10s · Nenhum "deixe seu like" genérico |
+| 26 | Voice-over + tradução | Sem contrações coloquiais na narração (exceto inserções editoriais) · Sem gírias PT-BR sem equivalente EN · Datas por extenso · Siglas expandidas na 1ª ocorrência |
+| 27 | Manifesto de Diferenciação | Frase de diferenciação presente no briefing da Fase 0 · Tese parafraseada aparece no roteiro (preferencialmente Bloco 4) |
 
 ---
 
@@ -1620,6 +1814,64 @@ Com os dados obtidos, gerar o seguinte diagnóstico no output:
   possíveis causas]
 - Comparação com top performer: [diferenças-chave entre o
   último vídeo e o melhor vídeo do canal]
+
+### Análise de retenção por timestamp (cruzamento com roteiro)
+
+> Esta é a análise mais importante da Fase P. Sem ela, você
+> sabe QUE o vídeo falhou, mas não ONDE nem POR QUÊ.
+
+**Passo 1 — Obter a retention curve:**
+Se a API retornar dados de retention curve (VidIQ
+`vidiq_channel_analytics` com dimensão temporal ou YouTube
+Analytics com `audienceWatchRatio`), extrair os pontos de
+retenção segundo-a-segundo (ou a granularidade disponível).
+
+**Passo 2 — Identificar os 3 maiores drops:**
+
+| Drop | Timestamp | Retenção antes | Retenção depois | Queda |
+|---|---|---|---|---|
+| 1 | [mm:ss] | [X%] | [Y%] | [-Z%] |
+| 2 | [mm:ss] | [X%] | [Y%] | [-Z%] |
+| 3 | [mm:ss] | [X%] | [Y%] | [-Z%] |
+
+**Passo 3 — Cruzar cada drop com o roteiro:**
+Para cada drop identificado, localizar o trecho exato do
+roteiro do último vídeo que corresponde àquele timestamp:
+- Timestamp do drop: [mm:ss]
+- Trecho do roteiro: [citar a frase ou parágrafo exato]
+- Diagnóstico narrativo: [causa provável — escolher entre:]
+  - Hook não entregou a promessa do título
+  - Explicação técnica longa sem dado contraintuitivo
+  - Transição fraca entre blocos (perda de tensão)
+  - Bloco sem payoff parcial (espectador não vê recompensa)
+  - Ausência de pattern interrupt (monotonia visual/narrativa)
+  - Dado ou fonte sem conexão emocional com o espectador
+- Ação corretiva para o roteiro atual: [ação específica]
+
+**Passo 4 — Verificar os 3 pontos críticos universais:**
+Mesmo que não sejam os maiores drops, verificar sempre:
+- **Marca de ~30s** — retenção neste ponto indica se o hook
+  entregou a promessa do título. Se < 70%, o hook falhou.
+- **Marca de ~2min** — retenção indica se o primeiro payoff
+  parcial funcionou. Se < 50%, o contexto/Bloco 1 perderam
+  o espectador.
+- **Marca de ~50% da duração** — ponto de fadiga. Se a
+  retenção cai > 10% neste ponto vs. a marca anterior, falta
+  virada narrativa ou dado de impacto no meio do vídeo.
+
+Se a retention curve não estiver disponível, usar a retenção
+média como proxy e informar: "Retention curve indisponível —
+diagnóstico baseado em retenção média. Aplicar reforço
+preventivo nos 3 pontos críticos (30s, 2min, 50% da duração)."
+
+### Lições do último vídeo
+- ERRO A NÃO REPETIR: [1-2 erros narrativos específicos
+  identificados no diagnóstico, com referência ao trecho do
+  roteiro anterior. Ex: "Explicação técnica de 90s sem dado
+  contraintuitivo no Bloco 2 coincide com o maior drop"]
+- ACERTO A MANTER: [1 padrão que funcionou, com referência.
+  Ex: "Hook com dado numérico em <5s — retenção dos primeiros
+  30s acima da média do canal"]
 
 ### Calibrações para o roteiro atual
 - [Lista de 2-4 ações concretas derivadas do diagnóstico.
@@ -1777,3 +2029,64 @@ gancho do novo pacote. Dado concreto + tensão não resolvida.
 2. [Quando medir resultados]
 3. [Próximo passo se não funcionar]
 ```
+
+---
+
+## ANEXO — GERAÇÃO DE SHORTS COMPANION (opcional)
+
+> **QUANDO USAR:** Após gerar o roteiro de um vídeo longo,
+> identificar 2-3 trechos com potencial de Short autônomo.
+> Esses Shorts são derivados do long-form mas devem funcionar
+> sozinhos — sem dependência de contexto.
+
+### Critérios de seleção
+
+Para cada trecho candidato, validar:
+- [ ] Tem arco narrativo completo em 45-60 segundos?
+- [ ] Contém o dado mais impactante do vídeo OU o paradoxo
+  mais forte?
+- [ ] Funciona SEM contexto do vídeo original? (um espectador
+  que nunca viu o longo entende e se impressiona?)
+- [ ] O hook é autossuficiente em ≤ 3 segundos?
+- [ ] Não é uma "prévia" — é um micro-vídeo completo?
+
+### Output por Short companion
+
+Para cada Short selecionado, gerar:
+
+```
+### Short Companion #[N] — [título curto]
+
+**Trecho original:** [mm:ss] a [mm:ss] do roteiro longo
+**Função no funil:** [Teaser / Standalone / Lançamento / Reprise]
+
+**Hook reescrito (3 segundos, autossuficiente):**
+[frase de abertura — deve funcionar sem o contexto do vídeo longo]
+
+**Narração adaptada (45-60s, 120-130 palavras):**
+[texto reescrito para formato Short — ritmo acelerado, sem
+introdução, paradoxo imediato → tensão → mecanismo → implicação]
+
+**Texto on-screen sugerido (overlay):**
+[1-2 frases de impacto para aparecer na tela em momentos-chave]
+
+**CTA final (últimos 5 segundos):**
+[open loop que direciona para o vídeo longo]
+Ex: "O que aconteceu depois disso mudou tudo. Vídeo completo
+no canal."
+
+**VISUAL — direção para edição:**
+[indicações de corte, ritmo e transições visuais]
+```
+
+### Regras
+
+- Máximo de 3 Shorts companion por vídeo longo.
+- Nenhum Short pode cobrir o mesmo dado/cena que outro.
+- Se o vídeo longo tem menos de 10 minutos, gerar no máximo
+  2 Shorts companion.
+- A narração do Short DEVE ser reescrita — nunca copiar
+  literalmente o trecho do longo. O ritmo e a estrutura são
+  diferentes.
+- Cada Short companion deve ter um título próprio (não o
+  título do vídeo longo).
