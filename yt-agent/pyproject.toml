@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "yt-agent"
+version = "0.1.0"
+description = "Agentic workflow para produção de vídeos YouTube — powered by LangGraph + Claude"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12,<4.0"
+authors = [{ name = "Marcus Maciel" }]
+
+dependencies = [
+    "langgraph>=1.1",
+    "langgraph-checkpoint-sqlite>=3.0",
+    "langchain-anthropic>=1.4",
+    "mcp>=1.27",
+    "httpx>=0.28",
+    "pydantic>=2.11",
+    "pydantic-settings>=2.8",
+    "typer>=0.24",
+    "rich>=14.0",
+    "sqlalchemy>=2.0",
+    "aiosqlite>=0.21",
+    "greenlet>=3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=1.0",
+    "pytest-mock>=3.14",
+    "respx>=0.22",
+    "ruff>=0.11",
+]
+
+[project.scripts]
+yt-agent = "yt_agent.main:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/yt_agent"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "TCH"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
