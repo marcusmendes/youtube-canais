@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "python3 .cursor/hooks/inject-memory.py"
+      }
+    ],
+    "subagentStop": [
+      {
+        "command": "python3 .cursor/hooks/save-to-db.py",
+        "matcher": "generalPurpose"
+      }
+    ]
+  }
+}
