@@ -75,6 +75,29 @@ Use `vidiq_video_comments` nos 2-3 vídeos com mais views para extrair:
 
 > Se VidIQ não estiver disponível, pular este passo.
 
+### Passo 3.7 — Desconstrução de Hook do top performer
+
+No concorrente com MAIS views entre os selecionados, analisar os
+**primeiros 15 segundos** do transcript:
+
+- **O que prometeu** visualmente e verbalmente que gerou o clique?
+- **Qual técnica de abertura** usou? (dado numérico, pergunta,
+  cenário hipotético, contradição, história pessoal)
+- **Em quantos segundos** entregou o primeiro payoff parcial?
+- **Qual emoção** o hook ativou? (medo, admiração, curiosidade,
+  indignação)
+
+Incluir no briefing uma seção:
+```
+### Desconstrução do Hook do Top Performer
+- Vídeo: [título] ([views] views)
+- Técnica de abertura: [tipo]
+- Primeiro payoff: [Xs]
+- Emoção ativada: [emoção]
+- Instrução para o roteiro: superar essa promessa nos
+  primeiros 8s do nosso hook
+```
+
 ### Passo 4 — Análise cruzada com fontes
 
 Para cada transcript, cruzar com as fontes científicas definidas para

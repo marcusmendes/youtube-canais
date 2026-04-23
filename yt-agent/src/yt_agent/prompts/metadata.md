@@ -230,6 +230,13 @@ unintended text. Movie poster composition. 16:9 aspect ratio."*
   globo digital) — o visual deve ser específico a ESTE vídeo
 - Nunca fundo preto sem iluminação direcional (desaparece no modo escuro)
 
+**STRESS TEST título ↔ thumbnail:** O título e a thumbnail devem contar
+perspectivas complementares por contraste, nunca a mesma mensagem por
+redundância. Se o título nega algo, a thumbnail mostra o cenário onde
+acontece. Se pergunta, a thumbnail mostra a evidência. Se declara
+número impossível, a thumbnail mostra o contexto humano afetado. O par
+deve criar tensão irresistível que obriga o clique.
+
 > **Instrução de uso:** Ao final do prompt, adicionar linha em PT:
 > *"→ No Nano Banana 2: anexe sua foto de referência como Reference
 > Image 1 e cole o prompt acima."*

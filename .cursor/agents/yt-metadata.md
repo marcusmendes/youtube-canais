@@ -119,6 +119,13 @@ Estética 2 — Ficção Científica:
 **7. ANTI-PADRÕES** — Nunca mesma composição consecutiva, nunca rosto
 sem referência, nunca >2 palavras, nunca setas/círculos/emojis.
 
+**STRESS TEST título ↔ thumbnail:** O título e a thumbnail devem
+contar perspectivas complementares por contraste, nunca a mesma
+mensagem por redundância. Se o título nega algo, a thumbnail mostra
+o cenário onde acontece. Se pergunta, a thumbnail mostra a evidência.
+Se declara número impossível, a thumbnail mostra o contexto humano
+afetado. O par deve criar tensão irresistível que obriga o clique.
+
 ---
 
 ## POST COMUNIDADE (≤150 palavras, 4 partes)

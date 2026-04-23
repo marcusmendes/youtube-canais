@@ -46,7 +46,7 @@ tom, ritmo e fluidez. O modelo é referência de ESTILO DE ESCRITA
 3. **VALIDAÇÃO DE TEMA** — Checklist de Ouro
 4. **METADADOS** — 10 títulos + thumbnail + descrição + tags
 5. **ROTEIRO** — Hook → Contexto → 4 Blocos → CTA Final
-6. **CHECKLIST DE VALIDAÇÃO** — 28 itens
+6. **CHECKLIST DE VALIDAÇÃO** — 29 itens
 7. **FASE R** (pós-publicação) — Repackaging se vídeo subperformar em 7 dias
 
 > Se pular qualquer fase, sinalizar no output e justificar.
@@ -271,7 +271,7 @@ sinais de rankeamento.
   a curiosidade do espectador — nunca sobrecarregue sua paciência com
   jargão não explicado.
 
-### DNA NARRATIVO — 7 PRINCÍPIOS DE ESCRITA
+### DNA NARRATIVO — 8 PRINCÍPIOS DE ESCRITA
 
 > **INSTRUÇÃO DE PRIORIDADE MÁXIMA:** Estes 7 princípios definem o
 > estilo narrativo do canal. Aplicar em TODOS os roteiros, sem exceção.
@@ -384,6 +384,33 @@ Padrão desejado:
 Anti-padrão: resumo analítico ("Em resumo, os dados mostram
 que...") ou lista de pontos abordados ("Neste vídeo, vimos
 três aspectos...").
+
+**PRINCÍPIO 8 — FATOR DE AGÊNCIA**
+Sempre que a tecnologia descrita tiver **autonomia de decisão**
+(a IA decide, age ou descobre algo sem intervenção humana direta),
+o roteiro deve destacar explicitamente o **momento de decisão
+não-humana** — o instante em que a máquina fez algo por conta própria.
+
+Quando a tecnologia NÃO tem autonomia, criar o conflito narrativo
+sobre a *falta* dela ou o *desejo* por ela: "Por enquanto, um humano
+ainda precisa apertar o botão. Mas por quanto tempo?"
+
+Este princípio reflete um padrão comprovado do canal: vídeos que
+exploram o dilema "quem decide?" e "quem é o responsável?" geram
+significativamente mais retenção e engajamento do que vídeos
+puramente informativos.
+
+**Aplicação prática:**
+- No hook ou contexto: posicionar o conflito de agência cedo
+- Em pelo menos 1 bloco: dedicar espaço ao dilema ético da
+  autonomia (quem responde quando a IA erra?)
+- No CTA de engajamento: formular a pergunta em torno da
+  responsabilidade ou confiança ("Você confiaria numa decisão
+  feita 100% por IA?")
+
+Anti-padrão: tratar a IA como ferramenta passiva em todos os
+blocos. Mesmo que o tema seja "IA assistiva", encontrar o ponto
+onde a autonomia começa — é aí que mora a tensão narrativa.
 
 **PRESENÇA EDITORIAL EM PRIMEIRA PESSOA:**
 O narrador é Marcus Maciel — uma voz com ponto de vista próprio,
@@ -846,6 +873,31 @@ extrair:
 
 > Se VidIQ não estiver disponível, pular este passo.
 
+**Passo 3.7 — Desconstrução de Hook do top performer:**
+No concorrente com MAIS views entre os selecionados, analisar
+especificamente os **primeiros 15 segundos** do transcript:
+
+- **O que ele prometeu** visualmente e verbalmente que gerou o clique?
+- **Qual técnica de abertura** usou? (dado numérico, pergunta,
+  cenário hipotético, contradição, história pessoal)
+- **Em quantos segundos** entregou o primeiro payoff parcial?
+- **Qual emoção** o hook ativou? (medo, admiração, curiosidade,
+  indignação)
+
+Incluir no briefing competitivo uma seção:
+```
+### Desconstrução do Hook do Top Performer
+- Vídeo: [título] ([views] views)
+- Técnica de abertura: [tipo]
+- Primeiro payoff: [Xs]
+- Emoção ativada: [emoção]
+- Instrução para o roteiro: superar essa promessa nos
+  primeiros 8s do nosso hook
+```
+
+> O objetivo não é copiar — é entender por que o concorrente
+> ganhou o clique e garantir que nosso hook supere essa promessa.
+
 **Passo 4 — Análise cruzada com fontes:**
 Para cada transcript, cruzar com as fontes científicas definidas
 para o tema do nosso roteiro e identificar:
@@ -1218,6 +1270,25 @@ e leia só o título. Funciona sozinho? Se ambos funcionam
 separados E se completam juntos, o par está correto. Se a
 thumbnail precisa do título para fazer sentido, a imagem
 precisa ser mais forte.
+
+**Stress Test de Contradição Visual (título ↔ thumbnail):**
+O título e a thumbnail devem contar **perspectivas complementares
+por contraste**, nunca a mesma mensagem por redundância.
+
+Regra: se o título usa uma emoção ou direção, a thumbnail deve
+mostrar a tensão oposta ou o "outro lado" do conflito.
+
+| Se o título... | A thumbnail deve mostrar... |
+|---|---|
+| Nega algo ("NÃO vai substituir") | O cenário visual onde substitui |
+| Faz uma pergunta ("Pode curar?") | A evidência visual de que sim (ou quase) |
+| Declara um número impossível | O contexto humano afetado pelo número |
+| Apresenta conflito ("X vs Y") | O momento de confronto visual |
+| Sugere consequência futura | O presente sendo transformado |
+
+O par título + thumbnail deve criar uma **tensão irresistível**:
+o espectador vê uma coisa na imagem, lê outra no título, e
+precisa clicar para resolver a contradição.
 
 **6. STYLE CLOSE**
 
@@ -1941,7 +2012,7 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 15 | Análise de performance (Fase P) | Fase P executada via VidIQ ou MCP · Diagnóstico documentado · ≥2 calibrações incorporadas · Ou fallback informado |
 | 16 | Análise competitiva (Fase 0) | Fase 0 executada ou fornecida · ≥3 concorrentes analisados · Comentários dos concorrentes analisados (VidIQ) · ≥1 correção explícita de erro · ≥1 ângulo diferenciador |
 | 17 | Validação de tema (Fase V) | Keyword principal validada por `vidiq_keyword_research` · Volume e competição documentados · Ou fallback informado |
-| 18 | DNA Narrativo — 7 Princípios | Verificar: (a) scaffold invisível — nenhum rótulo de bloco na narração (P1) · (b) transições orgânicas sem marcadores (P2) · (c) ritmo respiratório — ao menos 1 frase ≤8 e 1 ≥25 palavras por parágrafo (P3) · (d) metáforas concretas antes de conceitos abstratos (P4) · (e) espectador posicionado como participante (P5) · (f) contra-argumento honesto presente se roteiro investigativo (P6) · (g) conclusão como crescendo, não como resumo (P7) |
+| 18 | DNA Narrativo — 8 Princípios | Verificar: (a) scaffold invisível — nenhum rótulo de bloco na narração (P1) · (b) transições orgânicas sem marcadores (P2) · (c) ritmo respiratório — ao menos 1 frase ≤8 e 1 ≥25 palavras por parágrafo (P3) · (d) metáforas concretas antes de conceitos abstratos (P4) · (e) espectador posicionado como participante (P5) · (f) contra-argumento honesto presente se roteiro investigativo (P6) · (g) conclusão como crescendo, não como resumo (P7) · (h) fator de agência — momento de decisão não-humana destacado ou conflito sobre falta de autonomia presente (P8) |
 | 19 | Revisão anti-IA | Releia o roteiro e verifique: (a) nenhuma frase-molde dos anti-padrões · (b) nenhum bloco abre com mesma estrutura sintática · (c) nenhuma bridge repete fórmula · (d) inserções editoriais específicas ao conteúdo · (e) modelos de escrita foram consultados · Se encontrar violação, reescreva antes de entregar |
 | 20 | Modelo de escrita consultado | Ao menos 1 roteiro de `modelos-de-escrita/` foi lido antes de escrever · Estilo narrativo calibrado |
 | 21 | Especificidade visual | Nenhum VISUAL genérico (chip de IA, data center genérico, globo digital, cientista genérico) · Cada VISUAL é específico ao conteúdo daquele bloco · Nenhum VISUAL consecutivo repete escala ou cenário · Paleta cromática dos VISUALs varia conforme o tema |
@@ -1952,6 +2023,7 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 26 | Voice-over + tradução | Sem contrações coloquiais na narração (exceto inserções editoriais) · Sem gírias PT-BR sem equivalente EN · Datas por extenso · Siglas expandidas na 1ª ocorrência |
 | 27 | Manifesto de Diferenciação | Frase de diferenciação presente no briefing da Fase 0 · Tese parafraseada aparece no roteiro (preferencialmente Bloco 4) |
 | 28 | Label "Altered content" no Studio | Marcado durante upload (Studio → Detalhes → "Conteúdo alterado") · Obrigatório quando vídeo usa imagens/voz/vídeo gerados por IA que pareçam realistas |
+| 29 | Stress Test título ↔ thumbnail | O título e a thumbnail contam perspectivas complementares por contraste (não redundantes) · Se título nega, thumbnail mostra o oposto visual · Se título pergunta, thumbnail sugere a evidência · O par gera tensão que obriga o clique |
 
 ---
 
@@ -1976,7 +2048,7 @@ um workflow independente que não requer os campos variáveis.)
    o estilo narrativo antes de escrever.
 5. **Metadados + Roteiro** — Gere todas as seções na ordem definida,
    sem interrupção, incorporando os insights da Fase P e Fase 0,
-   aplicando os 7 Princípios do DNA Narrativo.
+   aplicando os 8 Princípios do DNA Narrativo.
 6. **Checklist** — Execute a checklist de validação ao final.
 
 ---
