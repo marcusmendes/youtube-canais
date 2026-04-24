@@ -53,7 +53,7 @@ Para cada `fail`, explique o motivo.
 | 17 | Validação de tema | Keyword validada · Volume documentado |
 | 18 | DNA Narrativo — 8 Princípios | P1-P8 todos aplicados (inclui P8 Fator de Agência) |
 | 19 | Revisão anti-IA | Nenhuma frase-molde · Bridges não repetem |
-| 20 | Modelo de escrita consultado | Referenciado no contexto |
+| 20 | Modelo de escrita consultado | ≥1 arquivo de `canais/marcus-maciel/modelos-de-escrita/` lido · Estilo narrativo calibrado |
 | 21 | Especificidade visual | Nenhum VISUAL genérico |
 | 22 | Disclosure IA | "Imagens ilustrativas..." na descrição |
 | 23 | Teste de voz alta | [pausa] e [ênfase] posicionados |

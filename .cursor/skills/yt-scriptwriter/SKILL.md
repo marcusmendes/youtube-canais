@@ -21,8 +21,10 @@ Lance o subagent **`/yt-scriptwriter`** passando:
 - Calibrações de Performance se disponíveis
 - Briefing Competitivo se disponível
 
-O subagent escreve o roteiro completo seguindo os 7 Princípios do
-DNA Narrativo, com VISUALs, open loops e CTAs.
+O subagent lê um modelo de escrita de
+`canais/marcus-maciel/modelos-de-escrita/` para calibrar o estilo
+narrativo, e então escreve o roteiro completo seguindo os 8 Princípios
+do DNA Narrativo, com VISUALs, open loops e CTAs.
 
 Após conclusão, apresente o roteiro ao usuário com contagem de
 palavras e duração estimada.
