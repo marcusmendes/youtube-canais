@@ -74,6 +74,57 @@ def fetch_last_subnicho(conn: sqlite3.Connection) -> str:
     return f"- Último sub-nicho: {row['video_topic']} (próximo deve ser diferente)\n"
 
 
+def fetch_last_audit(conn: sqlite3.Connection) -> str:
+    row = conn.execute(
+        """SELECT summary, created_at FROM agent_runs
+           WHERE agent_type = 'yt-algorithm-audit'
+           ORDER BY created_at DESC LIMIT 1"""
+    ).fetchone()
+    if not row:
+        return "- Nenhuma auditoria algorítmica registrada (execute /yt-algorithm-audit)\n"
+    summary = row["summary"]
+    if len(summary) > 800:
+        summary = summary[:800] + "..."
+    return f"- Última auditoria ({row['created_at'][:10]}):\n  {summary}\n"
+
+
+def fetch_current_calendar(conn: sqlite3.Connection) -> str:
+    from datetime import datetime as dt
+
+    current_month = dt.now().strftime("%Y-%m")
+    rows = conn.execute(
+        """SELECT week_number, topic, sub_niche, keyword, status
+           FROM content_calendar
+           WHERE month_year = ?
+           ORDER BY week_number""",
+        (current_month,),
+    ).fetchall()
+    if not rows:
+        prev_month_row = conn.execute(
+            """SELECT month_year FROM content_calendar
+               ORDER BY month_year DESC LIMIT 1"""
+        ).fetchone()
+        if prev_month_row:
+            return f"- Nenhum cronograma para {current_month} (último: {prev_month_row['month_year']})\n"
+        return "- Nenhum cronograma registrado (execute /yt-calendar)\n"
+
+    status_icons = {
+        "planned": "📋",
+        "in_progress": "🔄",
+        "published": "✅",
+        "skipped": "⏭️",
+    }
+    parts = []
+    for r in rows:
+        icon = status_icons.get(r["status"], "❓")
+        kw = f' — kw: "{r["keyword"]}"' if r["keyword"] else ""
+        parts.append(
+            f"  - Semana {r['week_number']}: {icon} {r['topic']} "
+            f"({r['sub_niche']}){kw} [{r['status']}]"
+        )
+    return "\n".join(parts) + "\n"
+
+
 def fetch_recent_keywords(conn: sqlite3.Connection) -> str:
     rows = conn.execute(
         """SELECT keyword, volume, overall FROM keyword_cache
@@ -108,6 +159,10 @@ def build_context() -> str:
             fetch_last_thumbnail(conn),
             "\n### Último sub-nicho\n",
             fetch_last_subnicho(conn),
+            "\n### Última Auditoria Algorítmica\n",
+            fetch_last_audit(conn),
+            "\n### Cronograma do Mês Atual\n",
+            fetch_current_calendar(conn),
             "\n### Keywords recentes com volume\n",
             fetch_recent_keywords(conn),
         ]

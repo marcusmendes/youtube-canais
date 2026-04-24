@@ -24,6 +24,8 @@ YT_AGENT_TYPES = {
     "yt-scriptwriter",
     "yt-qa",
     "yt-repackaging",
+    "yt-algorithm-audit",
+    "yt-calendar",
 }
 
 
@@ -70,6 +72,51 @@ def save_agent_run(
            VALUES (?, ?, ?, ?, ?, ?)""",
         (agent_type, video_topic, video_id, summary, status, now),
     )
+
+
+def extract_month_year(text: str) -> str | None:
+    """Extract month/year like '2026-06' from calendar summary or task."""
+    m = re.search(r"(\d{4})[-/](\d{2})", text)
+    if m:
+        return f"{m.group(1)}-{m.group(2)}"
+    months_pt = {
+        "janeiro": "01", "fevereiro": "02", "março": "03", "marco": "03",
+        "abril": "04", "maio": "05", "junho": "06", "julho": "07",
+        "agosto": "08", "setembro": "09", "outubro": "10",
+        "novembro": "11", "dezembro": "12",
+    }
+    for name, num in months_pt.items():
+        pattern = rf"{name}\s+(\d{{4}})"
+        m = re.search(pattern, text, re.IGNORECASE)
+        if m:
+            return f"{m.group(1)}-{num}"
+    return None
+
+
+def save_calendar_topics(
+    conn: sqlite3.Connection, summary: str, task: str,
+) -> None:
+    """Parse weekly topics from calendar summary and insert into content_calendar."""
+    month_year = extract_month_year(f"{task} {summary}")
+    if not month_year:
+        return
+
+    now = datetime.now(timezone.utc).isoformat()
+    week_pattern = re.compile(
+        r"Semana\s+(\d+).*?Sub-nicho[:\s]*([^\n|]+)",
+        re.IGNORECASE | re.DOTALL,
+    )
+
+    for match in week_pattern.finditer(summary):
+        week = int(match.group(1))
+        sub_niche = match.group(2).strip().rstrip("|").strip()
+
+        conn.execute(
+            """INSERT OR IGNORE INTO content_calendar
+               (month_year, week_number, content_type, topic, sub_niche, status, created_at)
+               VALUES (?, ?, 'long', ?, ?, 'planned', ?)""",
+            (month_year, week, sub_niche, sub_niche, now),
+        )
 
 
 def update_baseline_from_summary(conn: sqlite3.Connection, summary: str) -> None:
@@ -132,6 +179,9 @@ def main() -> None:
 
         if agent_type == "yt-performance":
             update_baseline_from_summary(conn, summary)
+
+        if agent_type == "yt-calendar":
+            save_calendar_topics(conn, summary, task)
 
         conn.commit()
     except Exception:

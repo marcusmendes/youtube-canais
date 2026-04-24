@@ -63,10 +63,31 @@ CREATE TABLE IF NOT EXISTS keyword_cache (
     cached_at     TEXT
 );
 
+CREATE TABLE IF NOT EXISTS content_calendar (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    month_year      TEXT NOT NULL,
+    week_number     INTEGER NOT NULL,
+    content_type    TEXT NOT NULL DEFAULT 'long',
+    publish_date    TEXT,
+    topic           TEXT NOT NULL,
+    sub_niche       TEXT,
+    keyword         TEXT,
+    keyword_vol     REAL,
+    keyword_overall REAL,
+    angle           TEXT,
+    emotion         TEXT,
+    topic_type      TEXT,
+    status          TEXT DEFAULT 'planned',
+    video_id        TEXT,
+    created_at      TEXT NOT NULL
+);
+
 CREATE INDEX IF NOT EXISTS idx_agent_runs_type ON agent_runs(agent_type);
 CREATE INDEX IF NOT EXISTS idx_agent_runs_created ON agent_runs(created_at);
 CREATE INDEX IF NOT EXISTS idx_thumbnail_created ON thumbnail_history(created_at);
 CREATE INDEX IF NOT EXISTS idx_keyword_cached ON keyword_cache(cached_at);
+CREATE INDEX IF NOT EXISTS idx_calendar_month ON content_calendar(month_year);
+CREATE INDEX IF NOT EXISTS idx_calendar_status ON content_calendar(status);
 """
 
 
@@ -78,7 +99,7 @@ def main() -> None:
         conn.executescript(SCHEMA)
         conn.commit()
         print(f"Database initialized at {DB_PATH}")
-        print("Tables: agent_runs, channel_baseline, video_history, thumbnail_history, keyword_cache")
+        print("Tables: agent_runs, channel_baseline, video_history, thumbnail_history, keyword_cache, content_calendar")
     finally:
         conn.close()
 
