@@ -145,10 +145,24 @@ como proxy e informar.
 
 ---
 
+## 8. Session Architecture — Checklist rápido
+
+Ao analisar o último vídeo, verificar também:
+- [ ] Vídeo adicionado a 2 playlists temáticas?
+- [ ] Comentário fixado com pergunta provocativa + link para playlist?
+- [ ] (Se canal tem 15+ vídeos) End-screen apontando para vídeo da
+  mesma playlist com maior CTR? Card aos 60% com vídeo de maior
+  watch time médio?
+
+Se algum item estiver pendente, incluir como ação no diagnóstico.
+
+---
+
 ## Output
 
 Salve o resultado em `output/videos/{slug-do-tema}/01-performance.md`
 (se dentro do pipeline) ou exiba diretamente (se execução avulsa).
 
 Estruture com seções Markdown claras: Último Vídeo, Diagnóstico Geral,
-Análise de Retenção, Pontos Críticos, Lições, Calibrações, Alerta.
+Análise de Retenção, Pontos Críticos, Lições, Calibrações, Session
+Architecture, Alerta.

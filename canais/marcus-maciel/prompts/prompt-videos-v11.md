@@ -46,8 +46,9 @@ tom, ritmo e fluidez. O modelo é referência de ESTILO DE ESCRITA
 3. **VALIDAÇÃO DE TEMA** — Checklist de Ouro
 4. **METADADOS** — 10 títulos + thumbnail + descrição + tags
 5. **ROTEIRO** — Hook → Contexto → 4 Blocos → CTA Final
-6. **CHECKLIST DE VALIDAÇÃO** — 29 itens
+6. **CHECKLIST DE VALIDAÇÃO** — 30 itens
 7. **FASE R** (pós-publicação) — Repackaging se vídeo subperformar em 7 dias
+8. **FASE S** (pós-publicação) — Session Architecture: playlists, comentário fixado, end-screens, cards
 
 > Se pular qualquer fase, sinalizar no output e justificar.
 
@@ -1275,8 +1276,10 @@ precisa ser mais forte.
 O título e a thumbnail devem contar **perspectivas complementares
 por contraste**, nunca a mesma mensagem por redundância.
 
-Regra: se o título usa uma emoção ou direção, a thumbnail deve
-mostrar a tensão oposta ou o "outro lado" do conflito.
+**Regra do Intrigue Gap:** o título afirma o RESULTADO ou FATO;
+a thumbnail mostra o **instante imediatamente ANTES** da revelação
+visual desse resultado. O cérebro do viewer precisa "completar a
+cena" — esse gap temporal é o que força o clique.
 
 | Se o título... | A thumbnail deve mostrar... |
 |---|---|
@@ -1285,6 +1288,17 @@ mostrar a tensão oposta ou o "outro lado" do conflito.
 | Declara um número impossível | O contexto humano afetado pelo número |
 | Apresenta conflito ("X vs Y") | O momento de confronto visual |
 | Sugere consequência futura | O presente sendo transformado |
+| Afirma resultado ("IA detecta câncer") | O instante ANTES da revelação (expressão de choque do médico antes de ver o laudo, robô cirúrgico antes da incisão) |
+
+**Exemplos do Intrigue Gap:**
+- ✅ Marcus apontando para tela ANTES do diagnóstico aparecer
+- ✅ Robô cirúrgico no instante ANTERIOR à incisão
+- ❌ Médico já segurando o laudo positivo (redundante com o título)
+- ❌ Diagnóstico já visível na tela (entrega a informação do título)
+
+**Validação obrigatória:** "Se eu apago o título, a thumbnail
+desperta UMA pergunta específica que SÓ o título responde?"
+Se não → refazer thumbnail.
 
 O par título + thumbnail deve criar uma **tensão irresistível**:
 o espectador vê uma coisa na imagem, lê outra no título, e
@@ -2023,7 +2037,8 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 26 | Voice-over + tradução | Sem contrações coloquiais na narração (exceto inserções editoriais) · Sem gírias PT-BR sem equivalente EN · Datas por extenso · Siglas expandidas na 1ª ocorrência |
 | 27 | Manifesto de Diferenciação | Frase de diferenciação presente no briefing da Fase 0 · Tese parafraseada aparece no roteiro (preferencialmente Bloco 4) |
 | 28 | Label "Altered content" no Studio | Marcado durante upload (Studio → Detalhes → "Conteúdo alterado") · Obrigatório quando vídeo usa imagens/voz/vídeo gerados por IA que pareçam realistas |
-| 29 | Stress Test título ↔ thumbnail | O título e a thumbnail contam perspectivas complementares por contraste (não redundantes) · Se título nega, thumbnail mostra o oposto visual · Se título pergunta, thumbnail sugere a evidência · O par gera tensão que obriga o clique |
+| 29 | Stress Test título ↔ thumbnail (Intrigue Gap) | Título afirma resultado · Thumbnail mostra instante ANTES da revelação visual · Nunca redundância · Validação: "Se apago o título, a thumbnail gera 1 pergunta que SÓ o título responde?" |
+| 30 | Session Architecture (FASE S) | Vídeo adicionado a 2 playlists temáticas · Comentário fixado com pergunta provocativa + link para playlist · (Se 15+ vídeos) End-screen com maior CTR da playlist · Card aos 60% com vídeo de maior watch time médio |
 
 ---
 
@@ -2174,6 +2189,54 @@ gancho do novo pacote. Dado concreto + tensão não resolvida.
 2. [Quando medir resultados]
 3. [Próximo passo se não funcionar]
 ```
+
+---
+
+## FASE S — SESSION ARCHITECTURE (PÓS-PUBLICAÇÃO)
+
+> **PRINCÍPIO:** O algoritmo do YouTube não recompensa duração isolada
+> de vídeo — recompensa SESSION TIME (tempo total que o viewer permanece
+> no YouTube após clicar no nosso vídeo). Cada vídeo publicado deve ser
+> configurado como nó de um ecossistema, não como peça isolada.
+
+### Executar para cada novo vídeo publicado
+
+**━━ 1. PLAYLIST INTEGRATION ━━**
+- Adicionar o vídeo a **exatamente 2 playlists** temáticas
+  (ex: "IA na Saúde" + "Medicina do Futuro").
+- Posicionar o vídeo novo entre 2 vídeos com alta retenção
+  (não no final da playlist).
+- Reordenar para criar narrativa de continuidade temática
+  (não cronológica).
+
+**━━ 2. PRIMEIRO COMENTÁRIO FIXADO ━━**
+- Postar comentário próprio fixado com:
+  - Pergunta provocativa para a comunidade
+  - Link para a playlist temática primária (playlist gera
+    mais session time que link para vídeo individual)
+
+### Ativar quando o canal tiver 15+ vídeos publicados
+
+**━━ 3. END-SCREEN ESTRATÉGICO ━━**
+- NÃO apontar para o vídeo mais recente.
+- Apontar para o vídeo da MESMA PLAYLIST com maior CTR histórico.
+- Configurar 2 elementos: 1 vídeo + 1 playlist completa.
+- Duração mínima da end-screen: 20 segundos.
+
+**━━ 4. CARD ESTRATÉGICO AOS 60% ━━**
+- Inserir 1 card no marco de 60% da duração total.
+- Linkar para o vídeo do canal com maior WATCH TIME MÉDIO
+  (não o mais relacionado tematicamente — relação de retenção).
+- Texto do teaser: pergunta aberta sobre o próximo passo
+  natural da curiosidade do viewer.
+
+**━━ 5. AUDITORIA TRIMESTRAL ━━**
+- A cada 3 meses:
+  - Puxar dados de session time no YouTube Analytics
+  - Reordenar playlists baseado em retention curves agregadas
+  - Substituir cards/end-screens dos vídeos com session time
+    abaixo da mediana do canal
+  - Documentar aprendizados na planilha de SOP
 
 ---
 

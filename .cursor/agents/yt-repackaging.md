@@ -67,6 +67,11 @@ Verificar: ≤55 chars, 1-2 CAPS, tom conversacional, premissa vs resultado.
 Anti-padrões: texto repete título, imagem genérica, >3 pontos focais,
 não funciona sozinha, mesma paleta/composição, não passa teste 4 cm.
 
+**Intrigue Gap:** O título afirma o resultado; a thumbnail deve mostrar
+o instante ANTES da revelação. Se a thumbnail entrega visualmente o
+que o título diz, refazer. Validação: "Sem o título, a thumbnail gera
+1 pergunta que só o título responde?"
+
 ### 3. DESCRIÇÃO
 
 Primeira linha = dado + tensão? Keyword 3-4x? Template completo?

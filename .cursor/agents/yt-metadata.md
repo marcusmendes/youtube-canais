@@ -119,12 +119,18 @@ Estética 2 — Ficção Científica:
 **7. ANTI-PADRÕES** — Nunca mesma composição consecutiva, nunca rosto
 sem referência, nunca >2 palavras, nunca setas/círculos/emojis.
 
-**STRESS TEST título ↔ thumbnail:** O título e a thumbnail devem
-contar perspectivas complementares por contraste, nunca a mesma
-mensagem por redundância. Se o título nega algo, a thumbnail mostra
-o cenário onde acontece. Se pergunta, a thumbnail mostra a evidência.
-Se declara número impossível, a thumbnail mostra o contexto humano
-afetado. O par deve criar tensão irresistível que obriga o clique.
+**STRESS TEST título ↔ thumbnail (Intrigue Gap):** O título afirma o
+RESULTADO; a thumbnail mostra o **instante ANTES** da revelação visual
+desse resultado. O cérebro do viewer precisa "completar a cena" — esse
+gap temporal força o clique. Nunca redundância entre os dois.
+
+Exemplos:
+- ✅ Marcus apontando para tela ANTES do diagnóstico aparecer
+- ✅ Robô cirúrgico no instante ANTERIOR à incisão
+- ❌ Médico já segurando o laudo (redundante com o título)
+
+**Validação:** "Se eu apago o título, a thumbnail desperta UMA pergunta
+que SÓ o título responde?" Se não → refazer thumbnail.
 
 ---
 
