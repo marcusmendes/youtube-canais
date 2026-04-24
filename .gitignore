@@ -1,3 +1,5 @@
 .DS_Store
 client_secret.json
 tokens.json
+.env
+/data/*.log 

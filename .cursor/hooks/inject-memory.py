@@ -5,11 +5,20 @@ the conversation as additional_context.
 """
 
 import json
+import logging
 import sqlite3
 import sys
 from pathlib import Path
 
 DB_PATH = Path(__file__).resolve().parents[2] / "data" / "memory.db"
+LOG_PATH = DB_PATH.parent / "hook-inject.log"
+
+logging.basicConfig(
+    filename=str(LOG_PATH),
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
 
 
 def get_connection() -> sqlite3.Connection | None:
@@ -172,8 +181,10 @@ def build_context() -> str:
 
 
 def main() -> None:
+    logging.info("Hook inject-memory.py triggered")
     _input = json.load(sys.stdin)  # noqa: F841
     context = build_context()
+    logging.info("Context built (%d chars)", len(context))
     output = {"additional_context": context}
     print(json.dumps(output))
 

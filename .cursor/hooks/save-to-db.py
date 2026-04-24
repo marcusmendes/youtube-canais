@@ -8,6 +8,7 @@ specialized tables (channel_baseline, thumbnail_history).
 """
 
 import json
+import logging
 import re
 import sqlite3
 import sys
@@ -15,6 +16,14 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 DB_PATH = Path(__file__).resolve().parents[2] / "data" / "memory.db"
+LOG_PATH = DB_PATH.parent / "hook-save.log"
+
+logging.basicConfig(
+    filename=str(LOG_PATH),
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
 
 YT_AGENT_TYPES = {
     "yt-performance",
@@ -153,38 +162,53 @@ def update_baseline_from_summary(conn: sqlite3.Connection, summary: str) -> None
 
 
 def main() -> None:
+    logging.info("Hook save-to-db.py triggered")
     payload = json.load(sys.stdin)
+    logging.info("Payload keys: %s", list(payload.keys()))
 
     status = payload.get("status", "")
-    if status != "completed":
-        print(json.dumps({}))
-        return
-
     task = payload.get("task", "")
     description = payload.get("description", "")
     summary = payload.get("summary", "")
 
-    agent_type = extract_agent_type(task, description)
-    if agent_type is None:
+    logging.info("status=%s task=%s description=%s summary_len=%d",
+                 status, task[:80], description[:80], len(summary))
+
+    if status != "completed":
+        logging.info("Skipped: status is '%s', not 'completed'", status)
         print(json.dumps({}))
         return
 
+    agent_type = extract_agent_type(task, description)
+    if agent_type is None:
+        logging.info("Skipped: no yt-* agent type found in task/description")
+        print(json.dumps({}))
+        return
+
+    logging.info("Detected agent_type: %s", agent_type)
+
     conn = get_connection()
     if conn is None:
+        logging.error("DB not found at %s", DB_PATH)
         print(json.dumps({}))
         return
 
     try:
         save_agent_run(conn, agent_type, summary, task, status)
+        logging.info("Saved agent_run for %s", agent_type)
 
         if agent_type == "yt-performance":
             update_baseline_from_summary(conn, summary)
+            logging.info("Updated channel_baseline from yt-performance")
 
         if agent_type == "yt-calendar":
             save_calendar_topics(conn, summary, task)
+            logging.info("Saved calendar topics for yt-calendar")
 
         conn.commit()
-    except Exception:
+        logging.info("Commit OK")
+    except Exception as exc:
+        logging.exception("Error saving data: %s", exc)
         conn.rollback()
     finally:
         conn.close()

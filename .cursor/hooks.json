@@ -8,8 +8,7 @@
     ],
     "subagentStop": [
       {
-        "command": "python3 .cursor/hooks/save-to-db.py",
-        "matcher": "generalPurpose"
+        "command": "python3 .cursor/hooks/save-to-db.py"
       }
     ]
   }
