@@ -20,8 +20,8 @@ por dados reais do YouTube.
 
 O handle do canal é `@MarcusMacielIAeCiencia`.
 
-**Cadência padrão:** 1 vídeo longo por semana (sábado) + 2 Shorts
-por semana (terça e quinta).
+**Cadência padrão:** 1 vídeo longo por semana (terça-feira) + 2 Shorts
+por semana (quinta-feira e sábado). Total: 3 publicações por semana.
 
 ---
 
@@ -197,7 +197,7 @@ Produzir o output com TODAS as seções abaixo.
 **Canal: Marcus Maciel (@MarcusMacielIAeCiencia)**
 **Gerado em: [data]**
 
-> Cadência: [N] longo(s) por semana (sábado) + [N] Shorts por semana.
+> Cadência: [N] longo(s) por semana (terça-feira) + [N] Shorts por semana.
 > Ferramentas: MCP YouTube + VidIQ.
 ```
 
@@ -205,15 +205,16 @@ Produzir o output com TODAS as seções abaixo.
 
 Grade visual semana-a-semana com dias da semana reais do mês
 solicitado. Marcar:
-- **Sáb** = LONGO #N
-- **Ter** = Short SN
-- **Qui** = Short SN
+- **Terça** = LONGO #N
+- **Quinta** = Short SN
+- **Sábado** = Short SN
 
 Exemplo:
 ```
-| Semana | Seg | Ter | Qua | Qui | Sex | **Sáb** | Dom |
-|--------|-----|-----|-----|-----|-----|---------|-----|
-| 1 | 1 | 2 **S1** | 3 | 4 **S2** | 5 | **6 LONGO** | 7 |
+| Semana | Seg | Ter        | Qua | Qui      | Sex | Sáb      | Dom |
+|--------|-----|------------|-----|----------|-----|----------|-----|
+| 1      | 1   | 2 LONGO #1 | 3   | 4 S1     | 5   | 6 S2     | 7   |
+| 2      | 8   | 9 LONGO #2 | 10  | 11 S3    | 12  | 13 S4    | 14  |
 ```
 
 **Totais:** [N] longos + [N] Shorts = [N] publicações
@@ -231,15 +232,15 @@ Incluir abaixo da tabela:
 
 | Dia | Função | Relação com os longos |
 |-----|--------|----------------------|
-| **Terça** | Teaser do longo do sábado OU Reprise do longo anterior | |
-| **Quinta** | Teaser direto do sábado OU Standalone | |
+| **Quinta** | Teaser do longo de terça OU Standalone | Derivado do longo publicado 2 dias antes |
+| **Sábado** | Reprise/highlight do longo OU Standalone | Derivado do longo da semana OU tema independente |
 
 ### 5. Detalhamento por semana (repetir para cada semana)
 
 Para cada semana gerar:
 
 ```markdown
-## Semana N — Vídeo Longo #N (Sábado DD/MM)
+## Semana N — Vídeo Longo #N (Terça DD/MM)
 
 ### [Sub-nicho]: [Título provisório do tema]
 
@@ -288,8 +289,8 @@ Para cada semana gerar:
 
 | Short | Data | Função | Conteúdo |
 |---|---|---|---|
-| SN | Ter DD/MM | Teaser/Reprise | [descrição + CTA] |
-| SN | Qui DD/MM | Standalone/Teaser | [descrição + CTA] |
+| SN | Qui DD/MM | Teaser do longo / Standalone | [descrição + CTA] |
+| SN | Sáb DD/MM | Reprise / Standalone | [descrição + CTA] |
 ```
 
 ### 6. Calendário Completo (tabela consolidada)
@@ -319,7 +320,7 @@ Para cada semana gerar:
 ### 9. Checklist Semanal de Produção
 
 ```markdown
-**Longo (entregar até sexta):**
+**Longo (entregar até segunda para publicar terça):**
 - [ ] Fase V: tema validado com `vidiq_keyword_research`
 - [ ] Tema passa na Checklist de Ouro (3 perguntas)
 - [ ] Sub-nicho diferente do vídeo anterior
@@ -338,9 +339,9 @@ Para cada semana gerar:
 - [ ] Descrição SEO (250-400 palavras, template completo)
 - [ ] Post de Comunidade preparado
 
-**Shorts (entregar até segunda para a semana):**
-- [ ] Terça: Teaser ou Reprise pronto
-- [ ] Quinta: Standalone ou Teaser pronto
+**Shorts (entregar até quarta para a semana):**
+- [ ] Quinta: Teaser do longo ou Standalone pronto
+- [ ] Sábado: Reprise/highlight ou Standalone pronto
 - [ ] CTA específico em cada Short (nunca genérico)
 ```
 
@@ -356,7 +357,7 @@ Para cada semana gerar:
 ## REGRAS IMPORTANTES
 
 1. **Datas reais:** calcular os dias reais do mês solicitado.
-   Sábados para longos, terças e quintas para Shorts.
+   Terças para longos, quintas e sábados para Shorts.
 2. **Arco narrativo:** os temas devem formar uma progressão ao
    longo do mês, não uma lista aleatória.
 3. **Fórmulas de título:** seguir as 6 fórmulas do prompt-videos-v11
