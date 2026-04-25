@@ -212,7 +212,7 @@ Estrutura obrigatória:
 
 ## Output
 
-Salve em `output/videos/{slug-do-tema}/04-metadata.md` (pipeline)
+Salve em `output/videos/{slug-do-tema}/05-metadata.md` (pipeline)
 ou exiba diretamente (avulso).
 
 Estruture: Títulos (10 + Top 3), Thumbnail Prompt, Descrição SEO,

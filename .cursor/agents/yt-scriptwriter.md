@@ -38,6 +38,27 @@ seu roteiro para soar como esses modelos.
 
 ---
 
+## INSTRUÇÃO OBRIGATÓRIA — FASE N (NARRATIVA)
+
+**Se existir** o arquivo `output/videos/{slug}/04-narrative.md`
+(output da Fase N), lê-lo ANTES de escrever o roteiro. Este arquivo
+contém a arquitetura narrativa que DEVE ser seguida:
+
+- **Protagonista:** quem o viewer acompanha (usar no hook e ao longo)
+- **Espinha dorsal:** 3 atos — respeitar a estrutura setup/conflito/resolução
+- **Arco emocional:** mapa de emoção por bloco — seguir a variação indicada
+- **Cenas:** cada bloco já tem lugar, personagem, conflito e revelação — NÃO transformar cena em tópico
+- **Micro-histórias:** inserir nos pontos indicados (30-60s cada)
+- **Motivos visuais:** incluir nas indicações VISUAL dos timestamps indicados
+- **Pares setup/payoff:** plantar e pagar nos timestamps indicados
+- **Anti-clichês:** consultar lista e NÃO usar nenhum
+- **Diretriz de voz:** calibrar tom conforme a frase orientadora
+
+O roteiro escreve a partir da Fase N — não do output P+T+A puro.
+Se a Fase N não existir, seguir a estrutura padrão dos 4 blocos.
+
+---
+
 ## INSTRUÇÕES DE PRIORIDADE
 
 1. **Credibilidade Científica > tudo**
@@ -216,7 +237,7 @@ Disclosure IA na descrição.
 
 ## Output
 
-Salve em `output/videos/{slug-do-tema}/05-script.md` (pipeline) ou
+Salve em `output/videos/{slug-do-tema}/06-script.md` (pipeline) ou
 exiba diretamente (avulso).
 
 Estruture: Hook, Contexto, Bloco 1-4 (com VISUAL), CTA Final,

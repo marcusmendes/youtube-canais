@@ -1,261 +1,189 @@
-# Análise Competitiva — A Corrida pela Superinteligência (AGI)
-
-**Canal:** Marcus Maciel | IA & Ciência (`@MarcusMacielIAeCiencia`)
-**Data da análise:** 24 de abril de 2026
-**Sub-nicho:** IA + Futuro/AGI
-**Keywords analisadas:** "agi", "superintelligence", "artificial general intelligence"
-
----
-
-## 1. Outliers Identificados
-
-### Busca VidIQ — Outliers (breakout score)
-
-| # | Título | Canal | Views | VPH | Breakout | Duração | Data |
-|---|--------|-------|-------|-----|----------|---------|------|
-| 1 | Rich Sutton, The OaK Architecture: A Vision of SuperIntelligence from Experience | Amii | 72K | 3.5 | 204.6 | 61 min | Jun 2025 |
-| 2 | This is why AGI doesn't exist yet | Enovair Insights | 32K | 10.5 | 189.6 | 12 min | Dez 2025 |
-| 3 | The AI Superintelligence Myth with Arvind Narayanan | ODSC | 28K | 3.9 | 67.8 | 51 min | Jun 2025 |
-| 4 | Roman Yampolskiy — AGI Will be Humanity's Last Great Invention | Oxford Union | 71K | 23.3 | 33.7 | 9 min | Dez 2025 |
-| 5 | Safe Superintelligence Inc. Documentary: The Company Racing Toward AGI | Nuclear Corner with Dan | 41K | 5.8 | 33.5 | 8 min | Jul 2025 |
-| 6 | Superintelligence Will Drive Us to Extinction — Roman Yampolskiy | Jon Hernandez AI | 24K | 7.8 | 28.5 | 90 min | Dez 2025 |
-| 7 | No One Is Ready For This — Ilya Sutskever on Superintelligence | AI Copium | 83K | 26.9 | 13.0 | 20 min | Nov 2025 |
-| 8 | Google's AGI Scientist Says SUPERINTELLIGENCE Is Inevitable | AI Copium | 25K | 8.7 | 3.9 | 18 min | Fev 2026 |
-| 9 | OpenAI Sam Altman SHOCKS: We've Already Crossed Into Superintelligence | AI Revolution | 225K | 29.7 | 3.8 | 13 min | Jun 2025 |
-| 10 | Elon Knew the Secret to AGI All Along | Brighter with Herbert | 159K | 7.5 | 3.6 | 20 min | Mar 2026 |
-
-### Busca VidIQ — Trending (VPH)
-
-| # | Título | Canal | Views | VPH | Engagement |
-|---|--------|-------|-------|-----|------------|
-| 1 | "We're Probably Already Too Late" — AI Safety Expert on Superintelligence | Tom Bilyeu Clips | 31K | 526.2 | 2.5% |
-| 2 | Timeline to AGI: When will superhuman AI be created? | Lex Clips | 120K | 1.1 | 1.3% |
-
----
-
-## 2. Top 5 Concorrentes Selecionados
-
-Critério: relevância temática direta ao tema "corrida pela superinteligência/AGI" + performance (views × VPH × breakout) + recência.
-
-| # | Título | Canal | Views | VPH | Duração | Idioma | videoId |
-|---|--------|-------|-------|-----|---------|--------|---------|
-| **C1** | OpenAI Sam Altman SHOCKS: We've Already Crossed Into Superintelligence | AI Revolution (540K subs) | 225K | 29.7 | 13 min | EN | m_ipAJWCs8g |
-| **C2** | Elon Knew the Secret to AGI All Along | Brighter with Herbert (177K subs) | 159K | 7.5 | 20 min | EN | XeodCKnM0Zk |
-| **C3** | No One Is Ready For This — Ilya Sutskever on Superintelligence | AI Copium (23K subs) | 83K | 26.9 | 20 min | EN | h9gynRa0jB4 |
-| **C4** | Roman Yampolskiy — AGI Will be Humanity's Last Great Invention | Oxford Union (2.4M subs) | 71K | 23.3 | 9 min | EN | pk4tE78LtKc |
-| **C5** | "We're Probably Already Too Late" — AI Safety Expert on Superintelligence | Tom Bilyeu Clips (12K subs) | 31K | 526.2 | 17 min | EN | Hyp0v4Ik4bc |
-
----
-
-## 3. Análise dos Concorrentes
-
-### C1 — "OpenAI Sam Altman SHOCKS: We've Already Crossed Into Superintelligence"
-- **Canal:** AI Revolution (540K subs)
-- **Views:** 225K | **VPH:** 29.7 | **Engagement:** 1.6%
-- **Ângulo:** News roundup — compilação de anúncios recentes (Google MASS, OpenAI o3 Pro, Meta AI lab)
-- **Primeira linha da descrição:** Compilação de novidades AI com tom "aconteceu essa semana"
-- **Estrutura:** Intro → Google MASS → OpenAI o3 Pro → Altman "gentle singularity" → Meta + Alexander Wang → CTA
-- **Pontos fortes:** Cobertura ampla, ritmo rápido, dados concretos (benchmarks)
-- **Fraquezas:** Superficialidade extrema — cobre 4 temas em 13 min sem profundidade; inclui anúncio de curso patrocinado no meio do vídeo; não distingue AGI de ASI; aceita claims de Altman sem questionamento crítico
-
-### C2 — "Elon Knew the Secret to AGI All Along"
-- **Canal:** Brighter with Herbert (177K subs)
-- **Views:** 159K | **VPH:** 7.5 | **Engagement:** 3.7%
-- **Ângulo:** Tese investidor — "visão é o segredo da AGI, e Tesla tem o moat"
-- **Primeira linha da descrição:** "Elon Musk said eight words in 2019 that the entire autonomous driving industry laughed at"
-- **Estrutura:** Hook (lidar é bobagem) → FSD prova → World Model → Optimus → Digital Optimus → Grok Imagine → AGI thesis → Implicações investimento
-- **Pontos fortes:** Narrativa coesa com uma tese clara ao longo de 20 min; engagement alto (3.7%); conecta múltiplos produtos em uma única narrativa
-- **Fraquezas:** Extremamente parcial pró-Tesla/Musk; ignora abordagens concorrentes (Google DeepMind, Anthropic); reduz AGI a "visão + world model" quando a comunidade científica considera múltiplos requisitos; ignora o problema de alinhamento
-
-### C3 — "No One Is Ready For This — Ilya Sutskever on Superintelligence"
-- **Canal:** AI Copium (23K subs)
-- **Views:** 83K | **VPH:** 26.9 | **Engagement:** 2.6%
-- **Ângulo:** Breakdown de entrevista — análise da entrevista de Ilya com Dwarkesh Patel
-- **Primeira linha da descrição:** Ilya on scaling, missing piece, AGI timeline
-- **Estrutura:** Contexto Ilya → Scaling acabou → AGI = aprendizado contínuo → Cenários (recursive self-improvement vs intelligence explosion) → Alinhamento → Merge com AI → Timeline 5-20 anos
-- **Pontos fortes:** O mais substantivo dos 5; traz conceitos reais (continual learning, recursive self-improvement); apresenta múltiplos cenários; inclui nuance sobre alinhamento
-- **Fraquezas:** Depende 100% da entrevista de Ilya — não adiciona fontes externas; não questiona as premissas de Ilya; não explora a distinção AGI vs ASI com rigor
-
-### C4 — "Roman Yampolskiy — AGI Will be Humanity's Last Great Invention"
-- **Canal:** Oxford Union (2.4M subs)
-- **Views:** 71K | **VPH:** 23.3 | **Engagement:** 2.6%
-- **Ângulo:** Debate acadêmico — Yampolskiy argumenta que AGI é ameaça existencial
-- **Estrutura:** Abertura provocativa → Distinção AI/AGI/ASI → Impossibilidade de controle → Dados de probabilidade de doom (20-30%) → Fecho emocional
-- **Pontos fortes:** Alta credibilidade (Oxford + Yampolskiy); dados concretos ("30% p(doom) entre pesquisadores"); distinção clara entre AI tools vs AGI agents; tom persuasivo
-- **Fraquezas:** Unilateral — apresenta apenas o lado doom sem contrapontos; formato debate limita profundidade; não cita soluções concretas nem frameworks de governança
-
-### C5 — "We're Probably Already Too Late" — AI Safety Expert on Superintelligence
-- **Canal:** Tom Bilyeu Clips (12K subs)
-- **Views:** 31K | **VPH:** 526.2 | **Engagement:** 2.5%
-- **Ângulo:** Entrevista adversarial — Tom Bilyeu vs Roman Yampolskiy sobre riscos existenciais
-- **Estrutura:** Recursive self-improvement → p(doom) → Timeline AGI 2027 → Drives emergentes (self-preservation) → Stop button problem → Consciência → Moralidade vs controle
-- **Pontos fortes:** Alto VPH (trending agora); formato Q&A que explora objeções reais; Yampolskiy apresenta argumento sobre impossibilidade de controle de forma acessível; cobre o "stop button problem" com profundidade
-- **Fraquezas:** Extremamente fatalista — não apresenta nenhum cenário positivo; Tom Bilyeu oscila entre alarmismo e solucionismo superficial; não cita Stuart Russell nem frameworks de governança concretos
-
----
-
-## 4. Desconstrução do Hook do Top Performer
-
-### Vídeo: "OpenAI Sam Altman SHOCKS: We've Already Crossed Into Superintelligence" (225K views)
-
-**Primeiros 15 segundos do transcript:**
-> "So, Google just built a team of AI teams that optimize themselves, and it's terrifyingly effective. OpenAI dropped a brand new monster model called o3 Pro that's already beating Claude and Gemini on PhD level benchmarks. Sam Altman says we've officially crossed into the era of super intelligence..."
-
-- **Técnica de abertura:** Cascata de bombas noticiosas — 3 claims impactantes em rápida sucessão
-- **O que prometeu:** Que estamos vivendo um momento de ruptura histórica (Google auto-otimizando, OpenAI batendo PhDs, singularidade declarada)
-- **Primeiro payoff:** ~5 segundos — a frase "terrifyingly effective" já entrega emoção
-- **Emoção ativada:** Medo + urgência (FOMO) — "something none of us can fully control"
-- **Por que funcionou:** Sensação de que o espectador está "atrasado" se não souber dessas 3 novidades
-
-**Instrução para o roteiro:** Superar essa promessa nos primeiros 8s do nosso hook. Em vez de listar notícias, abrir com UM dado existencial que gere pausa cognitiva ("Existe uma probabilidade de 30% de que a IA elimine a humanidade — e quem diz isso são os próprios criadores dela"). Isso supera a cascata de notícias porque personaliza o risco.
-
----
-
-## 5. Análise de Comentários dos Concorrentes
-
-### 5.1 Perguntas mais curtidas / insights da audiência
-
-| Pergunta / Insight | Fonte | Likes | Tema |
-|---|---|---|---|
-| "I am not concerned about AI and AGI but I am very concerned about the people who own it" | C3 (h9gynRa0jB4) | 93 | Controle corporativo |
-| "We are living in the most transformative time in human history, and most people are unaware" | C1 (m_ipAJWCs8g) | 88 | Urgência/despertar |
-| "The soft singularity is that AI is becoming part of daily life just like the internet" | C1 (m_ipAJWCs8g) | 87 | Normalização |
-| "I have a video of my nephew at 2 years old having a Physics world model experience... the ball dropped on his face" | C2 (XeodCKnM0Zk) | 79 | World model / aprendizado |
-| "Optimus does not only use vision, it also uses pressure. To be human capable it will also need hearing, smell, taste" | C2 (XeodCKnM0Zk) | 42 | Multimodalidade |
-| "Merging with technology may be the only way to keep up" but "is keeping up what we really want?" | C3 (h9gynRa0jB4) | 19 | Filosofia / merge |
-| "Current research suggests a future AGI architecture will likely be a hybrid System-of-Systems" | C3 (h9gynRa0jB4) | 32 | Arquitetura técnica |
-| "What happens after the 15th AGI replication? What are we going to end up with?" | C5 (Hyp0v4Ik4bc) | — | Recursive self-improvement |
-
-### 5.2 Sentimento Dominante
-
-**Polarização clara entre dois campos:**
-1. **Fascinação ansiosa** (~55%): "Estamos vivendo o momento mais transformador da história" — querem entender, mas sentem FOMO e insegurança sobre o futuro do trabalho
-2. **Ceticismo ativo** (~30%): "It simulates intelligence but there is no intelligence" / "It's just a calculator/predictive text bot" — questionam se LLMs atuais realmente são o caminho para AGI
-3. **Fatalismo/medo** (~15%): "If it was 1% it would be insane. They're betting 8 billion lives" — preocupação existencial genuína
-
-### 5.3 Objeções e Ceticismo Recorrente
-
-1. **"AGI não é possível com a arquitetura atual"** — múltiplos comentaristas afirmam que LLMs simulam inteligência mas não possuem compreensão real
-2. **"Visão não é suficiente para inteligência geral"** — cegos como Stevie Wonder são inteligentes; AGI precisa de múltiplos sentidos
-3. **"Quem controla a IA é o verdadeiro problema"** — preocupação com concentração de poder nas Big Tech (93 likes no C3)
-4. **"Just pull the plug"** — vários comentaristas acham que a solução é trivial (desligar), o que indica incompreensão da distribuição de sistemas
-
-### 5.4 O Que o Público Sentiu que Faltou
-
-1. **Contrapontos de especialistas céticos** — pedidos por Chollet, LeCun, e vozes que questionam a iminência de AGI
-2. **Cenários positivos concretos** — vídeos doom-focused não mostram como AGI poderia resolver problemas reais
-3. **Governança e regulação** — quase nenhum vídeo cobre frameworks concretos (EU AI Act, propostas de Bengio, Stuart Russell)
-4. **Impacto no emprego** — discussão superficial; audiência quer detalhes práticos sobre transição econômica
-5. **Distinção rigorosa AGI vs ASI vs AI atual** — confusão generalizada nos comentários
-
----
-
-## 6. Erros e Simplificações dos Concorrentes
-
-### Erro 1 — Confundir "singularidade" com AGI (C1)
-**O que disseram:** Sam Altman diz "we've crossed into the era of super intelligence" e o vídeo aceita sem questionamento, equiparando 800M de usuários do ChatGPT a "singularidade gentil".
-**Correção com fonte:** O conceito de singularidade tecnológica (Vernor Vinge, 1993; Ray Kurzweil, 2005) refere-se a um ponto onde IA recursivamente auto-aprimorante supera a inteligência humana, tornando o futuro imprevisível. ChatGPT com 800M de usuários é uma ferramenta popular, não uma singularidade. Nick Bostrom ("Superintelligence", 2014) é explícito: singularidade requer que o sistema gere insight genuinamente novo sem supervisão humana — algo que nenhum LLM atual demonstrou.
-
-### Erro 2 — Reduzir AGI a "visão + world model" (C2)
-**O que disseram:** "The path to AGI is through vision. And Elon has been building the infrastructure for it." — apresenta visão como O ingrediente missing para AGI.
-**Correção com fonte:** Os próprios comentários do vídeo apontam (42 likes): "Optimus doesn't only use vision, it also uses pressure." Yann LeCun (Meta, 2024-2026) argumenta que AGI requer "world models" mas não apenas visuais — requer raciocínio causal, planejamento, e modelagem de objetivos. Yoshua Bengio (2025, carta aberta) lista 6 capacidades essenciais para AGI, das quais visão é apenas uma. Google DeepMind (Levels of AGI, 2023) define 5 níveis onde visão não é sequer mencionada como critério primário.
-
-### Erro 3 — Apresentar p(doom) como consenso científico (C4, C5)
-**O que disseram:** "Average for ML researchers at an AI conference is 30% [probability AI kills everyone]" (Yampolskiy, Oxford Union).
-**Correção com fonte:** O survey citado (Katja Grace et al., 2024, "Thousands of AI Authors on the Future of AI") reporta mediana de 5% de p(doom), não 30%. A cifra de 30% aparece em surveys informais de conferências específicas com viés de seleção. O próprio Yampolskiy (2024, "AI: Unexplainable, Unpredictable, Uncontrollable") reconhece que suas estimativas estão no extremo pessimista do espectro.
-
----
-
-## 7. Ângulos Inexplorados (Nenhum Concorrente Cobriu)
-
-### Ângulo 1 — A corrida geopolítica pela superinteligência como nova Guerra Fria
-Nenhum dos 5 vídeos aborda o aspecto geopolítico: EUA vs China na corrida por AGI, com implicações para soberania, defesa e equilíbrio de poder. Stuart Russell ("Human Compatible", 2019; atualização 2026) argumenta que AGI sem tratado internacional é equivalente a corrida nuclear sem NPT. O relatório do RAND Corporation (2025) mapeia 14 cenários de conflito habilitados por AGI.
-
-### Ângulo 2 — O framework de níveis de AGI do Google DeepMind (Levels 1-5)
-Google DeepMind publicou (Morris et al., 2023; atualizado 2025) um framework com 5 níveis: Emerging → Competent → Expert → Virtuoso → Superhuman. Nenhum concorrente usa esse framework para contextualizar ONDE estamos na jornada. Isso permitiria ao espectador avaliar claims de Altman ("já cruzamos") versus realidade (estamos entre Level 1-2).
-
-### Ângulo 3 — O problema do controle segundo Stuart Russell
-Stuart Russell ("Human Compatible", 2019; palestra RSA 2026) propõe a inversão do paradigma: em vez de dar objetivos fixos à IA, criar sistemas que são incertos sobre seus objetivos e deferentes a humanos. Nenhum concorrente menciona essa abordagem, preferindo o binário "doom vs utopia".
-
----
-
-## 8. Padrão Estrutural Dominante a Evitar
-
-**Padrão identificado:** "News dump alarmista" — o vídeo começa com 3-4 claims impactantes, lista novidades da semana, usa frases como "this changes everything" e "no one is ready", e termina com "drop your thoughts in the comments."
-
-**Por que evitar:**
-- Produz um vídeo datável (shelf life de 2-4 semanas)
-- Não constrói autoridade — qualquer canal pode compilar notícias
-- Não gera rewatch ou compartilhamento orgânico
-
-**Alternativa:** Estrutura investigativa com tese central, onde notícias são evidência e não o produto final. Modelo: "uma pergunta existencial → 3 perspectivas com fontes → framework para o espectador decidir sozinho."
-
----
-
-## 9. Manifesto de Diferenciação
-
-> **Este vídeo se diferencia de todos os concorrentes analisados porque é o único que mapeia a corrida pela superinteligência como uma disputa geopolítica (EUA/China/UE) com framework concreto de níveis (DeepMind Levels 1-5) e propõe o "paradigma de Russell" como alternativa ao binário doom/utopia, baseado em Stuart Russell ("Human Compatible", 2019/2026), Yoshua Bengio (carta aberta 2025) e Google DeepMind (Levels of AGI, 2023/2025) — três fontes que nenhum dos top performers sequer mencionou.**
-
----
-
-## 10. Insights da Audiência para o Roteiro
-
-### Loops de retenção (perguntas para responder ao longo do vídeo)
-1. "Em que nível de AGI estamos realmente?" (framework DeepMind)
-2. "Os criadores de IA realmente acham que ela pode nos matar?" (dados reais vs inflados)
-3. "Quem controla a corrida — governos ou empresas?" (geopolítica)
-4. "Existe um 'botão de desligar' que funcione?" (problema do controle, Stuart Russell)
-5. "Quando isso chega?" (timeline com fontes múltiplas: Sutskever 5-20 anos, Altman "já chegou", Bengio "décadas")
-
-### Objeções para contra-argumentar (Princípio 6)
-- "LLMs não são inteligentes de verdade" → Reconhecer e explicar a diferença entre narrow AI e AGI genuína
-- "É só desligar" → Explicar sistemas distribuídos e o argumento de Russell sobre agentes deferentes
-- "Big Tech não pode ser confiável" → Apresentar modelos de governança (Bengio, EU AI Act)
-
-### 5 perguntas mais curtidas dos comentários (para CTAs e loops)
-1. "Who controls AI is the real problem" (93 likes)
-2. "Most people are unaware this is happening" (88 likes)
-3. "Congratulations on identifying one of eleven pillars of AGI, embodiment" (4 likes mas profundo)
-4. "What happens after the 15th AGI replication?"
-5. "Can we convince AI to care about sentient life?"
-
----
-
-## 11. Tags dos Concorrentes (para pesquisa de tags)
-
-```
-agi, superintelligence, artificial general intelligence, artificial intelligence,
-AI safety, AI alignment, ai news, future of ai, ai research, ai risks,
-AGI timeline, AI predictions, AI takeover, intelligence explosion,
-recursive self-improvement, AI control problem, AI existential risk,
-Sam Altman, Ilya Sutskever, Roman Yampolskiy, Nick Bostrom,
-OpenAI, DeepMind, Anthropic, safe superintelligence,
-AI economy, AI disruption, AI governance, singularity,
-superinteligência, inteligência artificial geral,
-corrida pela agi, futuro da ia, riscos ia
-```
-
----
-
-## 12. Briefing Competitivo — Resumo Executivo
-
-### Landscape
-- **Volume alto, profundidade baixa** — a maioria dos vídeos sobre AGI/superinteligência é news dump ou entrevista-breakdown, sem análise original
-- **Polarização doom vs hype** — os vídeos se dividem entre "vai matar todo mundo" (Yampolskiy) e "já chegamos na singularidade" (Altman/Musk), sem nuance
-- **Ausência total de perspectiva geopolítica** — nenhum vídeo mapeia a corrida EUA/China/UE
-- **Ausência de frameworks concretos** — nenhum usa DeepMind Levels, nenhum cita Stuart Russell
-
-### Oportunidade
-Um vídeo que ocupe o espaço entre doom e hype, com:
-1. **Framework concreto** (DeepMind Levels) para o espectador situar-se
-2. **Perspectiva geopolítica** (corrida EUA/China como nova Guerra Fria)
-3. **Solução proposta** (paradigma de Russell: IA incerta sobre seus objetivos)
-4. **Correção explícita** de pelo menos 1 erro dos concorrentes (p.ex., "singularidade gentil" de Altman não é singularidade)
-
-### Para alimentar o roteiro
-- ≥1 correção explícita: "A 'singularidade gentil' de Altman não é singularidade — segundo Bostrom (2014), singularidade requer auto-aprimoramento recursivo"
-- ≥1 ângulo inédito: A corrida geopolítica EUA/China + framework de níveis DeepMind
-- Manifesto no Bloco 4: parafrasear o manifesto de diferenciação
-- 5 perguntas da audiência como loops e CTAs
-- Objeções ("é só desligar", "LLMs não são inteligentes") como contra-argumentos
-- Tags dos concorrentes reutilizadas na pesquisa de metadados
+Executando Fase A — Análise Competitiva. Vou puxar transcripts dos 4 top performers (3 BR + 1 global) e comentários dos 3 mais virais em paralelo.Briefing competitivo pronto. Achado mais forte: nenhum dos 4 top performers respondeu a pergunta que mais aparece nos comentários — "E o Brasil?" + "Como me preparo?". Isso é seu moat real, validado pela audiência.🎯 FASE A — Análise CompetitivaVídeo: LONGO #3 — AGI EM 2027 (19/05/2026)
+Inputs: Output Fase P + Fase V
+Concorrentes analisados: 4 (3 BR + 1 global)1. 📊 Vídeos Analisados
+
+#VídeoCanalViewsDuraçãoPublicadoInsight1 AI 2027: A Realistic Scenario of AI Takeover44x  "AI 2027: A Realistic Scenario of AI Takeover"Species | Documenting AGI Species4,39M 🏆37:45mai/2025Top global — narrativa cinematográfica2 É assim que a Inteligência Artificial pode destruir a humanidade?3,8x  "É assim que a IA pode destruir a humanidade?"BBC News Brasil BBC News Brasil787K8:07ago/2025Top BR — framing dystópico3 o QUÃO PERTO da AGI estamos?1,5x  "O QUÃO PERTO da AGI estamos?"Ponto em Comum Ponto em Comum126K19:21dez/2025BR técnico — argumenta CONTRA AGI próxima4 AGI em 2027: Inteligência Artificial Geral Chegando!>100x  "AGI em 2027: Inteligência Artificial Geral Chegando!"King Pod Cortes King Pod Cortes12K0:55mai/2025Corte de podcast — só menciona Eric Schmidt2. 🔍 Desconstrução do Hook do Top PerformerVídeo:  AI 2027: A Realistic Scenario of AI Takeover44x  Species — "AI 2027" (4,39M views)Primeiros 15 segundos (transcrito):
+"By now you've probably heard AI scientists, Nobel laureates, and even the godfather of AI himself sounding the alarm that AI could soon lead to human extinction. But have you ever wondered how exactly that could happen?"
+
+ElementoAnálisePromessa visual + verbalVocê já ouviu o aviso de extinção. Aqui está exatamente COMO vai acontecer.Técnica de aberturaApelo à autoridade empilhada ("cientistas → Nobel → padrinho da IA") + pergunta retórica fechada ("você se perguntou exatamente como?")Primeiro payoff parcialAos ~25s: anuncia "two endings: a happy ending and a nightmare ending"Emoção ativadaMedo legitimado por autoridade + curiosidade narrativa (loop dos 2 finais)🎯 Instrução para o roteiro do LONGO #3Superar essa promessa nos primeiros 8 segundos. O Species apela para autoridade abstrata (cientistas, Nobel) e demora ~25s para o primeiro payoff. Seu hook precisa:
+Substituir "autoridade abstrata" por NOME PRÓPRIO + DATA (Sam Altman + Eric Schmidt + 2027) já no primeiro frame
+Substituir "two endings" por promessa BR concreta ("seu trabalho está nessa lista") nos primeiros 8s
+Vantagem competitiva: Species fala para o mundo, você fala para o brasileiro — promessa pessoalizada vence promessa global em CTR para o público BR
+3. ❌ Top 3 Erros / Simplificações dos ConcorrentesErro #1 — Species trata AI 2027 como "evidence-based" sem qualificar que é um CENÁRIO, não previsão
+Onde: Species fala "a deeply researched, evidence-based scenario" sem deixar claro que cenário ≠ previsão
+Impacto: comentários confundem (geetarguy777: "AI in 2025: okay it's probably Skynet") — tratam ficção como fato
+Correção (sua, baseada em fonte real): O paper original do AI Futures Project (Kokotajlo et al., 2025) é explicitamente um exercício de cenário probabilístico, não previsão. Cite isso. "Pesquisadores projetam — não preveem". Isso aumenta sua credibilidade científica E te diferencia da retórica catastrofista.
+Erro #2 — Ponto em Comum descarta AGI próxima por argumento "data wall" — desconsiderando multimodalidade, dados sintéticos e robótica
+Onde: vídeo gasta 19 min argumentando que LLMs vão "atingir teto de texto humano em 2026-2028" e portanto AGI está distante
+Validação na própria audiência: comentário de @iil217 (83 likes): "o diretor do DeepMind já disse que o caminho pra AGI vai muito além de LLMs. Modelos de mundo, vídeo e imagem são outra parte". Comentário de @attilamonteirodeabreu5545 (35 likes): "Dados sintéticos, auto-jogo e melhorias em raciocínio já estão mitigando a escassez de texto. O limite mais sério é arquitetural — não falta de dados"
+Correção (sua): Citar Demis Hassabis (DeepMind, 2025) e Ilya Sutskever (SSI, 2025) sobre multimodalidade + world models. Mostrar que o argumento "data wall" é parcial — abre uma frente de credibilidade que o canal #1 BR de IA-skeptic deixou aberta.
+Erro #3 — BBC News Brasil reduz tudo a Skynet/Exterminador sem ângulo BR e sem ação prática
+Onde: BBC apresenta cenário dystópico de 8 minutos focado em "humanidade" abstrata — zero menção ao Brasil, zero ação prática
+Validação na audiência (comentários top likes):
+
+@CAllan-ep4pe (93 likes): "'É assim que o mundo vai ser daqui a 10 anos'. Não necessariamente o Brasil."
+@carollinavalerio98 (395 likes): "basicamente refizeram o Exterminador do Futuro"
+@walt.03 (269 likes): "Realidade: a gente morrendo de fome ou recebendo esmola só pra continuar vivo"
+
+
+Correção (sua): Você é o vídeo que responde a essas 3 reclamações. Ângulo BR + 3 profissões + dado salarial + ação prática nos últimos 2 minutos.
+4. 💎 Top 3 Ângulos NÃO ExploradosÂngulo #1 — Impacto local concreto em profissões brasileiras (o moat)Nenhum dos 4 vídeos menciona Brasil, salário brasileiro, ou profissão específica brasileira. BBC BR até é brasileira mas usa enquadramento global. A pergunta mais latente nos comentários BR ("E o Brasil?") está respondida em 0 vídeos.
+Justificativa: comentário top likes do BBC valida demanda. Volume de busca PT BR para agi (265K) confirma audiência presente.Ângulo #2 — "O que fazer ANTES da AGI chegar" (ação prática individual)Os 4 vídeos terminam em fatalismo ou contemplação. Species termina em "Earth-born civilization launches itself toward the stars — but without its creators". BBC termina em "esperamos que dê certo". Zero vídeos dão ação prática para o viewer fazer essa semana.
+Justificativa: intent de busca em volta de AGI mistura medo + desejo de antecipação (validado na Fase V). O vídeo que respondem ao "desejo" com ação concreta captura sozinho metade do funil emocional.Ângulo #3 — O ROADMAP INTERNO como artefato narrativo (não só citação)Species menciona o paper "AI 2027" mas trata como pano de fundo. Ponto em Comum nem cita. BBC menciona genericamente. Ninguém abre o documento e mostra trecho/tabela específica como CENA.
+Justificativa: seu título promete "O Plano Secreto" — você precisa ENTREGAR o documento como prop visual nos 3-5 minutos iniciais. Isso justifica a palavra "secreto" no título e diferencia de toda a concorrência.5. 🚫 Padrão Estrutural Dominante a EVITAROs 3 vídeos longos analisados (Species, Ponto em Comum, BBC) seguem o mesmo template fatalista:1. Hook: pergunta retórica abstrata ou citação de cientista
+2. 2-5 min de explicação técnica (gráfico exponencial, definições)
+3. Cenário dystópico narrado (cena após cena)
+4. Climax = "AGI chega, AGI substitui, AGI domina"
+5. Fim: contemplação fatalista ou apelo "esperamos dar certo"
+6. CTA fraco ou ausente
+❌ O que isso causa
+Audiência se sente impotente (validado em comentários: Skynet, Exterminador, "vibe dark")
+Zero ação tomada após assistir
+Engajamento alto na primeira metade, queda no final (provavelmente bate com seu próprio drop dos 87-99%)
+✅ Estrutura ALTERNATIVA a usar no LONGO #31. Hook: NOME + DATA + CONSEQUÊNCIA PESSOAL (8s) ← já calibrado na Fase P
+2. Roadmap como CENA (documento na tela) — 3 a 5 min
+3. Yampolskiy + risco — 2 min
+4. PIVOT BR: 3 profissões com salário/dado real — 3 min ← MOAT
+5. Cenário 2027-2030 (versão calibrada) — 2 min
+6. AÇÃO PRÁTICA: 3 movimentos concretos pra fazer ESTA SEMANA — 2 min ← DIFERENCIAÇÃO
+7. CTA emocional + pergunta provocativa — 30s
+A diferença chave: terminar com ação, não com fatalismo. Isso vai melhorar tanto retenção final quanto comentários (gente comenta o que pode FAZER, não o que pode TEMER).6. 📜 MANIFESTO DE DIFERENCIAÇÃO
+Este vídeo se diferencia de todos os concorrentes analisados porque é o único que materializa o cenário "AGI 2027" em três profissões brasileiras concretas com dados salariais locais — advogado, médico e professor — e termina com três movimentos práticos que o viewer pode executar nesta semana, baseado nos papers do AI Futures Project (Kokotajlo et al., 2025), nas declarações públicas de Roman Yampolskiy (Oxford Union, mar/2026) e em dados do Cadastro Geral de Empregados e Desempregados — algo que nem Species (4,39M global), nem BBC News Brasil (787K), nem Ponto em Comum (126K) cobriram.
+Como isso ataca cada competidor:
+vs Species: ele fala global, você fala BR. Ele termina em fatalismo, você termina em ação.
+vs BBC: ela responde "como pode acabar", você responde "o que fazer agora".
+vs Ponto em Comum: ele argumenta CONTRA AGI próxima por data wall — você cita os contra-argumentos (multimodalidade + dados sintéticos) que a própria audiência dele apontou nos comentários.
+7. 💬 Insights da Audiência (5 perguntas/sentimentos mais latentes)
+Estas viram loops abertos, CTAs e contra-argumentos dentro do roteiro:
+
+#Pergunta/sentimento dominanteEvidênciaComo usar no roteiro1"E o Brasil nisso tudo?"@CAllan-ep4pe (93 likes BBC)Pivot BR (bloco 4) inteiro — anunciar como loop aberto no minuto 22"Eu tenho mais medo de HUMANO usando IA do que da IA"@JackOzMcClane (BBC) + @obarddal (318 likes BBC)Contra-argumento no bloco 3: "não é a IA que decide — é quem a controla"3"Isso vai acontecer com TRABALHO INTELECTUAL ANTES do braçal"@vitorhugoloureiro4498 (Ponto em Comum)Validação direta no bloco BR: advogado/médico/professor caem antes do encanador4"Isso é previsão ou ficção?"@geetarguy777 (1771 likes Species) + @AISpecies pinnedEndereçar nos primeiros 30s: "é cenário probabilístico, não previsão — mas baseado em..."5"E se eu sou pobre / não tenho como me adaptar?"@walt.03 (269 likes BBC)Bloco AÇÃO PRÁTICA precisa ter movimento de baixo custo (ex: aprender a USAR IA hoje, não programar)🎯 Bônus — Objeção principal a refutar"AGI nunca vai chegar porque LLMs vão bater no teto de dados" (Ponto em Comum, 126K views, eco em ~80 comentários). Você tem que endereçar isso no bloco 2 ou 3 com 30 segundos máximo + 2 fontes (Hassabis/multimodal + Sutskever/SSI/raciocínio sintético). Não pode ignorar — é o argumento mais forte do lado cético no nicho BR.8. 🏷️ Tags dos Concorrentes (consolidadas)tags_concorrentes_capturadas:
+  do_species:
+    - "agi"
+    - "ai 2027"
+    - "2027"
+    - "ai"
+    - "artificial general intelligence"
+    - "daniel kokotajlo"
+    - "Scott Alexander"
+    - "AI futures project"
+    - "how ai might takeover"
+  do_ponto_em_comum:
+    - "davi calazans"
+    - "ponto em comum"
+    - "careca ciencia"
+    - "como inteligência artificial funciona"
+    - "como ia funciona"
+  do_bbc:
+    - "bbc brasil"
+    - "notícias internacionais"
+
+tags_a_adicionar_no_video_marcus:
+  obrigatorias_canal: # já documentadas
+    - "Marcus Maciel"
+    - "IA e Ciência"
+  do_seo_fase_v:
+    - "agi 2027"  # primária
+    - "agi"
+    - "inteligência artificial geral"
+    - "superinteligência"
+    - "futuro da ia"
+    - "ai 2027"
+  capturadas_dos_concorrentes:
+    - "artificial general intelligence"
+    - "daniel kokotajlo"
+    - "AI futures project"
+    - "openai agi"
+    - "yampolskiy"
+    - "roman yampolskiy"
+  brasileiras_diferenciadoras:
+    - "agi brasil"
+    - "futuro do trabalho brasil"
+    - "profissões em risco ia"
+    - "sam altman portugues"
+9. 📤 Output Combinado P + V + A (pronto para o roteiro)phase_pva_output:
+  video_alvo: "LONGO #3 — AGI EM 2027 (19/05/2026)"
+  duracao_alvo: 14-16 min
+  
+  # === FASE P (mantido) ===
+  hook_template:
+    estrutura: "Consequência (0-3s) → Fonte (3-7s) → Definição via cena (7-12s) → Pattern interrupt (12-18s) → Loop aberto BR (18-30s)"
+    proibido: ["Imagine...", "Para entender...", "música nos primeiros 5s"]
+    obrigatorio: ["voz seca 0-3s", "nome próprio até 7s", "data 2027 até 7s"]
+  
+  drops_a_resolver:
+    drop_1_0a16s: "promessa entregue no fotograma 1"
+    drop_2_5a7min: "pattern interrupt + pivot BR"
+    drop_3_87a99pct: "ação prática + pergunta provocativa"
+  
+  # === FASE V (mantido) ===
+  keyword_primaria: "agi 2027"  # vol 8458, comp 20.7, overall 66.89
+  keyword_secundaria: "agi"
+  intent_dominante: "alarmista_comedido + timeline + acao_pratica"
+  
+  # === FASE A (NOVO) ===
+  manifesto_diferenciacao: |
+    Único vídeo que materializa o cenário AGI 2027 em 3 profissões 
+    brasileiras concretas com dados salariais locais + 3 movimentos 
+    práticos para esta semana, baseado em Kokotajlo et al. (2025), 
+    Yampolskiy (Oxford 2026) e CAGED.
+  
+  estrutura_nova_anti_padrao_competidor:
+    - "0:00-0:30 — Hook (template Fase P)"
+    - "0:30-2:00 — Tese + endereçar 'previsão vs cenário' + loop BR"
+    - "2:00-5:00 — Roadmap interno COMO CENA (documento na tela) [PAYOFF #1]"
+    - "5:00-6:30 — Yampolskiy: por que pode dar errado + CTA INSCRIÇÃO"
+    - "6:30-7:00 — Refutação 'data wall' (30s, fontes Hassabis + Sutskever)"
+    - "7:00-10:00 — PIVOT BR: 3 profissões com salário CAGED [MOAT]"
+    - "10:00-12:00 — Cenário 2027-2030 calibrado [PAYOFF #2]"
+    - "12:00-14:00 — AÇÃO PRÁTICA: 3 movimentos esta semana [DIFERENCIAÇÃO]"
+    - "14:00-14:30 — CTA emocional + pergunta provocativa"
+  
+  loops_abertos_validados_pela_audiencia:
+    - "E o Brasil nisso tudo?" (anunciado no min 2, pago no min 7)
+    - "É previsão ou ficção?" (anunciado no hook, pago no min 1)
+    - "Quais profissões caem primeiro?" (anunciado no min 4, pago no min 7)
+    - "O que eu faço?" (anunciado no min 8, pago no min 12)
+  
+  contra_argumentos_obrigatorios:
+    - "Data wall: refutar com Hassabis (multimodal) + Sutskever (raciocínio sintético) + comentário de @iil217 e @attilamonteirodeabreu5545"
+    - "Não é a IA, é o humano por trás (validar medo de @JackOzMcClane)"
+  
+  fontes_obrigatorias:
+    - "Daniel Kokotajlo et al. — AI Futures Project (2025)"
+    - "Roman Yampolskiy — Oxford Union, março 2026"
+    - "Eric Schmidt — TED 2025 (citação de King Pod)"
+    - "Sam Altman — perfil The New Yorker (já usado no LONGO #2)"
+    - "Demis Hassabis — declarações DeepMind 2025"
+    - "Ilya Sutskever — SSI 2025"
+    - "CAGED — dados salariais BR (advogado/médico/professor)"
+  
+  evitar_categorias:
+    - "Encerrar em fatalismo (todos competidores fazem isso)"
+    - "Apelo à autoridade abstrata sem nome próprio"
+    - "Mais de 1 minuto de explicação técnica sem dado/cena"
+    - "Skynet/Exterminador como referência (audiência reclama)"
+  
+  metas_calibradas:
+    ctr: ">=4% (vs 2.9% baseline + diferenciação BR)"
+    retencao_media: ">=35% (vs 22.67% baseline)"
+    retencao_30s: ">=60%"
+    retencao_final_99pct: ">=20% (vs 9.64% baseline — ação prática segura final)"
+    conversao_sub: ">=2%"
+    comentarios_alvo: ">=15 (vs 2 baseline — pergunta sobre profissão pessoal)"
+  
+  tags_finais: # ver bloco 8 acima
+🎯 Resumo Executivo da Fase AMarcus, três conclusões fortes:
+
+Seu moat está validado pela audiência da concorrência. Os comentários top likes do BBC, Species e Ponto em Comum literalmente reclamam da ausência do que você vai entregar (Brasil + ação prática). Você não está adivinhando — você está respondendo demanda explícita.
+
+
+O Species (4,39M global) é referência narrativa, não competidor direto BR. Eles falam para um público global em inglês. O LONGO #3 não compete com 4,39M — compete com BBC (787K BR) e Ponto em Comum (126K BR), e em ambos você tem diferenciação dura.
+
+
+A objeção "data wall" do Ponto em Comum é a única ameaça intelectual real. 30 segundos refutando com 2 fontes resolve. Sem isso, você vira alvo nos comentários do tipo "mas o careca já disse que LLMs vão bater no teto".
+
+Decisão sua para a próxima fase:
+📝 Avançar para o ROTEIRO completo do LONGO #3 com o output P+V+A consolidado?
+🎬 Fase de Storytelling/Narrative (se tiver no seu pipeline) antes do roteiro?
+🏷️ Fase de Metadados (descrição + tags + capítulos) primeiro?
+Qual o próximo? 🎯

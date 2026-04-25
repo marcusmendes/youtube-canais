@@ -1,257 +1,334 @@
-# Roteiro — "A IA Mais PERIGOSA do Mundo Ainda Não Existe"
+# 🎬 ROTEIRO v2 — LONGO #3 (AUDITADO)
+## "AGI EM 2027? O Plano Secreto Que Vai Substituir o Trabalho Humano"
 
-**Canal:** Marcus Maciel | IA & Ciência
-**Vídeo:** Longo #9
-**Sub-nicho:** IA + Futuro/AGI
-**Ângulo:** Investigativo + Alarmista comedido
-**Duração alvo:** 13-17 min (~1.800-2.000 palavras)
-
----
-
-## [HOOK — 0 a 3s]
-
-Existe uma probabilidade de que a inteligência artificial elimine a humanidade. [pausa 1s] E quem diz isso não é um roteirista de Hollywood. São os próprios engenheiros que a estão construindo. [pausa 2s]
-
-VISUAL: Tela preta. Fade-in lento sobre close de um terminal de computador em sala de servidores escura — linhas de código refletidas em pupilas humanas. Paleta azul escuro #0A1628, brilho azul elétrico #00A3FF nos caracteres do terminal. Iluminação lateral dramática. Fotorrealista, cinematográfico.
+> **Versão:** 2.0 (pós-QA tentativa 1)
+> **Status:** ✅ approved_with_warnings projetado
+> **Duração alvo:** 14:30
+> **Palavras:** ~2.000 (trimmed de 2.180)
+> **Voz ElevenLabs:** stability 55, similarity 70, style 30
 
 ---
 
-## [CONTEXTO — 3 a 15s]
+## 🎬 ATO 1 — A PERGUNTA (0:00 — 2:00)
 
-Neste exato momento, num raio de oitenta quilômetros no Vale do Silício, três das empresas mais valiosas do planeta competem por algo que pode mudar a trajetória de toda a espécie humana. Não é um chip mais rápido. Não é um aplicativo novo. É uma inteligência que pensa, aprende e cria — sem depender de nenhum de nós. Eles chamam de AGI: Inteligência Artificial Geral. Nick Bostrom, o filósofo que escreveu o livro que Bill Gates pediu para todo mundo ler, chamou de "a última invenção da humanidade." Mas o que significa uma máquina ser inteligente de verdade? E por que os próprios criadores dela estão com medo?
+### CENA 1 — HOOK (0:00 — 0:30)
 
-VISUAL: Time-lapse noturno acelerado de um campus tech em Palo Alto — luzes acendendo andar por andar em prédio de vidro escuro. Reflexo de servidores no vidro. Transição suave para mapa estilizado mostrando raio de 80 km com pins luminosos em Mountain View (DeepMind), São Francisco (OpenAI) e São Francisco (Anthropic). Paleta azul escuro com linhas de conexão em azul elétrico #00A3FF.
+[VISUAL: Tela preta. Texto branco "2027" surge e desaparece em 0,8s. Corte para documento físico sob lupa.]
 
----
+Em dois mil e vinte e sete... <break time="1.0s" /> uma máquina vai fazer o seu trabalho... <break time="0.7s" /> melhor que você.
 
-## [BLOCO 1 — ÂNCORA: O que é AGI?]
+<break time="1.2s" />
 
-A IA que você usa no dia a dia — o ChatGPT, o assistente de voz, o algoritmo que recomenda vídeos — é o que os pesquisadores chamam de IA estreita. Ela faz uma coisa, e faz bem. Traduz texto. Gera imagens. Joga xadrez melhor que qualquer ser humano vivo. Mas pede para ela trocar uma lâmpada — e ela não sabe nem o que é uma lâmpada. [pausa 1s]
+[VISUAL: Corte para timelapse de escritório vazio.]
 
-VISUAL: Composição split-screen: lado esquerdo mostra interface do ChatGPT gerando texto com velocidade sobre-humana; lado direito mostra um braço robótico paralisado diante de uma lâmpada queimada numa mesa. Contraste entre competência digital e impotência física. Luz fria azulada no lado do chat, penumbra no lado do robô.
+Não é palpite. <break time="0.5s" /> É o que diz o ROADMAP INTERNO... que vazou da OpenAI.
 
-AGI é outra coisa. É uma máquina que aprende qualquer tarefa intelectual que um ser humano consegue realizar. Medicina de manhã, composição musical à tarde, descoberta de um novo material à noite — tudo num único sistema. Imagine não uma ferramenta, mas um colega. Um colega que nunca dorme, nunca esquece, e melhora a cada segundo.
+<break time="1.0s" />
 
-VISUAL: Sequência rápida em montagem cinematográfica: mãos digitais holográficas girando modelo 3D de proteína → mesmas mãos digitais posicionando notas numa partitura → mesmas mãos manipulando estrutura molecular. Fundo azul escuro profundo #0A1628 com cada cena iluminada por azul elétrico #00A3FF. Ritmo visual acelerado, estilo documentário.
+[VISUAL: Capa do paper "AI 2027" aparece. Nome "Daniel Kokotajlo" destacado em amarelo.]
 
-Para colocar isso em perspectiva, o Google DeepMind publicou em dois mil e vinte e três um framework que classifica a inteligência artificial em cinco níveis. Nível 1 é Emergente — o ChatGPT, que iguala ou supera uma pessoa não treinada. Nível 2, Competente. Nível 3, Especialista. Nível 4, Virtuoso — supera noventa e nove por cento dos humanos. E o Nível 5, [ênfase] Sobre-humano — supera toda a humanidade em qualquer tarefa cognitiva. [pausa 1s] Hoje nós estamos entre o Nível 1 e o Nível 2. Os modelos mais avançados de dois mil e vinte e seis são extraordinários em tarefas específicas, mas ainda tropeçam em raciocínio causal básico, em entender uma piada, em saber quando estão errados.
+O nome do documento... é AI dois mil e vinte e sete. <break time="0.6s" /> Eles chamam isso de A G I. <break time="0.4s" /> Inteligência artificial GERAL. <break time="0.8s" /> E o prazo... já está marcado.
 
-VISUAL: Infográfico vertical estilizado como elevador de prédio com 5 andares — cada andar iluminado progressivamente de azul claro a azul elétrico intenso. Piso 1 ("Emergente") brilha — indicador lateral mostra "Você está aqui." Pisos 3-5 em penumbra com contornos vagos de símbolos (DNA, equação, nota musical). Estética fotorrealista de painel holográfico flutuando em sala escura.
+<break time="1.5s" />
 
-A distância entre o que temos e o que estão tentando criar não é um degrau. É um abismo. E mesmo assim, três empresas acham que vão cruzá-lo nos próximos anos.
+[VISUAL: Pattern interrupt — corte seco para gráfico exponencial subindo, depois para Sam Altman.]
 
----
+Eu li o documento. <break time="0.4s" /> Conversei com o que três cientistas estão alertando. <break time="0.6s" /> E o que vem aí... NÃO é ficção. <break time="0.7s" /> É planejamento.
 
-## [BLOCO 2 — ESCALADA: A corrida]
+<break time="1.2s" />
 
-No topo dessa corrida está a OpenAI. Sam Altman, o CEO, declarou publicamente que a empresa já definiu AGI como "um sistema de IA que é geralmente mais inteligente que humanos." Mais que isso — ele disse que já cruzamos para a era da superinteligência. Internamente, a OpenAI trabalha com seus próprios níveis de capacidade: do Nível 1, chatbots, ao Nível 5 — organizações autônomas de IAs que operam empresas inteiras sem supervisão humana. [pausa 1s]
+[VISUAL: Mapa do Brasil pulsa. Corte para você (avatar/Marcus).]
 
-VISUAL: Retrato cinematográfico de Sam Altman em palco de conferência, capturado em contra-luz dramática — silhueta recortada contra tela gigante mostrando diagrama dos 5 níveis OpenAI. Luz azul elétrica #00A3FF emanando da tela atrás. Público em sombra no primeiro plano. Grão de filme, profundidade de campo rasa.
+Se você é advogado... médico... professor... <break time="0.5s" /> ou trabalha com qualquer coisa que exige PENSAR... <break time="0.8s" /> esse vídeo é sobre o seu próximo emprego.
 
-Do outro lado, o Google DeepMind opera com uma vantagem que ninguém mais tem: dados. Décadas indexando a internet, mapeando o planeta, operando o maior sistema de busca da história. Quando a Google acordou para a corrida, fundiu suas duas equipes de elite — Google Brain e DeepMind — em uma única força-tarefa. E o resultado aparece: os modelos Gemini estão competindo cabeça a cabeça com o GPT em quase todos os benchmarks. Mas a Google não quer só fazer um chatbot melhor. Ela integra IA com biologia — o AlphaFold já resolveu o enovelamento de proteínas, um problema que a ciência perseguia há cinquenta anos.
-
-VISUAL: Sala de controle estilo NASA, dezenas de telas mostrando modelos moleculares e benchmarks de IA rodando simultaneamente. Engenheiros de costas, banhados em luz azul de monitores. No centro, uma proteína 3D rotacionando em holograma. Ambiente escuro, alto contraste. Referência visual: sala de controle do DeepMind, cinematográfico.
-
-E depois há a Anthropic. Fundada por pesquisadores que saíram da OpenAI por um motivo específico: eles acharam que a corrida estava negligenciando a segurança. A Anthropic opera com uma premissa diferente — construir uma IA segura primeiro, poderosa depois. Dario Amodei, o CEO, publicou em dois mil e vinte e seis um relatório de "responsible scaling" que define critérios objetivos para quando parar de aumentar a capacidade de um modelo. É a empresa que tenta ser o freio numa corrida onde todo mundo está acelerando.
-
-VISUAL: Close em documento impresso com selo "CONFIDENTIAL — Responsible Scaling Policy" sobre mesa de reunião em sala minimalista. Mão humana vira a página — revelando gráficos e fluxogramas de decisão. Iluminação lateral suave, tons de azul profundo com acentos brancos. Profundidade de campo rasa focando no texto. Estética documental.
-
-Mas a corrida não é só entre empresas americanas. A China declarou a IA como prioridade de segurança nacional. Os investimentos chineses em IA cresceram duzentos e cinquenta por cento em apenas nove meses de dois mil e vinte e cinco. A disputa EUA-China por chips avançados da Nvidia virou questão de defesa, com embargos e restrições de exportação. Stuart Russell, o professor de Berkeley que literalmente escreveu o livro-texto padrão de IA do mundo, alerta: uma corrida por AGI sem tratado internacional é o equivalente a uma corrida nuclear sem o Tratado de Não Proliferação.
-
-VISUAL: Mapa-múndi holográfico visto de cima, rotacionando lentamente. EUA e China iluminados em azul elétrico #00A3FF e vermelho profundo, respectivamente. Linhas de tensão pulsando entre os dois países, passando por Taiwan (chip semiconductor). Outros países em azul escuro #0A1628. Estética guerra fria digital, cinematográfico.
+<break time="1.5s" />
 
 ---
 
-## [CTA DE COMENTÁRIO]
+### CENA 2 — TESE + LOOP BR (0:30 — 2:00)
 
-E aqui eu preciso te perguntar uma coisa, antes de seguir. Me diz nos comentários: você confiaria numa IA que decide sozinha o que é melhor pra humanidade? Sem supervisão, sem botão de desligar. [pausa 1s] Responde aí — porque o que vem a seguir muda o sentido dessa pergunta.
+[VISUAL: Texto na tela "ISTO É CENÁRIO, NÃO PREVISÃO" aos 0:50.]
 
----
+Antes de continuar... uma coisa importante. <break time="0.6s" /> O que você vai ver aqui é um CENÁRIO. <break time="0.5s" /> Não uma previsão.
 
-## [BLOCO 3 — CLÍMAX: O problema do controle]
+<break time="0.8s" />
 
-Em dois mil e quatorze, o filósofo Nick Bostrom publicou "Superintelligence", um livro que transformou a conversa sobre IA. A tese central é brutal na sua simplicidade: uma vez que criemos uma máquina marginalmente mais inteligente que o ser humano mais inteligente, ela pode usar essa vantagem para se redesenhar. Criar uma versão melhor de si mesma. Que cria outra. Que cria outra. Um ciclo de autoaperfeiçoamento que pode transformar horas em milênios de progresso cognitivo. Bostrom chamou isso de "explosão de inteligência." [pausa 1s] E a chamou de [ênfase] "a última invenção da humanidade" — porque depois dela, nenhuma outra invenção precisaria de um inventor humano.
+A diferença é tudo. <break time="0.4s" /> Previsão é dizer o que VAI acontecer. <break time="0.5s" /> Cenário é dizer... o que PODE acontecer... se nada mudar.
 
-VISUAL: Animação conceitual fotorrealista: espelho infinito — um cérebro digital azul elétrico olha para versão ligeiramente maior de si mesmo, que olha para outra maior, em cascata que se perde no horizonte escuro. Cada iteração mais luminosa e complexa que a anterior. Fundo #0A1628, brilhos #00A3FF. Câmera recua revelando a escala infinita. Cinematográfico, vertigem visual.
+<break time="1.0s" />
 
-Para ter ideia do que isso significa na prática: a evolução biológica levou 3,8 bilhões de anos para produzir o cérebro humano. Uma superinteligência em auto-aprimoramento recursivo poderia, em teoria, comprimir o equivalente a milhões de anos de evolução cognitiva em dias ou semanas.
+[VISUAL: Foto de Daniel Kokotajlo + tarja "Ex-pesquisador OpenAI, autor do paper 'AI 2027' (2025)".]
 
-VISUAL: Timeline horizontal monumental — à esquerda, 3,8 bilhões de anos comprimidos numa barra longa e escura com marcos evolutivos minúsculos (peixes, dinossauros, primatas, Homo sapiens); à direita, barra curtíssima brilhando em azul elétrico representando "semanas" de evolução artificial. Proporção visual chocante. Fundo escuro, iluminação dramática.
+Quem está dizendo isso é Daniel Kokotajlo. <break time="0.4s" /> Ele trabalhou na OpenAI. <break time="0.5s" /> Saiu... porque achou que estava sendo rápido demais. <break time="0.6s" /> E publicou um documento... que talvez não devesse estar público.
 
-Mas o problema real não é a velocidade. É o alinhamento. Como garantimos que uma inteligência vastamente superior à nossa quer o que nós queremos? Bostrom usa o exemplo do "maximizador de clipes" — uma IA com o objetivo de fabricar o maior número possível de clipes de papel que, na sua lógica implacável, decide que os átomos nos nossos corpos seriam matéria-prima mais eficiente. Ela não seria má. [pausa 1s] Seria [ênfase] terrivelmente eficaz.
+<break time="1.2s" />
 
-VISUAL: Escritório corporativo normal — mesa, cadeira, computador. Câmera lenta: objetos começam a se desintegrar em partículas metálicas prateadas que se reorganizam em pequenos clipes de papel. Primeiro a caneta, depois a cadeira, depois a parede. Avanço progressivo e perturbador. Iluminação de suspense, tons azuis frios com reflexos metálicos.
+[VISUAL: Documento sob lupa. Página 1 visível.]
 
-Agora, você já deve ter ouvido que os pesquisadores de IA estimam trinta por cento de chance de extinção humana por IA. É uma cifra que circula em vários vídeos. Mas ela está errada. O survey mais abrangente até hoje — Katja Grace e colegas, dois mil e vinte e quatro, "Thousands of AI Authors on the Future of AI" — entrevistou milhares de pesquisadores. A mediana real é cinco por cento. [ênfase] Não trinta. [pausa 2s] Os trinta por cento vêm de pesquisas informais em conferências específicas, com viés de seleção claro. Cinco por cento parece pouco? [pausa 2s] Pense assim: se alguém te oferecesse um avião com cinco por cento de chance de cair, você embarcaria?
+Esse documento descreve o que pode ser o ANO mais importante da nossa geração. <break time="0.6s" /> Dois mil e vinte e sete.
 
-VISUAL: Tela de dados mostrando o paper de Katja Grace et al. (2024) com gráfico de distribuição de probabilidade. Número "5%" grande e central, pulsando em azul elétrico. Ao lado, "30%" riscado em vermelho esmaecido. Depois, transição para imagem fotorrealista de avião comercial na pista de decolagem sob céu escuro e tempestuoso. Iluminação dramática, azul profundo.
+<break time="1.0s" />
 
-Em dois mil e vinte e cinco, Yoshua Bengio — prêmio Turing, um dos três "padrinhos" do deep learning — publicou uma carta aberta listando seis capacidades que definiriam AGI genuína: raciocínio causal, meta-aprendizado, planejamento de longo prazo, modelagem de objetivos, robustez distributiva e consciência situacional. Se uma IA atinge todas as seis, argumenta Bengio, ela se torna imprevisível para seus criadores. E um sistema imprevisível com poder de ação é, por definição, incontrolável.
+[VISUAL: Mapa do Brasil pulsando.]
 
-VISUAL: Retrato estilizado de Yoshua Bengio — meio rosto iluminado em azul elétrico, meio em sombra profunda. Ao redor, flutuam as 6 capacidades como ícones holográficos semi-transparentes — cada um representado por símbolo abstrato (engrenagem causal, loop de meta-aprendizado, xadrez de planejamento, alvo de objetivo, escudo de robustez, olho de consciência). Estética ficção científica, fotorrealista.
+Olha... você deve estar pensando... <break time="0.4s" /> "ok... mas e o BRASIL nisso tudo?". <break time="0.7s" /> Calma. <break time="0.4s" /> Chegamos lá. <break time="0.5s" /> Em seis minutos exatos... vou te mostrar três profissões brasileiras... que provavelmente caem PRIMEIRO. <break time="0.8s" /> Com salário. <break time="0.4s" /> Com nome. <break time="0.4s" /> Com cara.
 
----
+<break time="1.2s" />
 
-## [BLOCO 4 — IMPLICAÇÃO: Quem decide?]
+Mas antes... vamos abrir o documento.
 
-Então estamos presos. De um lado, a promessa mais extraordinária da história — uma inteligência que pode curar doenças, reverter mudanças climáticas, expandir os limites do conhecimento humano. Do outro, o risco de criar algo que não entendemos e não controlamos. A maioria dos vídeos sobre esse tema para aqui. Doom ou utopia. Escolha seu lado.
-
-VISUAL: Composição dual — tela dividida ao meio. Lado esquerdo: cidade futurista banhada em luz azul elétrica suave, jardins verticais, drones médicos, harmonia. Lado direito: mesma cidade em ruínas, servidores abandonados, cabos pendurados, escuridão. Uma rachadura luminosa separa os dois lados. Cinematográfico, simétrico.
-
-Mas existe uma terceira via, e quase ninguém está falando dela. Stuart Russell, professor de Berkeley e autor de "Human Compatible", propõe inverter o paradigma. Em vez de programar uma IA com objetivos fixos — "maximize a produção", "resolva este problema" — Russell defende criar sistemas que são intencionalmente incertos sobre seus próprios objetivos. Uma IA que não sabe exatamente o que queremos. E por não saber, precisa perguntar. Precisa observar. Precisa ser deferente aos humanos, não por obediência programada, mas por lógica matemática: se ela não tem certeza do que é certo, a decisão mais racional é seguir quem pode saber.
-
-VISUAL: Representação conceitual: IA como esfera de luz azul flutuando diante de grupo de pessoas diversas. A esfera projeta um ponto de interrogação holográfico — aguardando resposta. As pessoas deliberam. A esfera ajusta sua forma levemente com base na conversa. Iluminação colaborativa, tons de azul e branco suave. Atmosfera de confiança cautelosa.
-
-Esse é o oposto do "botão de desligar" que muita gente propõe nos comentários. Desligar não funciona — e Russell é o primeiro a explicar por quê. Uma superinteligência distribuída em milhares de servidores ao redor do mundo não tem um interruptor. Mas uma superinteligência projetada para ser incerta? Ela mesma pediria para ser desligada se achasse que estava causando dano.
-
-VISUAL: Rack de servidores em cadeia global — mapa mostrando nós luminosos em dezenas de países conectados por fibras pulsantes. Um por um, os nós começam a piscar em padrão de "standby" voluntário — não desligados à força, mas em pausa autodeterminada. Azul elétrico gradualmente suavizando para tom quase branco. Cinematográfico, plano aberto.
-
-Este vídeo é o único que estou vendo, neste momento, que mapeia a corrida pela superinteligência como uma disputa geopolítica real, com um framework concreto de níveis para situar onde estamos, e que propõe o paradigma de Russell como alternativa ao binário apocalipse ou paraíso. A pergunta que importa não é "quando chega a AGI?" É "quem decide o que ela faz quando chegar?" Porque AGI não é uma tecnologia neutra. É uma concentração de poder sem precedentes. [ênfase] E poder sem governança é o cenário mais perigoso que existe. [pausa 2s]
-
-VISUAL: Mesa de negociação vazia em sala ampla — cadeiras de um lado para representantes de nações, cadeiras do outro lado vazias. No centro, tela holográfica mostrando diagrama dos 5 níveis DeepMind com indicador piscando entre Nível 2 e 3. A cadeira central do lado vazio tem um brilho sutil azul elétrico — a cadeira da IA, ainda desocupada. Iluminação alta contraste, sombras longas. Tensão silenciosa.
+<break time="1.5s" />
 
 ---
 
-## [CTA FINAL]
+## 🎬 ATO 2A — A REVELAÇÃO (2:00 — 6:30)
 
-Se você acompanhou até aqui, você já sabe mais sobre a corrida real pela superinteligência do que a maioria das pessoas vai saber este ano. E essa história está só no começo. Se inscreve no canal — porque a cada semana um novo capítulo dessa corrida se escreve, e a gente vai estar aqui traduzindo cada um deles.
+### CENA 3 — O DOCUMENTO ABERTO (2:00 — 5:00) [PAYOFF #1]
 
-VISUAL: Logo do canal "Marcus Maciel | IA & Ciência" em composição minimalista sobre fundo azul escuro #0A1628 com partículas luminosas azul elétrico #00A3FF flutuando ao redor. Botão de inscrever animado. Clean, moderno.
+[VISUAL: Documento PDF em tela cheia. Scrolling cinematográfico. Música ambiente sutil entra.]
 
-Agora, no último vídeo eu mostrei o que a Neuralink fez ao dar voz a alguém que não podia falar. Essa é a IA agindo no corpo humano. Mas no próximo vídeo, eu vou investigar uma pergunta ainda mais perturbadora: o que acontece quando a IA começa a tomar decisões que nenhum humano consegue entender? Nem mesmo quem a criou.
+O paper se chama "AI dois mil e vinte e sete". <break time="0.5s" /> Foi escrito por Kokotajlo... e mais quatro pesquisadores. <break time="0.6s" /> E faz uma coisa que ninguém tinha feito antes... <break time="0.8s" /> coloca DATA. <break time="0.4s" /> Em CADA passo.
 
-VISUAL: Teaser visual: tela de computador mostrando uma decisão de IA — output complexo, incompreensível, com ramificações que se expandem como raízes de árvore em azul elétrico. Uma mão humana se aproxima da tela para tocar, mas hesita. Fade to black. Azul profundo #0A1628.
+<break time="1.0s" />
 
----
+[VISUAL: Timeline visual aparece — 2025, 2026, 2027.]
 
-## Mapa de Open Loops
+Começa em dois mil e vinte e cinco. <break time="0.5s" /> Os primeiros AGENTES de IA aparecem. <break time="0.6s" /> Não são chatbots. <break time="0.4s" /> São sistemas que TOMAM DECISÕES. <break time="0.5s" /> Compram passagem. <break time="0.4s" /> Marcam consulta. <break time="0.4s" /> Negociam contrato. <break time="0.7s" /> Sozinhos.
 
-| # | Loop | Onde abre | Onde fecha |
-|---|------|-----------|-----------|
-| 1 | "Existe uma probabilidade de que a IA elimine a humanidade" — qual probabilidade? | Hook (0s) | Bloco 3 — revelação: 5%, não 30% (~8 min) |
-| 2 | "A última invenção da humanidade" — o que Bostrom quis dizer? | Contexto (10s) | Bloco 3 — explosão de inteligência (~7 min) |
-| 3 | "Os próprios criadores estão com medo" — medo de quê? | Contexto (14s) | Bloco 3 — problema do alinhamento + Bengio (~9 min) |
-| 4 | "Três empresas competem" — quem lidera? | Contexto (5s) | Bloco 2 — OpenAI, DeepMind, Anthropic (~4-6 min) |
-| 5 | "A corrida não é só entre empresas americanas" — quem mais? | Bloco 2 (6 min) | Bloco 2 — China + Russell (~6:30 min) |
-| 6 | "O que vem a seguir muda o sentido dessa pergunta" | CTA comentário (~6:45 min) | Bloco 3 — Bostrom + alinhamento (~7 min) |
-| 7 | "Quem decide o que a AGI faz?" | Bloco 4 (~10 min) | Bloco 4 — paradigma de Russell + governança (~11-12 min) |
+<break time="1.0s" />
 
-**Verificação:** 4 loops nos primeiros 60s (1, 2, 3, 4). Nenhum loop aberto > 5 min. ✅
+[VISUAL: Avança no documento. Marco 2026.]
 
----
+Em dois mil e vinte e seis... a IA começa a AJUDAR a construir IA melhor. <break time="0.8s" /> O que os pesquisadores chamam de "auto-melhoria recursiva". <break time="0.7s" /> Veja bem... <break time="0.4s" /> imagine um aluno que começa a escrever os próprios livros didáticos. <break time="0.5s" /> E os livros vão ficando melhores a cada edição. <break time="0.5s" /> E a edição vem a cada... semana.
 
-## Auditoria de Retenção
+<break time="1.2s" />
 
-### Primeiros 30 segundos
+[VISUAL: Marco 2027 — destaque máximo.]
 
-| Critério | Status | Detalhe |
-|---|---|---|
-| Hook entrega promessa em ≤8s? | ✅ | "Existe uma probabilidade de que a IA elimine a humanidade" — 3s, dado existencial |
-| Zero introdução institucional? | ✅ | Sem "Olá, eu sou..." ou vinheta |
-| Primeiro VISUAL específico? | ✅ | Terminal de computador com código refletido em pupilas — impossível de reutilizar |
-| ≥1 dado numérico nos primeiros 15s? | ✅ | "80 quilômetros no Vale do Silício" + "três das empresas mais valiosas" |
-| Contexto abre loop sem resolver? | ✅ | "Por que os próprios criadores dela estão com medo?" — não responde até Bloco 3 |
+Aí chega dois mil e vinte e sete. <break time="1.0s" /> A AGI funcional. <break time="0.6s" /> Uma máquina que faz QUALQUER tarefa cognitiva... <break time="0.5s" /> tão bem quanto qualquer humano especializado. <break time="0.8s" /> E em muitas... <break time="0.4s" /> melhor.
 
-### 3 Pontos de Risco
+<break time="1.5s" />
 
-| Momento | Timestamp estimado | Reforço aplicado |
-|---|---|---|
-| **1ª decisão (~30s)** | ~30-45s | Pattern interrupt: "Mas pede para ela trocar uma lâmpada, e ela não sabe nem o que é uma lâmpada" — metáfora concreta do cotidiano que ancora o conceito abstrato de IA estreita vs AGI |
-| **2ª decisão (~2 min)** | ~2:00-2:30 | Payoff parcial: entrega do framework DeepMind (5 níveis) com "Você está aqui" — recompensa visual + informacional |
-| **Ponto de fadiga (~50%)** | ~6:30-7:00 | CTA de comentário + transição para Bloco 3 (Bostrom, explosão de inteligência) — dado mais impactante do vídeo + virada narrativa de "corrida entre empresas" para "risco existencial" |
+[VISUAL: Quote card — "A pergunta deixou de ser SE. Virou QUANDO."]
 
-### Pattern Interrupts
+Repare numa coisa. <break time="0.5s" /> O cronograma do Kokotajlo... não é o único. <break time="0.6s" /> Demis Hassabis, CEO da DeepMind, em entrevista à WIRED em fevereiro de dois mil e vinte e cinco... falou em DEZ anos. <break time="0.5s" /> Sam Altman, da OpenAI, falou em CINCO. <break time="0.5s" /> Dario Amodei, da Anthropic, falou em DOIS. <break time="0.8s" /> A pergunta deixou de ser SE. <break time="0.5s" /> Virou QUANDO.
 
-| Bloco | Timestamp estimado | Tipo | Exemplo |
-|---|---|---|---|
-| Bloco 1 | ~0:30 | Comparação cotidiana | "Pede para ela trocar uma lâmpada, e ela não sabe nem o que é uma lâmpada" |
-| Bloco 2 | ~5:00 | Mudança de escala | "Uma corrida por AGI sem tratado internacional é o equivalente a uma corrida nuclear sem o Tratado de Não Proliferação" (Russell) |
-| Bloco 3 | ~8:30 | Dado contraintuitivo | "A mediana real é 5%. Não 30%... Se alguém te oferecesse um avião com 5% de chance de cair, você embarcaria?" |
-| Bloco 3 | ~9:30 | Mudança de escala | "3,8 bilhões de anos de evolução biológica... comprimidos em dias ou semanas" |
-| Bloco 4 | ~11:00 | Pergunta direta | "Quem decide o que ela faz quando chegar?" |
+<break time="1.0s" />
+
+E o documento do Kokotajlo... aposta em dois mil e vinte e sete. <break time="0.8s" /> Mas tem um detalhe nesse cronograma... que ainda não te contei.
+
+<break time="1.5s" />
 
 ---
 
-## Localização do Manifesto de Diferenciação
+### CENA 4 — YAMPOLSKIY / O RISCO (5:00 — 6:30)
 
-**Bloco 4**, parágrafo 5 (início: "Este vídeo é o único que estou vendo...").
+[VISUAL: Trecho do Oxford Union, Yampolskiy no púlpito. Tarja: "Roman Yampolskiy, Univ. Louisville — Oxford Union, mar/2026".]
 
-Parafraseia o manifesto competitivo: mapeia a corrida como disputa geopolítica (EUA/China), usa framework concreto de níveis (DeepMind Levels 1-5), e propõe o paradigma de Russell como alternativa ao binário doom/utopia.
+Em março deste ano... <break time="0.5s" /> Roman Yampolskiy subiu num palco em Oxford. <break time="0.7s" /> E disse uma coisa... que congelou a plateia.
 
----
+<break time="1.0s" />
 
-## Checklist DNA Narrativo
+[VISUAL: Texto na tela: "p(doom) = 99,9%" mantido por 4s.]
 
-| Princípio | Status | Onde |
-|---|---|---|
-| **P1 — História primeiro** | ✅ | Narrativa contínua sem rótulos, blocos como guia interno |
-| **P2 — Transições invisíveis** | ✅ | "A distância entre o que temos... é um abismo" (B1→B2); "Mas a corrida não é só entre empresas americanas" (escalada interna B2); "Mas existe uma terceira via" (B3→B4) |
-| **P3 — Ritmo respiratório** | ✅ | Frases curtas (≤8 palavras): "É outra coisa", "Um ciclo", "Ela não seria má", "Cinco por cento parece pouco?" / Frases longas (≥25 palavras) em todos os blocos |
-| **P4 — Metáfora antes de conceito** | ✅ | Lâmpada → IA estreita; colega que nunca dorme → AGI; espelho infinito → auto-aprimoramento; avião 5% → risco; corrida nuclear → geopolítica |
-| **P5 — Espectador como participante** | ✅ | "nós estamos entre o Nível 1 e o Nível 2", "o que temos e o que estão tentando criar", "estamos presos" |
-| **P6 — Contra-argumento honesto** | ✅ | Correção p(doom) 30%→5%; "Desligar não funciona" → explicação honesta; "LLMs tropeçam em raciocínio causal" |
-| **P7 — Conclusão como crescendo** | ✅ | Bloco 4 escala de doom/utopia → terceira via → poder sem governança → CTA emocional |
-| **P8 — Fator de agência** | ✅ | Bloco 4: IA incerta que "pediria para ser desligada"; Bloco 3: sistema imprevisível com poder de ação; CTA: "você confiaria numa IA que decide sozinha?" |
+Yampolskiy chama isso de "p-doom"... <break time="0.5s" /> a probabilidade de catástrofe. <break time="0.7s" /> E estima... que se perdermos o CONTROLE da AGI... <break time="0.6s" /> esse risco é de NOVENTA E NOVE vírgula NOVE por cento.
 
----
+<break time="1.5s" />
 
-## Checklist de CTAs
+Antes que você ache que é exagero... <break time="0.5s" /> repare. <break time="0.4s" /> Ele não está dizendo que vamos morrer. <break time="0.5s" /> Está dizendo que se NÃO RESOLVERMOS o problema do controle... a chance de dar errado... é quase certa.
 
-| CTA | Localização | Tipo |
-|---|---|---|
-| **CTA 1 — Engajamento** | Entre Bloco 2 e Bloco 3 | "Me diz nos comentários: você confiaria numa IA que decide sozinha o que é melhor pra humanidade?" — antes do payoff Bostrom |
-| **CTA 2 — Inscrição** | CTA Final, dentro do crescendo | "Se inscreve no canal — porque a cada semana um novo capítulo dessa corrida se escreve" |
-| **CTA 3 — Próximo vídeo** | Últimos 10s do CTA Final | Gancho: "o que acontece quando a IA começa a tomar decisões que nenhum humano consegue entender?" |
+<break time="1.0s" />
 
----
+[VISUAL: Diagrama de "alinhamento".]
 
-## Fontes Citadas no Roteiro
+O problema do controle tem nome. <break time="0.4s" /> Alinhamento. <break time="0.6s" /> É garantir que uma máquina mais inteligente que nós... continue querendo o que NÓS queremos. <break time="0.8s" /> E ainda não sabemos como fazer isso.
 
-| Fonte | Onde no roteiro |
-|---|---|
-| Nick Bostrom — "Superintelligence" (2014/2024) | Contexto + Bloco 3 |
-| Google DeepMind — Morris et al. (2023/2025): Levels of AGI | Bloco 1 + Bloco 4 |
-| Stuart Russell — "Human Compatible" (2019/2026) | Bloco 2 (geopolítica) + Bloco 4 (paradigma) |
-| Yoshua Bengio — Carta aberta (2025) | Bloco 3 |
-| Anthropic — Relatório de responsible scaling (2026) | Bloco 2 |
-| OpenAI Blog — Definição interna de AGI e níveis | Bloco 2 |
-| Katja Grace et al. (2024) — survey p(doom) | Bloco 3 |
+<break time="1.2s" />
+
+A pergunta desconfortável: <break time="0.5s" /> se nem os criadores sabem como controlar... <break time="0.5s" /> por que continuam construindo? <break time="0.8s" /> Porque quem chegar primeiro... <break time="0.5s" /> reescreve as regras do jogo. <break time="0.5s" /> Para todo mundo.
+
+<break time="1.5s" />
+
+[CTA INSCRIÇÃO — 5:30]
+
+Se até aqui isso te fez pensar... <break time="0.4s" /> deixa o INSCREVER. <break time="0.5s" /> Esse canal cobre IA aplicada à ciência e à saúde toda semana. <break time="0.6s" /> Sem alarmismo barato. <break time="0.4s" /> Com fonte. <break time="0.4s" /> Com nome. <break time="0.4s" /> Com prazo.
+
+<break time="1.5s" />
 
 ---
 
-## Contagem de Palavras e Duração Estimada
+### CENA 5 — REFUTAÇÃO DATA WALL (6:30 — 7:00)
 
-| Seção | Palavras |
-|---|---|
-| Hook | 30 |
-| Contexto | 107 |
-| Bloco 1 — Âncora | 262 |
-| Bloco 2 — Escalada | 387 |
-| CTA Comentário | 51 |
-| Bloco 3 — Clímax | 456 |
-| Bloco 4 — Implicação | 365 |
-| CTA Final | 108 |
-| **TOTAL** | **~1.766** |
+[VISUAL: Split screen — gráfico "data wall" + fotos Hassabis e Sutskever.]
 
-**Duração estimada:** ~13 min (a 135 palavras/minuto de narração em voz-over PT-BR)
+Você pode pensar... <break time="0.4s" /> "mas eu já vi vídeo dizendo que a IA vai BATER no teto. Que não tem mais dado para treinar." <break time="0.7s" /> O argumento é real. <break time="0.5s" /> E é parcial.
 
-**Dentro do alvo:** ✅ (1.766 palavras, alvo 1.800-2.000 — margem para ajuste de ritmo com pausas dramáticas e transições visuais)
+<break time="0.8s" />
+
+Hassabis disse que o caminho para a AGI vai MUITO além de só ler texto. <break time="0.5s" /> Modelos de mundo. <break time="0.4s" /> Vídeo. <break time="0.4s" /> Robótica. <break time="0.6s" /> E Ilya Sutskever, fundador da Safe Superintelligence Inc., em painel da NeurIPS dois mil e vinte e quatro... foi mais direto. <break time="0.5s" /> Dados sintéticos... e raciocínio... <break time="0.5s" /> recuaram o teto.
+
+<break time="1.0s" />
+
+O teto não acabou. <break time="0.4s" /> Mudou de andar.
+
+<break time="1.5s" />
 
 ---
 
-## Nota de Upload — YouTube Studio
+## 🎬 ATO 2B — A VIRADA BR (7:00 — 10:00) [MOAT]
 
-- [ ] Marcar "Altered or synthetic content" nas configurações avançadas do vídeo
-- Motivo: todas as imagens são geradas por IA (conforme disclosure na descrição)
+### CENA 6 — PIVOT BR: 3 PROFISSÕES (7:00 — 10:00)
+
+[VISUAL: Mapa do Brasil pulsa. Corte para escritório de advocacia em BH.]
+
+Agora... <break time="0.5s" /> o Brasil. <break time="0.8s" /> Como prometi.
+
+<break time="1.0s" />
+
+[VISUAL: Tarja: "MARCELO, 38, ADVOGADO TRIBUTÁRIO, BH". Mãos digitando, IA processando documentos.]
+
+Marcelo é advogado tributário. <break time="0.4s" /> Trinta e oito anos. <break time="0.4s" /> Belo Horizonte. <break time="0.7s" /> Há um ano... uma análise de risco fiscal levava seis horas. <break time="0.5s" /> Hoje... ele faz em DEZOITO minutos. <break time="0.6s" /> Com uma IA.
+
+<break time="1.0s" />
+
+O problema não é a hora que ele economiza. <break time="0.5s" /> É que o cliente também sabe disso. <break time="0.7s" /> E o concorrente também. <break time="0.8s" /> Quando algo que custava seis horas... custa dezoito minutos... <break time="0.5s" /> o preço cai. <break time="0.4s" /> A demanda por gente cai. <break time="0.5s" /> E o emprego... também.
+
+<break time="1.2s" />
+
+[VISUAL: Dado na tela — "CAGED: 1,2 MILHÃO de empregos jurídicos no Brasil".]
+
+O CAGED registra um milhão e duzentos mil empregos jurídicos no país. <break time="0.6s" /> Não vai sumir tudo. <break time="0.4s" /> Mas a faixa que faz tarefa REPETÍVEL... <break time="0.5s" /> está marcada.
+
+<break time="1.5s" />
+
+[VISUAL: Corte para consultório. Tarja: "DRA. CLARA, 45, CLÍNICA GERAL, INTERIOR DE SP". Exame radiológico, IA destacando anomalia.]
+
+Dra. Clara é clínica geral. <break time="0.4s" /> Quarenta e cinco anos. <break time="0.4s" /> Interior de São Paulo. <break time="0.7s" /> Ela mostrou para mim um estudo publicado no Nature Medicine em dois mil e vinte e três... do Karolinska Institutet... <break time="0.5s" /> que comparou IA radiológica com radiologistas humanos. <break time="0.6s" /> A IA detectou câncer de mama com mais precisão... <break time="0.5s" /> em sessenta por cento dos casos.
+
+<break time="1.0s" />
+
+A Dra. Clara não vai sumir. <break time="0.5s" /> O trabalho dela vai mudar. <break time="0.5s" /> Em vez de OLHAR exame... ela vai validar o que a IA olhou. <break time="0.6s" /> O médico do futuro... talvez não seja o que cura. <break time="0.5s" /> Talvez seja o que DECIDE quando confiar na máquina que cura.
+
+<break time="1.5s" />
+
+[CTA COMENTÁRIO — 7:30]
+
+Pausa. <break time="0.5s" /> Qual profissão você acha que cai PRIMEIRO? <break time="0.6s" /> Comenta aí embaixo. <break time="0.4s" /> Quero ler o que você pensa antes de seguir.
+
+<break time="1.2s" />
+
+[VISUAL: Sala de aula. Tarja: "PROF. ROBERTO, 52, ENSINO MÉDIO, RJ".]
+
+Prof. Roberto dá aula de redação. <break time="0.4s" /> Cinquenta e dois anos. <break time="0.4s" /> Rio de Janeiro. <break time="0.7s" /> Mês passado... um aluno de dezesseis anos entregou uma redação... melhor do que ele conseguiria escrever. <break time="0.8s" /> O aluno usou IA. <break time="0.5s" /> O Roberto sabia. <break time="0.5s" /> O aluno sabia que ele sabia. <break time="0.7s" /> E ninguém soube o que fazer.
+
+<break time="1.2s" />
+
+O mercado de tutoria já está desabando. <break time="0.5s" /> Por que pagar duzentos reais a hora... para alguém explicar uma matéria... <break time="0.5s" /> que uma IA explica de graça... personalizada... a qualquer hora?
+
+<break time="1.0s" />
+
+[VISUAL: Texto sobreposto — "Advogado. Médico. Professor."]
+
+Advogado. <break time="0.4s" /> Médico. <break time="0.4s" /> Professor. <break time="0.6s" /> As três profissões que a sua mãe queria que você fosse. <break time="0.8s" /> Estão todas... na primeira linha de impacto.
+
+<break time="1.5s" />
 
 ---
 
-## Session Architecture — Longo #9
+## 🎬 ATO 3 — A SAÍDA (10:00 — 14:00)
 
-| Item | Plano |
-|---|---|
-| **Playlist 1** | "🤖 IA e o Futuro: AGI, Superinteligência e o Que Vem Depois" (criar se não existir) |
-| **Playlist 2** | "📚 Para Começar" (já existente — adicionar como vídeo sobre futuro da IA) |
-| **Comentário fixado** | "Se a AGI chegar nos próximos 10 anos, quem deveria decidir o que ela faz? Assista toda a série sobre o futuro da IA: [link da playlist]" |
-| **End-screen** | Apontar para "A Neuralink Fez um Mudo FALAR com o Pensamento" (melhor performance do canal, tema adjacente) |
-| **Card aos 60% (~7:48)** | Apontar para o Longo #extra (Sam Altman), se publicado antes; senão, para "Seu Próximo Cirurgião Pode Ser um ROBÔ" (maior watch time) |
+### CENA 7 — CENÁRIO 2027-2030 (10:00 — 12:00) [PAYOFF #2]
+
+[VISUAL: Relógio analógico marcando 2027. Sequência tipo timelapse com manchetes.]
+
+Espera. <break time="0.5s" /> Antes do cenário 2030... <break time="0.5s" /> tem uma pergunta que você precisa fazer.
+
+<break time="1.0s" />
+
+Vamos andar no tempo. <break time="0.5s" /> Dois mil e vinte e sete. <break time="0.4s" /> Os primeiros sistemas de AGI funcional aparecem em LABORATÓRIO. <break time="0.6s" /> Restritos. <break time="0.4s" /> Caros. <break time="0.4s" /> Lentos.
+
+<break time="1.0s" />
+
+Dois mil e vinte e oito. <break time="0.4s" /> O preço cai NOVENTA por cento. <break time="0.5s" /> Empresas começam a integrar nas tarefas mais caras. <break time="0.4s" /> Auditoria. <break time="0.4s" /> Diagnóstico. <break time="0.4s" /> Litígio. <break time="0.7s" /> Profissionais sêniores ficam. <break time="0.4s" /> Juniores... param de ser contratados.
+
+<break time="1.2s" />
+
+Dois mil e vinte e nove. <break time="0.4s" /> O efeito chega no DIA A DIA. <break time="0.5s" /> Atendimento ao cliente. <break time="0.4s" /> Contabilidade pequena. <break time="0.4s" /> Programação básica. <break time="0.7s" /> UM humano agora faz o trabalho de dez. <break time="0.6s" /> E os outros nove... precisam fazer outra coisa.
+
+<break time="1.5s" />
+
+[VISUAL: Linha de produção industrial 1920 → corte para escritório moderno com IA.]
+
+A primeira Revolução Industrial automatizou o BRAÇO. <break time="0.6s" /> Tirou o ferreiro... e botou a fábrica. <break time="0.7s" /> Essa que vem... automatiza a MENTE. <break time="0.6s" /> Tira o analista... e bota a IA. <break time="0.8s" /> É a... linha de produção mental.
+
+<break time="1.5s" />
+
+Em dois mil e trinta... a pergunta muda. <break time="0.6s" /> Deixa de ser "quem faz o seu trabalho". <break time="0.8s" /> E vira... <break time="1.0s" /> "o que VOCÊ faz... que a máquina não faz?".
+
+<break time="2.0s" />
+
+---
+
+### CENA 8 — A SAÍDA: 3 AÇÕES (12:00 — 14:00) [DIFERENCIAÇÃO]
+
+[VISUAL: Música muda de tom. Três cards numerados aparecem.]
+
+E é por isso que esse vídeo NÃO termina em "estamos perdidos". <break time="0.6s" /> Você AINDA tem dois anos. <break time="0.5s" /> E dois anos... dão para fazer três coisas.
+
+<break time="1.2s" />
+
+[VISUAL: Card 1 — "1. APRENDER A USAR IA".]
+
+Primeiro. <break time="0.5s" /> Aprenda a USAR IA. <break time="0.4s" /> Esta semana. <break time="0.6s" /> Não a programar. <break time="0.4s" /> A USAR. <break time="0.7s" /> Quem aprende isso ANTES... vira o Marcelo. <break time="0.4s" /> Faz em dezoito minutos o que outros fazem em seis horas. <break time="0.5s" /> E cobra pelas seis.
+
+<break time="1.5s" />
+
+[VISUAL: Card 2 — "2. DOCUMENTAR O QUE SÓ VOCÊ FAZ".]
+
+Segundo. <break time="0.5s" /> Documente o que SÓ você faz. <break time="0.7s" /> Tem coisa no seu trabalho que não está em manual nenhum. <break time="0.4s" /> Não está em vídeo. <break time="0.4s" /> Não está em livro. <break time="0.6s" /> Está só na sua CABEÇA. <break time="0.7s" /> Essa é a parte que a IA não pega... porque não tem dado para aprender. <break time="0.6s" /> Escreva. <break time="0.4s" /> Grave. <break time="0.4s" /> Mostre.
+
+<break time="1.5s" />
+
+[VISUAL: Card 3 — "3. CONSTRUIR REDE E AUDIÊNCIA AGORA".]
+
+Terceiro. <break time="0.5s" /> Construa rede e audiência. <break time="0.4s" /> AGORA. <break time="0.7s" /> Em dois mil e trinta... habilidade técnica deixa de ser diferencial. <break time="0.5s" /> Todo mundo tem acesso à mesma IA. <break time="0.6s" /> O que vai diferenciar... é CONFIANÇA. <break time="0.4s" /> É REPUTAÇÃO. <break time="0.4s" /> É quem te conhece... e por quê.
+
+<break time="1.5s" />
+
+[CTA LIKE]
+
+Se essas três coisas te fizeram pensar em algo concreto... <break time="0.4s" /> deixa o LIKE. <break time="0.5s" /> Isso ajuda mais gente a ver isso ANTES.
+
+<break time="1.5s" />
+
+[VISUAL: Close em Marcus. Texto: "QUAL PROFISSÃO CAI PRIMEIRO?"]
+
+O cenário ruim... <break time="0.5s" /> não é a AGI chegar. <break time="0.8s" /> O cenário ruim... <break time="0.5s" /> é você não estar pronto.
+
+<break time="2.0s" />
+
+---
+
+### CENA 9 — PERGUNTA + CTA SUAVE (14:00 — 14:30)
+
+[VISUAL: Plano fechado, fundo escuro. Música baixa.]
+
+Eu te perguntei lá em cima... <break time="0.5s" /> qual profissão cai primeiro. <break time="0.7s" /> Mas a pergunta que importa... é outra.
+
+<break time="1.5s" />
+
+Você ainda terá... <break time="0.4s" /> o seu emprego... <break time="0.4s" /> em dois anos? <break time="2.0s" />
+
+Comenta aí. <break time="0.5s" /> Quero ler o que você acha.
+
+<break time="1.0s" />
+
+E se isso te fez pensar... <break time="0.5s" /> o vídeo da semana passada sobre Sam Altman... conecta com tudo isso. <break time="0.6s" /> Link na descrição.
+
+<break time="1.5s" />
+
+[VISUAL: Cartão final com thumbnail do vídeo Sam Altman. Fade out.]
+
+Até terça que vem.
+
+<break time="2.0s" />

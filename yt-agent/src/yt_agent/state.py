@@ -242,7 +242,7 @@ class QAItem(BaseModel):
 
 
 class QAReport(BaseModel):
-    total_items: int = 35
+    total_items: int = 38
     passed: int
     failed: int
     attempt: int = Field(ge=1, le=2)

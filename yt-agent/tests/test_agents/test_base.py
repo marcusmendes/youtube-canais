@@ -41,7 +41,7 @@ def test_load_prompt_scriptwriter():
 def test_load_prompt_qa():
     content = load_prompt("qa.md")
     assert "Agente QA" in content
-    assert "35" in content
+    assert "38" in content
 
 
 def test_load_prompt_repackaging():

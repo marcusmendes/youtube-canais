@@ -36,6 +36,7 @@ YT_AGENT_TYPES = {
     "yt-algorithm-audit",
     "yt-calendar",
     "yt-performance-triage",
+    "yt-narrative",
 }
 
 

@@ -44,12 +44,13 @@ tom, ritmo e fluidez. O modelo é referência de ESTILO DE ESCRITA
 1. **FASE P** — Diagnóstico do vídeo anterior (curva de retenção + drops + quadrante CTR×Retenção)
 2. **FASE 0** — Análise competitiva de roteiros (concorrentes + comentários)
 3. **VALIDAÇÃO DE TEMA** — Cluster semântico + Intent + Competição Contextual + Checklist de Ouro
-4. **METADADOS** — 10 títulos + thumbnail + descrição + tags em cluster + comentário fixado
-5. **ROTEIRO** — Hook → Contexto → 4 Blocos → CTA Final + Viewer Simulation Pass
-6. **CHECKLIST DE VALIDAÇÃO** — 35 itens (inclui compliance médico/científico)
-7. **FASE R** (pós-publicação) — Repackaging se vídeo subperformar em 7 dias
-8. **FASE S** (pós-publicação) — Session Architecture: playlists, comentário fixado, end-screens, cards
-9. **FASE Y** (pós-publicação) — 48h Performance Triage: checkpoints a 24h, 48h e 7d
+4. **FASE N** — Narrativa & Storytelling: protagonista, espinha dorsal, arco emocional, cenas, micro-histórias
+5. **METADADOS** — 10 títulos + thumbnail + descrição + tags em cluster + comentário fixado
+6. **ROTEIRO** — Hook → Contexto → 4 Blocos → CTA Final + Viewer Simulation Pass (baseado na Fase N)
+7. **CHECKLIST DE VALIDAÇÃO** — 38 itens (compliance médico + narrativa/storytelling)
+8. **FASE R** (pós-publicação) — Repackaging se vídeo subperformar em 7 dias
+9. **FASE S** (pós-publicação) — Session Architecture: playlists, comentário fixado, end-screens, cards
+10. **FASE Y** (pós-publicação) — 48h Performance Triage: checkpoints a 24h, 48h e 7d
 
 > Se pular qualquer fase, sinalizar no output e justificar.
 
@@ -2045,6 +2046,9 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 33 | YouTube Medical Misinformation Policy | Sem claims de cura não-comprovados · Sem desinformação sobre vacinas · Sem promessas de tratamento sem evidência peer-reviewed |
 | 34 | Viewer Simulation Pass | Roteiro lido como viewer leigo: zero jargão não-explicado · Zero transição abrupta · Zero trecho >45s sem pattern interrupt, dado novo ou escalada |
 | 35 | Translation-Friendly Audit | Frases >25 palavras quebradas em 2 · Expressões idiomáticas brasileiras traduzidas para construções universais (canal usa dublagem automática do YouTube) |
+| 36 | Protagonista identificável | Protagonista claro e identificável em <15s · Máximo 1 principal + 2 coadjuvantes · Viewer sabe "quem estou acompanhando" |
+| 37 | Cenas, não tópicos | Cada bloco do roteiro é CENA (lugar visual + personagem + conflito + revelação) · Nenhum bloco é apenas explicação/tópico |
+| 38 | Arco emocional variado | Mesma emoção não se repete por mais de 4 min consecutivos · Mínimo 3 emoções diferentes ao longo do roteiro |
 
 ---
 

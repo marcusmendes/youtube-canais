@@ -43,7 +43,7 @@ async def run_qa_agent(state: WorkflowState) -> dict:
         f"- Format: {state.get('format', 'long')}\n\n"
         f"## SCRIPT\n```json\n{script_json}\n```\n\n"
         f"## VIDEO METADATA\n```json\n{metadata_json}\n```\n\n"
-        f"Evaluate all 35 items. For each failure, generate specific fix_instructions.\n"
+        f"Evaluate all 38 items. For each failure, generate specific fix_instructions.\n"
         f"If failures >= 3 and attempt < 2, verdict = 'needs_fix'.\n"
         f"If failures >= 3 and attempt >= 2, verdict = 'approved_with_warnings' "
         f"(prevent infinite loop).\n\n"
