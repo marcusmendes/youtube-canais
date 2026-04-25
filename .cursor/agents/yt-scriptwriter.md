@@ -130,6 +130,23 @@ pergunta direta, dado contraintuitivo, mudança de ritmo, inserção editorial.
 | 2ª decisão | ~2min | Maior payoff até este ponto |
 | Ponto de fadiga | ~50% | Dado mais impactante OU virada |
 
+**Viewer Simulation Pass (obrigatória antes de salvar):**
+
+Reler o roteiro como viewer leigo e corrigir:
+1. **Jargão Audit:** Cada termo técnico tem analogia/explicação
+   imediata? Se não → adicionar metáfora (P4).
+2. **Transition Audit:** Transições são invisíveis? Eliminar:
+   "agora vamos falar de", "outra coisa importante é",
+   "passando para o próximo ponto".
+3. **Curiosity Death Audit:** Trecho >45s sem pattern interrupt,
+   dado novo, escalada ou pergunta? Se sim → inserir interrupt.
+4. **Translation-Friendly Audit:** Frases >25 palavras viraram 2?
+   Expressões brasileiras ("deu ruim", "passar pano") foram
+   traduzidas para construções universais? (Canal usa dublagem
+   automática do YouTube.)
+
+Não salvar roteiro com nenhum dos 4 audits pendente.
+
 ---
 
 ## CTAs

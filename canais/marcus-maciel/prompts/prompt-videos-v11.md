@@ -41,14 +41,15 @@ tom, ritmo e fluidez. O modelo é referência de ESTILO DE ESCRITA
 ## ORDEM DE EXECUÇÃO (PIPELINE OBRIGATÓRIO)
 ## ═══════════════════════════════════════
 
-1. **FASE P** — Diagnóstico do vídeo anterior (curva de retenção + drops)
+1. **FASE P** — Diagnóstico do vídeo anterior (curva de retenção + drops + quadrante CTR×Retenção)
 2. **FASE 0** — Análise competitiva de roteiros (concorrentes + comentários)
-3. **VALIDAÇÃO DE TEMA** — Checklist de Ouro
-4. **METADADOS** — 10 títulos + thumbnail + descrição + tags
-5. **ROTEIRO** — Hook → Contexto → 4 Blocos → CTA Final
-6. **CHECKLIST DE VALIDAÇÃO** — 30 itens
+3. **VALIDAÇÃO DE TEMA** — Cluster semântico + Intent + Competição Contextual + Checklist de Ouro
+4. **METADADOS** — 10 títulos + thumbnail + descrição + tags em cluster + comentário fixado
+5. **ROTEIRO** — Hook → Contexto → 4 Blocos → CTA Final + Viewer Simulation Pass
+6. **CHECKLIST DE VALIDAÇÃO** — 35 itens (inclui compliance médico/científico)
 7. **FASE R** (pós-publicação) — Repackaging se vídeo subperformar em 7 dias
 8. **FASE S** (pós-publicação) — Session Architecture: playlists, comentário fixado, end-screens, cards
+9. **FASE Y** (pós-publicação) — 48h Performance Triage: checkpoints a 24h, 48h e 7d
 
 > Se pular qualquer fase, sinalizar no output e justificar.
 
@@ -2039,6 +2040,11 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 28 | Label "Altered content" no Studio | Marcado durante upload (Studio → Detalhes → "Conteúdo alterado") · Obrigatório quando vídeo usa imagens/voz/vídeo gerados por IA que pareçam realistas |
 | 29 | Stress Test título ↔ thumbnail (Intrigue Gap) | Título afirma resultado · Thumbnail mostra instante ANTES da revelação visual · Nunca redundância · Validação: "Se apago o título, a thumbnail gera 1 pergunta que SÓ o título responde?" |
 | 30 | Session Architecture (FASE S) | Vídeo adicionado a 2 playlists temáticas · Comentário fixado com pergunta provocativa + link para playlist · (Se 15+ vídeos) End-screen com maior CTR da playlist · Card aos 60% com vídeo de maior watch time médio |
+| 31 | Fonte primária por claim | Todo claim científico/médico tem fonte citada (paper, instituição reconhecida ou pesquisador com afiliação) · Sem fonte = fail |
+| 32 | Zero recomendação médica implícita | Nenhuma frase interpretável como recomendação de tratamento, dosagem ou decisão de saúde · Frases proibidas: "você deve", "experimente", "substitua seu médico" · Fail automático |
+| 33 | YouTube Medical Misinformation Policy | Sem claims de cura não-comprovados · Sem desinformação sobre vacinas · Sem promessas de tratamento sem evidência peer-reviewed |
+| 34 | Viewer Simulation Pass | Roteiro lido como viewer leigo: zero jargão não-explicado · Zero transição abrupta · Zero trecho >45s sem pattern interrupt, dado novo ou escalada |
+| 35 | Translation-Friendly Audit | Frases >25 palavras quebradas em 2 · Expressões idiomáticas brasileiras traduzidas para construções universais (canal usa dublagem automática do YouTube) |
 
 ---
 
@@ -2192,6 +2198,26 @@ gancho do novo pacote. Dado concreto + tensão não resolvida.
 
 ---
 
+## CHECKLIST DE DISTRIBUIÇÃO (PRÉ-PUBLICAÇÃO — OPERACIONAL HUMANO)
+
+> **NOTA:** Este checklist é para execução manual pelo criador, não pelo
+> agente de IA. Incluir como seção final do FINAL.md de cada pipeline.
+
+Antes de publicar:
+- [ ] 5 comunidades identificadas (Reddit, LinkedIn, WhatsApp, Discord, fóruns)
+- [ ] Mensagens preparadas (pergunta provocativa, não link cru)
+- [ ] Soft launch: publicar como NÃO LISTADO 24h antes → enviar para
+  10-15 contatos + 2-3 grupos temáticos
+- [ ] Janela de publicação definida:
+  - Saúde/Ciência → ter/qua/qui, 19h-21h BRT
+  - Ética/AGI → sáb/dom, 10h-12h BRT
+  - Tech/Lançamentos → seg/ter, 9h-11h BRT
+- [ ] Comentário fixado redigido (pergunta provocativa + link para playlist)
+- [ ] Plano para primeiros 60 min: compartilhar nas 5 comunidades
+  escalonado (1 a cada 10-12 min), responder primeiros 5-10 comentários
+
+---
+
 ## FASE S — SESSION ARCHITECTURE (PÓS-PUBLICAÇÃO)
 
 > **PRINCÍPIO:** O algoritmo do YouTube não recompensa duração isolada
@@ -2237,6 +2263,56 @@ gancho do novo pacote. Dado concreto + tensão não resolvida.
   - Substituir cards/end-screens dos vídeos com session time
     abaixo da mediana do canal
   - Documentar aprendizados na planilha de SOP
+
+---
+
+## FASE Y — 48H PERFORMANCE TRIAGE (PÓS-PUBLICAÇÃO)
+
+> **PRINCÍPIO:** As primeiras 48h definem 70-80% do destino
+> algorítmico do vídeo. Esta fase obriga decisão ativa às 24h
+> e às 48h baseada em métricas reais.
+
+### Checkpoint 1 — 24 horas após publicação
+
+Métricas a coletar (YouTube Studio Analytics):
+impressões, CTR (%), views, retenção média (%), watch time (min),
+source de tráfego dominante.
+
+Decisão baseada em CTR (após mínimo 200 impressões):
+- **CTR ≥ 6%** → Saudável. Não tocar em nada. Reforçar distribuição.
+- **CTR 3-5,9%** → Alerta. Trocar thumbnail. Não alterar título nas
+  primeiras 24h (penaliza ranking).
+- **CTR < 3%** → Crítico. Trocar thumbnail E título simultaneamente.
+  Usar alternativa do top-3 da FASE METADADOS.
+
+### Checkpoint 2 — 48 horas após publicação
+
+Decisão baseada em retenção média:
+- **≥ 45%** → Excelente. Marcar para conversão em 3-5 Shorts.
+  Considerar como referência de estrutura.
+- **35-44%** → Bom. Identificar maior queda na retention curve.
+  Documentar tipo de cena/transição. Evitar no próximo roteiro.
+- **25-34%** → Atenção. Análise dos 3 maiores drops. Drop nos
+  primeiros 30s = problema de hook. Drop nos primeiros 2min =
+  promessa não cumprida.
+- **< 25%** → Diagnóstico profundo. Mismatch thumbnail/título vs
+  conteúdo OU hook frustrado. NÃO publicar próximo vídeo até
+  entender a causa.
+
+### Checkpoint 3 — 7 dias após publicação
+
+Documentação obrigatória:
+- Views totais, CTR final, retenção média final
+- Top 3 sources de tráfego
+- Diferença vs. mediana do canal
+- 1 hipótese sobre o que funcionou/não funcionou
+- 1 ação concreta a aplicar no próximo vídeo
+
+### Regra de bloqueio
+
+Se 3 vídeos consecutivos com CTR < 4% OU retenção < 30%:
+pausar publicações por 7 dias e refazer FASES P e validação
+antes do próximo vídeo.
 
 ---
 

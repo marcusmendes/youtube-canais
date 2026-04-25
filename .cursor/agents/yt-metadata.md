@@ -145,15 +145,20 @@ que SÓ o título responde?" Se não → refazer thumbnail.
 
 ---
 
-## TAGS (8-12, com volume comprovado)
+## TAGS — Estrutura em Cluster (8-12 total)
 
 Processo:
-1. `vidiq_keyword_research` com 2-3 keywords (PT + EN)
+1. `vidiq_keyword_research` com keywords do cluster validado na FASE T
 2. Extrair tags dos concorrentes da Fase 0
-3. **Regra de corte:** volume = 0 → descartar
-4. Lista final: ~4 alto volume + ~3 concorrentes + ~3 EN + ~2 canal
+3. **Regra de corte:** volume = 0 → descartar (exceto tags de canal)
 
-Tabela obrigatória: Tag | Volume | Competition | Overall
+Estrutura obrigatória:
+- 3 tags PRINCIPAIS (alto volume, do cluster validado na FASE T)
+- 3-5 LONG-TAIL (baixa competição, perguntas reais)
+- 2-3 SINÔNIMOS (PT + EN da mesma ideia)
+- 2 TAGS DE CANAL (Marcus Maciel, IA e Ciência)
+
+Tabela obrigatória: Tag | Tipo | Volume | Competition | Overall
 
 ---
 
@@ -167,8 +172,11 @@ Tabela obrigatória: Tag | Volume | Competition | Overall
 [PARÁGRAFO 2 — 2-3 linhas, keyword secundária 1x]
 
 🔬 NESTE VÍDEO VOCÊ VAI VER:
-00:00 Introdução
+00:00 [Keyword + gatilho de curiosidade, NÃO título neutro]
 ...
+(Cada chapter DEVE conter 1 keyword do cluster + 1 gatilho de
+curiosidade. ❌ "Introdução" ❌ "O que é AGI"
+✅ "O dado que ninguém quer ouvir" ✅ "AGI: a definição que muda tudo")
 
 ▶️ ASSISTA TAMBÉM:
 • [Vídeo 1] → [link]
@@ -190,10 +198,22 @@ NUNCA abrir com definição genérica.
 
 ---
 
+## COMENTÁRIO FIXADO ESTRATÉGICO
+
+O pinned comment é o "Bloco 5" — continua a narrativa fora do vídeo.
+
+Estrutura obrigatória:
+1. Frase-síntese provocativa do tema (1 linha)
+2. Pergunta substantiva (NÃO "o que vocês acham?")
+3. Link para PLAYLIST temática (não vídeo individual)
+4. ZERO pedido de like/inscrição
+
+---
+
 ## Output
 
 Salve em `output/videos/{slug-do-tema}/04-metadata.md` (pipeline)
 ou exiba diretamente (avulso).
 
 Estruture: Títulos (10 + Top 3), Thumbnail Prompt, Descrição SEO,
-Tags (tabela), Hashtags, Post Comunidade.
+Tags (tabela), Hashtags, Post Comunidade, Comentário Fixado.

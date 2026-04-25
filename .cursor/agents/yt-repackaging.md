@@ -129,11 +129,26 @@ Diagnóstico + mudanças propostas + efeito esperado.
 
 ---
 
+## VERSIONAMENTO OBRIGATÓRIO
+
+Toda mudança de thumbnail/título deve ser documentada no output:
+
+| Versão | Data | Thumbnail (resumo) | Título | CTR registrado |
+|---|---|---|---|---|
+| v1 | [data publicação] | [descrição curta] | [título original] | [CTR após 7d] |
+| v2 | [data mudança] | [nova descrição] | [novo título] | [delta vs v1] |
+
+Regra de encerramento: após 3 iterações sem ganho ≥ 20% em CTR,
+arquivar vídeo (remover de playlists ativas, parar de iterar).
+
+---
+
 ## REGRAS
 
 - NUNCA mude o conteúdo — apenas embalagem
 - NUNCA sugira repackaging em vídeos < 5 dias
 - Toda tag DEVE ter volume comprovado
+- Documentar cada versão na tabela de versionamento
 
 ---
 

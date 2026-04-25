@@ -35,6 +35,7 @@ YT_AGENT_TYPES = {
     "yt-repackaging",
     "yt-algorithm-audit",
     "yt-calendar",
+    "yt-performance-triage",
 }
 
 

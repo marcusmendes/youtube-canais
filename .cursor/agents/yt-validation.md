@@ -19,14 +19,38 @@ o canal invista tempo produzindo o vídeo.
 
 ## Processo de execução
 
-### Passo 1 — Keyword research
+### Passo 1 — Keyword Research Multi-Camada
 
+#### 1A. Keyword Principal
 Use `vidiq_keyword_research` com `include_related: true` para a
-keyword principal. O resultado inclui:
-- `volume` (0-100): busca mensal real no YouTube
-- `competition` (0-100): quantos vídeos competem
-- `overall` (0-100): score combinado de oportunidade
-- `related_keywords`: alternativas
+keyword principal (volume, competition, overall, related_keywords).
+
+#### 1B. Cluster Semântico (mínimo 5 keywords)
+Validar simultaneamente:
+- Keyword principal (ex: "agi")
+- Variação em inglês (ex: "artificial general intelligence")
+- Sinônimo PT (ex: "superinteligência")
+- Long-tail pergunta (ex: "quando vai chegar a agi")
+- Long-tail comparação (ex: "agi vs ia atual")
+
+Regra: Se ≥3 keywords do cluster têm volume > 0, o tema
+tem profundidade SEO suficiente.
+
+#### 1C. Intent Dominante
+Inspecionar top 5 resultados do YouTube para a keyword principal
+e classificar a intenção dominante do viewer:
+- Definição (o que é X?)
+- Timeline (quando vai chegar X?)
+- Opinião/Debate (X é bom ou ruim?)
+- Tutorial (como usar X?)
+
+O ângulo do vídeo DEVE corresponder ao intent dominante.
+
+#### 1D. Competição Contextual
+Verificar: "Existe pelo menos 1 canal entre 5K-50K subs
+ranqueando top-10 para a keyword principal?"
+- SIM → keyword é alcançável
+- NÃO → keyword é ceiling-bound; pivotar para long-tail do cluster
 
 ### Passo 2 — Avaliar viabilidade
 
@@ -34,6 +58,8 @@ keyword principal. O resultado inclui:
 - **`overall < 20` E `volume == 0`** → `low_demand`
   - Buscar alternativas nas `related_keywords`
   - Se nenhuma alternativa tiver volume > 0 → `rejected`
+- **Nenhum canal 5K-50K no top-10** → `ceiling_bound`
+  - Sugerir long-tail do cluster
 
 ### Passo 3 — Checklist de Ouro
 
@@ -57,6 +83,6 @@ keyword principal. O resultado inclui:
 Salve em `output/videos/{slug-do-tema}/03-validation.md` (pipeline)
 ou exiba diretamente (avulso).
 
-Estruture com: Keyword Principal (volume, competition, overall),
-Alternativas (tabela top 5), Checklist de Ouro (3 respostas),
+Estruture com: Cluster Semântico (tabela 5+ keywords), Intent
+Dominante, Competição Contextual, Checklist de Ouro (3 respostas),
 Veredicto.

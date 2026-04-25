@@ -117,16 +117,40 @@ Para cada drop, localizar o trecho exato e diagnosticar:
 | 2ª decisão | ~2min | Primeiro payoff funcionou? | < 50% = perdeu espectador |
 | Ponto de fadiga | ~50% duração | Virada narrativa? | Queda > 10% = falta impacto |
 
-### 5. Lições do último vídeo
+### 5. Quadrante CTR × Retenção (últimos 5 vídeos)
+
+Para cada vídeo longo recente, classificar em 1 dos 4 quadrantes:
+
+|                       | Retenção ALTA (≥35%)         | Retenção BAIXA (<35%)         |
+|-----------------------|------------------------------|-------------------------------|
+| **CTR ALTO (≥5%)**    | OURO: replicar fórmula       | ENGANO: thumb/título mentem   |
+| **CTR BAIXO (<5%)**   | INVISÍVEL: refazer packaging | FRACO: tema/conteúdo errado   |
+
+Ação por quadrante:
+- **OURO** → engenharia reversa do hook + thumbnail; usar como template
+- **ENGANO** → reescrever thumbnail/título alinhado ao conteúdo real
+- **INVISÍVEL** → acionar FASE R (Repackaging)
+- **FRACO** → bloquear sub-nicho por 30 dias
+
+### 6. Benchmarks de Referência
+
+Comparar métricas do canal contra benchmarks de documentário científico:
+
+| Métrica | Excelente | Bom | Alerta | Crítico |
+|---|---|---|---|---|
+| Retenção média | ≥45% | 35-44% | 25-34% | <25% |
+| CTR (canal <1K subs) | ≥7% | 5-6,9% | 3-4,9% | <3% |
+
+### 7. Lições do último vídeo
 
 - **ERRO A NÃO REPETIR:** 1-2 erros narrativos específicos
 - **ACERTO A MANTER:** 1 padrão que funcionou
 
-### 6. Calibrações para o roteiro atual
+### 8. Calibrações para o roteiro atual
 
 2-4 ações concretas derivadas do diagnóstico.
 
-### 7. Alerta
+### 9. Alerta
 
 Se retenção média < 20%, sinalizar `low_retention`.
 
@@ -145,7 +169,7 @@ como proxy e informar.
 
 ---
 
-## 8. Session Architecture — Checklist rápido
+## 10. Session Architecture — Checklist rápido
 
 Ao analisar o último vídeo, verificar também:
 - [ ] Vídeo adicionado a 2 playlists temáticas?
@@ -164,5 +188,5 @@ Salve o resultado em `output/videos/{slug-do-tema}/01-performance.md`
 (se dentro do pipeline) ou exiba diretamente (se execução avulsa).
 
 Estruture com seções Markdown claras: Último Vídeo, Diagnóstico Geral,
-Análise de Retenção, Pontos Críticos, Lições, Calibrações, Session
-Architecture, Alerta.
+Análise de Retenção, Pontos Críticos, Quadrante CTR×Retenção, Benchmarks,
+Lições, Calibrações, Alerta, Session Architecture.

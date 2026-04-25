@@ -316,12 +316,11 @@ Priorizar:
 - Keywords com `growthPercentage` positivo
 - Termos EN com alto volume como equivalentes dos PT com volume zero
 
-**Passo 4 — Lista final (8-12 tags):**
-- ~4 tags de alto volume validadas por keyword research (overall > 60)
-- ~3 tags recorrentes dos concorrentes com volume > 0
-- ~3 tags em inglês de alto volume para alcance internacional
-- ~2 tags do canal com volume comprovado ("inteligência artificial",
-  "ciência e tecnologia", "IA")
+**Passo 4 — Lista final em Cluster (8-12 tags):**
+- 3 tags PRINCIPAIS (alto volume, do cluster validado na FASE T)
+- 3-5 LONG-TAIL (baixa competição, perguntas reais)
+- 2-3 SINÔNIMOS (PT + EN da mesma ideia)
+- 2 TAGS DE CANAL (Marcus Maciel, IA e Ciência)
 
 **NÃO incluir:**
 - Tags long-tail PT com volume zero
@@ -330,8 +329,8 @@ Priorizar:
 
 Tabela obrigatória:
 
-| Tag | Volume | Competition | Overall |
-|---|---|---|---|
+| Tag | Tipo | Volume | Competition | Overall |
+|---|---|---|---|---|
 
 ---
 
@@ -353,12 +352,15 @@ concreto. Keyword principal 1x.]
 Keyword secundária 1x. Tom editorial do canal.]
 
 🔬 NESTE VÍDEO VOCÊ VAI VER:
-00:00 Introdução
-01:30 [Capítulo 2 — nome descritivo com keyword]
-03:45 [Capítulo 3 — nome descritivo com keyword]
-05:00 [Capítulo 4]
+00:00 [Keyword + gatilho de curiosidade]
+01:30 [Capítulo 2 — keyword + curiosidade]
+03:45 [Capítulo 3 — keyword + curiosidade]
+05:00 [Capítulo 4 — keyword + curiosidade]
 ...
 (mínimo 5 capítulos para 10-12 min, 7+ para >15 min)
+(Cada chapter DEVE ter 1 keyword do cluster + 1 gatilho de curiosidade.
+❌ "Introdução" ❌ "O que é AGI"
+✅ "O dado que ninguém quer ouvir" ✅ "AGI: a definição que muda tudo")
 
 ▶️ ASSISTA TAMBÉM:
 • [Vídeo relacionado 1] → [link]
