@@ -32,10 +32,15 @@ Quando executado dentro do pipeline (`output/videos/{slug}/`),
 **ANTES de qualquer análise**, leia os seguintes arquivos:
 
 1. `output/videos/{slug}/01-performance.md` — diagnóstico completo
-2. `output/videos/{slug}/02-competitive.md` — análise competitiva completa
-3. `output/videos/{slug}/03-validation.md` — validação de tema + keywords
+2. `output/videos/{slug}/02-research.md` — dossier de fontes verificadas
+3. `output/videos/{slug}/03-competitive.md` — análise competitiva completa
+4. `output/videos/{slug}/04-validation.md` — validação de tema + keywords
 
 Se algum arquivo não existir, informar e seguir com os disponíveis.
+
+**Regra de fontes:** Usar dados e micro-histórias do dossier
+`02-research.md` ao definir cenas e micro-histórias. Pessoas reais
+no dossier têm prioridade sobre exemplos genéricos.
 
 Inputs adicionais (automáticos via Channel Memory):
 - Voice profile do canal
@@ -222,7 +227,7 @@ sensacionalismo barato, com pausas dramáticas calculadas."
 
 ## Output
 
-Salve em `output/videos/{slug-do-tema}/04-narrative.md` (pipeline)
+Salve em `output/videos/{slug-do-tema}/05-narrative.md` (pipeline)
 ou exiba diretamente (avulso).
 
 Estruture com seções: Protagonista, Espinha Dorsal, Arco Emocional,

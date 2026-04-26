@@ -34,6 +34,21 @@ O handle do canal é `@MarcusMacielIAeCiencia`.
 
 ---
 
+## INPUT — LEITURA OBRIGATÓRIA DO DISCO
+
+Quando executado dentro do pipeline (`output/videos/{slug}/`),
+**ANTES de iniciar a análise**, leia:
+
+1. `output/videos/{slug}/02-research.md` — dossier de fontes verificadas
+
+Usar as fontes do dossier para cruzar com os transcripts dos
+concorrentes (Passo 4). Erros e lacunas são identificados
+comparando o que o concorrente disse com o que as fontes reais dizem.
+
+Se o arquivo não existir, seguir com conhecimento do modelo.
+
+---
+
 ## Processo de execução
 
 ### Passo 1 — Buscar concorrentes
@@ -105,6 +120,36 @@ Para cada transcript:
 | **Lacunas** | Ângulos que nossas fontes cobrem mas o vídeo ignorou |
 | **Padrão estrutural** | Como abre, escala, fecha |
 
+### Passo 4.5 — Extrair trechos de referência
+
+Dos transcripts analisados, selecionar 3 citações curtas (1-2 frases
+cada) que exemplifiquem momentos narrativos concretos:
+
+```
+### Trechos de Referência (do transcript dos concorrentes)
+
+1. MELHOR MOMENTO — Para superar
+   Vídeo: [título]
+   Timestamp: [mm:ss]
+   Trecho: "[citação exata do transcript, 1-2 frases]"
+   Por que funciona: [técnica narrativa usada]
+   Instrução: [como nosso roteiro deve superar este momento]
+
+2. PIOR MOMENTO — Para evitar
+   Vídeo: [título]
+   Timestamp: [mm:ss]
+   Trecho: "[citação exata]"
+   Por que falha: [erro narrativo identificado]
+   Instrução: [o que fazer no lugar]
+
+3. FRASE DE MAIOR ENGAJAMENTO — Para aprender
+   Vídeo: [título]
+   Fonte: [transcript ou comentário mais curtido]
+   Trecho: "[citação exata]"
+   Por que engajou: [o que ressoou com a audiência]
+   Instrução: [como replicar o efeito no nosso roteiro]
+```
+
 ### Passo 5 — Gerar briefing competitivo
 
 1. **Vídeos analisados** — título, canal, views, data
@@ -117,6 +162,7 @@ Para cada transcript:
    algo que nenhum dos top performers cobriu."
 6. **Insights da audiência** dos comentários
 7. **Tags dos concorrentes**
+8. **Trechos de referência** (3 citações: melhor, pior, engajamento)
 
 ---
 
@@ -128,14 +174,15 @@ Para cada transcript:
 - 5 perguntas mais curtidas alimentam loops e CTAs
 - Objeções alimentam contra-argumento (Princípio 6)
 - Tags encontradas reutilizadas na pesquisa de tags
+- Trechos de referência orientam tom e ritmo do roteirista
 
 ---
 
 ## Output
 
-Salve em `output/videos/{slug-do-tema}/02-competitive.md` (pipeline)
+Salve em `output/videos/{slug-do-tema}/03-competitive.md` (pipeline)
 ou exiba diretamente (avulso).
 
 Estruture com: Vídeos Analisados (tabela), Erros/Simplificações,
-Ângulos Inexplorados, Padrão a Evitar, Manifesto, Insights da
-Audiência, Tags dos Concorrentes.
+Ângulos Inexplorados, Padrão a Evitar, Manifesto, Trechos de
+Referência, Insights da Audiência, Tags dos Concorrentes.

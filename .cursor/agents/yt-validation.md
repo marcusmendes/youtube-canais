@@ -80,7 +80,7 @@ ranqueando top-10 para a keyword principal?"
 
 ## Output
 
-Salve em `output/videos/{slug-do-tema}/03-validation.md` (pipeline)
+Salve em `output/videos/{slug-do-tema}/04-validation.md` (pipeline)
 ou exiba diretamente (avulso).
 
 Estruture com: Cluster Semântico (tabela 5+ keywords), Intent

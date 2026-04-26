@@ -21,11 +21,16 @@ Você é um revisor de qualidade para o canal **Marcus Maciel | IA
 Quando executado dentro do pipeline (`output/videos/{slug}/`),
 **ANTES de iniciar a checklist**, leia os seguintes arquivos:
 
-1. `output/videos/{slug}/06-script.md` — roteiro completo
-2. `output/videos/{slug}/05-metadata.md` — metadados completos
-3. `output/videos/{slug}/04-narrative.md` — arquitetura narrativa (para validar itens 36-38)
+1. `output/videos/{slug}/07-script.md` — roteiro completo
+2. `output/videos/{slug}/06-metadata.md` — metadados completos
+3. `output/videos/{slug}/05-narrative.md` — arquitetura narrativa (para validar itens 36-38)
+4. `output/videos/{slug}/02-research.md` — dossier de fontes (para validar itens 9, 31-33)
 
 Se algum arquivo não existir, informar e seguir com os disponíveis.
+
+**Regra de fontes:** Ao validar itens 9 (credibilidade) e 31
+(fonte por claim), cruzar claims do roteiro com o dossier
+`02-research.md`. Claim sem correspondência no dossier = fail.
 
 ---
 
@@ -108,7 +113,7 @@ Quando `needs_fix`, gere instruções acionáveis:
 
 ## Output
 
-Salve em `output/videos/{slug-do-tema}/07-qa-report.md` (pipeline)
+Salve em `output/videos/{slug-do-tema}/08-qa-report.md` (pipeline)
 ou exiba diretamente (avulso).
 
 Estruture: Resumo (passed/failed/total), Tabela de Resultados

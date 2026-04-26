@@ -27,6 +27,7 @@ logging.basicConfig(
 
 YT_AGENT_TYPES = {
     "yt-performance",
+    "yt-research",
     "yt-competitive",
     "yt-validation",
     "yt-metadata",

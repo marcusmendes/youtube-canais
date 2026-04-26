@@ -83,7 +83,7 @@ por 7 dias e refazer FASE P + validação.
 
 ## Output
 
-Salve em `output/videos/{slug-do-tema}/08-triage-{checkpoint}.md`
+Salve em `output/videos/{slug-do-tema}/09-triage-{checkpoint}.md`
 (pipeline) ou exiba diretamente (avulso).
 
 Estruture com: Métricas Coletadas (tabela), Classificação por

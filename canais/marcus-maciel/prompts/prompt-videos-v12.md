@@ -1,5 +1,5 @@
 # PROMPT MESTRE — IA, CIÊNCIA E FUTURO DA HUMANIDADE
-**Canal: Marcus Maciel | IA & Ciência — Versão 12.0**
+**Canal: Marcus Maciel | IA & Ciência — Versão 12.2**
 
 ---
 
@@ -42,15 +42,16 @@ tom, ritmo e fluidez. O modelo é referência de ESTILO DE ESCRITA
 ## ═══════════════════════════════════════
 
 1. **FASE P** — Diagnóstico do vídeo anterior (curva de retenção + drops + quadrante CTR×Retenção)
-2. **FASE 0** — Análise competitiva de roteiros (concorrentes + comentários)
-3. **VALIDAÇÃO DE TEMA** — Cluster semântico + Intent + Competição Contextual + Checklist de Ouro
-4. **FASE N** — Narrativa & Storytelling: protagonista, espinha dorsal, arco emocional, cenas, micro-histórias
-5. **METADADOS** — 10 títulos + thumbnail + descrição + tags em cluster + comentário fixado
-6. **ROTEIRO** — Hook → Contexto → 4 Blocos → CTA Final + Viewer Simulation Pass (baseado na Fase N)
-7. **CHECKLIST DE VALIDAÇÃO** — 38 itens (compliance médico + narrativa/storytelling)
-8. **FASE R** (pós-publicação) — Repackaging se vídeo subperformar em 7 dias
-9. **FASE S** (pós-publicação) — Session Architecture: playlists, comentário fixado, end-screens, cards
-10. **FASE Y** (pós-publicação) — 48h Performance Triage: checkpoints a 24h, 48h e 7d
+2. **FASE F** — Pesquisa de fontes primárias (papers, artigos, notícias, dados concretos via WebSearch)
+3. **FASE 0** — Análise competitiva de roteiros (concorrentes + comentários, cruzados com dossier de fontes)
+4. **VALIDAÇÃO DE TEMA** — Cluster semântico + Intent + Competição Contextual + Checklist de Ouro
+5. **FASE N** — Narrativa & Storytelling: protagonista, espinha dorsal, arco emocional, cenas, micro-histórias
+6. **METADADOS** — 10 títulos + thumbnail + descrição + tags em cluster + comentário fixado
+7. **ROTEIRO** — Two-pass: esqueleto narrativo → polimento ElevenLabs + Viewer Simulation Pass
+8. **CHECKLIST DE VALIDAÇÃO** — 38 itens (compliance médico + narrativa/storytelling + verificação de fontes)
+9. **FASE R** (pós-publicação) — Repackaging se vídeo subperformar em 7 dias
+10. **FASE S** (pós-publicação) — Session Architecture: playlists, comentário fixado, end-screens, cards
+11. **FASE Y** (pós-publicação) — 48h Performance Triage: checkpoints a 24h, 48h e 7d
 
 > Se pular qualquer fase, sinalizar no output e justificar.
 
@@ -935,10 +936,97 @@ para a Fase 0.
 
 ---
 
+## FASE F — PESQUISA DE FONTES PRIMÁRIAS
+
+> Executar em PARALELO com a Fase P (sem dependência mútua).
+> Objetivo: buscar, verificar e estruturar fontes primárias reais
+> sobre o tema ANTES que qualquer outra fase as utilize.
+
+**Princípio:** Nenhum dado entra no roteiro sem fonte verificável.
+Se não encontrar evidência real, registrar como "NÃO ENCONTRADO"
+e o roteirista saberá que não pode usar aquele claim.
+
+### Passo 1 — Decompor o tema em 3-5 eixos de pesquisa
+
+Exemplo para "IA na cirurgia robótica":
+1. Estado da arte (qual o sistema mais avançado?)
+2. Evidência clínica (papers com resultados reais)
+3. Dados de escala (quantas cirurgias, custo)
+4. Controvérsia/risco (falhas documentadas)
+5. Futuro próximo (pesquisas em andamento)
+
+### Passo 2 — Busca em 3 camadas
+
+Para CADA eixo, buscar com WebSearch:
+
+**Camada A — Papers e estudos:**
+- `"[tema] site:nature.com OR site:science.org 2024 2025 2026"`
+- `"[tema] peer-reviewed study results"`
+- `"[tema] site:arxiv.org"` / `"[tema] site:pubmed.ncbi.nlm.nih.gov"`
+
+**Camada B — Divulgação de alta qualidade:**
+- `"[tema] site:technologyreview.com"`
+- `"[tema] site:spectrum.ieee.org"` / `"[tema] site:wired.com"`
+
+**Camada C — Notícias e dados recentes:**
+- `"[tema] 2026"` (ou ano atual)
+- Dados quantitativos: mercado, adoção, investimento
+
+### Passo 3 — Verificar e extrair (WebFetch)
+
+Para cada resultado, acessar e extrair:
+1. Título completo
+2. Autores principais (1-3 nomes)
+3. Instituição
+4. Publicação (Nature, Science, etc.)
+5. Ano
+6. Dado-chave — número, resultado ou descoberta central
+7. URL verificável
+8. Tipo de evidência — peer-reviewed / preprint / divulgação / relatório / notícia
+
+Nível de confiança:
+- Paper peer-reviewed → ALTA
+- Preprint → sinalizar como "preprint, não revisado"
+- Divulgação → verificar se cita paper original
+- Notícia → apenas dados quantitativos, nunca claim científico isolado
+
+### Passo 4 — Classificar potencial narrativo
+
+| Tipo de dado | Potencial | Momento sugerido |
+|---|---|---|
+| Número impossível | ALTO | hook / clímax |
+| Contradição | ALTO | abertura / escalada |
+| Timeline concreta | MÉDIO | urgência |
+| Caso humano | ALTO | micro-história |
+| Limitação/falha | MÉDIO | contra-argumento |
+| Projeção futura | MÉDIO | implicação |
+
+### Requisitos mínimos do dossier
+
+- 8+ fontes verificadas (ideal: 12-15)
+- 2+ papers peer-reviewed
+- 1+ dado "número impossível" para hook/clímax
+- 1+ caso humano concreto para micro-história
+- Toda fonte preprint sinalizada
+- 1+ fonte em português (acessibilidade)
+
+### Output: Dossier de Fontes
+
+O dossier é o documento-base de credibilidade do vídeo. Todas as
+fases seguintes (Competitiva, Narrativa, Metadados, Roteiro, QA)
+lêem obrigatoriamente este dossier.
+
+Seções: Resumo executivo, Eixos de pesquisa (com fontes detalhadas),
+Dados de impacto (prontos para roteiro), Micro-histórias potenciais,
+Lacunas e alertas, Fontes para descrição SEO.
+
+---
+
 ## FASE 0 — ANÁLISE COMPETITIVA DE ROTEIROS
 
-> **INSTRUÇÃO:** Esta fase é executada APÓS a Fase P e ANTES da
-> geração dos metadados e do roteiro. O objetivo é identificar
+> **INSTRUÇÃO:** Esta fase é executada APÓS a Fase F. Deve ler o
+> dossier de fontes para cruzar com transcripts dos concorrentes.
+> O objetivo é identificar
 > lacunas e erros nos vídeos existentes sobre o tema para
 > diferenciar o conteúdo do canal.
 > Se o campo ANÁLISE COMPETITIVA DE ROTEIROS estiver preenchido nos
@@ -1065,6 +1153,23 @@ algo que nenhum dos top performers cobriu."
 
 → Esta frase deve aparecer parafraseada em algum momento do
 roteiro (preferencialmente no Bloco 4 — Implicação).
+
+### Trechos de Referência (do transcript dos concorrentes)
+
+1. MELHOR MOMENTO — Para superar
+   Vídeo: [título] | Timestamp: [mm:ss]
+   Trecho: "[citação exata, 1-2 frases]"
+   Por que funciona: [técnica] | Instrução: [como superar]
+
+2. PIOR MOMENTO — Para evitar
+   Vídeo: [título] | Timestamp: [mm:ss]
+   Trecho: "[citação exata]"
+   Por que falha: [erro] | Instrução: [o que fazer no lugar]
+
+3. FRASE DE MAIOR ENGAJAMENTO — Para aprender
+   Vídeo: [título] | Fonte: [transcript ou comentário]
+   Trecho: "[citação exata]"
+   Por que engajou: [motivo] | Instrução: [como replicar]
 
 ### Insights da Audiência (dos comentários)
 - 5 perguntas mais curtidas: [lista]
@@ -1877,8 +1982,9 @@ houver nenhum vídeo publicado relacionado, omitir a seção.]
   [URL se disponível]
 • [Autor/Instituição — Título, Publicação, ano]
   [URL se disponível]
-[NÃO invente DOIs ou URLs. Se o DOI não for conhecido com
-certeza, omita o link e indique: "verificar no Google Scholar".]
+[Preencher a partir do dossier de fontes (FASE F / 02-research.md).
+NÃO invente DOIs ou URLs. Se uma URL do dossier estiver marcada como
+inacessível, omitir o link e indicar "verificar no Google Scholar".]
 
 Imagens ilustrativas geradas por inteligência artificial.
 
@@ -1949,6 +2055,32 @@ O output da Fase N contém a arquitetura narrativa que DEVE ser seguida:
 
 O roteiro escreve a partir da Fase N — não do output P+V+A puro.
 Se a Fase N não foi executada, seguir a estrutura padrão dos 4 blocos.
+
+---
+
+### Método de escrita — Two-pass (obrigatório)
+
+O roteiro é escrito em duas passagens. O Pass 1 é rascunho interno —
+NÃO entregar ao usuário. Só o resultado do Pass 2 é o output final.
+
+**Pass 1 — Esqueleto narrativo:**
+1. Para cada CENA da Fase N, escrever narração + `VISUAL:` + micro-história
+2. Inserir dados do dossier de fontes (`02-research.md`) em cada claim
+3. Mapear setup/payoff nos timestamps indicados
+4. Seguir arco emocional — 1 emoção por bloco
+5. NÃO polir ElevenLabs nem ritmo neste pass
+
+**Pass 2 — Polimento e engenharia de retenção:**
+1. Inserir Audio Tags ElevenLabs (`[pause]`, emocionais)
+2. Normalizar texto (anos, %, siglas, URLs por extenso)
+3. Aplicar ritmo respiratório (P3): ≥1 frase ≤8 + ≥1 ≥25 por parágrafo
+4. Verificar pattern interrupts a cada 30-45s
+5. Eliminar transições explícitas (P2)
+6. Executar Viewer Simulation Pass (4 audits)
+7. Verificar que todo claim tem fonte no dossier
+
+Critério: só entregar após Pass 2 completo. Se Pass 2 identificar
+problemas estruturais, corrigir antes de entregar.
 
 ---
 
@@ -2421,22 +2553,22 @@ execute o pipeline de criação abaixo. (Para repackaging de
 vídeos já publicados, use a **Fase R** diretamente — ela é
 um workflow independente que não requer os campos variáveis.)
 
-1. **Fase P (Performance)** — Diagnóstico do vídeo anterior com
-   retention curve, CTR real, traffic sources, quadrante CTR×Retenção.
-2. **Fase V (Validação)** — Validar tema com cluster semântico de 5+
-   keywords, intent dominante, competição contextual + Checklist de Ouro.
-3. **Fase 0 (Competitiva)** — Análise de 3-5 concorrentes, hook,
-   ângulos, manifesto de diferenciação.
-4. **Fase N (Narrativa)** — Converter output P+V+A em arquitetura
-   narrativa: protagonista, espinha dorsal, arco emocional, cenas,
-   micro-histórias, motivos visuais, pares setup/payoff, anti-clichês.
+1. **Fase P + F (paralelo)** — Performance (diagnóstico) e Research
+   (pesquisa de fontes primárias via WebSearch/WebFetch) em paralelo.
+2. **Fase 0 (Competitiva)** — Análise de 3-5 concorrentes, cruzada
+   com dossier de fontes. Hook, ângulos, manifesto.
+3. **Fase V (Validação)** — Cluster semântico de 5+ keywords, intent,
+   competição contextual + Checklist de Ouro.
+4. **Fase N (Narrativa)** — Converter output P+F+A+V em arquitetura
+   narrativa: protagonista, cenas, arco emocional, micro-histórias.
 5. **Modelos de Escrita** — Ler ao menos 1 roteiro da pasta
    `canais/marcus-maciel/modelos-de-escrita/` para calibrar estilo.
-6. **Metadados** — 10 títulos, thumbnail, descrição SEO, tags em
-   cluster, comentário fixado estratégico.
-7. **Roteiro** — Escrever a partir da Fase N (cenas, não tópicos),
-   com formatação ElevenLabs V3, Viewer Simulation Pass.
-8. **Checklist** — 38 itens (compliance médico + narrativa/storytelling).
+6. **Metadados** — 10 títulos, thumbnail, descrição SEO (com fontes
+   do dossier), tags em cluster, comentário fixado.
+7. **Roteiro (Two-pass)** — Pass 1: esqueleto narrativo com dados do
+   dossier. Pass 2: ElevenLabs, ritmo, pattern interrupts, Viewer
+   Simulation Pass, verificação de fontes.
+8. **Checklist** — 38 itens (compliance + narrativa + fontes verificáveis).
 
 ---
 

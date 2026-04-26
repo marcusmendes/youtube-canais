@@ -26,10 +26,15 @@ Quando executado dentro do pipeline (`output/videos/{slug}/`),
 **ANTES de gerar metadados**, leia os seguintes arquivos:
 
 1. `output/videos/{slug}/01-performance.md` — calibrações do diagnóstico
-2. `output/videos/{slug}/02-competitive.md` — manifesto, tags dos concorrentes
-3. `output/videos/{slug}/03-validation.md` — cluster de keywords validado
+2. `output/videos/{slug}/02-research.md` — dossier de fontes (para descrição SEO e fontes)
+3. `output/videos/{slug}/03-competitive.md` — manifesto, tags dos concorrentes
+4. `output/videos/{slug}/04-validation.md` — cluster de keywords validado
 
 Se algum arquivo não existir, informar e seguir com os disponíveis.
+
+**Regra de fontes:** A seção `📚 FONTES E ESTUDOS CITADOS` da
+descrição SEO DEVE ser preenchida a partir do dossier `02-research.md`.
+Nunca inventar DOIs ou URLs.
 
 ---
 
@@ -225,7 +230,7 @@ Estrutura obrigatória:
 
 ## Output
 
-Salve em `output/videos/{slug-do-tema}/05-metadata.md` (pipeline)
+Salve em `output/videos/{slug-do-tema}/06-metadata.md` (pipeline)
 ou exiba diretamente (avulso).
 
 Estruture: Títulos (10 + Top 3), Thumbnail Prompt, Descrição SEO,

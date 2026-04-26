@@ -135,18 +135,23 @@ seu roteiro para soar como esses modelos.
 Quando executado dentro do pipeline (`output/videos/{slug}/`),
 **ANTES de escrever o roteiro**, leia os seguintes arquivos:
 
-1. `output/videos/{slug}/04-narrative.md` — arquitetura narrativa (PRINCIPAL)
-2. `output/videos/{slug}/05-metadata.md` — título escolhido, emoção, ângulo
-3. `output/videos/{slug}/01-performance.md` — calibrações do diagnóstico
-4. `output/videos/{slug}/02-competitive.md` — manifesto, correções, ângulos
+1. `output/videos/{slug}/05-narrative.md` — arquitetura narrativa (PRINCIPAL)
+2. `output/videos/{slug}/06-metadata.md` — título escolhido, emoção, ângulo
+3. `output/videos/{slug}/02-research.md` — dossier de fontes verificadas (FONTES)
+4. `output/videos/{slug}/01-performance.md` — calibrações do diagnóstico
+5. `output/videos/{slug}/03-competitive.md` — manifesto, correções, ângulos
 
 Se algum arquivo não existir, informar e seguir com os disponíveis.
+
+**Regra de fontes:** Todo dado, número ou claim científico no roteiro
+DEVE referenciar uma fonte do dossier `02-research.md`. Se o dado não
+constar no dossier, NÃO inventar — omitir ou sinalizar como lacuna.
 
 ---
 
 ## INSTRUÇÃO OBRIGATÓRIA — FASE N (NARRATIVA)
 
-O arquivo `04-narrative.md` contém a arquitetura narrativa que DEVE
+O arquivo `05-narrative.md` contém a arquitetura narrativa que DEVE
 ser seguida:
 
 - **Protagonista:** quem o viewer acompanha (usar no hook e ao longo)
@@ -334,16 +339,76 @@ Cada VISUAL específico ao conteúdo — impossível de reutilizar.
 
 ## CREDIBILIDADE CIENTÍFICA
 
-Fontes reais (Nature, Science, MIT Tech Review, etc.).
-Nunca invente dados. Preliminar → sinalizar. Previsões → "projetam".
+Todas as fontes DEVEM vir do dossier `02-research.md`. Nunca invente
+dados, DOIs, URLs ou nomes de pesquisadores. Se o dossier sinalizar
+fonte como preprint, incluir "resultados promissores, mas a ciência
+pede cautela". Previsões → "pesquisadores projetam".
 Disclosure IA na descrição.
+
+---
+
+## MÉTODO DE ESCRITA — TWO-PASS (OBRIGATÓRIO)
+
+O roteiro é escrito em duas passagens dentro da mesma execução.
+NÃO entregar o resultado do Pass 1 — ele é rascunho interno.
+
+### Pass 1 — Esqueleto narrativo (rascunho)
+
+Objetivo: preencher a arquitetura da Fase N com conteúdo concreto.
+
+1. Para cada CENA definida na Fase N, escrever:
+   - Narração (usando dados do dossier `02-research.md`)
+   - `VISUAL:` alinhado ao "Lugar visual" da cena
+   - Micro-história no ponto indicado
+   - Setup/payoff nos timestamps indicados
+2. Seguir o arco emocional — mapear 1 emoção por bloco
+3. Inserir fontes do dossier em cada claim (referência interna)
+4. NÃO se preocupar com ElevenLabs, ritmo ou polish neste pass
+5. Resultado: roteiro completo em conteúdo, mas cru em forma
+
+### Pass 2 — Polimento e engenharia de retenção
+
+Objetivo: transformar o rascunho em roteiro final pronto para ElevenLabs.
+
+1. **Formatação ElevenLabs:**
+   - Inserir Audio Tags (`[pause]`, `[short pause]`, `[long pause]`)
+   - Inserir Audio Tags emocionais nos momentos-chave
+   - Normalizar texto (anos, porcentagens, siglas, URLs por extenso)
+   - Aplicar CAPS cirúrgico (≤2 palavras, 1x/parágrafo)
+   - Calibrar pontuação (reticências, travessões, exclamações)
+2. **Ritmo respiratório (P3):**
+   - Garantir ≥1 frase ≤8 palavras e ≥1 frase ≥25 por parágrafo
+   - Frases curtas nos momentos dramáticos
+   - Frases longas nos trechos expositivos
+3. **Pattern interrupts:**
+   - Verificar que há interrupt a cada 30-45s (~75-110 palavras)
+   - Variar tipo (escala, pergunta, dado, ritmo, editorial)
+4. **Transições (P2):**
+   - Eliminar marcadores explícitos
+   - Substituir por metáfora, pergunta natural, mudança de escala
+5. **Viewer Simulation Pass (4 audits):**
+   - Jargão Audit
+   - Transition Audit
+   - Curiosity Death Audit
+   - Translation-Friendly Audit
+6. **Verificação de fontes:**
+   - Todo claim tem referência ao dossier?
+   - Preprints sinalizados?
+   - Nenhum dado inventado?
+
+### Critério de entrega
+
+O roteiro só é entregue após o Pass 2 completo. Se durante o Pass 2
+identificar problemas estruturais (cena sem conflito, arco emocional
+repetitivo, loop sem payoff), corrigir antes de entregar.
 
 ---
 
 ## Output
 
-Salve em `output/videos/{slug-do-tema}/06-script.md` (pipeline) ou
+Salve em `output/videos/{slug-do-tema}/07-script.md` (pipeline) ou
 exiba diretamente (avulso).
 
 Estruture: Hook, Contexto, Bloco 1-4 (com VISUAL), CTA Final,
-Mapa de Open Loops, Auditoria de Retenção, Localização do Manifesto.
+Mapa de Open Loops, Auditoria de Retenção, Localização do Manifesto,
+Referências de Fontes (mapeamento dado→fonte do dossier).
