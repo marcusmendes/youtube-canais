@@ -20,6 +20,19 @@ O handle do canal é `@MarcusMacielIAeCiencia`.
 
 ---
 
+## INPUT — LEITURA OBRIGATÓRIA DO DISCO
+
+Quando executado dentro do pipeline (`output/videos/{slug}/`),
+**ANTES de gerar metadados**, leia os seguintes arquivos:
+
+1. `output/videos/{slug}/01-performance.md` — calibrações do diagnóstico
+2. `output/videos/{slug}/02-competitive.md` — manifesto, tags dos concorrentes
+3. `output/videos/{slug}/03-validation.md` — cluster de keywords validado
+
+Se algum arquivo não existir, informar e seguir com os disponíveis.
+
+---
+
 ## INSTRUÇÕES DE PRIORIDADE
 
 1. **Credibilidade Científica > tudo**

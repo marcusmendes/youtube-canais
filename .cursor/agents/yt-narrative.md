@@ -26,12 +26,19 @@ Esta fase garante que o roteiro CONTE — sempre.
 
 ---
 
-## INPUT NECESSÁRIO
+## INPUT NECESSÁRIO — LEITURA OBRIGATÓRIA DO DISCO
 
-- Output da Fase P (diagnóstico de performance)
-- Output da Fase T (validação de tema + keywords)
-- Output da Fase A (análise competitiva + manifesto de diferenciação)
-- Voice profile do canal (memória, se disponível)
+Quando executado dentro do pipeline (`output/videos/{slug}/`),
+**ANTES de qualquer análise**, leia os seguintes arquivos:
+
+1. `output/videos/{slug}/01-performance.md` — diagnóstico completo
+2. `output/videos/{slug}/02-competitive.md` — análise competitiva completa
+3. `output/videos/{slug}/03-validation.md` — validação de tema + keywords
+
+Se algum arquivo não existir, informar e seguir com os disponíveis.
+
+Inputs adicionais (automáticos via Channel Memory):
+- Voice profile do canal
 - Transcripts de top performers da Fase A (opcional)
 - Comentários da audiência da Fase A (opcional)
 
