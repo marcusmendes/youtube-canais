@@ -1,5 +1,5 @@
 # PROMPT MESTRE — IA, CIÊNCIA E FUTURO DA HUMANIDADE
-**Canal: Marcus Maciel | IA & Ciência — Versão 11.3**
+**Canal: Marcus Maciel | IA & Ciência — Versão 12.0**
 
 ---
 
@@ -483,48 +483,103 @@ no contexto deste roteiro específico.
 
 ---
 
-## ESCRITA OTIMIZADA PARA VOZ-OVER + TRADUÇÃO AUTOMÁTICA
+## FORMATAÇÃO PARA ELEVENLABS (OBRIGATÓRIO)
 
-> O canal usa narração em voz-over e ativa tradução automática
-> (YouTube auto-dub). Estas regras garantem que o roteiro soe
-> natural quando narrado e que a tradução para EN preserve o
-> sentido. **Aplicar DURANTE a escrita do roteiro, não depois.**
+> O canal usa narração sintetizada pela **ElevenLabs Eleven V3** com
+> voz clonada. O roteiro DEVE ser escrito pronto para colar na
+> ferramenta — sem edição posterior. Também ativa tradução automática
+> (YouTube auto-dub). **Aplicar DURANTE a escrita do roteiro, não depois.**
 
-### Regras para voz-over
+### Audio Tags — Pausas
 
-- Marcar pausas com `[pausa]` entre frases longas ou antes de
-  revelações — o narrador precisa respirar e o espectador
-  precisa processar.
-- Marcar ênfase com `[ênfase]` em palavras-chave que o narrador
-  deve destacar vocalmente.
-- Frases com mais de 25 palavras DEVEM ter vírgulas ou travessões
-  estratégicos que criem pontos naturais de respiração.
-- Números grandes: escrever por extenso ou com separador
-  legível — "oitenta mil" ou "80.000", nunca "80000".
-- Datas: escrever por extenso — "vinte e cinco de março de dois
-  mil e vinte e seis", não "25/03/2026". Formato numérico
-  prejudica o reconhecimento de fala (ASR).
-- Siglas: na primeira ocorrência, escrever o nome completo
-  seguido da sigla — "Agência Espacial Europeia (ESA)". Nas
-  seguintes, usar a sigla. Siglas muito comuns (IA, NASA, DNA)
-  não precisam de expansão.
+| Tag | Duração | Quando usar |
+|---|---|---|
+| `[short pause]` | ~0.5s | Entre frases dentro do mesmo raciocínio |
+| `[pause]` | ~1s | Entre blocos, após revelação, antes de virada |
+| `[long pause]` | ~2s | Momento dramático, antes de conclusão |
+
+### Audio Tags — Entrega Emocional
+
+| Tag | Efeito | Exemplo |
+|---|---|---|
+| `[whispers]` | Tom sussurrado | `[whispers]` "E se já for tarde demais?" |
+| `[excited]` | Tom animado/energético | `[excited]` "Funcionou!" |
+| `[curious]` | Tom de curiosidade | `[curious]` "Mas por que ninguém percebeu?" |
+| `[thoughtful]` | Tom reflexivo | `[thoughtful]` "Isso muda tudo que sabíamos." |
+| `[sighs]` | Suspiro antes da fala | `[sighs]` "Mais um estudo ignorado." |
+| `[frustrated sigh]` | Suspiro de frustração | `[frustrated sigh]` "Três anos de trabalho..." |
+| `[dramatically]` | Tom dramático | `[dramatically]` "E então... silêncio." |
+| `[clears throat]` | Transição de tom | Antes de mudar de bloco narrativo |
+| `[inhales deeply]` | Respiração profunda | Antes de revelação impactante |
+
+Audio tags sempre ANTES do trecho que modificam.
+Podem ser combinados: `[sighs] [thoughtful]` "Talvez seja tarde demais."
+
+### Pontuação como Controle de Entrega
+
+| Pontuação | Efeito | Exemplo |
+|---|---|---|
+| `...` (reticências) | Pausa com peso/hesitação | "E aí... tudo mudou." |
+| `—` (travessão) | Corte abrupto/interrupção | "Mas tem um problema — ninguém percebeu." |
+| `!` (exclamação) | Energia, ênfase natural | "Isso muda TUDO!" |
+| `?` (interrogação) | Inflexão ascendente real | "Mas e se não funcionar?" |
+| Ponto final curto | Frase seca, assertiva | "Não funcionou." |
+
+### CAPS para Ênfase
+
+CAPS em 1-2 palavras aumenta ênfase vocal no V3.
+- Máximo 2 palavras consecutivas em CAPS
+- Máximo 1x por parágrafo
+- Exemplo: "Isso NÃO é ficção científica."
+
+### Estrutura de Texto
+
+Line breaks e parágrafos afetam o ritmo no V3:
+- **Parágrafo novo** = pausa natural entre ideias
+- **Frases curtas isoladas** = entrega mais lenta/dramática
+- **Frases longas corridas** = ritmo acelerado/urgente
+- Usar frases curtas (≤15 palavras) nos momentos dramáticos
+- Usar frases mais longas nos trechos expositivos para fluidez
+
+### Normalização de Texto (Text Normalization)
+
+O V3 pode pronunciar incorretamente números, datas e siglas.
+Normalizar TUDO no roteiro:
+
+| Tipo | Errado | Correto |
+|---|---|---|
+| Anos | "2026" | "dois mil e vinte e seis" |
+| Porcentagens | "97%" | "noventa e sete por cento" |
+| Valores monetários | "$45 bilhões" | "quarenta e cinco bilhões de dólares" |
+| Datas | "01/03/2025" | "primeiro de março de dois mil e vinte e cinco" |
+| Siglas (soletrar) | "AGI" | "A-G-I" (ou "inteligência artificial geral" na 1ª ocorrência) |
+| Siglas (palavra) | "NASA" | "nasa" (minúsculo se pronunciada como palavra) |
+| Abreviaturas | "Dr." | "doutor" |
+| URLs | "arxiv.org" | "arxiv ponto org" |
+| Unidades | "100km" | "cem quilômetros" |
+| Ordinais | "3ª" | "terceira" |
+
+### Regras de Frequência
+
+1. Mínimo 4 `[pause]` por roteiro (nos 3 pontos de risco + antes do CTA)
+2. Mínimo 2 `[short pause]` por bloco (entre frases densas)
+3. Máximo 3 `[long pause]` por roteiro (reservar para momentos dramáticos)
+4. Audio tags de emoção: máximo 5 por roteiro (bem distribuídos)
+5. NÃO usar tags SSML `<break>` — usar apenas Audio Tags
+6. NÃO usar tags visuais/não-sonoras (`[standing]`, `[grinning]`, `[pacing]`)
+7. NÃO usar tags de som ambiente (`[gunshot]`, `[applause]`) — canal usa edição separada
 
 ### Regras para tradução automática (YouTube auto-dub EN)
 
 - Evitar gírias ou expressões idiomáticas brasileiras que não
-  tenham equivalente direto em inglês. Ex: "dar um jeitinho",
-  "fulano de tal", "na cara dura".
+  tenham equivalente direto em inglês.
 - Evitar jogos de palavra que dependem de fonética PT-BR.
-- Nomes próprios em inglês: manter a grafia original e indicar
-  pronúncia entre colchetes na primeira ocorrência se necessário
-  — ex: "Ronan Farrow [rônan férou]".
+- Nomes próprios em inglês: manter a grafia original.
 - Evitar contrações coloquiais na narração — usar "para" (não
-  "pra"), "está" (não "tá"), "estou" (não "tô"). A exceção
-  são inserções editoriais em 1ª pessoa onde o coloquialismo
-  reforça autenticidade — nesse caso, limitar a 1-2 por roteiro.
-- Frases ambíguas para tradução automática: evitar construções
-  onde sujeito e objeto podem ser confundidos por IA de tradução.
-  Preferir ordem direta (sujeito + verbo + objeto).
+  "pra"), "está" (não "tá"), "estou" (não "tô"). Exceção:
+  inserções editoriais (limitar a 1-2 por roteiro).
+- Frases ambíguas: preferir ordem direta (sujeito + verbo + objeto).
+- Frases >25 palavras DEVEM ser quebradas em 2.
 
 ---
 
@@ -597,6 +652,23 @@ Ao escrever o roteiro, verificar que estes 3 pontos estão
 cobertos. Se um deles cair numa transição entre blocos ou
 numa explicação técnica longa, reposicionar o conteúdo.
 
+**Viewer Simulation Pass (obrigatória antes de salvar):**
+
+Reler o roteiro como viewer leigo e corrigir:
+1. **Jargão Audit:** Cada termo técnico tem analogia/explicação
+   imediata? Se não → adicionar metáfora (P4).
+2. **Transition Audit:** Transições são invisíveis? Eliminar:
+   "agora vamos falar de", "outra coisa importante é",
+   "passando para o próximo ponto".
+3. **Curiosity Death Audit:** Trecho >45s sem pattern interrupt,
+   dado novo, escalada ou pergunta? Se sim → inserir interrupt.
+4. **Translation-Friendly Audit:** Frases >25 palavras viraram 2?
+   Expressões brasileiras ("deu ruim", "passar pano") foram
+   traduzidas para construções universais? (Canal usa dublagem
+   automática do YouTube.)
+
+Não salvar roteiro com nenhum dos 4 audits pendente.
+
 ---
 
 ## CTAs NA NARRAÇÃO — POSICIONAMENTO ESTRATÉGICO
@@ -656,34 +728,56 @@ Fechar com gancho para o próximo vídeo ou vídeo relacionado.
 *Fallback MCP:* Usar `studio_listOwnVideos` com `status: "public"`
 e `maxResults: 5`.
 
-**Passo 2 — Obter analytics do último vídeo**
+**Passo 2 — Obter métricas gerais do vídeo**
 
-*VidIQ (preferencial — sem delay de 2-3 dias):*
-- `vidiq_video_stats` com `granularity: "hourly"` para a curva de
-  crescimento hora a hora (views, likes, comments, VPH)
-- `vidiq_channel_analytics` com `filters: "video==[videoId]"` para
-  métricas detalhadas (views, watch time, retenção, por dimensão)
-- Se precisar breakdown por device/country/traffic source:
-  `vidiq_channel_analytics` com `dimensions: ["deviceType"]`,
-  `["country"]` ou `["insightTrafficSourceType"]`
+*VidIQ:* `vidiq_video_stats` com `granularity: "hourly"` para a
+curva de crescimento hora a hora (views, likes, comments, VPH).
 
-*Fallback MCP:* Usar `analytics_getVideoAnalytics` com métricas:
+**Passo 2B — Obter retenção e CTR (YouTube Analytics — OBRIGATÓRIO)**
+
+A VidIQ NÃO fornece retenção por segundo nem CTR de impressões.
+Esses dados vêm exclusivamente do YouTube Analytics.
+
+*Retenção por segundo (retention curve):*
+- `vidiq_channel_analytics` com `filters: "video==[videoId]"`,
+  `dimensions: ["elapsedVideoTimeRatio"]`,
+  `metrics: ["audienceWatchRatio", "relativeRetentionPerformance"]`
+- Isso retorna a curva de retenção ponto a ponto (0.0 a 1.0).
+  `audienceWatchRatio` = % absoluto de viewers naquele ponto.
+  `relativeRetentionPerformance` = vs vídeos de duração similar.
+
+*Fallback MCP YouTube:* `analytics_getVideoAnalytics` com métricas:
 `views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,dislikes,comments,shares,subscribersGained`
+(retorna retenção média, sem curva por segundo).
 
-Nota sobre delay do MCP YouTube: a API de analytics tem delay de
-2-3 dias. Se o resultado retornar zeros, usar as estatísticas de
-`studio_listOwnVideos` e tentar o vídeo anterior.
+*CTR de impressões:*
+- `vidiq_channel_analytics` com `filters: "video==[videoId]"`,
+  `metrics: ["views", "totalSegmentImpressions"]`
+- CTR = views / totalSegmentImpressions.
+
+**Passo 2C — Breakdown por traffic source**
+
+- `vidiq_channel_analytics` com `filters: "video==[videoId]"`,
+  `dimensions: ["insightTrafficSourceType"]`,
+  `metrics: ["views", "estimatedMinutesWatched"]`
+- Browse dominante → algoritmo testando, manter consistência
+- Search dominante → SEO funciona, fortalecer keywords
+- Suggested dominante → cluster algorítmico estabelecido
+- External dominante → distribuição manual é o motor
+
+Nota: a API de analytics tem delay de 2-3 dias. Se retornar
+zeros, informar e usar retenção média como proxy.
 
 **Passo 3 — Obter baseline do canal**
 
 *VidIQ:*
 - `vidiq_channel_analytics` com `startDate` dos últimos 90 dias
   e métricas: `["views", "estimatedMinutesWatched",
-  "averageViewDuration", "likes", "comments", "subscribersGained"]`
+  "averageViewDuration", "averageViewPercentage", "likes",
+  "comments", "subscribersGained", "totalSegmentImpressions"]`
+- Calcular CTR baseline: total views / totalSegmentImpressions.
 - `vidiq_channel_performance_trends` para a curva típica de
-  acumulação de views (min/max/avg/mediana por minutos desde
-  publicação) — permite comparar se o último vídeo está acima
-  ou abaixo do padrão do canal
+  acumulação de views.
 
 *Fallback MCP:* Usar `analytics_getChannelAnalytics` sem
 `dimensions` (agregado) e dividir pelo número de vídeos públicos.
@@ -768,6 +862,34 @@ Se a retention curve não estiver disponível, usar a retenção
 média como proxy e informar: "Retention curve indisponível —
 diagnóstico baseado em retenção média. Aplicar reforço
 preventivo nos 3 pontos críticos (30s, 2min, 50% da duração)."
+
+### Traffic Sources
+- Browse: [X%] | Search: [X%] | Suggested: [X%] | External: [X%]
+- Fonte dominante: [fonte] → [interpretação]
+
+### Quadrante CTR × Retenção (últimos 5 vídeos longos)
+
+|                       | Retenção ALTA (≥35%)         | Retenção BAIXA (<35%)         |
+|-----------------------|------------------------------|-------------------------------|
+| **CTR ALTO (≥5%)**    | OURO: replicar fórmula       | ENGANO: thumb/título mentem   |
+| **CTR BAIXO (<5%)**   | INVISÍVEL: refazer packaging | FRACO: tema/conteúdo errado   |
+
+| Vídeo | CTR | Retenção | Quadrante |
+|---|---|---|---|
+| [título] | [X%] | [X%] | [quadrante] |
+
+Ação por quadrante:
+- OURO → engenharia reversa do hook + thumbnail; usar como template
+- ENGANO → reescrever thumbnail/título alinhado ao conteúdo real
+- INVISÍVEL → acionar FASE R (Repackaging)
+- FRACO → bloquear sub-nicho por 30 dias
+
+### Benchmarks de Referência
+
+| Métrica | Excelente | Bom | Alerta | Crítico |
+|---|---|---|---|---|
+| Retenção média | ≥45% | 35-44% | 25-34% | <25% |
+| CTR (canal <1K subs) | ≥7% | 5-6,9% | 3-4,9% | <3% |
 
 ### Lições do último vídeo
 - ERRO A NÃO REPETIR: [1-2 erros narrativos específicos
@@ -943,6 +1065,15 @@ algo que nenhum dos top performers cobriu."
 
 → Esta frase deve aparecer parafraseada em algum momento do
 roteiro (preferencialmente no Bloco 4 — Implicação).
+
+### Insights da Audiência (dos comentários)
+- 5 perguntas mais curtidas: [lista]
+- Sentimento dominante: [positivo/negativo/misto]
+- Objeções recorrentes: [lista]
+- O que o público sentiu que faltou: [lista]
+
+### Tags dos Concorrentes (para pesquisa de tags)
+- Tags recorrentes em 2+ vídeos: [lista]
 ```
 
 ### Como o briefing alimenta o roteiro:
@@ -964,6 +1095,162 @@ roteiro (preferencialmente no Bloco 4 — Implicação).
 
 ---
 
+## FASE N — NARRATIVA & STORYTELLING
+
+> Executar DEPOIS da Fase 0 e ANTES de gerar metadados/roteiro.
+> Objetivo: converter output analítico (P + V + A) em arquitetura
+> narrativa acionável para o roteirista.
+
+**Por que esta fase existe:** Sem esta camada, o roteiro vira
+documentário-aula (alta info, baixa retenção). A Fase P provou que
+o público abandona quando o canal EXPLICA. Esta fase garante que o
+roteiro CONTE — sempre.
+
+### Passo 1 — Definir protagonista
+
+Identificar QUEM o viewer acompanha durante o vídeo.
+Pode ser:
+- **Pessoa real:** cientista, paciente, profissional impactado
+- **Conceito personificado:** a IA como "personagem" com agência
+- **Documento/artefato:** o roadmap interno, o paper que mudou tudo
+- **O próprio viewer:** "você, advogado de 35 anos em SP"
+
+Regra: MÁXIMO 1 protagonista principal + 2 coadjuvantes.
+
+```
+Protagonista: [nome] — [papel] — [por que o viewer se importa]
+Coadjuvante 1: [nome] — [papel] — [momento de entrada]
+Coadjuvante 2: [nome] — [papel] — [momento de entrada]
+```
+
+### Passo 2 — Definir espinha dorsal (3 Atos)
+
+| Ato | Duração | Função |
+|---|---|---|
+| Ato 1 — Setup | 0-25% | Promessa central + protagonista + conflito |
+| Ato 2a — Aprofundamento | 25-50% | 1ª virada + escalada de tensão |
+| Ato 2b — Complicação | 50-75% | 2ª virada + dado mais impactante |
+| Ato 3 — Resolução | 75-100% | Payoff emocional + implicação futura |
+
+Alternativas (quando usar):
+- **Jornada do Herói:** descoberta/transformação progressiva
+- **Kishotenketsu:** reviravolta sem antagonista (estilo japonês)
+- **Promessa e Pagamento:** quando o título é uma pergunta direta
+
+Justificar a escolha do framework em 1 frase.
+
+### Passo 3 — Arco emocional
+
+Mapear UMA emoção dominante por bloco de ~2 minutos.
+Variação obrigatória — mesma emoção por mais de 4 min = fadiga.
+
+Paleta emocional para documentário científico:
+
+| Emoção | Quando usar |
+|---|---|
+| Choque | Revelação inesperada, dado contraintuitivo |
+| Inquietação | Algo está errado, perigo implícito |
+| Curiosidade | Loop aberto, pergunta sem resposta |
+| Urgência | Prazo apertado, contagem regressiva |
+| Empatia | Alguém afetado, micro-história humana |
+| Esperança | Saída possível, solução emergente |
+| Empoderamento | Eu posso fazer algo, ação concreta |
+
+Output: tabela com minuto, emoção e justificativa.
+
+### Passo 4 — Converter blocos em CENAS
+
+Cada bloco precisa virar CENA, não tópico.
+Uma cena responde obrigatoriamente a 4 perguntas:
+
+1. **Lugar/contexto visual:** onde estamos olhando?
+2. **Personagem em foco:** quem está em cena?
+3. **Conflito ou tensão:** o que está em jogo?
+4. **Revelação:** o que muda no fim da cena?
+
+**Regra dura:** se o bloco não responde às 4 perguntas, NÃO É CENA.
+Reescrever até que responda.
+
+```
+Cena [N] — [timestamp início]-[timestamp fim]
+  Lugar visual: [descrição concreta para B-roll/edição]
+  Personagem: [quem está em foco]
+  Conflito: [o que está em jogo]
+  Revelação: [o que muda no fim]
+```
+
+### Passo 5 — Micro-histórias humanas
+
+Inserir 2-4 PESSOAS REAIS com nome e contexto durante o vídeo.
+Não citar "advogados em geral" — citar "Marcelo, advogado em BH".
+Cada micro-história ocupa 30-60s máximo.
+
+```
+Quem: [nome, profissão, idade, cidade]
+Quando aparece: [minuto aproximado]
+O que acontece: [ação concreta em 1 frase]
+Função narrativa: [por que está aqui]
+```
+
+### Passo 6 — Motivos visuais recorrentes
+
+Definir 2-3 MOTIVOS VISUAIS que se repetem e ganham significado
+ao longo do vídeo. Esses motivos amarram o vídeo visualmente.
+
+```
+Motivo: [descrição]
+Aparições: [lista de timestamps]
+Significado: [o que ele representa narrativamente]
+```
+
+### Passo 7 — Pares setup/payoff
+
+Para cada loop aberto, definir EXATAMENTE onde é plantado e pago.
+**Lei narrativa:** nenhum setup sem payoff. Nenhum payoff sem setup.
+
+```
+Loop: [pergunta/promessa]
+Setup em: [timestamp] — [frase plantada]
+Payoff em: [timestamp] — [revelação]
+Tensão acumulada: [minutos entre setup e payoff]
+```
+
+### Passo 8 — Anti-clichês do nicho
+
+Listar 5 clichês do nicho a EVITAR (baseados na análise competitiva
+e comentários da audiência). Cada clichê precisa de substituto
+narrativo concreto.
+
+```
+Clichê: [frase ou referência]
+Por que evitar: [evidência dos comentários/competitiva]
+Substituto: [alternativa narrativa concreta]
+```
+
+### Checklist pré-aprovação da Fase N
+
+- [ ] Protagonista definido em uma única frase
+- [ ] Espinha dorsal mapeada nos 3 atos (framework justificado)
+- [ ] Mapa emocional sem repetição > 4 min consecutivos
+- [ ] Cada bloco virou CENA (4 perguntas respondidas)
+- [ ] Mínimo 2 micro-histórias humanas com nome próprio
+- [ ] Mínimo 2 motivos visuais recorrentes definidos
+- [ ] Todos os loops abertos têm par setup/payoff
+- [ ] Lista anti-clichês com 5 substitutos concretos
+
+**Critério final:**
+> "Se eu remover toda a narração e ficar só com as imagens
+> descritas nas cenas, ainda é possível entender o que está
+> sendo contado?" SIM → pode ir para roteiro. NÃO → voltar passo 4.
+
+### Diretriz de voz narrativa
+
+Incluir uma frase única que orienta o TOM da narração deste vídeo
+específico. Ex: "Narrador documentário sério, sem ironia, sem
+sensacionalismo barato, com pausas dramáticas calculadas."
+
+---
+
 ## ESTRUTURA OBRIGATÓRIA DO ROTEIRO
 
 Antes de iniciar o roteiro, gere os seguintes metadados:
@@ -972,11 +1259,47 @@ Antes de iniciar o roteiro, gere os seguintes metadados:
 
 ### [METADADOS DO VÍDEO]
 
-**Validação do Tema (Checklist de Ouro do Método):**
-Antes de sugerir os títulos ou iniciar o roteiro, a IA deve provar a viabilidade do tema respondendo obrigatoriamente a estes 3 pontos (extraídos do método do canal):
-1.  **Ângulo Universal:** Como alguém sem qualquer formação técnica se importa com isso? (Explicar em tom acessível).
-2.  **Premissa Curta:** Resuma a premissa do vídeo em uma única frase de no máximo 10 palavras.
-3.  **Gatilho de Persona:** Qual medo ou desejo profundo do "Explorador da Fronteira" este vídeo ativa? (Ex: Medo da obsolescência, fascínio pelo desconhecido, desejo de entender o futuro).
+**Validação do Tema — Pesquisa Multi-Camada:**
+
+Antes de sugerir títulos ou iniciar o roteiro, validar o tema em 4 camadas:
+
+**1A. Keyword Principal:**
+`vidiq_keyword_research` com `include_related: true` → volume, competition, overall.
+
+**1B. Cluster Semântico (mínimo 5 keywords simultâneas):**
+- Keyword principal (ex: "agi")
+- Variação em inglês (ex: "artificial general intelligence")
+- Sinônimo PT (ex: "superinteligência")
+- Long-tail pergunta (ex: "quando vai chegar a agi")
+- Long-tail comparação (ex: "agi vs ia atual")
+Regra: Se ≥3 keywords do cluster têm volume > 0, o tema tem
+profundidade SEO suficiente.
+
+**1C. Intent Dominante:**
+Inspecionar top 5 resultados do YouTube para a keyword principal
+e classificar a intenção dominante do viewer:
+- Definição (o que é X?)
+- Timeline (quando vai chegar X?)
+- Opinião/Debate (X é bom ou ruim?)
+- Tutorial (como usar X?)
+O ângulo do vídeo DEVE corresponder ao intent dominante.
+
+**1D. Competição Contextual:**
+"Existe pelo menos 1 canal entre 5K-50K subs ranqueando top-10
+para a keyword principal?"
+- SIM → keyword é alcançável
+- NÃO → keyword é ceiling-bound; pivotar para long-tail do cluster
+
+**Decisão:**
+- `overall ≥ 20` OU `volume > 0` → `approved`
+- `overall < 20` E `volume == 0` → `low_demand` (buscar alternativas)
+- Nenhum canal 5K-50K no top-10 → `ceiling_bound` (pivotar long-tail)
+
+**Checklist de Ouro (obrigatório):**
+1. **Ângulo Universal:** Como alguém sem formação técnica se importa?
+2. **Premissa Curta:** Resumo em ≤10 palavras.
+3. **Gatilho de Persona:** Qual medo/desejo do "Explorador da
+   Fronteira" este vídeo ativa?
 
 **Títulos sugeridos:** gere exatamente 10 opções de título.
 Para cada um, aplique uma estrutura diferente entre as 6 fórmulas
@@ -1463,14 +1786,13 @@ Priorizar:
 - Termos em inglês com alto volume como equivalentes dos
   termos em português que têm volume zero
 
-**Passo 4 — Montar a lista final:**
-Gere **8 a 12 tags** (não mais), todas com volume comprovado:
-- ~4 tags de alto volume validadas por keyword research
-  (priorizar overall > 60)
-- ~3 tags recorrentes dos concorrentes com volume > 0
-- ~3 tags em inglês de alto volume para alcance internacional
-- ~2 tags do canal (apenas as que têm volume: "inteligência
-  artificial", "ciência e tecnologia", "IA")
+**Passo 4 — Montar a lista final em Cluster (8-12 tags):**
+
+Estrutura obrigatória:
+- **3 tags PRINCIPAIS** (alto volume, do cluster validado na Validação)
+- **3-5 tags LONG-TAIL** (baixa competição, perguntas reais)
+- **2-3 tags SINÔNIMOS** (PT + EN da mesma ideia)
+- **2 tags DE CANAL** (Marcus Maciel, IA e Ciência)
 
 **NÃO incluir:**
 - Tags long-tail em português com volume zero (ex: "cirurgia
@@ -1525,19 +1847,21 @@ neste vídeo. Keyword secundária aparece 1x aqui. Tom editorial
 do canal.]
 
 🔬 NESTE VÍDEO VOCÊ VAI VER:
-00:00 Introdução
-01:30 [Capítulo 2 — nome descritivo com keyword]
-03:45 [Capítulo 3 — nome descritivo com keyword]
-05:00 [Capítulo 4 — nome descritivo com keyword]
+00:00 [Keyword + gatilho de curiosidade, NÃO título neutro]
+01:30 [Keyword + gatilho de curiosidade]
+03:45 [Keyword + gatilho de curiosidade]
+05:00 [Keyword + gatilho de curiosidade]
 ...
+(Cada chapter DEVE conter 1 keyword do cluster + 1 gatilho de
+curiosidade. ❌ "Introdução" ❌ "O que é AGI"
+✅ "O dado que ninguém quer ouvir" ✅ "AGI: a definição que muda tudo")
 
 **CAPÍTULOS (timestamps) — obrigatórios em todo long-form:**
 - Mínimo 5 capítulos para vídeos 10–12 min, 7+ para vídeos >15 min.
-- Nome do capítulo deve incluir keyword secundária quando possível.
+- Nome do capítulo: 1 keyword do cluster + 1 gatilho de curiosidade.
 - Cada capítulo é indexado pelo YouTube como ponto de entrada de
-  busca (não é só conveniência do viewer — é estrutura de
-  indexação semântica, cf. patente US11354342B2).
-- Anti-padrão: nomes genéricos ("Parte 1", "Continuação").
+  busca (estrutura de indexação semântica).
+- Anti-padrão: nomes genéricos ("Parte 1", "Continuação", "Introdução").
 - Timestamps devem corresponder às seções do roteiro. Ajustar
   os tempos reais após a edição do vídeo.
 
@@ -1589,11 +1913,42 @@ https://www.youtube.com/@MarcusMacielIAeCiencia?sub_confirmation=1
 
 ---
 
+**Comentário Fixado Estratégico:**
+
+O pinned comment é o "Bloco 5" — continua a narrativa fora do vídeo.
+
+Estrutura obrigatória:
+1. Frase-síntese provocativa do tema (1 linha)
+2. Pergunta substantiva (NÃO "o que vocês acham?")
+3. Link para PLAYLIST temática (não vídeo individual)
+4. ZERO pedido de like/inscrição
+
+---
+
 Em seguida, escreva o roteiro com as seções abaixo.
 Para cada bloco de narração, inclua imediatamente após o texto
 uma linha de direção visual no formato:
 
 > `VISUAL: [descrição objetiva do que deve aparecer na tela — aplicar obrigatoriamente a Camada Visual Permanente]`
+
+---
+
+### Instrução obrigatória — FASE N (Narrativa)
+
+O output da Fase N contém a arquitetura narrativa que DEVE ser seguida:
+
+- **Protagonista:** quem o viewer acompanha (usar no hook e ao longo)
+- **Espinha dorsal:** 3 atos — respeitar setup/conflito/resolução
+- **Arco emocional:** mapa de emoção por bloco — seguir variação indicada
+- **Cenas:** cada bloco já tem lugar, personagem, conflito e revelação — NÃO transformar cena em tópico
+- **Micro-histórias:** inserir nos pontos indicados (30-60s cada)
+- **Motivos visuais:** incluir nas indicações VISUAL dos timestamps indicados
+- **Pares setup/payoff:** plantar e pagar nos timestamps indicados
+- **Anti-clichês:** consultar lista e NÃO usar nenhum
+- **Diretriz de voz:** calibrar tom conforme a frase orientadora
+
+O roteiro escreve a partir da Fase N — não do output P+V+A puro.
+Se a Fase N não foi executada, seguir a estrutura padrão dos 4 blocos.
 
 ---
 
@@ -2033,10 +2388,10 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 20 | Modelo de escrita consultado | Ao menos 1 roteiro de `modelos-de-escrita/` foi lido antes de escrever · Estilo narrativo calibrado |
 | 21 | Especificidade visual | Nenhum VISUAL genérico (chip de IA, data center genérico, globo digital, cientista genérico) · Cada VISUAL é específico ao conteúdo daquele bloco · Nenhum VISUAL consecutivo repete escala ou cenário · Paleta cromática dos VISUALs varia conforme o tema |
 | 22 | Disclosure de IA na descrição | Linha "Imagens ilustrativas geradas por inteligência artificial." presente na descrição SEO, após o convite de inscrição e antes das fontes |
-| 23 | Teste de leitura em voz alta | Roteiro lido em voz alta a ~150 palavras/min · Nenhuma frase causa fôlego curto · Pausas `[pausa]` e ênfases `[ênfase]` posicionadas · Números escritos por extenso ou com separador legível |
+| 23 | Formatação ElevenLabs V3 | Mín 4 `[pause]` por roteiro · Mín 2 `[short pause]` por bloco · Máx 3 `[long pause]` · Máx 5 audio tags emocionais · CAPS ≤2 palavras e 1x/parágrafo · Text normalization completa (anos, %, datas, siglas, URLs por extenso) · Zero `<break>` SSML · Zero tags visuais/ambientais |
 | 24 | Camada de Retenção Engenheirada | Auditoria dos primeiros 30s aprovada (5 itens) · Pattern interrupts a cada 30-45s · Mapa de open loops documentado (mínimo 3 nos primeiros 60s) · 3 pontos de risco de drop cobertos (30s, 2min, 50%) · Variação de densidade: nenhuma sequência de 3+ parágrafos de alta densidade sem momento de baixa |
 | 25 | CTAs na narração | CTA 1 (engajamento) entre Bloco 2 e 3 · CTA 2 (inscrição) dentro do Bloco 4 · CTA 3 (próximo vídeo) nos últimos 10s · Nenhum "deixe seu like" genérico |
-| 26 | Voice-over + tradução | Sem contrações coloquiais na narração (exceto inserções editoriais) · Sem gírias PT-BR sem equivalente EN · Datas por extenso · Siglas expandidas na 1ª ocorrência |
+| 26 | Voice-over + tradução | Sem contrações coloquiais (exceto inserções editoriais) · Sem gírias PT-BR sem equivalente EN · Normalização ElevenLabs: anos/datas/porcentagens/siglas/URLs por extenso · Frases >25 palavras quebradas · Ordem direta (sujeito+verbo+objeto) |
 | 27 | Manifesto de Diferenciação | Frase de diferenciação presente no briefing da Fase 0 · Tese parafraseada aparece no roteiro (preferencialmente Bloco 4) |
 | 28 | Label "Altered content" no Studio | Marcado durante upload (Studio → Detalhes → "Conteúdo alterado") · Obrigatório quando vídeo usa imagens/voz/vídeo gerados por IA que pareçam realistas |
 | 29 | Stress Test título ↔ thumbnail (Intrigue Gap) | Título afirma resultado · Thumbnail mostra instante ANTES da revelação visual · Nunca redundância · Validação: "Se apago o título, a thumbnail gera 1 pergunta que SÓ o título responde?" |
@@ -2050,6 +2405,15 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 37 | Cenas, não tópicos | Cada bloco do roteiro é CENA (lugar visual + personagem + conflito + revelação) · Nenhum bloco é apenas explicação/tópico |
 | 38 | Arco emocional variado | Mesma emoção não se repete por mais de 4 min consecutivos · Mínimo 3 emoções diferentes ao longo do roteiro |
 
+**Lógica de decisão:**
+- 0-2 falhas → `approved` ou `approved_with_warnings`
+- 3+ falhas → `needs_fix` + instruções de correção
+- **EXCEÇÃO:** Se QUALQUER item 31, 32 ou 33 falhar → `needs_fix`
+  independente do número total (compliance médico é binário)
+
+Para cada item `fail`, gerar instrução acionável: número do item,
+o que mudar exatamente, sem necessidade de reler a checklist.
+
 ---
 
 Quando todos os campos variáveis estiverem preenchidos,
@@ -2057,24 +2421,22 @@ execute o pipeline de criação abaixo. (Para repackaging de
 vídeos já publicados, use a **Fase R** diretamente — ela é
 um workflow independente que não requer os campos variáveis.)
 
-1. **Fase V (Validação)** — Antes de tudo, valide o tema usando
-   `vidiq_keyword_research` com a keyword principal do tema.
-   Se o `overall` score for < 20 e o `volume` for 0, alertar
-   que o tema pode ter demanda insuficiente e sugerir keywords
-   alternativas usando as `relatedKeywords` retornadas.
-   Se VidIQ não estiver disponível, prosseguir sem validação.
-2. **Fase P (Performance)** — Execute a Análise de Performance do
-   Vídeo Anterior (ver seção FASE P acima). Documente o diagnóstico
-   no output.
-3. **Fase 0 (Competitiva)** — Execute a Análise Competitiva de
-   Roteiros (ver seção FASE 0 acima). Documente o briefing no output.
-4. **Modelos de Escrita** — Leia ao menos 1 roteiro da pasta
-   `canais/marcus-maciel/modelos-de-escrita/` para calibrar
-   o estilo narrativo antes de escrever.
-5. **Metadados + Roteiro** — Gere todas as seções na ordem definida,
-   sem interrupção, incorporando os insights da Fase P e Fase 0,
-   aplicando os 8 Princípios do DNA Narrativo.
-6. **Checklist** — Execute a checklist de validação ao final.
+1. **Fase P (Performance)** — Diagnóstico do vídeo anterior com
+   retention curve, CTR real, traffic sources, quadrante CTR×Retenção.
+2. **Fase V (Validação)** — Validar tema com cluster semântico de 5+
+   keywords, intent dominante, competição contextual + Checklist de Ouro.
+3. **Fase 0 (Competitiva)** — Análise de 3-5 concorrentes, hook,
+   ângulos, manifesto de diferenciação.
+4. **Fase N (Narrativa)** — Converter output P+V+A em arquitetura
+   narrativa: protagonista, espinha dorsal, arco emocional, cenas,
+   micro-histórias, motivos visuais, pares setup/payoff, anti-clichês.
+5. **Modelos de Escrita** — Ler ao menos 1 roteiro da pasta
+   `canais/marcus-maciel/modelos-de-escrita/` para calibrar estilo.
+6. **Metadados** — 10 títulos, thumbnail, descrição SEO, tags em
+   cluster, comentário fixado estratégico.
+7. **Roteiro** — Escrever a partir da Fase N (cenas, não tópicos),
+   com formatação ElevenLabs V3, Viewer Simulation Pass.
+8. **Checklist** — 38 itens (compliance médico + narrativa/storytelling).
 
 ---
 
@@ -2198,6 +2560,16 @@ gancho do novo pacote. Dado concreto + tensão não resolvida.
 1. [O que mudar primeiro]
 2. [Quando medir resultados]
 3. [Próximo passo se não funcionar]
+
+### Versionamento (obrigatório)
+
+| Versão | Data | Thumbnail (resumo) | Título | CTR registrado |
+|---|---|---|---|---|
+| v1 | [data publicação] | [descrição curta] | [título original] | [CTR após 7d] |
+| v2 | [data mudança] | [nova descrição] | [novo título] | [delta vs v1] |
+
+Regra de encerramento: após 3 iterações sem ganho ≥ 20% em CTR,
+arquivar vídeo (remover de playlists ativas, parar de iterar).
 ```
 
 ---

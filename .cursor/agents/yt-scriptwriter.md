@@ -174,7 +174,7 @@ Se a Fase N não existir, seguir a estrutura padrão dos 4 blocos.
 
 ## DURAÇÃO ALVO
 
-- Vídeos longos: 10-15 min → **1.400 a 2.000 palavras**
+- Vídeos longos: 13-17 min → **1.400 a 2.000 palavras**
 - Shorts: até 60s → **120 a 130 palavras**
 
 ## VOZ E TOM

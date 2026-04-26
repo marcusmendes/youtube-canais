@@ -62,7 +62,7 @@ do Marcus. O texto deve ser escrito pronto para colar diretamente.
 
 ## DURAÇÃO ALVO
 
-- Vídeos longos: 10-15 min → **1.400 a 2.000 palavras** (~150 palavras/min)
+- Vídeos longos: 13-17 min → **1.400 a 2.000 palavras** (~150 palavras/min)
 - Shorts: até 60s → **120 a 130 palavras**
 
 ---
