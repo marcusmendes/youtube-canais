@@ -2095,11 +2095,26 @@ campos variáveis. Calibrar para a persona "O Explorador da Fronteira":
 o espectador deve sentir que está prestes a entender algo que a
 maioria das pessoas ainda não sabe.
 
-**Variação opcional — Hook "Cardápio Rápido":**
+**Variação opcional A — Hook "Cardápio Rápido":**
 Se o vídeo contiver múltiplos dados ou revelações impactantes,
 abra com narração rápida em voz-over de 3 a 4 clipes dos momentos
 mais impactantes — criando open loops simultâneos antes de entrar
 no desenvolvimento. O espectador deve ficar para ver todos.
+
+**Variação opcional B — Hook "Payoff Antecipado":**
+Comece mostrando o RESULTADO impossível nos primeiros 5 segundos —
+o output da descoberta, não o input. O resto do vídeo explica o
+"como" chegaram lá, criando um arco de "engenharia reversa" que
+mantém o espectador preso para entender o processo.
+
+Diferença vs. hook padrão:
+- Hook padrão: "A IA analisou oitenta mil exames em uma hora" (input)
+- Payoff Antecipado: "Este código viu algo que nenhum médico
+  detectou em vinte anos" → e mostra o resultado visual (output)
+
+Usar quando: o tema tem um resultado visual/emocional forte que
+pode ser mostrado antes de explicado. Especialmente eficaz em
+temas de medicina, robótica e descobertas científicas.
 
 > `VISUAL: [imagem ou cena de alto impacto, aplicando a Camada Visual Permanente, relacionada ao hook]`
 

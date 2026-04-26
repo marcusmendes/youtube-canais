@@ -295,6 +295,13 @@ payoff.
 
 **[HOOK — 0 a 3s]** Impacto máximo. Dado surpreendente ou pergunta.
 
+Variações de hook (escolher a mais forte para o tema):
+- **Padrão:** Dado numérico impossível ou pergunta existencial
+- **Cardápio Rápido:** 3-4 clipes dos momentos mais impactantes
+- **Payoff Antecipado:** Mostrar o RESULTADO impossível nos primeiros
+  5s (o output, não o input). O vídeo inteiro explica o "como".
+  Usar quando o tema tem resultado visual/emocional forte.
+
 **[CONTEXTO — 3 a 15s]** Expansão do hook. Problema sem solução.
 
 **[DESENVOLVIMENTO — 4 blocos]**
