@@ -486,66 +486,152 @@ no contexto deste roteiro específico.
 
 ## FORMATAÇÃO PARA ELEVENLABS (OBRIGATÓRIO)
 
-> O canal usa narração sintetizada pela **ElevenLabs Eleven V3** com
-> voz clonada. O roteiro DEVE ser escrito pronto para colar na
-> ferramenta — sem edição posterior. Também ativa tradução automática
-> (YouTube auto-dub). **Aplicar DURANTE a escrita do roteiro, não depois.**
+> O canal usa narração sintetizada pela **ElevenLabs Eleven
+> Multilingual v2** com Professional Voice Clone (PVC) do Marcus.
+> O modelo v3 ainda **não suporta PVC**, então o canal usa v2 —
+> que tem motor de prosódia totalmente diferente. Também ativa
+> tradução automática (YouTube auto-dub). **Aplicar DURANTE a
+> escrita do roteiro, não depois.**
 
-### Audio Tags — Pausas
+> **PRINCÍPIO V2:** Audio Tags (`[whispers]`, `[excited]`,
+> `[pause]`, `[short pause]`, `[long pause]`, `[curious]`, etc.)
+> **NÃO existem no v2**. Se colocadas no texto, o modelo as **lê
+> literalmente em voz alta**. Toda expressividade vem de 4
+> mecanismos: SSML `<break>`, pontuação, CAPS e estrutura de
+> parágrafo. A emoção é construída pela ESCRITA, não por
+> instruções inline.
+
+### Pausas — SSML `<break>` (único controle programático)
 
 | Tag | Duração | Quando usar |
 |---|---|---|
-| `[short pause]` | ~0.5s | Entre frases dentro do mesmo raciocínio |
-| `[pause]` | ~1s | Entre blocos, após revelação, antes de virada |
-| `[long pause]` | ~2s | Momento dramático, antes de conclusão |
+| `<break time="0.5s" />` | ~0.5s | Entre frases dentro do mesmo raciocínio |
+| `<break time="1s" />` | ~1s | Entre blocos, após revelação, antes de virada |
+| `<break time="1.5s" />` | ~1.5s | Pausa dramática moderada |
+| `<break time="2s" />` | ~2s | Momento dramático, antes de conclusão |
+| `<break time="3s" />` | ~3s | **Limite máximo do v2** — usar com extrema parcimônia |
 
-### Audio Tags — Entrega Emocional
+**Regras críticas (doc oficial ElevenLabs):**
 
-| Tag | Efeito | Exemplo |
-|---|---|---|
-| `[whispers]` | Tom sussurrado | `[whispers]` "E se já for tarde demais?" |
-| `[excited]` | Tom animado/energético | `[excited]` "Funcionou!" |
-| `[curious]` | Tom de curiosidade | `[curious]` "Mas por que ninguém percebeu?" |
-| `[thoughtful]` | Tom reflexivo | `[thoughtful]` "Isso muda tudo que sabíamos." |
-| `[sighs]` | Suspiro antes da fala | `[sighs]` "Mais um estudo ignorado." |
-| `[frustrated sigh]` | Suspiro de frustração | `[frustrated sigh]` "Três anos de trabalho..." |
-| `[dramatically]` | Tom dramático | `[dramatically]` "E então... silêncio." |
-| `[clears throat]` | Transição de tom | Antes de mudar de bloco narrativo |
-| `[inhales deeply]` | Respiração profunda | Antes de revelação impactante |
+- Use **sempre o formato self-closing**: `<break time="1.5s" />`.
+  NUNCA use `<break time="2s"></break>` — bug confirmado.
+- **Máximo 3 segundos** por break.
+- **Excesso causa instabilidade:** mais de 3-4 breaks por geração
+  pode acelerar a fala, gerar ruído ou artefatos. Para roteiros
+  longos (>1.500 palavras), preferir **gerar em chunks** (1
+  bloco por vez).
 
-Audio tags sempre ANTES do trecho que modificam.
-Podem ser combinados: `[sighs] [thoughtful]` "Talvez seja tarde demais."
+### Pausas alternativas — pontuação
 
-### Pontuação como Controle de Entrega
+Quando não quiser usar `<break>` (ou já estiver no limite), a
+pontuação cria pausas mais naturais e estáveis:
 
 | Pontuação | Efeito | Exemplo |
 |---|---|---|
 | `...` (reticências) | Pausa com peso/hesitação | "E aí... tudo mudou." |
-| `—` (travessão) | Corte abrupto/interrupção | "Mas tem um problema — ninguém percebeu." |
-| `!` (exclamação) | Energia, ênfase natural | "Isso muda TUDO!" |
-| `?` (interrogação) | Inflexão ascendente real | "Mas e se não funcionar?" |
-| Ponto final curto | Frase seca, assertiva | "Não funcionou." |
+| `—` ou `--` (travessão) | Corte abrupto/interrupção | "Tem um problema — ninguém percebeu." |
+| `,` (vírgula) | Pausa curta natural | "Olha, isso muda tudo." |
+| Quebra de parágrafo | Pausa natural entre ideias | (linha em branco) |
+
+**Hierarquia:** pontuação primeiro · quebra de parágrafo · `<break>`
+apenas em pontos dramáticos planejados (3-4 por roteiro, no máximo).
+
+### Estratégia de Emoção — pela ESCRITA, não por tags
+
+O v2 não tem `[whispers]`, `[excited]`, `[curious]`, etc. Em
+voice-over de canal (sem diálogo), também **não use** dialogue
+tags inline (`"ela disse, com a voz tremendo"`) — o modelo lê em
+voz alta.
+
+A emoção vem de **3 alavancas combinadas**:
+
+#### A) Escolha lexical e sintática
+
+| Emoção desejada | Como escrever |
+|---|---|
+| **Sussurro / intimidade** | Frase curta isolada em parágrafo próprio · vocabulário sensorial · `...` para hesitação |
+| **Animação / energia** | Frases curtas (≤8 palavras) · `!` no final · CAPS cirúrgico (1 palavra) |
+| **Curiosidade** | Pergunta direta com `?` · entonação ascendente real · sem CAPS |
+| **Reflexão** | Frase mais longa (20-30 palavras) · ritmo lento via vírgulas · `...` antes da virada |
+| **Drama** | Frase isolada em parágrafo próprio · `<break time="1.5s" />` antes · ponto final seco depois |
+| **Suspiro / cansaço** | Reticências no início · ritmo arrastado · sem `!` |
+| **Tensão / urgência** | Frases curtas em sequência · sem reticências · pontos finais consecutivos |
+
+#### B) Pontuação como controle de entrega
+
+| Pontuação | Efeito vocal no v2 |
+|---|---|
+| `...` (reticências) | Pausa com peso, hesitação, suspense |
+| `—` (travessão) | Corte abrupto, interrupção, virada |
+| `!` (exclamação) | Energia natural, ênfase |
+| `?` (interrogação) | Inflexão ascendente real |
+| Ponto final curto | Frase seca, assertiva, finalidade |
+
+#### C) PVC já carrega inflexão
+
+A Professional Voice Clone foi treinada com samples reais do
+Marcus. Ela já carrega o padrão emocional natural quando ele
+fala sobre IA/ciência. Não tente forçar emoções fora desse range
+— gera resultados instáveis.
 
 ### CAPS para Ênfase
 
-CAPS em 1-2 palavras aumenta ênfase vocal no V3.
+CAPS em 1-2 palavras aumenta ênfase vocal no v2 (a doc oficial
+lista CAPS entre as técnicas de emphasis para modelos sem audio
+tags):
 - Máximo 2 palavras consecutivas em CAPS
 - Máximo 1x por parágrafo
+- Funciona melhor com `!` ao final
 - Exemplo: "Isso NÃO é ficção científica."
+- Exemplo: "É INACREDITÁVEL o que descobriram."
+
+> **Cautela:** o v2 é menos previsível que o v3 com CAPS. Se uma
+> palavra em CAPS soar soletrada quando deveria ser falada, trocar
+> por reforço sintático (vírgula + ênfase contextual).
 
 ### Estrutura de Texto
 
-Line breaks e parágrafos afetam o ritmo no V3:
-- **Parágrafo novo** = pausa natural entre ideias
-- **Frases curtas isoladas** = entrega mais lenta/dramática
-- **Frases longas corridas** = ritmo acelerado/urgente
+Line breaks e parágrafos afetam ritmo no v2 (mais ainda do que
+no v3 — sem audio tags, são o principal recurso de pacing):
+
+- **Parágrafo novo** = pausa natural ~0.5-0.8s (sem precisar de `<break>`)
+- **Frase curta isolada em parágrafo próprio** = peso dramático máximo
+- **Frases longas corridas com vírgulas** = ritmo acelerado/urgente
 - Usar frases curtas (≤15 palavras) nos momentos dramáticos
-- Usar frases mais longas nos trechos expositivos para fluidez
+- Usar frases mais longas (20-30) nos trechos expositivos
+
+### Voice Settings (configurar na UI/API ao gerar — fora do texto)
+
+O v2 expõe controles de voz **fora do roteiro**, no momento da
+geração. Usar presets diferentes por tipo de cena:
+
+| Setting | Faixa | Default | Comportamento |
+|---|---|---|---|
+| **Stability** | 0.0-1.0 | 0.5 | ↓ = mais expressivo · ↑ = mais consistente |
+| **Similarity Boost** | 0.0-1.0 | 0.75 | Aderência ao timbre do PVC. Manter alto (0.75-0.85) |
+| **Style Exaggeration** | 0.0-1.0 | 0.0 | Intensidade do estilo do sample. Subir aumenta latência |
+| **Speaker Boost** | on/off | on | Melhora clareza. Manter on |
+| **Speed** | 0.7-1.2 | 1.0 | Velocidade global da geração |
+
+**Presets sugeridos por tipo de bloco:**
+
+| Tipo de bloco | Stability | Style | Speed |
+|---|---|---|---|
+| Hook + Drama (clímax) | 0.35-0.45 | 0.30-0.40 | 1.0 |
+| Exposição (Bloco 1-2) | 0.55-0.65 | 0.10-0.20 | 1.0 |
+| Implicação (Bloco 4) | 0.45-0.55 | 0.20-0.30 | 0.95 |
+| CTA Final | 0.50-0.60 | 0.15-0.25 | 1.0 |
+
+> Para máxima fidelidade ao PVC e roteiros longos sem drift, gerar
+> **bloco a bloco** com o preset correspondente, em vez de gerar
+> o vídeo inteiro de uma vez.
 
 ### Normalização de Texto (Text Normalization)
 
-O V3 pode pronunciar incorretamente números, datas e siglas.
-Normalizar TUDO no roteiro:
+O v2 é maior que v3/Flash em normalização nativa (lê
+"$1,000,000" como "one million dollars" corretamente, segundo a
+doc), mas em PT-BR ainda há inconsistências. Normalizar TUDO no
+roteiro:
 
 | Tipo | Errado | Correto |
 |---|---|---|
@@ -560,15 +646,26 @@ Normalizar TUDO no roteiro:
 | Unidades | "100km" | "cem quilômetros" |
 | Ordinais | "3ª" | "terceira" |
 
-### Regras de Frequência
+### Regras de Frequência (v2)
 
-1. Mínimo 4 `[pause]` por roteiro (nos 3 pontos de risco + antes do CTA)
-2. Mínimo 2 `[short pause]` por bloco (entre frases densas)
-3. Máximo 3 `[long pause]` por roteiro (reservar para momentos dramáticos)
-4. Audio tags de emoção: máximo 5 por roteiro (bem distribuídos)
-5. NÃO usar tags SSML `<break>` — usar apenas Audio Tags
-6. NÃO usar tags visuais/não-sonoras (`[standing]`, `[grinning]`, `[pacing]`)
-7. NÃO usar tags de som ambiente (`[gunshot]`, `[applause]`) — canal usa edição separada
+1. **Máximo 3-4 `<break>` por geração** (>4 causa instabilidade
+   confirmada). Para mais pausas: gerar em chunks ou usar
+   pontuação.
+2. **Usar SSML em pontos dramáticos planejados:** marca dos 30s
+   (após hook), antes da virada do clímax, antes do CTA final.
+3. **Pontuação > SSML** para pausas curtas/médias. Vírgulas e
+   reticências são mais estáveis.
+4. **NÃO usar Audio Tags v3** (`[pause]`, `[short pause]`,
+   `[long pause]`, `[whispers]`, `[excited]`, `[curious]`,
+   `[thoughtful]`, `[sighs]`, `[frustrated sigh]`,
+   `[dramatically]`, `[clears throat]`, `[inhales deeply]`,
+   etc.) — o v2 lê literalmente em voz alta.
+5. **NÃO usar dialogue tags inline** (`"ele disse, com a voz
+   tremendo"`) — voice-over não permite essa técnica.
+6. **NÃO usar tags SSML que o v2 não suporta:** apenas `<break>`
+   funciona. `<phoneme>`, `<emphasis>`, `<prosody>` etc. não.
+7. **Geração em chunks recomendada** para vídeos >1.500 palavras:
+   um bloco por vez, com Voice Settings calibrados.
 
 ### Regras para tradução automática (YouTube auto-dub EN)
 
@@ -2176,13 +2273,22 @@ NÃO entregar ao usuário. Só o resultado do Pass 2 é o output final.
 5. NÃO polir ElevenLabs nem ritmo neste pass
 
 **Pass 2 — Polimento e engenharia de retenção:**
-1. Inserir Audio Tags ElevenLabs (`[pause]`, emocionais)
-2. Normalizar texto (anos, %, siglas, URLs por extenso)
-3. Aplicar ritmo respiratório (P3): ≥1 frase ≤8 + ≥1 ≥25 por parágrafo
-4. Verificar pattern interrupts a cada 30-45s
-5. Eliminar transições explícitas (P2)
-6. Executar Viewer Simulation Pass (4 audits)
-7. Verificar que todo claim tem fonte no dossier
+1. Inserir SSML `<break time="Xs" />` (self-closing, máx 3-4 por
+   geração, máx 3s) em pontos dramáticos planejados — NUNCA
+   Audio Tags v3 (`[pause]`, `[whispers]`, `[excited]`, etc. — o
+   v2 lê literalmente)
+2. Calibrar pontuação como motor de prosódia (reticências,
+   travessões, vírgulas) e construir emoção pela escrita
+   (parágrafo isolado para drama, frase curta para tensão)
+3. Normalizar texto (anos, %, siglas, URLs por extenso)
+4. Aplicar ritmo respiratório (P3): ≥1 frase ≤8 + ≥1 ≥25 por parágrafo
+5. Aplicar CAPS cirúrgico (≤2 palavras, 1x/parágrafo)
+6. Verificar pattern interrupts a cada 30-45s
+7. Eliminar transições explícitas (P2)
+8. Executar Viewer Simulation Pass (4 audits)
+9. Verificar que todo claim tem fonte no dossier
+10. Anotar **Voice Settings ElevenLabs v2 sugeridos por bloco**
+    (Stability/Style/Speed) ao final do roteiro
 
 Critério: só entregar após Pass 2 completo. Se Pass 2 identificar
 problemas estruturais, corrigir antes de entregar.
@@ -2640,7 +2746,7 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 20 | Modelo de escrita consultado | Ao menos 1 roteiro de `modelos-de-escrita/` foi lido antes de escrever · Estilo narrativo calibrado |
 | 21 | Especificidade visual | Nenhum VISUAL genérico (chip de IA, data center genérico, globo digital, cientista genérico) · Cada VISUAL é específico ao conteúdo daquele bloco · Nenhum VISUAL consecutivo repete escala ou cenário · Paleta cromática dos VISUALs varia conforme o tema |
 | 22 | Disclosure de IA na descrição | Linha "Imagens ilustrativas geradas por inteligência artificial." presente na descrição SEO, após o convite de inscrição e antes das fontes |
-| 23 | Formatação ElevenLabs V3 | Mín 4 `[pause]` por roteiro · Mín 2 `[short pause]` por bloco · Máx 3 `[long pause]` · Máx 5 audio tags emocionais · CAPS ≤2 palavras e 1x/parágrafo · Text normalization completa (anos, %, datas, siglas, URLs por extenso) · Zero `<break>` SSML · Zero tags visuais/ambientais |
+| 23 | Formatação ElevenLabs Multilingual v2 | SSML `<break>` self-closing (`<break time="Xs" />`) usado em pontos dramáticos · Máx 3-4 `<break>` por geração (acima causa instabilidade) · Máx 3s por break · CAPS ≤2 palavras e 1x/parágrafo · Pontuação como motor de prosódia (reticências, travessões, vírgulas) · Text normalization completa (anos, %, datas, siglas, URLs por extenso) · **Zero Audio Tags v3** (`[pause]`, `[short pause]`, `[long pause]`, `[whispers]`, `[excited]`, `[curious]`, `[thoughtful]`, `[sighs]`, `[dramatically]` etc. — v2 lê literalmente) · Zero dialogue tags inline · Voice Settings v2 sugeridos por bloco anotados ao final do roteiro |
 | 24 | Camada de Retenção Engenheirada | Auditoria dos primeiros 30s aprovada (5 itens) · Pattern interrupts a cada 30-45s · Mapa de open loops documentado (mínimo 3 nos primeiros 60s) · 3 pontos de risco de drop cobertos (30s, 2min, 50%) · Variação de densidade: nenhuma sequência de 3+ parágrafos de alta densidade sem momento de baixa |
 | 25 | CTAs na narração | CTA 1 (engajamento) entre Bloco 2 e 3 · CTA 2 (inscrição) dentro do Bloco 4 · CTA 3 (próximo vídeo) nos últimos 10s · Nenhum "deixe seu like" genérico |
 | 26 | Voice-over + tradução | Sem contrações coloquiais (exceto inserções editoriais) · Sem gírias PT-BR sem equivalente EN · Normalização ElevenLabs: anos/datas/porcentagens/siglas/URLs por extenso · Frases >25 palavras quebradas · Ordem direta (sujeito+verbo+objeto) |
