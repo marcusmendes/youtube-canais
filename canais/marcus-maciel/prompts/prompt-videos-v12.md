@@ -717,78 +717,130 @@ Fechar com gancho para o próximo vídeo ou vídeo relacionado.
 > Objetivo: identificar o que funcionou e o que falhou no último
 > vídeo publicado para calibrar o roteiro atual.
 
-### Processo de execução (VidIQ como primário, MCP YouTube como fallback)
+### Processo de execução (estratégia complementar)
+
+**Princípio:** o MCP YouTube é a fonte primária para tudo que envolve
+analytics privado do canal (retenção, traffic, devices, demografia,
+cards, CTR de thumbnail). VidIQ complementa com VPH hora-a-hora,
+curva típica de acumulação e benchmarks/outliers do nicho.
 
 **Passo 1 — Identificar o último vídeo publicado**
 
-*VidIQ:* Usar `vidiq_user_channels` para obter o channelId, depois
-`vidiq_channel_videos` com `videoFormat: "long"` e `popular: false`
-(uploads recentes). Selecionar o mais recente. Repetir com
-`videoFormat: "short"` para obter o último Short.
+*MCP YouTube:* `studio_listOwnVideos` com `status: "public"` e
+`maxResults: 5`. Selecionar o mais recente por `publishedAt`.
 
-*Fallback MCP:* Usar `studio_listOwnVideos` com `status: "public"`
-e `maxResults: 5`.
+*Complementar VidIQ:* `vidiq_user_channels` → `vidiq_channel_videos`
+com `videoFormat: "long"` e `popular: false`. Repetir com
+`videoFormat: "short"` para o último Short.
 
 **Passo 2 — Obter métricas gerais do vídeo**
 
-*VidIQ:* `vidiq_video_stats` com `granularity: "hourly"` para a
-curva de crescimento hora a hora (views, likes, comments, VPH).
+*MCP YouTube — métricas agregadas:*
+- `analytics_getVideoAnalytics` com `videoId` e `metrics`:
+  `"views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,dislikes,comments,shares,subscribersGained"`.
 
-**Passo 2B — Obter retenção e CTR (YouTube Analytics — OBRIGATÓRIO)**
+*VidIQ — velocidade de views (sem delay, hora-a-hora):*
+- `vidiq_video_stats` com `granularity: "hourly"` para a curva de
+  crescimento (views, likes, comments, VPH).
 
-A VidIQ NÃO fornece retenção por segundo nem CTR de impressões.
-Esses dados vêm exclusivamente do YouTube Analytics.
+**Passo 2B — Retention curve e CTR (MCP YouTube — OBRIGATÓRIO)**
 
-*Retenção por segundo (retention curve):*
-- `vidiq_channel_analytics` com `filters: "video==[videoId]"`,
-  `dimensions: ["elapsedVideoTimeRatio"]`,
-  `metrics: ["audienceWatchRatio", "relativeRetentionPerformance"]`
-- Isso retorna a curva de retenção ponto a ponto (0.0 a 1.0).
-  `audienceWatchRatio` = % absoluto de viewers naquele ponto.
-  `relativeRetentionPerformance` = vs vídeos de duração similar.
+*Retention curve por segundo:*
+- `analytics_getRetentionCurve` com:
+  - `videoId: "[videoId]"`
+  - `videoDurationSeconds: [duração em segundos]` — injeta
+    `timestampSeconds` e `timestampLabel` (`mm:ss`) em cada linha
+  - `audienceType: "ORGANIC"` (default; `ALL` remove o filtro)
+  - `includeGranularStats: true` (default; adiciona
+    `startedWatching`, `stoppedWatching`, `totalSegmentImpressions`)
+- Retorna `audienceWatchRatio` (% absoluto naquele ponto) e
+  `relativeRetentionPerformance` (vs. vídeos de duração similar)
+  já com timestamps prontos. A tool ajusta automaticamente
+  `startDate` se a janela for incompatível com `audienceType`
+  (floor 2013-09-25).
 
-*Fallback MCP YouTube:* `analytics_getVideoAnalytics` com métricas:
-`views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,dislikes,comments,shares,subscribersGained`
-(retorna retenção média, sem curva por segundo).
+*CTR de impressões da thumbnail (Reporting API):*
+- `reporting_getReachByVideo` com `videoId`, `aggregateBy: "video"`
+  e `autoCreateJob: true` (defaults).
+- Retorna `video_thumbnail_impressions` e
+  `video_thumbnail_impressions_click_rate` via Reporting API (bulk).
 
-*CTR de impressões:*
-- `vidiq_channel_analytics` com `filters: "video==[videoId]"`,
-  `metrics: ["views", "totalSegmentImpressions"]`
-- CTR = views / totalSegmentImpressions.
+> **Atenção ao lag do Reporting API:** delay de **24-48h**. Se
+> `hasData: false`, informar no diagnóstico e reportar no checkpoint
+> 48h (FASE Y). Se for o primeiro uso, o job é auto-criado e os
+> primeiros relatórios só aparecem 24-48h depois. Para vídeos com
+> mais de 48h sem dados, considerar fallback `vidiq_video_stats`
+> para impressões aproximadas.
 
-**Passo 2C — Breakdown por traffic source**
+**Passo 2C — Breakdown por traffic source (MCP YouTube)**
 
-- `vidiq_channel_analytics` com `filters: "video==[videoId]"`,
-  `dimensions: ["insightTrafficSourceType"]`,
-  `metrics: ["views", "estimatedMinutesWatched"]`
+- `analytics_getTrafficSources` com `videoId` e
+  `includeEngagedViews: true` (default).
+- Retorna percentuais de views e watch time por fonte com
+  `viewsSharePercentage` já calculado.
+
+Identificar fonte dominante:
 - Browse dominante → algoritmo testando, manter consistência
 - Search dominante → SEO funciona, fortalecer keywords
 - Suggested dominante → cluster algorítmico estabelecido
 - External dominante → distribuição manual é o motor
 
-Nota: a API de analytics tem delay de 2-3 dias. Se retornar
-zeros, informar e usar retenção média como proxy.
+**Drill-down (quando uma fonte concentrar >40%):**
+`analytics_getTrafficSourceDetail` com `videoId` e
+`trafficSourceType` específico (`YT_SEARCH` para queries reais,
+`RELATED_VIDEO` para vídeos que recomendam, `EXT_URL` para sites
+externos, `END_SCREEN`, `NOTIFICATION`). `maxResults: 25` (cap da
+API). Documentar as keywords/vídeos/URLs exatas que estão drivando
+o tráfego dominante.
+
+**Passo 2D — Devices, demografia e cards (MCP YouTube)**
+
+*Device + playback:*
+- `analytics_getDeviceAndPlayback` com `videoId` e
+  `groupBy: "deviceType"` (rodar uma vez); repetir com
+  `"operatingSystem"` se houver concentração inesperada.
+- Investigar disparidade desktop/mobile/TV. A auditoria algorítmica
+  do canal já indicou retenção desktop ~4× mobile — verificar se
+  persiste.
+
+*Demografia (apenas se views > 1.000 — privacy threshold da API):*
+- `analytics_getDemographics` com `videoId` e
+  `subscribedStatus: "BOTH"` (default — retorna 3 sets
+  pré-normalizados: subscribed, unsubscribed, overall, cada um
+  somando 100%).
+
+*Cards (info-cards):*
+- `analytics_getCardPerformance` com `videoId` e `groupByDay: false`.
+- Retorna `cardImpressions`, `cardClickRate`, `cardTeaserClickRate`.
+  Comparar com baseline do canal se houver cards configurados.
 
 **Passo 3 — Obter baseline do canal**
 
-*VidIQ:*
-- `vidiq_channel_analytics` com `startDate` dos últimos 90 dias
-  e métricas: `["views", "estimatedMinutesWatched",
-  "averageViewDuration", "averageViewPercentage", "likes",
-  "comments", "subscribersGained", "totalSegmentImpressions"]`
-- Calcular CTR baseline: total views / totalSegmentImpressions.
-- `vidiq_channel_performance_trends` para a curva típica de
-  acumulação de views.
+*MCP YouTube — agregado dos últimos 90 dias (fonte primária):*
+- `analytics_getChannelAnalytics` com `startDate` = 90d atrás,
+  `endDate` = hoje, `metrics`:
+  `"views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,comments,subscribersGained,subscribersLost"`.
 
-*Fallback MCP:* Usar `analytics_getChannelAnalytics` sem
-`dimensions` (agregado) e dividir pelo número de vídeos públicos.
+*MCP YouTube — CTR baseline do canal (Reporting API):*
+- `reporting_getReachByVideo` SEM `videoId`/`videoIds` (escopo de
+  canal completo), janela de 90 dias, `aggregateBy: "video"`. Usar
+  `totals.video_thumbnail_impressions_click_rate` como CTR baseline
+  e `totals.video_thumbnail_impressions` como impressões totais.
+
+*VidIQ — curva típica de acumulação (complementar):*
+- `vidiq_channel_performance_trends` para min/max/avg/mediana de
+  views por minutos desde publicação (compara o último vídeo com o
+  padrão do canal nos primeiros minutos/horas).
 
 **Passo 4 — Obter top performers (referência)**
 
-*VidIQ:* `vidiq_channel_videos` com `popular: true` para longos
-e shorts separadamente.
+*MCP YouTube — fonte primária:*
+- `analytics_getTopVideos` com `metric: "views"` e janela de 90 dias
+  para os 5 mais vistos.
 
-*Fallback MCP:* `analytics_getTopVideos` com `maxResults: 5`.
+*VidIQ — complemento por formato:*
+- `vidiq_channel_videos` com `popular: true`, separadamente para
+  `videoFormat: "long"` e `"short"`.
 
 ### Diagnóstico a produzir
 
@@ -821,10 +873,11 @@ Com os dados obtidos, gerar o seguinte diagnóstico no output:
 > sabe QUE o vídeo falhou, mas não ONDE nem POR QUÊ.
 
 **Passo 1 — Obter a retention curve:**
-Se a API retornar dados de retention curve (VidIQ
-`vidiq_channel_analytics` com dimensão temporal ou YouTube
-Analytics com `audienceWatchRatio`), extrair os pontos de
-retenção segundo-a-segundo (ou a granularidade disponível).
+Usar os dados do Passo 2B (`audienceWatchRatio` por
+`elapsedVideoTimeRatio`). Quando `videoDurationSeconds` é informado
+em `analytics_getRetentionCurve`, cada linha já vem com
+`timestampSeconds` e `timestampLabel` (`mm:ss`) — usar diretamente
+sem conversão manual.
 
 **Passo 2 — Identificar os 3 maiores drops:**
 
@@ -867,6 +920,19 @@ preventivo nos 3 pontos críticos (30s, 2min, 50% da duração)."
 ### Traffic Sources
 - Browse: [X%] | Search: [X%] | Suggested: [X%] | External: [X%]
 - Fonte dominante: [fonte] → [interpretação]
+- Drill-down (se aplicável): [keywords de YT_SEARCH OU vídeos
+  RELATED_VIDEO OU URLs EXT_URL que concentram views]
+
+### Devices e demografia
+- Top device: [DESKTOP/MOBILE/TABLET/TV] → [X% das views]
+- Disparidade de retenção desktop vs mobile: [Δ segundos/%]
+- Demografia (se views > 1.000): faixa etária dominante [X-Y anos]
+  → [X% inscritos, Y% não-inscritos]
+- Cards (se configurados): impressões [X] · CTR [Y%] vs baseline [Z%]
+
+### CTR de impressões da thumbnail (Reporting API)
+- CTR último vídeo: [X%] · CTR baseline canal: [Y%] · Δ: [+/- Z%]
+- Status do dado: [disponível / pendente — lag de 24-48h]
 
 ### Quadrante CTR × Retenção (últimos 5 vídeos longos)
 
@@ -930,9 +996,17 @@ As ações concretas devem ser incorporadas no roteiro como:
 ### Fallback
 
 Se o MCP YouTube não estiver disponível ou a autenticação OAuth
-falhar, informar no output: "Fase P não executada — MCP YouTube
-indisponível. Prosseguindo sem dados de performance." e continuar
-para a Fase 0.
+falhar:
+1. Verificar `auth_status`. Se `authenticated: false`, executar
+   `auth_authenticate`. Se a autenticação OAuth retornar erros de scope
+   (revenue/monetary), executar `auth_reauthenticate({ confirm: true })`
+   para regrantear scopes (`yt-analytics-monetary.readonly` é
+   exigido por `analytics_getRevenue`; as demais tools de Fase P
+   só precisam de `yt-analytics.readonly` + `youtube`).
+2. Se persistir indisponível, informar no output: "Fase P não
+   executada — MCP YouTube indisponível. Prosseguindo sem dados
+   de performance." e continuar para a Fase 0, usando apenas o
+   que VidIQ permitir (VPH, top performers, baseline aproximado).
 
 ---
 
@@ -1033,7 +1107,13 @@ Lacunas e alertas, Fontes para descrição SEO.
 > campos variáveis, pule a execução automática e use o briefing
 > fornecido.
 
-### Processo (VidIQ como primário, MCP YouTube como fallback):
+### Processo (VidIQ como primário para benchmark do nicho, MCP YouTube como fallback):
+
+> **Por que VidIQ aqui:** análise competitiva precisa de outliers e
+> trending no nicho — dados de canais de terceiros que o MCP YouTube
+> não fornece nativamente. O MCP cobre busca pública via
+> `videos_searchVideos` mas sem o breakout score/VPH proprietários
+> da VidIQ.
 
 **Passo 1 — Buscar concorrentes — vídeos que realmente performaram:**
 
@@ -1477,7 +1557,7 @@ Após gerar os 10, identifique os 3 com maior potencial de CTR
 e explique em uma frase por que cada um se destaca, referenciando
 qual fórmula foi usada.
 
-**Validação de títulos com dados reais (VidIQ):**
+**Validação de títulos com dados reais — Camada 1 (VidIQ — keywords):**
 Antes de confirmar o Top 3, use `vidiq_keyword_research` para
 testar as 2-3 keywords principais presentes nos títulos candidatos.
 Avaliar:
@@ -1492,6 +1572,31 @@ volume.
 
 > Se VidIQ não estiver disponível, prosseguir com a seleção por
 > fórmula e intuição.
+
+**Validação de títulos — Camada 2 (MCP YouTube — fórmulas que
+retêm no PRÓPRIO canal):**
+
+A keyword com volume só importa se a fórmula do título também
+sustenta retenção. Cruzar dados internos antes de confirmar o
+Top 3:
+
+1. `analytics_getTopVideos` com janela dos últimos 90 dias e
+   `metric: "views"` para identificar os 3-5 títulos mais vistos
+   do canal.
+2. Para cada top performer, `analytics_getRetentionCurve` com
+   `videoId` + `videoDurationSeconds` → calcular retenção média
+   (`audienceWatchRatio` em `elapsedVideoTimeRatio = 0.5`) e drops.
+3. Classificar cada top performer pela fórmula (1-6) usada no
+   título original. Identificar qual(is) fórmula(s) o canal
+   sustenta com retenção mais alta.
+4. **Regra:** entre os Top 3 candidatos, priorizar títulos cuja
+   fórmula coincide com a(s) fórmula(s) que o canal já provou
+   reter bem. Se o candidato vencedor por keyword usa uma fórmula
+   que historicamente teve retenção baixa, sinalizar trade-off
+   no output.
+
+> Se o canal tem menos de 3 vídeos públicos, pular a Camada 2 e
+> usar apenas a Camada 1.
 
 ---
 
@@ -2514,7 +2619,7 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | # | Verificação | Critério |
 |---|---|---|
 | 1 | Metadados completos | 10 títulos + Top 3 CTR + thumbnail + post comunidade + 3–5 hashtags + 8–12 tags (todas com volume > 0, tabela com dados) + descrição SEO (250–400 palavras, template completo com timestamps + vídeos relacionados + fontes + CTA) |
-| 2 | Títulos validados | Todos os 10: ≤ 55 caracteres · ≤ 10 palavras · zero jargão · 1-2 CAPS cirúrgicos · tom conversacional · premissa (não resultado) · nenhum caiu nas 6 armadilhas sem reframe aplicado. Top 3 validados por keyword research (VidIQ) ou justificados por fórmula se indisponível |
+| 2 | Títulos validados | Todos os 10: ≤ 55 caracteres · ≤ 10 palavras · zero jargão · 1-2 CAPS cirúrgicos · tom conversacional · premissa (não resultado) · nenhum caiu nas 6 armadilhas sem reframe aplicado. Top 3 validados em 2 camadas: (1) keywords com `vidiq_keyword_research` e (2) fórmulas cruzadas com retenção dos top performers do canal via `analytics_getTopVideos` + `analytics_getRetentionCurve` (ou justificativa se canal tem <3 vídeos) |
 | 3 | Contagem de palavras (narração) | Vídeo longo: 1.400–2.000 palavras · Short: ≤ 130 palavras |
 | 4 | Todas as seções do roteiro presentes | Hook + Contexto + Desenvolvimento (blocos) + Loops + CTA Final |
 | 5 | Escalonamento progressivo | Os blocos seguem Âncora → Escalada → Clímax → Implicação · Tensão nunca diminui · Transições invisíveis entre blocos (Princípio 2) |
@@ -2527,7 +2632,7 @@ Fase P (Performance) antes de gerar o roteiro.]`
 | 12 | Thumbnail — sistema completo | Estética (Documental Sombria ou Ficção Científica) escolhida e coerente com o ângulo editorial · Estética alternada em relação à última thumbnail quando possível · Todas as 7 seções presentes · Composição diferente da última thumbnail · Paleta emocional diferente da última · Expressão facial diferente da última · Texto ≤ 2 palavras (ou zero) · Text overlay complementa o título (nunca repete) · Passa no teste do celular (4 cm) · Aspecto de pôster de cinema · Nenhum anti-padrão violado |
 | 13 | Sub-nicho diferente do vídeo anterior | Campo SUB-NICHO preenchido e diferente do último vídeo publicado |
 | 14 | Função do Short (apenas Shorts) | Campo FUNÇÃO DO SHORT preenchido · CTA específico conectado ao longo · Nunca CTA genérico |
-| 15 | Análise de performance (Fase P) | Fase P executada via VidIQ ou MCP · Diagnóstico documentado · ≥2 calibrações incorporadas · Ou fallback informado |
+| 15 | Análise de performance (Fase P) | Fase P executada com `analytics_getRetentionCurve` + `analytics_getTrafficSources` + `analytics_getDeviceAndPlayback` + `reporting_getReachByVideo` (CTR Reporting API) · VidIQ complementar para VPH/curva de acumulação · Diagnóstico documentado · ≥2 calibrações incorporadas · Lag do Reporting API (24-48h) sinalizado quando aplicável · Ou fallback informado |
 | 16 | Análise competitiva (Fase 0) | Fase 0 executada ou fornecida · ≥3 concorrentes analisados · Comentários dos concorrentes analisados (VidIQ) · ≥1 correção explícita de erro · ≥1 ângulo diferenciador |
 | 17 | Validação de tema (Fase V) | Keyword principal validada por `vidiq_keyword_research` · Volume e competição documentados · Ou fallback informado |
 | 18 | DNA Narrativo — 8 Princípios | Verificar: (a) scaffold invisível — nenhum rótulo de bloco na narração (P1) · (b) transições orgânicas sem marcadores (P2) · (c) ritmo respiratório — ao menos 1 frase ≤8 e 1 ≥25 palavras por parágrafo (P3) · (d) metáforas concretas antes de conceitos abstratos (P4) · (e) espectador posicionado como participante (P5) · (f) contra-argumento honesto presente se roteiro investigativo (P6) · (g) conclusão como crescendo, não como resumo (P7) · (h) fator de agência — momento de decisão não-humana destacado ou conflito sobre falta de autonomia presente (P8) |
@@ -2609,12 +2714,22 @@ O objetivo do repackaging é transformar:
 
 **Passo 1 — Identificar candidatos a repackaging**
 
-Usar `vidiq_channel_videos` com `popular: false` para listar os
-uploads recentes. Para obter a média de views do canal como
-baseline, usar `vidiq_channel_videos` com `popular: true` e
-calcular a média de views dos últimos 10 vídeos — ou reutilizar
-o baseline da Fase P se já tiver sido executada recentemente.
+*MCP YouTube (preferencial):* `studio_listOwnVideos` com
+`status: "public"`, ordenar por data de publicação. Para baseline,
+reutilizar o output da Fase P ou rodar `analytics_getTopVideos` +
+`analytics_getChannelAnalytics` (90d) e calcular a média.
+
+*VidIQ (fallback):* `vidiq_channel_videos` com `popular: false`
+para uploads recentes; `popular: true` para média.
+
 Vídeos com views < 50% da média após 5+ dias são candidatos.
+
+**Medir CTR e retenção do candidato (obrigatório antes de iterar):**
+- CTR atual: `reporting_getReachByVideo` com `videoId`. Esta é a
+  baseline contra a qual cada iteração será comparada.
+- Retenção atual: `analytics_getVideoAnalytics` (média) e
+  `analytics_getRetentionCurve` (curva — para confirmar que o
+  problema é packaging e não conteúdo).
 
 Critério adicional: o vídeo deve ter retenção razoável (>25% para
 longos, >40% para Shorts). Se a retenção é baixa, o problema é
@@ -2673,8 +2788,13 @@ gancho do novo pacote. Dado concreto + tensão não resolvida.
 - Mudar UMA coisa por vez (título primeiro, thumbnail depois,
   ou vice-versa)
 - Esperar 4-5 dias entre mudanças para medir impacto
-- Usar `vidiq_video_stats` com `granularity: "daily"` para
-  monitorar a curva de views após cada mudança
+- Para monitorar:
+  - `reporting_getReachByVideo` com `videoId` → CTR pós-mudança
+    (lembrar do lag de 24-48h; primeira leitura confiável é no
+    dia seguinte ao 4º dia)
+  - `analytics_getVideoAnalytics` → views, retenção, watch time
+  - `vidiq_video_stats` com `granularity: "daily"` → curva de
+    views diária (sem lag, complementar)
 - Se a primeira mudança não funcionou, tentar outra abordagem
 - Nunca desistir completamente de um bom vídeo — vídeos podem
   explodir semanas ou meses depois de um repackaging bem feito
@@ -2710,10 +2830,14 @@ gancho do novo pacote. Dado concreto + tensão não resolvida.
 
 ### Versionamento (obrigatório)
 
-| Versão | Data | Thumbnail (resumo) | Título | CTR registrado |
-|---|---|---|---|---|
-| v1 | [data publicação] | [descrição curta] | [título original] | [CTR após 7d] |
-| v2 | [data mudança] | [nova descrição] | [novo título] | [delta vs v1] |
+> **Fonte do CTR:** `reporting_getReachByVideo` (Reporting API).
+> Sempre registrar a tool usada para evitar comparar CTR de fontes
+> diferentes entre iterações.
+
+| Versão | Data | Thumbnail (resumo) | Título | CTR registrado | Fonte |
+|---|---|---|---|---|---|
+| v1 | [data publicação] | [descrição curta] | [título original] | [CTR após 7d] | reporting_getReachByVideo |
+| v2 | [data mudança] | [nova descrição] | [novo título] | [delta vs v1] | reporting_getReachByVideo |
 
 Regra de encerramento: após 3 iterações sem ganho ≥ 20% em CTR,
 arquivar vídeo (remover de playlists ativas, parar de iterar).
@@ -2780,12 +2904,20 @@ Antes de publicar:
   natural da curiosidade do viewer.
 
 **━━ 5. AUDITORIA TRIMESTRAL ━━**
-- A cada 3 meses:
-  - Puxar dados de session time no YouTube Analytics
-  - Reordenar playlists baseado em retention curves agregadas
+- A cada 3 meses, via MCP YouTube:
+  - `analytics_getChannelAnalytics` com janela de 90d e métricas
+    `"views,estimatedMinutesWatched,averageViewDuration"` para
+    session/watch time agregado.
+  - `analytics_getTopVideos` (90d, `metric: "estimatedMinutesWatched"`)
+    para ranquear por watch time real.
+  - Para cada vídeo: `analytics_getRetentionCurve` para identificar
+    drops e reordenar playlists baseado em retention curves
+    agregadas.
+  - `analytics_getCardPerformance` para identificar cards com CTR
+    abaixo da mediana — substituir.
   - Substituir cards/end-screens dos vídeos com session time
-    abaixo da mediana do canal
-  - Documentar aprendizados na planilha de SOP
+    abaixo da mediana do canal.
+  - Documentar aprendizados na planilha de SOP.
 
 ---
 
@@ -2797,9 +2929,17 @@ Antes de publicar:
 
 ### Checkpoint 1 — 24 horas após publicação
 
-Métricas a coletar (YouTube Studio Analytics):
-impressões, CTR (%), views, retenção média (%), watch time (min),
-source de tráfego dominante.
+**Coleta de métricas (MCP YouTube — fonte primária):**
+- `analytics_getVideoAnalytics` com `videoId` e `metrics`:
+  `"views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,dislikes,comments,shares,subscribersGained"`.
+- `reporting_getReachByVideo` com `videoId` para CTR de impressões.
+  > **Lag de 24-48h:** se `hasData: false` no checkpoint 24h (esperado),
+  > tentar novamente no checkpoint 48h. Se ainda assim não houver
+  > dados, usar `vidiq_video_stats` como proxy.
+- `analytics_getTrafficSources` com `videoId` para fonte dominante.
+
+**Velocidade de views (sem delay):** `vidiq_video_stats` com
+`granularity: "hourly"` para a curva hora-a-hora.
 
 Decisão baseada em CTR (após mínimo 200 impressões):
 - **CTR ≥ 6%** → Saudável. Não tocar em nada. Reforçar distribuição.
@@ -2808,28 +2948,44 @@ Decisão baseada em CTR (após mínimo 200 impressões):
 - **CTR < 3%** → Crítico. Trocar thumbnail E título simultaneamente.
   Usar alternativa do top-3 da FASE METADADOS.
 
+> Se `reporting_getReachByVideo` ainda não retornou dados às 24h
+> (lag normal), basear a decisão de CTR no checkpoint 48h e usar
+> apenas retenção média + VPH às 24h.
+
 ### Checkpoint 2 — 48 horas após publicação
+
+**Coleta de métricas:**
+- `analytics_getRetentionCurve` com `videoId` e
+  `videoDurationSeconds` para a curva detalhada com timestamps.
+- `reporting_getReachByVideo` (CTR já deve estar disponível).
+- Reaplicar `analytics_getTrafficSources` para confirmar fonte
+  dominante após 48h.
 
 Decisão baseada em retenção média:
 - **≥ 45%** → Excelente. Marcar para conversão em 3-5 Shorts.
   Considerar como referência de estrutura.
-- **35-44%** → Bom. Identificar maior queda na retention curve.
-  Documentar tipo de cena/transição. Evitar no próximo roteiro.
-- **25-34%** → Atenção. Análise dos 3 maiores drops. Drop nos
-  primeiros 30s = problema de hook. Drop nos primeiros 2min =
-  promessa não cumprida.
+- **35-44%** → Bom. Identificar maior queda na retention curve
+  (`analytics_getRetentionCurve`). Documentar `timestampLabel`
+  do drop e tipo de cena/transição. Evitar no próximo roteiro.
+- **25-34%** → Atenção. Análise dos 3 maiores drops via
+  `analytics_getRetentionCurve`. Drop nos primeiros 30s = problema
+  de hook. Drop nos primeiros 2min = promessa não cumprida.
 - **< 25%** → Diagnóstico profundo. Mismatch thumbnail/título vs
   conteúdo OU hook frustrado. NÃO publicar próximo vídeo até
   entender a causa.
 
 ### Checkpoint 3 — 7 dias após publicação
 
-Documentação obrigatória:
-- Views totais, CTR final, retenção média final
-- Top 3 sources de tráfego
-- Diferença vs. mediana do canal
-- 1 hipótese sobre o que funcionou/não funcionou
-- 1 ação concreta a aplicar no próximo vídeo
+Documentação obrigatória (todas via MCP YouTube):
+- `analytics_getVideoAnalytics` para views totais, retenção média
+  final, watch time.
+- `reporting_getReachByVideo` para CTR final.
+- `analytics_getTrafficSources` para top 3 sources.
+- `analytics_getDeviceAndPlayback` para split desktop/mobile/TV.
+- Diferença vs. mediana do canal (referenciar baseline da Fase P
+  via `analytics_getChannelAnalytics` 90d).
+- 1 hipótese sobre o que funcionou/não funcionou.
+- 1 ação concreta a aplicar no próximo vídeo.
 
 ### Regra de bloqueio
 

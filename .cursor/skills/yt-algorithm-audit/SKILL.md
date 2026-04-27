@@ -17,12 +17,15 @@ O usuário invoca `/yt-algorithm-audit`.
 Lance o subagent **`yt-algorithm-audit`** sem parâmetros adicionais.
 
 O subagent executa 3 fases automaticamente:
-1. **Fase 1 — Dados internos:** analytics, traffic sources, curva de
-   acumulação, breakdown por device e status de inscrição
+1. **Fase 1 — Dados internos do canal:** usa MCP YouTube como fonte
+   primária (`analytics_getTrafficSources`,
+   `analytics_getDeviceAndPlayback`, `analytics_getDemographics`,
+   `reporting_getReachByVideo`) + VidIQ para velocidade e curva de
+   acumulação.
 2. **Fase 2 — Dados do nicho:** outliers, trending, canais similares,
-   breakout channels, keywords em crescimento
+   breakout channels, keywords em crescimento (VidIQ).
 3. **Fase 3 — Análise cruzada:** benchmarks, sinais algorítmicos,
-   oportunidades de timing, hipóteses testáveis
+   oportunidades de timing, hipóteses testáveis.
 
 Após conclusão, apresente ao usuário:
 - Os 5-7 sinais algorítmicos mais relevantes

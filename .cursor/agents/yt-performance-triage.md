@@ -31,15 +31,37 @@ O handle do canal é `@MarcusMacielIAeCiencia`.
 
 ### Passo 1 — Coletar métricas
 
-Usar `youtube_get_video_analytics` para obter:
-- Impressões
-- CTR (%)
-- Views
-- Retenção média (%)
-- Watch time absoluto (min)
+**Métricas agregadas do vídeo (sempre):**
 
-Usar `youtube_get_video_details` para obter:
-- Likes, comentários, inscritos ganhos
+Use `analytics_getVideoAnalytics` com:
+- `videoId: "[ID]"`
+- `metrics: "views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,dislikes,comments,shares,subscribersGained"`
+
+Retorna views, watch time, retenção média, likes, comentários,
+inscritos ganhos.
+
+**Impressões e CTR de thumbnail (Reporting API):**
+
+Use `reporting_getReachByVideo` com:
+- `videoId: "[ID]"`
+- `aggregateBy: "video"`
+- `autoCreateJob: true`
+
+Retorna `video_thumbnail_impressions` e
+`video_thumbnail_impressions_click_rate`.
+
+**Atenção crítica ao lag:** o Reporting API tem delay de **24-48h**.
+Em vídeos com menos de 24h de publicação, este endpoint frequentemente
+retorna `hasData: false`. Nesse caso:
+- Documentar "CTR via Reporting API ainda não disponível (lag 24-48h)".
+- Usar fallback: `vidiq_video_stats` (`granularity: "hourly"`) +
+  `vidiq_channel_analytics` para impressões/CTR aproximados.
+- Repetir a coleta no próximo checkpoint.
+
+**Detalhes do vídeo (título, duração, tags):**
+
+Use `youtube_get_video_details` (ou `studio_listOwnVideos` filtrando
+pelo ID) para obter o restante.
 
 ### Passo 2 — Checkpoint 24h (CTR)
 
@@ -56,7 +78,18 @@ recomendar repetir análise em 24h adicionais.
 
 ### Passo 3 — Checkpoint 48h (Retenção)
 
-Decisão baseada em retenção média:
+Para o checkpoint 48h, obter a retention curve detalhada (não apenas
+a retenção média):
+
+Use `analytics_getRetentionCurve` com:
+- `videoId: "[ID]"`
+- `videoDurationSeconds: [duração]`
+- `audienceType: "ORGANIC"` (default)
+
+Identificar os 3 maiores drops percentuais entre pontos consecutivos
+(usando `audienceWatchRatio` por `timestampLabel`).
+
+Decisão baseada em retenção média (`averageViewPercentage` do Passo 1):
 
 | Retenção | Status | Ação |
 |---|---|---|

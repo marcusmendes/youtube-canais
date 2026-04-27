@@ -305,17 +305,35 @@ Para cada semana gerar:
 
 ### 8. Metas do Mês
 
-| Métrica | Meta | Baseline atual |
-|---|---|---|
-| Views/longo | > [X] | [baseline do channel memory] |
-| Views/Short | > [X] | [baseline] |
-| Like ratio | > [X]% | [baseline] |
-| Comentários | > [X] por vídeo | [baseline] |
-| Inscritos ao final do mês | > [X] | [baseline] |
+**Como obter o baseline atual (preferência: dados frescos do MCP):**
 
-> Usar dados do Channel Memory (baseline, último diagnóstico) para
-> preencher. Se não disponível, deixar "Sem dados" e recomendar
-> executar `/yt-performance` primeiro.
+1. Janela de 90 dias do canal:
+   - `analytics_getChannelAnalytics` com `startDate` = 90d atrás,
+     `metrics: "views,likes,comments,subscribersGained,subscribersLost,averageViewPercentage,estimatedMinutesWatched"`
+   - Dividir pelo número de vídeos públicos no período para obter
+     médias por vídeo.
+2. CTR baseline (90d):
+   - `reporting_getReachByVideo` SEM `videoId` (escopo de canal),
+     `aggregateBy: "video"`. Usar `totals.video_thumbnail_impressions_click_rate`.
+   - Atenção: lag 24-48h. Se o job ainda não está populado,
+     fallback para Channel Memory.
+3. Top performers do nicho (referência):
+   - `analytics_getTopVideos` com janela de 90 dias para identificar
+     o melhor vídeo recente (alvo aspiracional para o mês).
+
+| Métrica | Meta | Baseline atual | Fonte |
+|---|---|---|---|
+| Views/longo | > [X] | [Y] | analytics_getChannelAnalytics ÷ N |
+| Views/Short | > [X] | [Y] | analytics_getChannelAnalytics ÷ N |
+| Like ratio | > [X]% | [Y]% | likes ÷ views |
+| Comentários | > [X] | [Y] | comments ÷ N |
+| CTR médio | > [X]% | [Y]% | reporting_getReachByVideo (totals) |
+| Retenção média | > [X]% | [Y]% | averageViewPercentage |
+| Inscritos no mês | > [X] | [Y] | subscribersGained − subscribersLost |
+
+> Se o MCP estiver indisponível ou autenticação ausente, usar Channel
+> Memory injetada pelo hook `sessionStart` como fallback. Se ambos
+> faltarem, deixar "Sem dados" e recomendar `/yt-performance` primeiro.
 
 ### 9. Checklist Semanal de Produção
 

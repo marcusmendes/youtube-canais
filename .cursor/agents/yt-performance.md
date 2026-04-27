@@ -34,88 +34,153 @@ o mais recente. Repita com `videoFormat: "short"` para obter o último Short.
 
 ### Passo 2 — Obter métricas gerais do vídeo
 
-**VidIQ** para velocidade de views (sem delay):
+**Estratégia complementar:** MCP YouTube (Analytics próprio do canal,
+sem delay para Targeted Queries comuns) é fonte primária para retenção,
+demografia, devices, traffic e cards. VidIQ é primário para velocidade
+(VPH hora-a-hora), benchmarks do nicho e curva típica de acumulação.
 
-Use `vidiq_video_stats` com `granularity: "hourly"` para a curva de
-crescimento hora a hora (views, likes, comments, VPH).
-
-### Passo 2B — Obter retenção e CTR (YouTube Analytics — OBRIGATÓRIO)
-
-A VidIQ NÃO fornece retenção por segundo nem CTR de impressões.
-Esses dados vêm exclusivamente do YouTube Analytics via MCP YouTube.
-
-**Retenção por segundo (retention curve):**
-
-Use `vidiq_channel_analytics` com:
-- `channelId: "@MarcusMacielIAeCiencia"`
-- `filters: "video==[videoId]"`
-- `dimensions: ["elapsedVideoTimeRatio"]`
-- `metrics: ["audienceWatchRatio", "relativeRetentionPerformance"]`
-
-Isso retorna a curva de retenção ponto a ponto (0.0 a 1.0 da duração).
-`audienceWatchRatio` = % absoluto de viewers naquele ponto.
-`relativeRetentionPerformance` = comparação com vídeos de duração similar.
-
-**Se VidIQ não retornar** (delay ou erro), usar o MCP YouTube:
+**MCP YouTube — métricas agregadas do vídeo:**
 
 Use `analytics_getVideoAnalytics` com:
 - `videoId: "[videoId]"`
 - `metrics: "views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,dislikes,comments,shares,subscribersGained"`
 
-Isso retorna `averageViewPercentage` (retenção média agregada, sem
-curva por segundo — usar como proxy se a curva não estiver disponível).
+Retorna `averageViewPercentage` (retenção média agregada).
 
-**CTR de impressões:**
+**VidIQ — velocidade de views (sem delay, hora-a-hora):**
 
-Use `vidiq_channel_analytics` com:
-- `channelId: "@MarcusMacielIAeCiencia"`
-- `filters: "video==[videoId]"`
-- `metrics: ["views", "totalSegmentImpressions", "annotationClickThroughRate"]`
+Use `vidiq_video_stats` com `granularity: "hourly"` para a curva de
+crescimento hora a hora (views, likes, comments, VPH).
 
-`totalSegmentImpressions` = número de impressões do vídeo.
-CTR aproximado = views / totalSegmentImpressions.
-Se `annotationClickThroughRate` retornar valor, usar diretamente.
+### Passo 2B — Retention curve e CTR (MCP YouTube — OBRIGATÓRIO)
 
-**Nota:** A API de analytics do YouTube tem delay de 2-3 dias. Se
-retornar zeros, informar no diagnóstico e usar `averageViewPercentage`
-do VidIQ channel_analytics como fallback.
+**Retention curve por segundo:**
 
-### Passo 2C — Breakdown por traffic source (YouTube Analytics)
+Use `analytics_getRetentionCurve` com:
+- `videoId: "[videoId]"`
+- `videoDurationSeconds: [duração em segundos]` — injeta `timestampSeconds` e `timestampLabel` em cada linha
+- `audienceType: "ORGANIC"` (default) — `ALL` remove o filtro
+- `includeGranularStats: true` (default) — adiciona `startedWatching`, `stoppedWatching`, `totalSegmentImpressions`
 
-Use `vidiq_channel_analytics` com:
-- `filters: "video==[videoId]"`
-- `dimensions: ["insightTrafficSourceType"]`
-- `metrics: ["views", "estimatedMinutesWatched"]`
+Retorna `audienceWatchRatio` (% de viewers naquele ponto) e
+`relativeRetentionPerformance` (comparação com vídeos de duração similar)
+ponto a ponto, já com timestamps `mm:ss` quando `videoDurationSeconds`
+é informado. A tool ajusta automaticamente `startDate` se a janela
+for incompatível com `audienceType` (floor 2013-09-25).
 
-Identificar fonte dominante: Browse, Search, Suggested, External.
+**CTR de impressões da thumbnail:**
+
+Use `reporting_getReachByVideo` com:
+- `videoId: "[videoId]"`
+- `aggregateBy: "video"` (default)
+- `autoCreateJob: true` (default)
+
+Retorna `video_thumbnail_impressions` e
+`video_thumbnail_impressions_click_rate` via Reporting API (bulk).
+
+**Atenção ao lag:**
+- Reporting API tem delay de **24-48h**. Se a tool retornar
+  `hasData: false`, informar no diagnóstico: "CTR de impressões ainda
+  não disponível (Reporting API lag de 24-48h). Reportar no checkpoint
+  48h."
+- Se for o primeiro uso e o job for auto-criado, os primeiros relatórios
+  só aparecem 24-48h depois. Documentar no diagnóstico.
+- Para vídeos publicados há mais de 48h sem dados, considerar fallback:
+  `vidiq_video_stats` para impressões aproximadas.
+
+### Passo 2C — Breakdown por traffic source (MCP YouTube)
+
+Use `analytics_getTrafficSources` com:
+- `videoId: "[videoId]"`
+- `includeEngagedViews: true` (default)
+
+Retorna percentuais de views e watch time por fonte com
+`viewsSharePercentage` já calculado (post-processado pelo service).
+
+Identificar fonte dominante:
 - **Browse dominante** → algoritmo está testando, manter consistência
 - **Search dominante** → SEO funciona, fortalecer keywords
 - **Suggested dominante** → cluster algorítmico estabelecido
 - **External dominante** → distribuição manual é o motor
 
+**Drill-down em fonte específica** (quando uma fonte concentrar >40%):
+
+Use `analytics_getTrafficSourceDetail` com:
+- `videoId: "[videoId]"`
+- `trafficSourceType`: `YT_SEARCH` (queries reais), `RELATED_VIDEO`
+  (vídeos que recomendam), `EXT_URL` (sites externos), `END_SCREEN`,
+  `NOTIFICATION`
+- `maxResults: 25` (cap da API)
+
+Documentar as keywords/vídeos/URLs específicas que estão drivando o
+tráfego dominante.
+
+### Passo 2D — Devices, demografia e cards (MCP YouTube)
+
+**Device + playback:**
+
+Use `analytics_getDeviceAndPlayback` com:
+- `videoId: "[videoId]"`
+- `groupBy: "deviceType"` (e repetir com `"operatingSystem"` se devices
+  mostrar concentração inesperada)
+
+Investigar disparidade desktop/mobile/TV (a auditoria algorítmica do
+canal já indicou retenção desktop 4x mobile — verificar se persiste).
+
+**Demografia (apenas se views > 1.000):**
+
+Use `analytics_getDemographics` com:
+- `videoId: "[videoId]"`
+- `subscribedStatus: "BOTH"` (default — retorna 3 sets pré-normalizados:
+  subscribed, unsubscribed, overall, cada um somando 100%)
+
+A YouTube Analytics API só retorna demografia agregada por threshold
+de privacidade. Se o vídeo for pequeno, vai vir vazio — não é erro.
+
+**Cards (info-cards):**
+
+Use `analytics_getCardPerformance` com:
+- `videoId: "[videoId]"`
+- `groupByDay: false`
+
+Retorna `cardImpressions`, `cardClickRate`, `cardTeaserClickRate`. Se
+o vídeo tem cards configurados, comparar com baseline do canal.
+
 ### Passo 3 — Obter baseline do canal
 
-Use `vidiq_channel_analytics` com `startDate` dos últimos 90 dias
-e métricas: `["views", "estimatedMinutesWatched",
-"averageViewDuration", "averageViewPercentage", "likes", "comments",
-"subscribersGained", "totalSegmentImpressions"]`.
+**MCP YouTube — agregado dos últimos 90 dias (fonte primária):**
 
-Calcular baseline de CTR do canal: total views / totalSegmentImpressions.
+Use `analytics_getChannelAnalytics` com:
+- `startDate`: 90 dias atrás (formato YYYY-MM-DD)
+- `endDate`: hoje
+- `metrics: "views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,comments,subscribersGained,subscribersLost"`
+
+**MCP YouTube — CTR baseline do canal (Reporting API):**
+
+Use `reporting_getReachByVideo` SEM `videoId`/`videoIds` (escopo de
+canal completo) com janela de 90 dias e `aggregateBy: "video"`. O
+campo `totals` retorna o agregado:
+- CTR baseline = `totals.video_thumbnail_impressions_click_rate`
+- Impressões totais = `totals.video_thumbnail_impressions`
+
+**VidIQ — curva típica de acumulação (complementar):**
 
 Use `vidiq_channel_performance_trends` para a curva típica de
 acumulação de views (min/max/avg/mediana por minutos desde
 publicação) — permite comparar se o último vídeo está acima ou
-abaixo do padrão do canal.
-
-**Fallback:** Use `analytics_getChannelAnalytics` sem `dimensions`
-(agregado) e divida pelo número de vídeos públicos.
+abaixo do padrão do canal nos primeiros minutos/horas.
 
 ### Passo 4 — Obter top performers (referência)
 
-Use `vidiq_channel_videos` com `popular: true` para longos e shorts
-separadamente.
+**MCP YouTube — top performers (fonte primária):**
 
-**Fallback:** `youtube_get_top_videos` com `max_results: 5`.
+Use `analytics_getTopVideos` com `metric: "views"` e janela de 90 dias
+para os 5 vídeos mais vistos.
+
+**VidIQ — complemento por formato:**
+
+Use `vidiq_channel_videos` com `popular: true`, separadamente para
+`videoFormat: "long"` e `"short"`.
 
 ---
 
@@ -137,13 +202,14 @@ comentários, inscritos ganhos.
 **Passo A — Obter a retention curve:**
 
 Usar os dados do Passo 2B (`audienceWatchRatio` por
-`elapsedVideoTimeRatio`). Converter `elapsedVideoTimeRatio` (0.0-1.0)
-para timestamps reais (ex: 0.1 de um vídeo de 10min = 1:00).
+`elapsedVideoTimeRatio`). Quando `videoDurationSeconds` é informado em
+`analytics_getRetentionCurve`, cada linha já vem com `timestampSeconds`
+e `timestampLabel` (formato `mm:ss`) — usar diretamente sem conversão.
 
-Se a retention curve por segundo não estiver disponível, usar
-`averageViewPercentage` como proxy e informar: "Retention curve
-detalhada não disponível (delay de analytics). Usando retenção
-média como proxy."
+Se `audienceWatchRatio` retornar zerado/vazio (delay raro em vídeos
+recém-publicados), usar `averageViewPercentage` do Passo 2 como proxy
+e informar: "Retention curve detalhada não disponível (delay de
+analytics). Usando retenção média como proxy."
 
 **Passo B — Identificar os 3 maiores drops:**
 
@@ -170,8 +236,13 @@ Para cada drop, localizar o trecho exato e diagnosticar:
 
 ### 5. Quadrante CTR × Retenção (últimos 5 vídeos)
 
-Para cada vídeo longo recente, obter CTR e retenção via YouTube
-Analytics (Passo 2B). Classificar em 1 dos 4 quadrantes:
+Para cada vídeo longo recente, obter:
+- CTR via `reporting_getReachByVideo` com `videoIds: [...]` e
+  `aggregateBy: "video"` (uma chamada cobre os 5)
+- Retenção via `analytics_getVideoAnalytics` (`averageViewPercentage`)
+  ou `analytics_getRetentionCurve` se quiser análise mais profunda
+
+Classificar em 1 dos 4 quadrantes:
 
 |                       | Retenção ALTA (≥35%)         | Retenção BAIXA (<35%)         |
 |-----------------------|------------------------------|-------------------------------|
@@ -218,7 +289,9 @@ Se retenção média < 20%, sinalizar `low_retention`.
 
 Se a retention curve não estiver disponível (delay da API), usar a
 retenção média (`averageViewPercentage`) como proxy e informar.
-Se o CTR não estiver disponível, calcular views/impressões como proxy.
+Se o CTR não estiver disponível pelo Reporting API (lag de 24-48h ou
+job recém-criado), informar no diagnóstico e reportar no checkpoint
+seguinte (FASE Y — `/yt-performance-triage`).
 
 ---
 
@@ -241,6 +314,8 @@ Salve o resultado em `output/videos/{slug-do-tema}/01-performance.md`
 (se dentro do pipeline) ou exiba diretamente (se execução avulsa).
 
 Estruture com seções Markdown claras: Último Vídeo, Diagnóstico Geral,
-Análise de Retenção (com retention curve), Traffic Sources, Pontos
-Críticos, Quadrante CTR×Retenção, Benchmarks, Lições, Calibrações,
-Alerta, Session Architecture.
+Análise de Retenção (com retention curve), Traffic Sources (com
+drill-down se aplicável), Devices & Demografia (quando disponível),
+Cards Performance (se houver cards), Pontos Críticos, Quadrante
+CTR×Retenção, Benchmarks, Lições, Calibrações, Alerta, Session
+Architecture.

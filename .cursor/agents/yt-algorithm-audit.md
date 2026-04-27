@@ -33,49 +33,83 @@ em dados reais e gera hipóteses testáveis.
 
 ## Processo de execução
 
-### FASE 1 — Dados internos do canal (5 chamadas)
+### FASE 1 — Dados internos do canal
+
+**Estratégia:** MCP YouTube é fonte primária para tudo que envolve
+analytics privado do canal (traffic, devices, demografia, retention).
+VidIQ é primário para velocidade (VPH) e curva típica de acumulação.
 
 **1.1 — Top performers vs bottom performers**
 
-Use `vidiq_channel_videos` com `channelId: "@MarcusMacielIAeCiencia"`,
-`videoFormat: "long"` e `popular: true` para obter os vídeos mais
-populares.
+Use `analytics_getTopVideos` com `metric: "views"` e janela de 90 dias
+para os 5 mais vistos.
 
-Use `vidiq_channel_videos` com `popular: false` para obter os
-uploads recentes.
+Complementar com `vidiq_channel_videos`:
+- `channelId: "@MarcusMacielIAeCiencia"`, `videoFormat: "long"`,
+  `popular: true` → top por formato
+- `popular: false` → uploads recentes (bottom recente)
 
 Use `vidiq_video_stats` (`granularity: "daily"`) nos top 3 e
 bottom 3 para comparar curvas de crescimento.
 
-**1.2 — Mapa de fontes de tráfego**
+**1.2 — Mapa de fontes de tráfego (MCP YouTube)**
 
-Use `vidiq_channel_analytics` com:
-- `channelId: "@MarcusMacielIAeCiencia"`
-- `dimensions: ["insightTrafficSourceType"]`
-- `metrics: ["views", "estimatedMinutesWatched"]`
-- `startDate`: últimos 90 dias
+Use `analytics_getTrafficSources` com:
+- `startDate`: 90 dias atrás (formato YYYY-MM-DD)
+- `endDate`: hoje
+- `includeEngagedViews: true`
 
-Identifique a distribuição: Browse Features (home) vs Suggested
-vs YouTube Search vs External vs outros.
+Identificar a distribuição: Browse Features vs Suggested vs YouTube
+Search vs External vs Notification vs outros (com
+`viewsSharePercentage` já calculado).
 
-**1.3 — Breakdown por status de inscrição**
+**Drill-down (quando uma fonte concentrar >40%):** usar
+`analytics_getTrafficSourceDetail` no top performer com
+`trafficSourceType` específico (`YT_SEARCH`, `RELATED_VIDEO`,
+`EXT_URL`) para identificar as queries/vídeos/URLs exatas que estão
+distribuindo o canal.
 
-Use `vidiq_channel_analytics` com:
-- `dimensions: ["subscribedStatus"]`
-- `metrics: ["views", "estimatedMinutesWatched", "averageViewPercentage"]`
-- `startDate`: últimos 90 dias
+**1.3 — Breakdown por status de inscrição (MCP YouTube)**
+
+Use `analytics_getDeviceAndPlayback` com:
+- `groupBy: "subscribedStatus"`
+- `startDate`: 90 dias atrás
+- `metrics: "views,estimatedMinutesWatched,averageViewPercentage"`
 
 Proporção inscritos vs não-inscritos = grau de distribuição
 algorítmica para audiência nova.
 
-**1.4 — Breakdown por device**
+**1.4 — Breakdown por device (MCP YouTube)**
 
-Use `vidiq_channel_analytics` com:
-- `dimensions: ["deviceType"]`
-- `metrics: ["views", "estimatedMinutesWatched", "averageViewDuration"]`
-- `startDate`: últimos 90 dias
+Use `analytics_getDeviceAndPlayback` com:
+- `groupBy: "deviceType"` (rodar uma vez)
+- `groupBy: "operatingSystem"` (rodar uma segunda vez se houver
+  concentração inesperada)
+- `startDate`: 90 dias atrás
 
-**1.5 — Curva típica de acumulação**
+**1.5 — Demografia do canal (MCP YouTube)**
+
+Use `analytics_getDemographics` com:
+- `startDate`: 90 dias atrás
+- `subscribedStatus: "BOTH"` (default — retorna 3 sets pré-normalizados)
+
+Identificar concentração por idade × gênero. Comparar com a persona
+"Explorador da Fronteira" do canal — divergência grande indica que o
+algoritmo está distribuindo para um público diferente do projetado.
+
+**1.6 — Reach baseline do canal (Reporting API)**
+
+Use `reporting_getReachByVideo` SEM `videoId`/`videoIds` (escopo de
+canal completo) com janela de 90 dias e `aggregateBy: "video"`. O
+campo `totals` retorna o agregado:
+- CTR baseline = `totals.video_thumbnail_impressions_click_rate`
+- Impressões totais = `totals.video_thumbnail_impressions`
+
+**Atenção ao lag:** Reporting API tem delay de 24-48h. Se for o
+primeiro uso, o job é auto-criado e os primeiros relatórios só
+aparecem 24-48h depois.
+
+**1.7 — Curva típica de acumulação (VidIQ)**
 
 Use `vidiq_channel_performance_trends` com
 `channelId: "@MarcusMacielIAeCiencia"` para obter a curva de
@@ -83,7 +117,7 @@ views por minutos desde publicação (min/max/avg/mediana).
 
 ---
 
-### FASE 2 — Dados do nicho (5-7 chamadas)
+### FASE 2 — Dados do nicho
 
 **2.1 — Outliers do nicho**
 
@@ -189,12 +223,14 @@ Essas são oportunidades de surfar uma onda crescente.
 
 ### 1. Snapshot do Canal
 
-| Métrica | Valor | Período |
-|---|---|---|
-| Views totais (90d) | X | últimos 90 dias |
-| Watch time (90d) | X min | últimos 90 dias |
-| Retenção média | X% | últimos 90 dias |
-| Inscritos ganhos (90d) | X | últimos 90 dias |
+| Métrica | Valor | Período | Fonte |
+|---|---|---|---|
+| Views totais (90d) | X | últimos 90 dias | analytics_getChannelAnalytics |
+| Watch time (90d) | X min | últimos 90 dias | analytics_getChannelAnalytics |
+| Retenção média | X% | últimos 90 dias | analytics_getChannelAnalytics |
+| Inscritos ganhos (90d) | X | últimos 90 dias | analytics_getChannelAnalytics |
+| Impressões totais (90d) | X | últimos 90 dias | reporting_getReachByVideo |
+| CTR médio do canal (90d) | X% | últimos 90 dias | reporting_getReachByVideo |
 
 ### 2. Mapa de Distribuição
 
@@ -224,6 +260,18 @@ Breakdown por device:
 | Mobile | X% | X min | [análise] |
 | Desktop | X% | X min | [análise] |
 | TV | X% | X min | [análise] |
+
+Breakdown demográfico (subscribedStatus = BOTH, normalizado por bucket):
+
+| Bucket | Faixa etária dominante | Gênero dominante | Interpretação |
+|---|---|---|---|
+| Inscritos | X (X%) | X (X%) | [análise] |
+| Não-inscritos | X (X%) | X (X%) | [análise] |
+| Geral | X (X%) | X (X%) | [análise] |
+
+> Comparar a faixa etária dominante e o gênero com a persona alvo
+> "Explorador da Fronteira". Divergência > 20% pontos sugere que o
+> algoritmo está distribuindo para um público diferente do projetado.
 
 ### 3. Curva de Acumulação
 

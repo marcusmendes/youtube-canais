@@ -86,8 +86,36 @@ Distribua entre as 6 fórmulas, priorizando as 3 primeiras:
 - Tom conversacional
 - Premissa, não resultado
 
-Após gerar 10, Top 3 com justificativa. Validar com
-`vidiq_keyword_research` — priorizar volume alto + competition baixa.
+Após gerar 10, Top 3 com justificativa. Validar em duas camadas:
+
+**Camada 1 — Volume e competição (VidIQ):**
+
+Use `vidiq_keyword_research` para cada candidato a Top 3 — priorizar
+volume alto + competition baixa.
+
+**Camada 2 — Fórmulas que entregaram retenção no canal (MCP YouTube):**
+
+Identificar quais fórmulas historicamente performam melhor no canal
+para calibrar a escolha do Top 3:
+
+1. Use `analytics_getTopVideos` com janela de 90 dias e `metric: "views"`
+   para listar os top 5 vídeos.
+2. Para cada um, executar `analytics_getRetentionCurve` com
+   `videoDurationSeconds`. Cruzar a fórmula do título original com a
+   retenção média (`audienceWatchRatio` médio da curva) e a queda
+   nos primeiros 30 segundos.
+3. Documentar:
+
+| Top vídeo | Fórmula original | Retenção média | Queda 0-30s | Sinal |
+|---|---|---|---|---|
+| [título] | [Pergunta existencial / X vs Y / etc.] | [X%] | [-Y%] | OURO/MÉDIO/FRACO |
+
+Se uma fórmula aparece em 2+ vídeos OURO, priorizá-la no Top 3 do
+vídeo atual. Se uma fórmula aparece em 2+ vídeos FRACO, evitá-la
+neste vídeo.
+
+> Esta validação é opcional quando o canal tem <5 vídeos públicos —
+> nesse caso, basta a Camada 1 (VidIQ).
 
 ---
 

@@ -43,6 +43,21 @@ espectador se sente sobre ele:
 
 Se retenção abaixo desses limiares, o problema é conteúdo, não embalagem.
 
+**Como medir antes de iniciar (baseline v1):**
+
+1. Retenção média: `analytics_getVideoAnalytics` com `videoId` + métrica
+   `averageViewPercentage`.
+2. CTR de impressões: `reporting_getReachByVideo` com `videoId` e
+   `aggregateBy: "video"`. Retorna `video_thumbnail_impressions` e
+   `video_thumbnail_impressions_click_rate`.
+3. Traffic dominante: `analytics_getTrafficSources` com `videoId` —
+   se Browse Features < 10%, o algoritmo pode estar barrando por
+   packaging fraco (sinal forte para repackaging).
+
+> **Atenção ao lag:** Reporting API tem delay de 24-48h. Se o vídeo
+> tem menos de 48h, o CTR via Reporting pode vir vazio. Aguardar ou
+> usar `vidiq_video_stats` como aproximação temporária.
+
 ---
 
 ## DIAGNÓSTICO DO PACOTE ATUAL
@@ -125,7 +140,11 @@ Diagnóstico + mudanças propostas + efeito esperado.
 
 - Mudar UMA coisa por vez
 - Esperar 4-5 dias entre mudanças
-- Monitorar com `vidiq_video_stats` granularity: "daily"
+- Monitorar:
+  - Velocidade de views: `vidiq_video_stats` (`granularity: "daily"`)
+  - CTR atualizado: `reporting_getReachByVideo` com `videoId` —
+    janela de 5+ dias entre versões
+  - Retenção: `analytics_getVideoAnalytics` (`averageViewPercentage`)
 
 ---
 
@@ -133,10 +152,15 @@ Diagnóstico + mudanças propostas + efeito esperado.
 
 Toda mudança de thumbnail/título deve ser documentada no output:
 
-| Versão | Data | Thumbnail (resumo) | Título | CTR registrado |
-|---|---|---|---|---|
-| v1 | [data publicação] | [descrição curta] | [título original] | [CTR após 7d] |
-| v2 | [data mudança] | [nova descrição] | [novo título] | [delta vs v1] |
+| Versão | Data | Thumbnail (resumo) | Título | CTR registrado | Fonte do CTR |
+|---|---|---|---|---|---|
+| v1 | [data publicação] | [descrição curta] | [título original] | [CTR após 7d] | reporting_getReachByVideo |
+| v2 | [data mudança] | [nova descrição] | [novo título] | [delta vs v1] | reporting_getReachByVideo |
+
+> Para cada versão, executar `reporting_getReachByVideo` com `videoId`,
+> `startDate` = data da versão e `endDate` = +5 dias para isolar o
+> CTR daquela embalagem. Se a janela cair antes do lag de 24-48h ser
+> resolvido, repetir a coleta no dia seguinte.
 
 Regra de encerramento: após 3 iterações sem ganho ≥ 20% em CTR,
 arquivar vídeo (remover de playlists ativas, parar de iterar).

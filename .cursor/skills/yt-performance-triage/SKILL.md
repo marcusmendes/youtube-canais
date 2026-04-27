@@ -28,12 +28,17 @@ Executa a FASE Y do pipeline: triage de performance pós-publicação.
 
 ## O que faz
 
-O subagent `yt-performance-triage` coleta métricas via YouTube
-Analytics, classifica o vídeo no quadrante CTR×Retenção, e gera
-decisões de ação:
+O subagent `yt-performance-triage` coleta métricas via:
+
+- `analytics_getVideoAnalytics` — métricas agregadas
+- `analytics_getRetentionCurve` — curva detalhada (no checkpoint 48h)
+- `reporting_getReachByVideo` — CTR de impressões (lag 24-48h, com
+  fallback VidIQ)
+
+Classifica o vídeo no quadrante CTR×Retenção, e gera decisões de ação:
 
 - **24h**: foco em CTR → decisão sobre thumbnail/título
 - **48h**: foco em retenção → decisão sobre shorts + diagnóstico de drops
 - **7d**: documentação completa → hipóteses + ação para próximo vídeo
 
-Output salvo em `output/videos/{slug}/07-triage-{checkpoint}.md`.
+Output salvo em `output/videos/{slug}/09-triage-{checkpoint}.md`.
