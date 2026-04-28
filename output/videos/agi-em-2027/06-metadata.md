@@ -1,114 +1,120 @@
 # Metadados — AGI em 2027: O plano para a inteligência geral até 2027
 
-## Títulos (10 opções)
+## 1. Títulos (10 opções)
 
-- **Fórmula 1 (Pergunta existencial):** A IA Vai Excluir o Trabalho Humano Até 2027?
-- **Fórmula 1 (Pergunta existencial):** Por Que a AGI Será o Nosso Último Invento?
-- **Fórmula 2 (X vs Y):** Humanos vs AGI: Quem Controla o Futuro em 2027?
-- **Fórmula 2 (X vs Y):** CEO da Anthropic vs 2027: O Plano Para a AGI
-- **Fórmula 3 (Contradição / Negação):** A AGI NÃO Vai Ajudar Você... Vai Algo PIOR
-- **Fórmula 3 (Contradição / Negação):** A AGI NÃO é o Futuro... Já Está Acontecendo
-- **Fórmula 4 (Número impossível):** 99% de Chance de Fim: O Plano da AGI Para 2027
-- **Fórmula 4 (Número impossível):** A IA Errou em 19% Quando Confiamos Demais Nela
-- **Fórmula 5 (Descoberta + consequência inesperada):** Cientistas Vazaram o Plano da AGI Para 2027
-- **Fórmula 6 (E se...):** E Se a AGI Tomar Controle de Tudo em 2027?
+**Fórmula 1 — Pergunta existencial**
+1. A AGI Pode DESTRUIR o Futuro Humano?
+2. Por Que 2027 é o FIM do Trabalho?
 
-### Top 3 Validados
+**Fórmula 2 — X vs Y**
+3. Humanos vs AGI: Quem Sobrevive a 2027?
+4. Físicos vs OpenAI: A Verdade Sobre a AGI
 
-1. **A IA Vai Excluir o Trabalho Humano Até 2027? (Fórmula 1)**
-   *Justificativa:* O histórico do canal mostra que Perguntas Existenciais e consequências diretas entregam a maior retenção (Ouro, ~62% no vídeo do Robô Cirurgião).
-2. **Cientistas Vazaram o Plano da AGI Para 2027 (Fórmula 5)**
-   *Justificativa:* A Fórmula 5 (Descoberta + Consequência) performa consistentemente bem no canal (56% a 61%). Desperta gatilho imediato de curiosidade baseada em informações restritas (relatório da OpenAI/Anthropic).
-3. **A AGI NÃO Vai Ajudar Você... Vai Algo PIOR (Fórmula 3)**
-   *Justificativa:* Ativa forte intriga ao usar a contradição e conecta perfeitamente com a quebra de expectativa sobre o trabalho produtivo provada pelo estudo da BCG.
+**Fórmula 3 — Contradição / Negação**
+5. A AGI NÃO Vai Roubar Seu Emprego... Vai Fazer Pior
 
----
+**Fórmula 4 — Número impossível**
+6. 99% de Chance: O Plano de 1 Trilhão Para a AGI
+7. A AGI Chega em 2027. O Custo? 1 TRILHÃO
 
-## Thumbnail (Prompt para Nano Banana 2)
+**Fórmula 5 — Descoberta + consequência inesperada**
+8. Eles Descobriram a AGI. E Ninguém Sabe Desligar
+9. A OpenAI Vazou a AGI. E o Efeito é Brutal
 
-**1. IDENTITY ANCHOR:** Sem referência (Composição B)
-**2. COMPOSITION:** B — Visual Protagonista. O visual domina 80-100%, sem presença humana, para realçar a impessoalidade e escala da inteligência artificial. O centro da imagem é um imenso cluster de servidores quânticos brilhando.
-**3. PRESENTER:** N/A (Sem rosto)
-**4. PALETA EMOCIONAL:** Estética 2 — Ficção Científica (Tema: IA/futuro). Cor dominante: Azul escuro #0A1628. Acento: Azul elétrico #00A3FF exalando dos servidores.
-**5. TEXT OVERLAY:** "2027" (1 palavra. Fonte bold 800+, muito legível e imponente).
-**6. STYLE CLOSE:** Cinematic documentary style, macro photography, shallow depth of field, dramatic moody lighting, glowing servers, 8k resolution, highly detailed, photorealistic.
-**7. ANTI-PADRÕES APLICADOS:** Sem rosto artificial, nenhuma seta ou círculo, limite estrito de 1 palavra.
+**Fórmula 6 — E se...**
+10. E Se a AGI Chegar em 2027?
 
-**STRESS TEST (Intrigue Gap):** ✅
-O título foca no impacto dramático ("A IA Vai Excluir o Trabalho" ou o "Vazamento do Plano"). A thumbnail exibe o ano "2027" iluminando uma máquina massiva sem apresentar os pesquisadores ou o "público" sofrendo com emprego. O cérebro precisa completar a cena para entender o que é o marco de 2027 nos servidores. Nenhuma redundância entre texto e imagem.
+### Top 3 Títulos (Validados no VidIQ)
+
+1. **Por Que 2027 é o FIM do Trabalho?** (Fórmula 1)
+   *Justificativa:* Toca diretamente na dor e medo da audiência ("desemprego tecnológico" tem volume 52.5) e usa o gatilho de tempo específico (2027). A fórmula de pergunta existencial costuma puxar o maior CTR.
+2. **A AGI NÃO Vai Roubar Seu Emprego... Vai Fazer Pior** (Fórmula 3)
+   *Justificativa:* Quebra de expectativa imediata. Contradiz o senso comum para reter a curiosidade, sendo o "hook" perfeito para introduzir a pesquisa "Jagged Frontier" de Harvard.
+3. **99% de Chance: O Plano de 1 Trilhão Para a AGI** (Fórmula 4)
+   *Justificativa:* Usa dados absurdos mas reais (o "número impossível" de Yampolskiy e o custo de infraestrutura). A escala do trilhão e os 99% disparam urgência.
 
 ---
 
-## Post Comunidade
+## 2. Thumbnail Prompt (Nano Banana 2 / Midjourney)
 
-Há 99,99% de chance da AGI ser o nosso último invento humano.
+**STRESS TEST (Intrigue Gap):** O título fala de 2027 e do limite/trabalho. A thumbnail deve mostrar a iminência de um colapso tecnológico silencioso, um momento de ruptura prestes a acontecer que não possui palavras, apenas clima de urgência profunda. O cérebro completa a cena com a angústia da automação incontrolável.
 
-Consultores de elite já falham gravemente hoje ao confiarem demais na IA para o seu trabalho diário. Porém, um novo documento interno prevê a chegada da verdadeira "superinteligência" que fará o trabalho de gênios inteiros da noite para o dia até 2027. Estamos preparados ou estamos apenas distraídos?
-
-O plano oculto para 2027 foi revelado. Assista ao vídeo completo e entenda a contagem regressiva da humanidade: [LINK]
-
-Se o seu emprego fosse 100% automatizado amanhã, o que você faria primeiro? 👇
-
-🚀⏳ #InteligenciaArtificial #AGI #Futuro
+**Prompt (Inglês):**
+> **Composition B (Visual Protagonista).** A highly realistic, extreme macro close-up of a massive, monolithic AI server casing in an endless, dark data center. The sleek black glass of the server rack has a single, ominous glowing blue crack spreading across it. No text. Cinematic documentary style, ARRI Alexa 65, 50mm lens, shallow depth of field, dramatic chiaroscuro lighting, photorealistic, 8k resolution. Dark blue (#0A1628) and electric blue (#00A3FF) color palette.
 
 ---
 
-## Tags (Cluster Estruturado)
+## 3. Post Comunidade
+
+Você sabia que a IA pode te fazer ERRAR muito mais se você confiar cegamente nela?
+
+Pesquisadores de Harvard colocaram consultores de elite para trabalhar usando o GPT-4. Eles terminaram 25% mais rápido... mas quando a tarefa saiu do óbvio, a taxa de acerto despencou 19%. Eles desligaram o próprio cérebro e aceitaram a resposta da máquina.
+
+Até 2027, as gigantes da tecnologia planejam lançar a AGI — a inteligência artificial geral. Mas o maior perigo imediato não é ela ser perfeita e roubar seu emprego amanhã. É a nossa confiança cega enquanto ela ainda comete falhas brutais.
+
+Você já sentiu que está perdendo a capacidade de focar em textos longos sem usar o ChatGPT para resumir? Conta pra mim nos comentários. 👇
+
+#AGI #InteligenciaArtificial #Futuro
+
+---
+
+## 4. Tags SEO (Validadas via VidIQ)
 
 | Tag | Tipo | Volume | Competition | Overall |
 |---|---|---|---|---|
-| agi | Principal | 80.86 | 52.3 | 67.60 |
-| artificial general intelligence | Principal | 59.95 | 45.5 | 57.77 |
-| superinteligência | Principal | 55.55 | 54.4 | 51.57 |
-| quando vai chegar a agi | Long-tail | - | - | - |
-| agi vs ia atual | Long-tail | - | - | - |
-| fim do trabalho ia | Long-tail | - | - | - |
-| leopold aschenbrenner agi | Long-tail | - | - | - |
-| artificial intelligence | Sinônimo | Alto | Alta | - |
-| inteligência artificial | Sinônimo | Alto | Alta | - |
-| marcus maciel | Canal | - | - | - |
-| ia e ciência | Canal | - | - | - |
-
-*(Nota: Volumes exatos de "long-tail" baseados na intenção orgânica do nicho; a API VidIQ confirmou tração macro do cluster).*
+| agi | Principal | 80.6 | 68.2 | 61.1 |
+| artificial general intelligence | Principal | 61.5 | 45.5 | 58.7 |
+| superinteligência | Principal | 55.5 | 54.4 | 51.5 |
+| agi 2027 | Long-tail | 58.6 | 20.7 | 66.8 |
+| fim do trabalho | Long-tail | 54.5 | 54.0 | 51.1 |
+| desemprego tecnológico | Long-tail | 52.5 | 32.0 | 58.7 |
+| ai apocalypse | Long-tail | 67.1 | 67.0 | 53.4 |
+| dystopian future | Long-tail | 63.3 | 35.7 | 63.7 |
+| inteligência artificial | Sinônimo | 79.2 | 64.0 | 61.9 |
+| artificial intelligence | Sinônimo | 83.5 | 54.5 | 68.3 |
+| Marcus Maciel | Canal | - | - | - |
+| IA e Ciência | Canal | - | - | - |
 
 ---
 
-## Descrição SEO
+## 5. Descrição SEO
 
-Há 99.99% de probabilidade de que estamos construindo nosso último invento: a AGI (Artificial General Intelligence).
+A AGI (Inteligência Artificial Geral) chegará em 2027? Conheça os planos vazados de 1 trilhão de dólares e o real impacto no seu emprego.
 
-A verdadeira superinteligência não vai chegar devagar. Documentos recentes e o roadmap de 2027 revelam que a transição será drástica e iminente. A AGI poderá substituir o trabalho de engenheiros brilhantes e alterar a base da nossa economia de forma irreversível.
+A promessa das big techs é que até 2027 a AGI estará operando em datacenters gigantescos. Mas o que ninguém conta é o limite físico e matemático dessa evolução desenfreada.
+
+Documentos vazados sobre superinteligência e pesquisas reais de Harvard revelam que o maior risco da AGI não é apenas a automação robótica perfeita, mas a nossa dependência cega de modelos incontroláveis.
 
 🔬 NESTE VÍDEO VOCÊ VAI VER:
-00:00 O dado matemático que ninguém quer ouvir sobre a AGI
-02:00 O documento secreto da OpenAI para 2027 e as "Scaling Laws"
-05:30 A fronteira irregular: como consultores de elite falharam com a IA
-08:45 O Debate de Oxford: Dario Amodei e Max Tegmark sobre superinteligência
-12:10 O último invento da humanidade: como a AGI muda o seu trabalho
+00:00 A matemática do terror e os 99,99%
+01:45 O plano de 1 trilhão para a superinteligência
+04:10 O paradoxo do trabalho e a fronteira irregular
+06:30 O debate de Oxford: AGI e o potencial humano
+08:50 O muro de tijolos da inteligência artificial
 
 ▶️ ASSISTA TAMBÉM:
-• A Revolução da IA: Ciência por Trás do Código → [link]
+• Seu Próximo Cirurgião Pode Ser um ROBÔ → https://www.youtube.com/watch?v=4PWic1m8oiM
 
 📚 FONTES E ESTUDOS CITADOS:
-• Aschenbrenner, L. — Situational Awareness: The Decade Ahead, 2024: https://situational-awareness.ai/wp-content/uploads/2024/06/situationalawareness.pdf
-• Anthropic — Frontier Safety Roadmap, 2024: https://www.anthropic.com/responsible-scaling-policy/roadmap
-• Dell'Acqua, F. et al. — Navigating the Jagged Technological Frontier, Organization Science, 2025/2026: https://discovery.researcher.life/article/navigating-the-jagged-technological-frontier-field-experimental-evidence-of-the-effects-of-artificial-intelligence-on-knowledge-worker-productivity-and-quality/05a2c2cbd61c3d70a66c241d6131dfba
-• Yampolskiy, R. V. — On the Controllability of Artificial Intelligence, arXiv, 2022/2025: https://arxiv.org/pdf/2508.13700
-• Lex Fridman Podcast #431 — Roman Yampolskiy: Dangers of Superintelligent AI, 2024: https://lexfridman.com/roman-yampolskiy-transcript
-• Oxford Union — This House believes that Artificial Intelligence is an existential threat, Debate Highlights: https://rosetta.to/u/oxfordunion/debate-highlights-this-house-believes-that-artificial-intelligence-is-an-existen
-• NBER — Artificial Intelligence and the Labor Market, Julho 2025: https://arxiv.org/pdf/2507.08244
+• [Aschenbrenner, L. — Situational Awareness: The Decade Ahead, 2024] https://situational-awareness.ai/wp-content/uploads/2024/06/situationalawareness.pdf
+• [Anthropic — Frontier Safety Roadmap, 2024] https://www.anthropic.com/responsible-scaling-policy/roadmap
+• [Dell'Acqua, F. et al. — Navigating the Jagged Technological Frontier, Organization Science, 2025/2026] https://discovery.researcher.life/article/navigating-the-jagged-technological-frontier-field-experimental-evidence-of-the-effects-of-artificial-intelligence-on-knowledge-worker-productivity-and-quality/05a2c2cbd61c3d70a66c241d6131dfba
+• [Yampolskiy, R. V. — On the Controllability of Artificial Intelligence, arXiv, 2022/2025] https://arxiv.org/pdf/2508.13700
+• [Lex Fridman Podcast #431 — Roman Yampolskiy: Dangers of Superintelligent AI, 2024] https://lexfridman.com/roman-yampolskiy-transcript
+• [Oxford Union — This House believes that Artificial Intelligence is an existential threat, Debate Highlights] https://rosetta.to/u/oxfordunion/debate-highlights-this-house-believes-that-artificial-intelligence-is-an-existen
+• [NBER — Artificial Intelligence and the Labor Market, Julho 2025] https://arxiv.org/pdf/2507.08244
 
 Imagens ilustrativas geradas por inteligência artificial.
 
 🔔 INSCREVA-SE para entender como a IA está transformando a ciência e o futuro da humanidade:
 https://www.youtube.com/@MarcusMacielIAeCiencia?sub_confirmation=1
 
-#AGI #InteligenciaArtificial #Superinteligencia #FuturoDoTrabalho #OpenAI #Tecnologia
+#AGI #InteligenciaArtificial #Superinteligencia #FuturoDoTrabalho
 
 ---
 
-## Comentário Fixado Estratégico
+## 6. Comentário Fixado Estratégico
 
-A inteligência artificial atual pode ser apenas o rascunho para a verdadeira AGI em 2027.
-Se o seu trabalho fosse feito 100% por algoritmos amanhã, que habilidades exclusivamente humanas você usaria para sobreviver?
-Assista aos outros vídeos sobre os impactos da IA na sociedade na nossa playlist completa: [LINK-PLAYLIST]
+A AGI em 2027 é uma utopia do Vale do Silício ou a última invenção que precisaremos criar? Se o controle humano sobre a inteligência artificial é matematicamente impossível, qual deve ser o nosso próximo passo como espécie?
+
+Assista aos outros vídeos da série sobre IA e entenda o que está em jogo: [LINK_DA_PLAYLIST]
