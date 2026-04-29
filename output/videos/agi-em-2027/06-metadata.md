@@ -79,11 +79,19 @@ Você já sentiu que está perdendo a capacidade de focar em textos longos sem u
 
 ## 5. Descrição SEO
 
-A AGI (Inteligência Artificial Geral) chegará em 2027? Conheça os planos vazados de 1 trilhão de dólares e o real impacto no seu emprego.
+⚠️ **Aviso de Upload no YouTube Studio:** Ao subir este vídeo, certifique-se de marcar a opção "Altered content" (Conteúdo alterado), pois o vídeo pode apresentar mídias sintéticas hiper-realistas geradas por IA.
 
-A promessa das big techs é que até 2027 a AGI estará operando em datacenters gigantescos. Mas o que ninguém conta é o limite físico e matemático dessa evolução desenfreada.
+A AGI (Inteligência Artificial Geral) chegará em 2027? Conheça os planos vazados de 1 trilhão de dólares das big techs e o real impacto no seu emprego no curto prazo.
 
-Documentos vazados sobre superinteligência e pesquisas reais de Harvard revelam que o maior risco da AGI não é apenas a automação robótica perfeita, mas a nossa dependência cega de modelos incontroláveis.
+A promessa do Vale do Silício é que até o ano de 2027 a AGI estará operando ativamente em datacenters gigantescos ao redor do mundo. Mas o que os noticiários não contam é o limite físico, matemático e cognitivo dessa evolução desenfreada rumo à superinteligência.
+
+Neste documentário completo, nós vamos explorar os documentos vazados por Leopold Aschenbrenner, ex-pesquisador da equipe de superalinhamento da OpenAI, que detalham o projeto "Situational Awareness" e a corrida implacável de 1 trilhão de dólares para alcançar a Inteligência Artificial Geral antes do fim desta década.
+
+Mas a AGI não vai apenas automatizar o seu trabalho. Pesquisas reais conduzidas por cientistas de Harvard e do MIT com consultores de elite da BCG revelam a armadilha da "Fronteira Irregular" (Jagged Frontier). Esse estudo empírico prova que o maior risco imediato da inteligência artificial não é a robótica perfeita roubando o seu lugar, mas sim a nossa dependência cega. Quando profissionais altamente capacitados confiam no oráculo de silício para tarefas fora da zona de segurança, o desligamento cognitivo acontece e a performance humana despenca severamente.
+
+Além disso, vamos mergulhar no intenso debate da Oxford Union com o físico Max Tegmark e analisar a aterradora matemática da incontrolabilidade proposta pelo Dr. Roman Yampolskiy. Ele demonstra, por meio de teoremas matemáticos rigorosos, que garantir 100% de segurança e alinhamento de uma máquina superinteligente é tão impossível quanto criar uma máquina de movimento perpétuo. A utopia do controle absoluto esbarra nas leis da física, deixando a humanidade com 99,99% de probabilidade de enfrentar um risco existencial nas próximas décadas.
+
+Entenda como a automação de empregos cognitivos já começou e descubra o que você precisa fazer para sobreviver a essa reestruturação profunda da economia global. O cronômetro já começou a rodar.
 
 🔬 NESTE VÍDEO VOCÊ VAI VER:
 00:00 A matemática do terror e os 99,99%
