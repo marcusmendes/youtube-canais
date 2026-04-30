@@ -1,0 +1,1 @@
+> **Roteiro canônico (pós-QA):** use [`07-script-presenter.md`](./07-script-presenter.md) — contagem de palavras, fontes, CTAs e marcações alinhadas à checklist da Fase Q. Este ficheiro permanece como ponte para compatibilidade com pastas antigas.

@@ -73,7 +73,8 @@ exclusivamente explícita.
 | `yt-competitive` | `/yt-competitive "tema"` | Análise competitiva (Fase 0) |
 | `yt-validation` | `/yt-validation "keyword"` | Validação de tema (Fase V) |
 | `yt-metadata` | `/yt-metadata "tema"` | Gerar títulos, thumbnail, descrição, tags |
-| `yt-scriptwriter` | `/yt-scriptwriter "tema"` | Escrever roteiro completo |
+| `yt-scriptwriter` | `/yt-scriptwriter "tema"` | Escrever roteiro voz-over (ElevenLabs) |
+| `yt-scriptwriter-presenter` | `/yt-scriptwriter-presenter "tema"` | Roteiro para Marcus em câmera |
 | `yt-qa` | `/yt-qa` | Executar checklist de 28 itens |
 
 **Localização:** `.cursor/skills/{nome}/SKILL.md`
@@ -99,6 +100,7 @@ chat principal.
 | `yt-validation` | `validation.md` | `inherit` | VidIQ |
 | `yt-metadata` | `metadata.md` | `inherit` | VidIQ |
 | `yt-scriptwriter` | `scriptwriter.md` | `inherit` | Nenhum |
+| `yt-scriptwriter-presenter` | `scriptwriter-presenter.md` | `inherit` | Nenhum |
 | `yt-qa` | `qa.md` | `inherit` | Nenhum |
 | `yt-repackaging` | `repackaging.md` | `inherit` | VidIQ + YouTube |
 
@@ -335,7 +337,8 @@ Qualquer fase pode ser executada isoladamente:
 │   ├── yt-competitive.md                   Fase 0 — análise competitiva
 │   ├── yt-validation.md                    Fase V — validação de tema
 │   ├── yt-metadata.md                      Metadados (títulos, thumb, etc.)
-│   ├── yt-scriptwriter.md                  Roteiro completo
+│   ├── yt-scriptwriter.md                  Roteiro voz-over (ElevenLabs)
+│   ├── yt-scriptwriter-presenter.md        Roteiro apresentador em câmera
 │   ├── yt-qa.md                            Checklist de 28 itens
 │   └── yt-repackaging.md                   Fase R — repackaging
 │
@@ -353,7 +356,9 @@ Qualquer fase pode ser executada isoladamente:
 │   ├── yt-metadata/
 │   │   └── SKILL.md                        Metadados avulso
 │   ├── yt-scriptwriter/
-│   │   └── SKILL.md                        Roteiro avulso
+│   │   └── SKILL.md                        Roteiro voz-over avulso
+│   ├── yt-scriptwriter-presenter/
+│   │   └── SKILL.md                        Roteiro em câmera avulso
 │   └── yt-qa/
 │       └── SKILL.md                        QA avulso
 │
@@ -397,7 +402,7 @@ output/                                  ← Resultados gerados
     "subagentStop": [
       {
         "command": "python3 .cursor/hooks/save-to-db.py",
-        "matcher": "yt-performance|yt-competitive|yt-validation|yt-metadata|yt-scriptwriter|yt-qa|yt-repackaging"
+        "matcher": "yt-performance|yt-competitive|yt-validation|yt-metadata|yt-scriptwriter|yt-scriptwriter-presenter|yt-qa|yt-repackaging"
       }
     ]
   }

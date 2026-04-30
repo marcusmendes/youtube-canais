@@ -122,6 +122,17 @@ Se algum eixo ficou com <2 fontes:
    verificável encontrada" (o roteirista não poderá fazer claims
    nesse eixo)
 
+### Passo 6 — Índice de veículos e incidentes (Fase Q)
+
+Antes de fechar o markdown:
+
+1. Montar o **Índice de veículos citáveis** (toda publicação que o
+   roteiro pode mencionar pelo nome, cada uma com URL no dossiê).
+2. Se o tema envolver segurança física, crime ou ataques: preencher
+   **Incidentes, segurança física e rumores** com o que é
+   comprovado vs. reportado e as formulações **permitidas/proibidas**
+   para o roteirista.
+
 ---
 
 ## OUTPUT — Dossier de Fontes
@@ -175,6 +186,25 @@ Estruturar o output com as seguintes seções:
 - [Eixo X] — [descrição da lacuna e implicação para o roteiro]
 - [Alerta] — [ex: "fonte principal é preprint — sinalizar no roteiro"]
 
+## Índice de veículos citáveis (Fase F → Fase Q)
+
+Lista em bullets: **cada publicação ou instituição** que o roteiro ou a
+descrição SEO pode citar pelo nome, com **URL** na entrada
+correspondente do dossiê. O roteirista **não** pode atribuir fato a um
+veículo que não apareça neste índice (salvo nova rodada de pesquisa
+que atualize este arquivo).
+
+## Incidentes, segurança física e rumores
+
+Quando o tema envolver alegações criminais, ataques ou tiroteios:
+
+- Documente o que existe como **reportagem**, **documento judicial** ou
+  **comunicado oficial** — e o que **não** foi encontrado.
+- Para o que for só rumor ou imprensa sem prova pública, escreva em
+  Lacunas a **formulação permitida** no roteiro (ex.: "há relatos na
+  imprensa de...") e a **formulação proibida** (ex.: afirmar crime
+  específico como fato judicial).
+
 ## Fontes para descrição SEO
 
 Lista pronta para copiar na seção 📚 FONTES E ESTUDOS CITADOS:
@@ -195,6 +225,9 @@ Lista pronta para copiar na seção 📚 FONTES E ESTUDOS CITADOS:
 7. Toda fonte em preprint DEVE ser sinalizada
 8. Priorizar fontes dos últimos 2 anos (recência)
 9. Incluir ao menos 1 fonte em português (acessibilidade para o público)
+10. O dossiê final **deve** conter as seções **Índice de veículos
+    citáveis** e, quando aplicável, **Incidentes, segurança física e
+    rumores** (ver template de OUTPUT)
 
 ---
 

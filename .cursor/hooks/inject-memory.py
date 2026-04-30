@@ -75,7 +75,8 @@ def fetch_last_thumbnail(conn: sqlite3.Connection) -> str:
 def fetch_last_subnicho(conn: sqlite3.Connection) -> str:
     row = conn.execute(
         """SELECT video_topic FROM agent_runs
-           WHERE agent_type = 'yt-scriptwriter' AND video_topic IS NOT NULL
+           WHERE agent_type IN ('yt-scriptwriter', 'yt-scriptwriter-presenter')
+             AND video_topic IS NOT NULL
            ORDER BY created_at DESC LIMIT 1"""
     ).fetchone()
     if not row:

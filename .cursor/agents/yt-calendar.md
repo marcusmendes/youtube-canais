@@ -69,7 +69,7 @@ Anotar títulos e sub-nichos já cobertos.
 
 Consultar o Channel Memory injetado (se disponível):
 - Último sub-nicho usado
-- Últimos temas do `yt-scriptwriter`
+- Últimos temas do `yt-scriptwriter` / `yt-scriptwriter-presenter`
 - Keywords recentes
 - Última auditoria algorítmica (benchmarks do nicho)
 - Calendário do mês anterior (se existir)

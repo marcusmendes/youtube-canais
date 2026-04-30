@@ -56,5 +56,5 @@ Ou executar fases individuais:
 ```
 /yt-validation "keyword do tema"
 /yt-competitive "tema"
-/yt-scriptwriter (com tema + fontes do cronograma)
+/yt-scriptwriter ou /yt-scriptwriter-presenter (com tema + fontes do cronograma)
 ```

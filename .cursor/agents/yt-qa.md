@@ -21,7 +21,13 @@ Você é um revisor de qualidade para o canal **Marcus Maciel | IA
 Quando executado dentro do pipeline (`output/videos/{slug}/`),
 **ANTES de iniciar a checklist**, leia os seguintes arquivos:
 
-1. `output/videos/{slug}/07-script.md` — roteiro completo
+1. Roteiro completo — leia **`07-script.md`** se existir (voz-over /
+   ElevenLabs). Caso contrário, leia **`07-script-presenter.md`**
+   (apresentador em câmera). Se **não** existir, leia
+   **`07-scriptwriter-presenter.md`** (nome legado). Se **ambos**
+   `07-script.md` e roteiro apresentador existirem, priorize
+   `07-script.md`, salvo indicação explícita do usuário de validar o modo
+   apresentador.
 2. `output/videos/{slug}/06-metadata.md` — metadados completos
 3. `output/videos/{slug}/05-narrative.md` — arquitetura narrativa (para validar itens 36-38)
 4. `output/videos/{slug}/02-research.md` — dossier de fontes (para validar itens 9, 31-33)
@@ -53,7 +59,7 @@ Para cada `fail`, explique o motivo.
 |---|---|---|
 | 1 | Metadados completos | 10 títulos + Top 3 + thumbnail + post + hashtags + tags (volume > 0) + descrição SEO |
 | 2 | Títulos validados | ≤55 chars · ≤10 palavras · zero jargão · 1-2 CAPS · tom conversacional |
-| 3 | Contagem de palavras | Longo: 1.400-2.000 · Short: ≤130 |
+| 3 | Contagem de palavras | Longo: mínimo 1.500 (sem teto rígido; priorizar fluidez e Bloco 4 denso) · Short: ≤130 |
 | 4 | Seções presentes | Hook + Contexto + Blocos + Loops + CTA Final |
 | 5 | Escalonamento progressivo | Âncora → Escalada → Clímax → Implicação · Transições invisíveis |
 | 6 | VISUAL em todos os blocos | Cada narração tem `VISUAL:` |

@@ -65,9 +65,9 @@ PÓS-PUBLICAÇÃO
 | 3 | **FASE T** — Validação | `/yt-validation` | Ativo | Cluster semântico 5 keywords, intent dominante, competição |
 | 4 | **FASE A** — Competitiva | `/yt-competitive` | Ativo | 3-5 concorrentes, hook, ângulos, manifesto de diferenciação |
 | 5 | **FASE N** — Narrativa | `/yt-narrative` | Ativo | Protagonista, espinha dorsal, arco emocional, cenas, micro-histórias, anti-clichês |
-| 6 | **Roteiro** | `/yt-scriptwriter` | Ativo | 4 blocos + hook + CTA + Viewer Simulation Pass (baseado na Fase N) |
-| 7 | **Metadados** | `/yt-metadata` | Ativo | 10 títulos, thumbnail, descrição SEO, tags cluster, pinned comment |
-| 8 | **FASE QA** | `/yt-qa` | Ativo | Checklist 38 itens: narrativa, compliance médico, storytelling |
+| 6 | **Roteiro** | `/yt-scriptwriter` (voz-over ElevenLabs) **ou** `/yt-scriptwriter-presenter` (câmera) | Ativo | Saída canônica `07-script.md` ou `07-script-presenter.md` (evitar nome legado). Apresentador: 1.400–2.000 palavras contadas só nas falas, `[pausa]`/`[ênfase]`, CTAs B2–B4, loops ~250–400 palavras, `VISUAL:` acionável, veículos só do `02-research.md`, Auditoria 30s, modelo de escrita citado no topo. |
+| 7 | **Metadados** | `/yt-metadata` | Ativo | 10 títulos, Master Prompt v2 + **tabela 7 seções** (QA), descrição **250–400** palavras + disclosure IA, tags cluster, **hashtags em linha dedicada**, comentário fixo com **URL de playlist**, **Session Architecture (Fase S)** no `06-metadata.md`. |
+| 8 | **FASE QA** | `/yt-qa` | Ativo | Checklist 38 itens; lê também `07-scriptwriter-presenter.md` se for o único roteiro legado na pasta. |
 | 9 | **Distribuição** | *(checklist manual)* | Manual | 5 comunidades, soft launch 24h, janela de publicação |
 | 10 | **Publicação** | YouTube Studio | Manual | Upload, chapters, tags, end-screen, card, "Altered content" |
 | 11 | **FASE R** — Repackaging | `/yt-repackaging <video-id>` | Ativo | Novos títulos, thumbnail, versionamento (se underperform) |

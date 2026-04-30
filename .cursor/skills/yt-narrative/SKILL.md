@@ -36,5 +36,6 @@ e análise competitiva, e gera a arquitetura narrativa com 8 passos:
 
 Output salvo em `output/videos/{slug}/04-narrative.md`.
 
-O roteirista (`/yt-scriptwriter`) usa este output como fundação
+O roteirista (`/yt-scriptwriter` ou `/yt-scriptwriter-presenter`)
+usa este output como fundação
 para escrever o roteiro como HISTÓRIA, não como ensaio.

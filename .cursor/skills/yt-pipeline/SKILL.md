@@ -75,7 +75,14 @@ Salve em `output/videos/{slug}/06-metadata.md`.
 
 ### Fase 6 — Roteiro (Two-pass)
 
-Lance **`/yt-scriptwriter "TEMA"`**, passando como contexto:
+**Escolha do modo (pergunte ao usuário se não estiver explícito):**
+
+| Modo | Subagent | Arquivo de saída |
+|---|---|---|
+| Voz-over (ElevenLabs) — **padrão** | **`/yt-scriptwriter "TEMA"`** | `07-script.md` |
+| Marcus em câmera (teleprompter) | **`/yt-scriptwriter-presenter "TEMA"`** | `07-script-presenter.md` |
+
+Passe como contexto (ambos os modos):
 - Arquitetura narrativa (protagonista, cenas, arco emocional)
 - Metadados (título escolhido, emoção dominante, ângulo editorial)
 - Dossier de fontes (dados verificados, micro-histórias, lacunas)
@@ -84,10 +91,21 @@ Lance **`/yt-scriptwriter "TEMA"`**, passando como contexto:
 
 O roteirista executa em **dois passes**:
 1. **Pass 1 — Esqueleto:** preenche cenas da Fase N com dados do dossier
-2. **Pass 2 — Polimento:** ElevenLabs, ritmo, pattern interrupts,
-   Viewer Simulation Pass, verificação de fontes
+2. **Pass 2 — Polimento:** no modo ElevenLabs — formatação v2, ritmo,
+   pattern interrupts, Viewer Simulation Pass, fontes; no modo
+   apresentador — `[A-ROLL]`/`[B-ROLL]`, teleprompter, **`[pausa]` /
+   `[ênfase]`**, CTAs B2–B4, densidade de loops, **Auditoria 30s**,
+   contagem **real** de palavras faladas, mesmos audits e **somente**
+   fontes/veículos presentes no `02-research.md`.
 
-Salve em `output/videos/{slug}/07-script.md`.
+**Gates antes da Fase 7 (QA):** o `06-metadata.md` deve cumprir contagem
+da descrição, disclosure IA, hashtags dedicadas, tabela 7 seções da
+thumbnail e Session Architecture; o roteiro apresentador deve cumprir
+faixa de palavras, CTAs, anti-`VISUAL:` genérico e item 31 (veículos no
+dossiê).
+
+Salve em `output/videos/{slug}/07-script.md` **ou**
+`output/videos/{slug}/07-script-presenter.md`, conforme o modo.
 
 ### Fase 7 — QA
 
@@ -99,14 +117,17 @@ Salve em `output/videos/{slug}/08-qa-report.md`.
 **Decisão:**
 - `approved` → consolidar FINAL.md
 - `needs_fix` → passar instruções ao roteirista (relançar Fase 6
-  com as correções) e repetir QA
+  com as correções — **mesmo** subagent e arquivo de roteiro do
+  modo escolhido: `yt-scriptwriter` → `07-script.md`, ou
+  `yt-scriptwriter-presenter` → `07-script-presenter.md`) e repetir QA
 - `approved_with_warnings` → consolidar com nota de warnings
 
 ### Consolidação
 
 Após QA aprovado, crie `output/videos/{slug}/FINAL.md` com todas as
 seções consolidadas: Performance, Research, Competitiva, Validação,
-Narrativa, Metadados, Roteiro, QA Report.
+Narrativa, Metadados, Roteiro (`07-script.md` e/ou
+`07-script-presenter.md`, conforme o que existir), QA Report.
 
 ## Passagem de Contexto entre Fases
 
@@ -123,7 +144,9 @@ Fase Competitiva  ← lê 02-research (cruzar fontes com concorrentes)
 Fase Narrativa    ← lê 01-performance + 02-research + 03-competitive + 04-validation
 Fase Metadados    ← lê 01-performance + 02-research + 03-competitive + 04-validation
 Fase Roteiro      ← lê 05-narrative + 06-metadata + 02-research + 01-performance + 03-competitive
-Fase QA           ← lê 06-metadata + 07-script + 05-narrative + 02-research
+Fase QA           ← lê 06-metadata + 07-script.md OU 07-script-presenter.md
+                   (ou legado `07-scriptwriter-presenter.md`) + 05-narrative
+                   + 02-research
 ```
 
 ## Numeração de outputs
@@ -136,7 +159,8 @@ Fase QA           ← lê 06-metadata + 07-script + 05-narrative + 02-research
 | 04 | Validation | `04-validation.md` |
 | 05 | Narrative | `05-narrative.md` |
 | 06 | Metadata | `06-metadata.md` |
-| 07 | Script | `07-script.md` |
+| 07 | Script (VO / ElevenLabs) | `07-script.md` |
+| 07b | Script (apresentador) | `07-script-presenter.md` |
 | 08 | QA | `08-qa-report.md` |
 | 09 | Triage (pós-pub) | `09-triage-{checkpoint}.md` |
 

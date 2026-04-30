@@ -32,6 +32,7 @@ YT_AGENT_TYPES = {
     "yt-validation",
     "yt-metadata",
     "yt-scriptwriter",
+    "yt-scriptwriter-presenter",
     "yt-qa",
     "yt-repackaging",
     "yt-algorithm-audit",

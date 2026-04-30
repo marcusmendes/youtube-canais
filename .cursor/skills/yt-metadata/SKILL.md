@@ -19,8 +19,11 @@ Lance o subagent **`/yt-metadata`** passando:
 - Contexto adicional se disponível (resultados de Performance,
   Competitiva, Validação)
 
-O subagent gera o pacote completo: 10 títulos (6 fórmulas),
-thumbnail prompt, descrição SEO, tags com volume, hashtags e post
-comunidade.
+O subagent gera o pacote completo: 10 títulos (6 fórmulas), thumbnail
+(Master Prompt v2 **e** tabela **7 seções** checklist QA), descrição SEO
+**250–400 palavras** com disclosure de IA, tags com volume, **hashtags
+em linha dedicada**, post comunidade, comentário fixo com **URL de
+playlist**, seção **Session Architecture (Fase S)** e nota de conteúdo
+alterado no Studio quando couber.
 
 Após conclusão, apresente os metadados completos ao usuário.
